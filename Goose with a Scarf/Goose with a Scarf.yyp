@@ -8,7 +8,7 @@
     "children":[],
     "name":"Default",
   },
-  "defaultScriptType":0,
+  "defaultScriptType":1,
   "Folders":[
     {"$GMFolder":"","%Name":"Animation Curves","folderPath":"folders/Animation Curves.yy","name":"Animation Curves","resourceType":"GMFolder","resourceVersion":"2.0",},
     {"$GMFolder":"","%Name":"Extensions","folderPath":"folders/Extensions.yy","name":"Extensions","resourceType":"GMFolder","resourceVersion":"2.0",},
@@ -34,13 +34,17 @@
   },
   "name":"Goose with a Scarf",
   "resources":[
-    {"id":{"name":"Room1","path":"rooms/Room1/Room1.yy",},},
+    {"id":{"name":"objGame","path":"objects/objGame/objGame.yy",},},
+    {"id":{"name":"objGoose","path":"objects/objGoose/objGoose.yy",},},
+    {"id":{"name":"room_1_1","path":"rooms/room_1_1/room_1_1.yy",},},
+    {"id":{"name":"spr_tiles_ground","path":"sprites/spr_tiles_ground/spr_tiles_ground.yy",},},
     {"id":{"name":"sprGoose","path":"sprites/sprGoose/sprGoose.yy",},},
+    {"id":{"name":"tls_ground","path":"tilesets/tls_ground/tls_ground.yy",},},
   ],
   "resourceType":"GMProject",
   "resourceVersion":"2.0",
   "RoomOrderNodes":[
-    {"roomId":{"name":"Room1","path":"rooms/Room1/Room1.yy",},},
+    {"roomId":{"name":"room_1_1","path":"rooms/room_1_1/room_1_1.yy",},},
   ],
   "templateType":"game",
   "TextureGroups":[
