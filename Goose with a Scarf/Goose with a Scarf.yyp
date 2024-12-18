@@ -38,6 +38,7 @@
     {"id":{"name":"objGoose","path":"objects/objGoose/objGoose.yy",},},
     {"id":{"name":"room_1_1","path":"rooms/room_1_1/room_1_1.yy",},},
     {"id":{"name":"spr_colour_palette","path":"sprites/spr_colour_palette/spr_colour_palette.yy",},},
+    {"id":{"name":"spr_tiles_decorations","path":"sprites/spr_tiles_decorations/spr_tiles_decorations.yy",},},
     {"id":{"name":"spr_tiles_ground","path":"sprites/spr_tiles_ground/spr_tiles_ground.yy",},},
     {"id":{"name":"sprGoose","path":"sprites/sprGoose/sprGoose.yy",},},
     {"id":{"name":"tls_ground","path":"tilesets/tls_ground/tls_ground.yy",},},
