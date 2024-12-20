@@ -1,11 +1,11 @@
 {
   "$GMSprite":"",
-  "%Name":"sprEgg",
+  "%Name":"sprStrawberry",
   "bboxMode":0,
-  "bbox_bottom":15,
-  "bbox_left":0,
-  "bbox_right":15,
-  "bbox_top":0,
+  "bbox_bottom":11,
+  "bbox_left":4,
+  "bbox_right":11,
+  "bbox_top":3,
   "collisionKind":1,
   "collisionTolerance":0,
   "DynamicTexturePage":false,
@@ -21,7 +21,7 @@
   "layers":[
     {"$GMImageLayer":"","%Name":"5957bc08-2b1e-4fb9-a0ee-20696a772fee","blendMode":0,"displayName":"default","isLocked":false,"name":"5957bc08-2b1e-4fb9-a0ee-20696a772fee","opacity":100.0,"resourceType":"GMImageLayer","resourceVersion":"2.0","visible":true,},
   ],
-  "name":"sprEgg",
+  "name":"sprStrawberry",
   "nineSlice":null,
   "origin":0,
   "parent":{
@@ -33,7 +33,7 @@
   "resourceVersion":"2.0",
   "sequence":{
     "$GMSequence":"",
-    "%Name":"sprEgg",
+    "%Name":"sprStrawberry",
     "autoRecord":true,
     "backdropHeight":768,
     "backdropImageOpacity":0.5,
@@ -57,7 +57,7 @@
       "resourceType":"KeyframeStore<MomentsEventKeyframe>",
       "resourceVersion":"2.0",
     },
-    "name":"sprEgg",
+    "name":"sprStrawberry",
     "playback":1,
     "playbackSpeed":8.0,
     "playbackSpeedType":0,
@@ -69,7 +69,7 @@
     "tracks":[
       {"$GMSpriteFramesTrack":"","builtinName":0,"events":[],"inheritsTrackColour":true,"interpolation":1,"isCreationTrack":false,"keyframes":{"$KeyframeStore<SpriteFrameKeyframe>":"","Keyframes":[
             {"$Keyframe<SpriteFrameKeyframe>":"","Channels":{
-                "0":{"$SpriteFrameKeyframe":"","Id":{"name":"b6c705b9-27fa-4435-b47e-6657b92f9767","path":"sprites/sprEgg/sprEgg.yy",},"resourceType":"SpriteFrameKeyframe","resourceVersion":"2.0",},
+                "0":{"$SpriteFrameKeyframe":"","Id":{"name":"b6c705b9-27fa-4435-b47e-6657b92f9767","path":"sprites/sprStrawberry/sprStrawberry.yy",},"resourceType":"SpriteFrameKeyframe","resourceVersion":"2.0",},
               },"Disabled":false,"id":"8adbc482-61fd-46be-81dd-154af3e54cce","IsCreationKey":false,"Key":0.0,"Length":1.0,"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"2.0","Stretch":false,},
           ],"resourceType":"KeyframeStore<SpriteFrameKeyframe>","resourceVersion":"2.0",},"modifiers":[],"name":"frames","resourceType":"GMSpriteFramesTrack","resourceVersion":"2.0","spriteId":null,"trackColour":0,"tracks":[],"traits":0,},
     ],
@@ -79,7 +79,7 @@
     "yorigin":0,
   },
   "swatchColours":[
-    4278190335,4294967295,4294703604,4293648840,4291673765,4289040760,4286407765,4284105015,4282129945,4284106260,
+    4278190335,4294967295,4294439913,4293648840,4291673765,4289040760,4286407765,4284105015,4282129945,4284106260,
     4285756175,4285113615,4285779265,4285792115,4286094300,4282868402,4281482380,4280489050,4279503415,4289057535,
     4285441525,4282805990,4281156035,4280492940,4282449985,4282450045,4282127530,4281150935,4280510960,4281510655,
     4284147455,4281194430,4280198500,4279532835,4279850255,4280496655,4293001090,4292335425,4291665940,4290996500,
