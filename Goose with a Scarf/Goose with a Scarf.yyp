@@ -34,9 +34,11 @@
   },
   "name":"Goose with a Scarf",
   "resources":[
+    {"id":{"name":"fnt_16_bit","path":"fonts/fnt_16_bit/fnt_16_bit.yy",},},
     {"id":{"name":"objGame","path":"objects/objGame/objGame.yy",},},
-    {"id":{"name":"objGoose","path":"objects/objGoose/objGoose.yy",},},
+    {"id":{"name":"objGooseBody","path":"objects/objGooseBody/objGooseBody.yy",},},
     {"id":{"name":"objGooseFeet","path":"objects/objGooseFeet/objGooseFeet.yy",},},
+    {"id":{"name":"objGooseHead","path":"objects/objGooseHead/objGooseHead.yy",},},
     {"id":{"name":"objStrawberry","path":"objects/objStrawberry/objStrawberry.yy",},},
     {"id":{"name":"room_1_1","path":"rooms/room_1_1/room_1_1.yy",},},
     {"id":{"name":"general_functions","path":"scripts/general_functions/general_functions.yy",},},

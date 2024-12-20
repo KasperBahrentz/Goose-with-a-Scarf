@@ -12,14 +12,12 @@ else {
 }
 
 if (hspeed != 0){
-	if (image_index == 2){
-		spr_body = spr_body_run;	
-	}
-	spr_feet = spr_feet_run;
+	if (image_index <= 1) sprite_index = spr_body_run;
+	objGooseFeet.sprite_index = spr_feet_run;
 }
 else{
-	spr_body = spr_body_idle;
-	spr_feet = spr_feet_idle;
+	if (image_index <= 1) sprite_index = spr_body_idle;
+	objGooseFeet.sprite_index = spr_feet_idle;
 }
 
 if (hspeed < 0){
