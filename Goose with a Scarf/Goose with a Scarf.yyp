@@ -50,6 +50,7 @@
     {"id":{"name":"sprGooseHeadIdle","path":"sprites/sprGooseHeadIdle/sprGooseHeadIdle.yy",},},
     {"id":{"name":"sprGooseIdle16","path":"sprites/sprGooseIdle16/sprGooseIdle16.yy",},},
     {"id":{"name":"sprGooseRun16","path":"sprites/sprGooseRun16/sprGooseRun16.yy",},},
+    {"id":{"name":"sprOrange16","path":"sprites/sprOrange16/sprOrange16.yy",},},
     {"id":{"name":"sprStrawberry","path":"sprites/sprStrawberry/sprStrawberry.yy",},},
     {"id":{"name":"sprStrawberry16","path":"sprites/sprStrawberry16/sprStrawberry16.yy",},},
     {"id":{"name":"sprTilesDecorations","path":"sprites/sprTilesDecorations/sprTilesDecorations.yy",},},

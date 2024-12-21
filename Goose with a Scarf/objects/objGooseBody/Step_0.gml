@@ -2,13 +2,13 @@
 // You can write your code in this editor
 
 if (keyboard_check(ord("D"))){
-	speed = spd;
+	hspeed = spd;
 }
 else if (keyboard_check(ord("A"))){
-	speed = -spd;
+	hspeed = -spd;
 }
 else {
-	speed = 0;	
+	hspeed = 0;	
 }
 
 if (hspeed != 0){
