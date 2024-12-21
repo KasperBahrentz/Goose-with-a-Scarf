@@ -1,14 +1,19 @@
 {
   "$GMTileSet":"v1",
-  "%Name":"tls_ground",
-  "autoTileSets":[],
+  "%Name":"tlsGround16",
+  "autoTileSets":[
+    {"$GMAutoTileSet":"","%Name":"grass16","closed_edge":false,"name":"grass16","resourceType":"GMAutoTileSet","resourceVersion":"2.0","tiles":[
+        46,47,48,49,50,51,52,53,91,92,93,94,95,96,97,98,136,137,138,139,140,141,142,143,181,182,183,184,185,
+        186,187,188,226,227,228,229,230,231,232,233,271,272,273,274,275,276,277,
+      ],},
+  ],
   "macroPageTiles":{
     "SerialiseHeight":0,
     "SerialiseWidth":0,
     "TileSerialiseData":[],
   },
-  "name":"tls_ground",
-  "out_columns":16,
+  "name":"tlsGround16",
+  "out_columns":26,
   "out_tilehborder":2,
   "out_tilevborder":2,
   "parent":{
@@ -18,8 +23,8 @@
   "resourceType":"GMTileSet",
   "resourceVersion":"2.0",
   "spriteId":{
-    "name":"sprTilesGround",
-    "path":"sprites/sprTilesGround/sprTilesGround.yy",
+    "name":"sprTilesGround16",
+    "path":"sprites/sprTilesGround16/sprTilesGround16.yy",
   },
   "spriteNoExport":false,
   "textureGroupId":{
@@ -34,5 +39,5 @@
   "tileWidth":16,
   "tilexoff":0,
   "tileyoff":0,
-  "tile_count":256,
+  "tile_count":675,
 }
