@@ -1,18 +1,17 @@
 {
   "$GMObject":"",
-  "%Name":"objStrawberry",
-  "eventList":[],
+  "%Name":"prtFruit",
+  "eventList":[
+    {"$GMEvent":"v1","%Name":"","collisionObjectId":null,"eventNum":0,"eventType":3,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
+  ],
   "managed":true,
-  "name":"objStrawberry",
+  "name":"prtFruit",
   "overriddenProperties":[],
   "parent":{
     "name":"Objects",
     "path":"folders/Objects.yy",
   },
-  "parentObjectId":{
-    "name":"prtFruit",
-    "path":"objects/prtFruit/prtFruit.yy",
-  },
+  "parentObjectId":null,
   "persistent":false,
   "physicsAngularDamping":0.1,
   "physicsDensity":0.5,
@@ -30,10 +29,7 @@
   "resourceType":"GMObject",
   "resourceVersion":"2.0",
   "solid":false,
-  "spriteId":{
-    "name":"sprStrawberry",
-    "path":"sprites/sprStrawberry/sprStrawberry.yy",
-  },
+  "spriteId":null,
   "spriteMaskId":null,
   "visible":true,
 }

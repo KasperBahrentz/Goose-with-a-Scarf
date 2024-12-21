@@ -1,9 +1,9 @@
 {
   "$GMObject":"",
-  "%Name":"objStrawberry",
+  "%Name":"objOrange",
   "eventList":[],
   "managed":true,
-  "name":"objStrawberry",
+  "name":"objOrange",
   "overriddenProperties":[],
   "parent":{
     "name":"Objects",
@@ -31,8 +31,8 @@
   "resourceVersion":"2.0",
   "solid":false,
   "spriteId":{
-    "name":"sprStrawberry",
-    "path":"sprites/sprStrawberry/sprStrawberry.yy",
+    "name":"sprOrange",
+    "path":"sprites/sprOrange/sprOrange.yy",
   },
   "spriteMaskId":null,
   "visible":true,
