@@ -4,6 +4,13 @@
 instance_create_layer(x, y, layer, objGooseFeet);
 instance_create_layer(x, y, layer, objGooseHead);
 
+enum player_state{
+	MOVE,
+	PAUSE	
+}
+
+state = player_state.MOVE;
+
 spr_body_idle = sprGooseBodyIdle;
 spr_body_run = sprGooseBodyRun;
 
