@@ -27,8 +27,8 @@
   "resourceType":"GMTileSet",
   "resourceVersion":"2.0",
   "spriteId":{
-    "name":"sprTilesGround16",
-    "path":"sprites/sprTilesGround16/sprTilesGround16.yy",
+    "name":"sprTilesGroundSpringSummer16",
+    "path":"sprites/sprTilesGroundSpringSummer16/sprTilesGroundSpringSummer16.yy",
   },
   "spriteNoExport":false,
   "textureGroupId":{

@@ -23,8 +23,8 @@
   "resourceType":"GMTileSet",
   "resourceVersion":"2.0",
   "spriteId":{
-    "name":"sprTilesGround",
-    "path":"sprites/sprTilesGround/sprTilesGround.yy",
+    "name":"sprTilesGroundSpringSummer",
+    "path":"sprites/sprTilesGroundSpringSummer/sprTilesGroundSpringSummer.yy",
   },
   "spriteNoExport":false,
   "textureGroupId":{
