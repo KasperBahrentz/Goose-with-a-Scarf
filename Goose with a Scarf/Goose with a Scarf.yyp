@@ -66,7 +66,6 @@
     {"id":{"name":"sprStrawberry","path":"sprites/sprStrawberry/sprStrawberry.yy",},},
     {"id":{"name":"sprStrawberry16","path":"sprites/sprStrawberry16/sprStrawberry16.yy",},},
     {"id":{"name":"sprTilesDeco16","path":"sprites/sprTilesDeco16/sprTilesDeco16.yy",},},
-    {"id":{"name":"sprTilesGroundFallWinter16","path":"sprites/sprTilesGroundFallWinter16/sprTilesGroundFallWinter16.yy",},},
     {"id":{"name":"sprTilesGroundSpringSummer","path":"sprites/sprTilesGroundSpringSummer/sprTilesGroundSpringSummer.yy",},},
     {"id":{"name":"sprTilesGroundSpringSummer16","path":"sprites/sprTilesGroundSpringSummer16/sprTilesGroundSpringSummer16.yy",},},
     {"id":{"name":"tlsDecoration","path":"tilesets/tlsDecoration/tlsDecoration.yy",},},

@@ -9,8 +9,11 @@
   "isDnd":false,
   "layers":[
     {"$GMRTileLayer":"","%Name":"ground","depth":0,"effectEnabled":true,"effectType":null,"gridX":32,"gridY":32,"hierarchyFrozen":false,"inheritLayerDepth":false,"inheritLayerSettings":false,"inheritSubLayers":true,"inheritVisibility":true,"layers":[],"name":"ground","properties":[],"resourceType":"GMRTileLayer","resourceVersion":"2.0","tiles":{"SerialiseHeight":15,"SerialiseWidth":31,"TileCompressedData":[
-          -320,0,1,158,-4,98,1,160,-25,0,6,94,32,36,129,63,125,-25,0,6,94,36,162,0,94,125,-25,0,6,94,125,0,0,94,
-          125,-25,0,6,94,125,0,0,94,125,-15,0,
+          -150,0,2,158,160,-28,0,4,158,33,34,160,-19,0,1,193,-7,0,4,94,32,32,125,-25,0,6,158,98,33,32,32,125,-20,
+          0,1,158,-4,98,6,33,32,32,36,129,162,-19,0,3,158,33,48,-5,44,2,75,125,-14,0,1,158,-6,98,3,33,48,42,-5,
+          41,2,74,125,-9,0,14,158,160,0,158,98,33,32,36,129,63,48,44,44,42,-6,41,2,74,125,-9,0,11,94,34,98,33,
+          32,32,36,162,0,94,46,-9,41,3,74,34,160,-8,0,2,94,48,-3,44,6,75,125,0,0,94,46,-9,41,3,43,75,125,-8,0,
+          2,94,46,-3,41,6,74,125,0,0,94,46,-10,41,2,74,125,-3,0,
         ],"TileDataFormat":1,},"tilesetId":{"name":"tlsGround16","path":"tilesets/tlsGround16/tlsGround16.yy",},"userdefinedDepth":false,"visible":true,"x":0,"y":0,},
     {"$GMRTileLayer":"","%Name":"back","depth":100,"effectEnabled":true,"effectType":null,"gridX":32,"gridY":32,"hierarchyFrozen":false,"inheritLayerDepth":false,"inheritLayerSettings":false,"inheritSubLayers":true,"inheritVisibility":true,"layers":[],"name":"back","properties":[],"resourceType":"GMRTileLayer","resourceVersion":"2.0","tiles":{"SerialiseHeight":15,"SerialiseWidth":31,"TileCompressedData":[-465,0,],"TileDataFormat":1,},"tilesetId":{"name":"tlsGround16","path":"tilesets/tlsGround16/tlsGround16.yy",},"userdefinedDepth":false,"visible":true,"x":0,"y":0,},
   ],
