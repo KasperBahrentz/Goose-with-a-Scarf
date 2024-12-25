@@ -16,7 +16,10 @@
           32,36,162,0,94,46,-9,41,3,74,34,160,-8,0,2,94,48,-3,44,6,75,125,0,0,94,46,-9,41,3,43,75,125,-8,0,2,94,
           46,-3,41,6,74,125,0,0,94,46,-10,41,2,74,125,-3,0,
         ],"TileDataFormat":1,},"tilesetId":{"name":"tlsGround16","path":"tilesets/tlsGround16/tlsGround16.yy",},"userdefinedDepth":false,"visible":true,"x":0,"y":0,},
-    {"$GMRTileLayer":"","%Name":"back","depth":100,"effectEnabled":true,"effectType":null,"gridX":32,"gridY":32,"hierarchyFrozen":false,"inheritLayerDepth":false,"inheritLayerSettings":false,"inheritSubLayers":true,"inheritVisibility":true,"layers":[],"name":"back","properties":[],"resourceType":"GMRTileLayer","resourceVersion":"2.0","tiles":{"SerialiseHeight":15,"SerialiseWidth":31,"TileCompressedData":[-465,0,],"TileDataFormat":1,},"tilesetId":{"name":"tlsGround16","path":"tilesets/tlsGround16/tlsGround16.yy",},"userdefinedDepth":false,"visible":true,"x":0,"y":0,},
+    {"$GMRTileLayer":"","%Name":"back","depth":100,"effectEnabled":true,"effectType":null,"gridX":32,"gridY":32,"hierarchyFrozen":false,"inheritLayerDepth":false,"inheritLayerSettings":false,"inheritSubLayers":true,"inheritVisibility":true,"layers":[],"name":"back","properties":[],"resourceType":"GMRTileLayer","resourceVersion":"2.0","tiles":{"SerialiseHeight":15,"SerialiseWidth":31,"TileCompressedData":[
+          -164,0,1,375,-3,315,1,377,-26,0,5,404,280,249,249,342,-27,0,4,404,280,249,342,-28,0,3,311,249,342,-28,
+          0,3,311,249,342,-28,0,3,404,346,379,-141,0,
+        ],"TileDataFormat":1,},"tilesetId":{"name":"tlsGround16","path":"tilesets/tlsGround16/tlsGround16.yy",},"userdefinedDepth":false,"visible":true,"x":0,"y":0,},
   ],
   "name":"room_tile_test",
   "parent":{
