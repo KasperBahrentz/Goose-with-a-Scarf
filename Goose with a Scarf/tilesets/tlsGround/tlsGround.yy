@@ -6,6 +6,7 @@
         32,33,34,35,36,37,38,39,63,64,65,66,67,68,69,70,94,95,96,97,98,99,100,101,125,126,127,128,129,130,131,
         132,156,157,158,159,160,161,162,163,187,188,189,190,191,192,193,
       ],},
+    {"$GMAutoTileSet":"","%Name":"summer_fill","closed_edge":false,"name":"summer_fill","resourceType":"GMAutoTileSet","resourceVersion":"2.0","tiles":[41,42,43,44,45,46,47,48,72,73,74,75,76,77,78,79,],},
   ],
   "macroPageTiles":{
     "SerialiseHeight":0,
