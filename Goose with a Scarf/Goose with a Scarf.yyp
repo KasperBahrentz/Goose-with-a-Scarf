@@ -45,6 +45,7 @@
     {"id":{"name":"objOrange","path":"objects/objOrange/objOrange.yy",},},
     {"id":{"name":"objPear","path":"objects/objPear/objPear.yy",},},
     {"id":{"name":"objStrawberry","path":"objects/objStrawberry/objStrawberry.yy",},},
+    {"id":{"name":"prtFly","path":"objects/prtFly/prtFly.yy",},},
     {"id":{"name":"prtFruit","path":"objects/prtFruit/prtFruit.yy",},},
     {"id":{"name":"room_1_1","path":"rooms/room_1_1/room_1_1.yy",},},
     {"id":{"name":"room_tile_test","path":"rooms/room_tile_test/room_tile_test.yy",},},
