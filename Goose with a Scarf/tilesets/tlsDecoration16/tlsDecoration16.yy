@@ -1,14 +1,14 @@
 {
   "$GMTileSet":"v1",
-  "%Name":"tlsDecoration",
+  "%Name":"tlsDecoration16",
   "autoTileSets":[],
   "macroPageTiles":{
     "SerialiseHeight":0,
     "SerialiseWidth":0,
     "TileSerialiseData":[],
   },
-  "name":"tlsDecoration",
-  "out_columns":16,
+  "name":"tlsDecoration16",
+  "out_columns":22,
   "out_tilehborder":2,
   "out_tilevborder":2,
   "parent":{
@@ -17,7 +17,10 @@
   },
   "resourceType":"GMTileSet",
   "resourceVersion":"2.0",
-  "spriteId":null,
+  "spriteId":{
+    "name":"sprTilesDeco16",
+    "path":"sprites/sprTilesDeco16/sprTilesDeco16.yy",
+  },
   "spriteNoExport":false,
   "textureGroupId":{
     "name":"Default",
@@ -31,5 +34,5 @@
   "tileWidth":16,
   "tilexoff":0,
   "tileyoff":0,
-  "tile_count":256,
+  "tile_count":465,
 }
