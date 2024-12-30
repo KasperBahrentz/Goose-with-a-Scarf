@@ -1,7 +1,12 @@
 {
   "$GMTileSet":"v1",
   "%Name":"tlsDecoration16",
-  "autoTileSets":[],
+  "autoTileSets":[
+    {"$GMAutoTileSet":"","%Name":"vinesSummer16","closed_edge":false,"name":"vinesSummer16","resourceType":"GMAutoTileSet","resourceVersion":"2.0","tiles":[
+        32,33,34,35,36,37,38,39,63,64,65,66,67,68,69,70,94,95,96,97,98,99,100,101,125,126,127,128,129,130,131,
+        132,156,157,158,159,160,161,162,163,187,188,189,190,191,192,193,
+      ],},
+  ],
   "macroPageTiles":{
     "SerialiseHeight":0,
     "SerialiseWidth":0,
