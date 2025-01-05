@@ -2,9 +2,9 @@
   "$GMSprite":"",
   "%Name":"sprSummerSky16",
   "bboxMode":0,
-  "bbox_bottom":239,
+  "bbox_bottom":269,
   "bbox_left":0,
-  "bbox_right":495,
+  "bbox_right":479,
   "bbox_top":0,
   "collisionKind":1,
   "collisionTolerance":0,
@@ -16,7 +16,7 @@
   ],
   "gridX":0,
   "gridY":0,
-  "height":240,
+  "height":270,
   "HTile":false,
   "layers":[
     {"$GMImageLayer":"","%Name":"21296371-fd99-4c8b-bbe1-faf00d3d912c","blendMode":0,"displayName":"Layer 1","isLocked":false,"name":"21296371-fd99-4c8b-bbe1-faf00d3d912c","opacity":100.0,"resourceType":"GMImageLayer","resourceVersion":"2.0","visible":true,},
@@ -96,5 +96,5 @@
   },
   "type":0,
   "VTile":false,
-  "width":496,
+  "width":480,
 }
