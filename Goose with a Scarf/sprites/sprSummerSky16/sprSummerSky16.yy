@@ -19,8 +19,8 @@
   "height":270,
   "HTile":false,
   "layers":[
-    {"$GMImageLayer":"","%Name":"21296371-fd99-4c8b-bbe1-faf00d3d912c","blendMode":0,"displayName":"Layer 1","isLocked":false,"name":"21296371-fd99-4c8b-bbe1-faf00d3d912c","opacity":100.0,"resourceType":"GMImageLayer","resourceVersion":"2.0","visible":true,},
-    {"$GMImageLayer":"","%Name":"b88e8b32-4aad-4156-a112-e04b56a07660","blendMode":0,"displayName":"default","isLocked":false,"name":"b88e8b32-4aad-4156-a112-e04b56a07660","opacity":100.0,"resourceType":"GMImageLayer","resourceVersion":"2.0","visible":false,},
+    {"$GMImageLayer":"","%Name":"fa1fa777-3e66-4105-96ab-59a255c57fdc","blendMode":0,"displayName":"Layer 4","isLocked":false,"name":"fa1fa777-3e66-4105-96ab-59a255c57fdc","opacity":100.0,"resourceType":"GMImageLayer","resourceVersion":"2.0","visible":true,},
+    {"$GMImageLayer":"","%Name":"21296371-fd99-4c8b-bbe1-faf00d3d912c","blendMode":0,"displayName":"Layer 1","isLocked":false,"name":"21296371-fd99-4c8b-bbe1-faf00d3d912c","opacity":100.0,"resourceType":"GMImageLayer","resourceVersion":"2.0","visible":false,},
   ],
   "name":"sprSummerSky16",
   "nineSlice":null,
