@@ -19,7 +19,12 @@ spr_head_idle = sprGooseHeadIdle;
 spr_feet_idle = sprGooseFeetIdle;
 spr_feet_run = sprGooseFeetRun;
 
-spd = 8;
+spd = 0;
+top_spd = 11;
+acceleration = 1.5;
+deceleration = 0.8;
 
 spr_number = 0;
+
+move_dir = 1;
 

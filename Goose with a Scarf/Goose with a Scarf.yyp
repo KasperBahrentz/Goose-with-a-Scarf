@@ -37,6 +37,7 @@
   "name":"Goose with a Scarf",
   "resources":[
     {"id":{"name":"fnt_16_bit","path":"fonts/fnt_16_bit/fnt_16_bit.yy",},},
+    {"id":{"name":"objCollision","path":"objects/objCollision/objCollision.yy",},},
     {"id":{"name":"objGame","path":"objects/objGame/objGame.yy",},},
     {"id":{"name":"objGooseBody","path":"objects/objGooseBody/objGooseBody.yy",},},
     {"id":{"name":"objGooseFeet","path":"objects/objGooseFeet/objGooseFeet.yy",},},
@@ -49,7 +50,10 @@
     {"id":{"name":"prtFruit","path":"objects/prtFruit/prtFruit.yy",},},
     {"id":{"name":"room_1_1","path":"rooms/room_1_1/room_1_1.yy",},},
     {"id":{"name":"room_tile_test","path":"rooms/room_tile_test/room_tile_test.yy",},},
+    {"id":{"name":"collision","path":"scripts/collision/collision.yy",},},
+    {"id":{"name":"enums","path":"scripts/enums/enums.yy",},},
     {"id":{"name":"general_functions","path":"scripts/general_functions/general_functions.yy",},},
+    {"id":{"name":"sprCollision","path":"sprites/sprCollision/sprCollision.yy",},},
     {"id":{"name":"sprColourPalette","path":"sprites/sprColourPalette/sprColourPalette.yy",},},
     {"id":{"name":"sprGooseBodyIdle","path":"sprites/sprGooseBodyIdle/sprGooseBodyIdle.yy",},},
     {"id":{"name":"sprGooseBodyRun","path":"sprites/sprGooseBodyRun/sprGooseBodyRun.yy",},},

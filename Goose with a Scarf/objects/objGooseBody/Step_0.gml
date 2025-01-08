@@ -7,14 +7,20 @@ switch (state){
 }
 
 function move(){
-	if (keyboard_check(ord("D"))){
-	hspeed = spd;
+	if (keyboard_check(ord("D"))) and (!check_collision(spd, 0)){
+		spd = min(max(deceleration, spd*acceleration), top_spd);
+		hspeed = spd;
+		move_dir = dir.RIGHT;
 	}
-	else if (keyboard_check(ord("A"))){
+	else if (keyboard_check(ord("A"))) and (!check_collision(-spd, 0)){
+		spd = min(max(deceleration, spd*acceleration), top_spd);
 		hspeed = -spd;
+		move_dir = dir.LEFT;
 	}
 	else {
-		hspeed = 0;	
+		if (spd > 1) spd = max(0, spd*deceleration);
+		else spd = 0;
+		hspeed = move_dir * spd;
 	}
 
 	if (hspeed != 0){
