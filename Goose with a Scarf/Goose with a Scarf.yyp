@@ -49,7 +49,6 @@
     {"id":{"name":"prtFly","path":"objects/prtFly/prtFly.yy",},},
     {"id":{"name":"prtFruit","path":"objects/prtFruit/prtFruit.yy",},},
     {"id":{"name":"room_1_1","path":"rooms/room_1_1/room_1_1.yy",},},
-    {"id":{"name":"room_tile_test_empty","path":"rooms/room_tile_test_empty/room_tile_test_empty.yy",},},
     {"id":{"name":"room_tile_test","path":"rooms/room_tile_test/room_tile_test.yy",},},
     {"id":{"name":"collision","path":"scripts/collision/collision.yy",},},
     {"id":{"name":"enums","path":"scripts/enums/enums.yy",},},
@@ -78,9 +77,10 @@
     {"id":{"name":"sprSummerMountainsBack","path":"sprites/sprSummerMountainsBack/sprSummerMountainsBack.yy",},},
     {"id":{"name":"sprSummerMountainsFront","path":"sprites/sprSummerMountainsFront/sprSummerMountainsFront.yy",},},
     {"id":{"name":"sprSummerMountainsFront16","path":"sprites/sprSummerMountainsFront16/sprSummerMountainsFront16.yy",},},
-    {"id":{"name":"sprSummerMountainsFront16Old","path":"sprites/sprSummerMountainsFront16Old/sprSummerMountainsFront16Old.yy",},},
     {"id":{"name":"sprSummerMountainsFrontTest","path":"sprites/sprSummerMountainsFrontTest/sprSummerMountainsFrontTest.yy",},},
     {"id":{"name":"sprSummerMountainsFrontTest2","path":"sprites/sprSummerMountainsFrontTest2/sprSummerMountainsFrontTest2.yy",},},
+    {"id":{"name":"sprSummerMountainsFrontTest3","path":"sprites/sprSummerMountainsFrontTest3/sprSummerMountainsFrontTest3.yy",},},
+    {"id":{"name":"sprSummerSky","path":"sprites/sprSummerSky/sprSummerSky.yy",},},
     {"id":{"name":"sprSummerSky16","path":"sprites/sprSummerSky16/sprSummerSky16.yy",},},
     {"id":{"name":"sprTilesDeco","path":"sprites/sprTilesDeco/sprTilesDeco.yy",},},
     {"id":{"name":"sprTilesDeco16","path":"sprites/sprTilesDeco16/sprTilesDeco16.yy",},},
@@ -96,7 +96,6 @@
   "RoomOrderNodes":[
     {"roomId":{"name":"room_1_1","path":"rooms/room_1_1/room_1_1.yy",},},
     {"roomId":{"name":"room_tile_test","path":"rooms/room_tile_test/room_tile_test.yy",},},
-    {"roomId":{"name":"room_tile_test_empty","path":"rooms/room_tile_test_empty/room_tile_test_empty.yy",},},
   ],
   "templateType":"game",
   "TextureGroups":[
