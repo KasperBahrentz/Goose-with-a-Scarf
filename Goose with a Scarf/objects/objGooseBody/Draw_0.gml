@@ -5,5 +5,5 @@ draw_sprite_custom(objGooseHead.sprite_index);
 draw_self();
 draw_sprite_custom(objGooseFeet.sprite_index);
 
-//draw_text(x, y, vspeed);
+//draw_text(x, y, hspeed);
 //draw_rectangle(bbox_left, bbox_top, bbox_right, bbox_bottom, false);

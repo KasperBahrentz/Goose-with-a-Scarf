@@ -19,15 +19,18 @@ spr_head_idle = sprGooseHeadIdle;
 spr_feet_idle = sprGooseFeetIdle;
 spr_feet_run = sprGooseFeetRun;
 
+move_dir = dir.RIGHT;
+
+h_spd = 0;
 h_top_spd = 12;
-acceleration = 1.5;
+acceleration = 1.8;
 deceleration = 0.8;
 
 jump_height = 44;
 v_deceleration = 0.5;
 grav = 18;
-jump_timer = 0;
 max_jump_timer = 20;
+jump_timer = max_jump_timer;
 
 spr_number = 0;
 
