@@ -8,8 +8,9 @@ switch (state){
 
 function move(){
 	
+	// Screen shake test
 	if (keyboard_check_pressed(ord("M"))){
-		screenshake(20, 3, 0.3);	
+		screenshake(15, 3, 0.3);	
 	}
 	
 	// Move horizontally
