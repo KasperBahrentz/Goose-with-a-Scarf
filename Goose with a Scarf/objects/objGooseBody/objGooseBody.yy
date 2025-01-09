@@ -35,6 +35,9 @@
     "name":"sprGooseBodyIdle",
     "path":"sprites/sprGooseBodyIdle/sprGooseBodyIdle.yy",
   },
-  "spriteMaskId":null,
+  "spriteMaskId":{
+    "name":"sprGooseBodyIdle",
+    "path":"sprites/sprGooseBodyIdle/sprGooseBodyIdle.yy",
+  },
   "visible":true,
 }

@@ -19,14 +19,15 @@ spr_head_idle = sprGooseHeadIdle;
 spr_feet_idle = sprGooseFeetIdle;
 spr_feet_run = sprGooseFeetRun;
 
-h_spd = 0;
-top_spd = 11;
+h_top_spd = 12;
 acceleration = 1.5;
 deceleration = 0.8;
 
-v_spd = 0;
-grav = 16;
-jump_height = 10;
+jump_height = 44;
+v_deceleration = 0.5;
+grav = 18;
+jump_timer = 0;
+max_jump_timer = 20;
 
 spr_number = 0;
 
@@ -40,4 +41,7 @@ spr_bbox_bottom = sprite_get_bbox_bottom(sprite_index) - sprite_get_yoffset(spri
 map_x = 0;
 map_y = 0;
 
-tilesize = 128;
+tile_size = 128;
+pixel_size = 8;
+
+has_jumped = false;
