@@ -44,7 +44,4 @@ spr_bbox_bottom = sprite_get_bbox_bottom(sprite_index) - sprite_get_yoffset(spri
 map_x = 0;
 map_y = 0;
 
-tile_size = 128;
-pixel_size = 8;
-
 has_jumped = false;

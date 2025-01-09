@@ -8,6 +8,10 @@ switch (state){
 
 function move(){
 	
+	if (keyboard_check_pressed(ord("M"))){
+		screenshake(20, 3, 0.3);	
+	}
+	
 	// Move horizontally
 	var _key_right = keyboard_check(ord("D"));
 	var _key_left = keyboard_check(ord("A"));
@@ -38,7 +42,7 @@ function move(){
 		map_x = tilemap_get_cell_x_at_pixel(objGame.collision_tilemap, x, y);
 		if (move_dir == dir.RIGHT) map_x++;
 		hspeed = 0;
-		x = (map_x * tile_size) - spr_bbox_right*move_dir - pixel_size*move_dir;
+		x = (map_x * objGame.tile_size) - spr_bbox_right*move_dir - objGame.pixel_size*move_dir;
 	}
 	else { // Move
 		hspeed = h_spd * move_dir;	
@@ -48,7 +52,7 @@ function move(){
 	if (check_collision(0, 32)){ // Stop
 		map_y = tilemap_get_cell_y_at_pixel(objGame.collision_tilemap, x, y + 32);
 		vspeed = 0;
-		y = (map_y * tile_size);
+		y = (map_y * objGame.tile_size);
 		
 		if (keyboard_check_pressed(vk_space)){
 			jump_timer = 0;
