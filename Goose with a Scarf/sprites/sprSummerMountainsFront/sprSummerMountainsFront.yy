@@ -5,21 +5,21 @@
   "bbox_bottom":2159,
   "bbox_left":0,
   "bbox_right":3839,
-  "bbox_top":408,
+  "bbox_top":184,
   "collisionKind":1,
   "collisionTolerance":0,
   "DynamicTexturePage":false,
   "edgeFiltering":false,
   "For3D":false,
   "frames":[
-    {"$GMSpriteFrame":"","%Name":"675f38c7-7d54-4a94-81c9-425d36fba442","name":"675f38c7-7d54-4a94-81c9-425d36fba442","resourceType":"GMSpriteFrame","resourceVersion":"2.0",},
+    {"$GMSpriteFrame":"","%Name":"4792fc1e-5711-4977-aa7e-19c395be0c61","name":"4792fc1e-5711-4977-aa7e-19c395be0c61","resourceType":"GMSpriteFrame","resourceVersion":"2.0",},
   ],
   "gridX":0,
   "gridY":0,
   "height":2160,
   "HTile":false,
   "layers":[
-    {"$GMImageLayer":"","%Name":"608782ec-af78-44ac-a132-68166da67b3d","blendMode":0,"displayName":"default","isLocked":false,"name":"608782ec-af78-44ac-a132-68166da67b3d","opacity":100.0,"resourceType":"GMImageLayer","resourceVersion":"2.0","visible":true,},
+    {"$GMImageLayer":"","%Name":"fd57379e-d1f8-4633-b2b6-4935ee83148d","blendMode":0,"displayName":"default","isLocked":false,"name":"fd57379e-d1f8-4633-b2b6-4935ee83148d","opacity":100.0,"resourceType":"GMImageLayer","resourceVersion":"2.0","visible":true,},
   ],
   "name":"sprSummerMountainsFront",
   "nineSlice":null,
@@ -69,8 +69,8 @@
     "tracks":[
       {"$GMSpriteFramesTrack":"","builtinName":0,"events":[],"inheritsTrackColour":true,"interpolation":1,"isCreationTrack":false,"keyframes":{"$KeyframeStore<SpriteFrameKeyframe>":"","Keyframes":[
             {"$Keyframe<SpriteFrameKeyframe>":"","Channels":{
-                "0":{"$SpriteFrameKeyframe":"","Id":{"name":"675f38c7-7d54-4a94-81c9-425d36fba442","path":"sprites/sprSummerMountainsFront/sprSummerMountainsFront.yy",},"resourceType":"SpriteFrameKeyframe","resourceVersion":"2.0",},
-              },"Disabled":false,"id":"bf795f24-5bfa-4dcc-a449-69dd9fa47a26","IsCreationKey":false,"Key":0.0,"Length":1.0,"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"2.0","Stretch":false,},
+                "0":{"$SpriteFrameKeyframe":"","Id":{"name":"4792fc1e-5711-4977-aa7e-19c395be0c61","path":"sprites/sprSummerMountainsFront/sprSummerMountainsFront.yy",},"resourceType":"SpriteFrameKeyframe","resourceVersion":"2.0",},
+              },"Disabled":false,"id":"d6b0065a-0b39-4f9e-a28d-2f256effeef1","IsCreationKey":false,"Key":0.0,"Length":1.0,"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"2.0","Stretch":false,},
           ],"resourceType":"KeyframeStore<SpriteFrameKeyframe>","resourceVersion":"2.0",},"modifiers":[],"name":"frames","resourceType":"GMSpriteFramesTrack","resourceVersion":"2.0","spriteId":null,"trackColour":0,"tracks":[],"traits":0,},
     ],
     "visibleRange":null,
