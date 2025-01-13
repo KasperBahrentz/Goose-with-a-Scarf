@@ -49,24 +49,33 @@ function move(){
 		hspeed = h_spd * move_dir;	
 	}
 	
+	
 	// Move vertically
-	if (check_collision(0, 32)){ // Stop
-		map_y = tilemap_get_cell_y_at_pixel(objGame.collision_tilemap, x, y + 32);
+	
+	var _ceiling_hit =  check_collision(0, -10*objGame.pixel_size);
+	
+	if (check_collision(0, 4*objGame.pixel_size)){ // Stop
+		map_y = tilemap_get_cell_y_at_pixel(objGame.collision_tilemap, x, y + 4*objGame.pixel_size);
 		vspeed = 0;
 		y = (map_y * objGame.tile_size);
 		
 		if (keyboard_check_pressed(vk_space)){
 			jump_timer = 0;
 		}
+	} 
+	else if (vspeed < 0) and (_ceiling_hit){ // Stop at ceiling
+		map_y = tilemap_get_cell_y_at_pixel(objGame.collision_tilemap, x, y-8*objGame.pixel_size) + 1;
+		vspeed = 0;
+		y = (map_y * objGame.tile_size);
 	}
 	else { // Move
 		vspeed = grav;	
 	}
-
-	if (jump_timer <= max_jump_timer){
+	
+	if (!_ceiling_hit) and (jump_timer < max_jump_timer){
 		vspeed -= jump_height * (1 - jump_timer/max_jump_timer);
 		jump_timer++;	
-	}
+	} else jump_timer = max_jump_timer;
 
 	if (hspeed != 0){ // Change to running sprite
 		if (image_index <= 1) sprite_index = spr_body_run;
