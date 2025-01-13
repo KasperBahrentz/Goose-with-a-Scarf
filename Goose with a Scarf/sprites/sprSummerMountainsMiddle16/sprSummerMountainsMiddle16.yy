@@ -1,11 +1,11 @@
 {
   "$GMSprite":"",
-  "%Name":"sprSummerMountainsFront16",
+  "%Name":"sprSummerMountainsMiddle16",
   "bboxMode":0,
   "bbox_bottom":269,
   "bbox_left":0,
-  "bbox_right":479,
-  "bbox_top":51,
+  "bbox_right":472,
+  "bbox_top":23,
   "collisionKind":1,
   "collisionTolerance":0,
   "DynamicTexturePage":false,
@@ -19,11 +19,11 @@
   "height":270,
   "HTile":false,
   "layers":[
-    {"$GMImageLayer":"","%Name":"b7654e27-efe8-462f-9236-3ea16ba1f637","blendMode":0,"displayName":"Layer_Front_Mountains","isLocked":false,"name":"b7654e27-efe8-462f-9236-3ea16ba1f637","opacity":100.0,"resourceType":"GMImageLayer","resourceVersion":"2.0","visible":true,},
-    {"$GMImageLayer":"","%Name":"31cac40d-dfe7-4498-b327-f0d66031cd96","blendMode":0,"displayName":"Layer_Back_Mountains (2)","isLocked":false,"name":"31cac40d-dfe7-4498-b327-f0d66031cd96","opacity":100.0,"resourceType":"GMImageLayer","resourceVersion":"2.0","visible":false,},
+    {"$GMImageLayer":"","%Name":"b7654e27-efe8-462f-9236-3ea16ba1f637","blendMode":0,"displayName":"Layer_Front_Mountains","isLocked":false,"name":"b7654e27-efe8-462f-9236-3ea16ba1f637","opacity":100.0,"resourceType":"GMImageLayer","resourceVersion":"2.0","visible":false,},
+    {"$GMImageLayer":"","%Name":"31cac40d-dfe7-4498-b327-f0d66031cd96","blendMode":0,"displayName":"Layer_Back_Mountains (2)","isLocked":false,"name":"31cac40d-dfe7-4498-b327-f0d66031cd96","opacity":100.0,"resourceType":"GMImageLayer","resourceVersion":"2.0","visible":true,},
     {"$GMImageLayer":"","%Name":"8c90aebb-ba03-414b-9c7c-5ca0feba57fb","blendMode":0,"displayName":"Layer_Back_Mountains","isLocked":false,"name":"8c90aebb-ba03-414b-9c7c-5ca0feba57fb","opacity":100.0,"resourceType":"GMImageLayer","resourceVersion":"2.0","visible":false,},
   ],
-  "name":"sprSummerMountainsFront16",
+  "name":"sprSummerMountainsMiddle16",
   "nineSlice":null,
   "origin":0,
   "parent":{
@@ -35,7 +35,7 @@
   "resourceVersion":"2.0",
   "sequence":{
     "$GMSequence":"",
-    "%Name":"sprSummerMountainsFront16",
+    "%Name":"sprSummerMountainsMiddle16",
     "autoRecord":true,
     "backdropHeight":768,
     "backdropImageOpacity":0.5,
@@ -59,7 +59,7 @@
       "resourceType":"KeyframeStore<MomentsEventKeyframe>",
       "resourceVersion":"2.0",
     },
-    "name":"sprSummerMountainsFront16",
+    "name":"sprSummerMountainsMiddle16",
     "playback":1,
     "playbackSpeed":8.0,
     "playbackSpeedType":0,
@@ -71,7 +71,7 @@
     "tracks":[
       {"$GMSpriteFramesTrack":"","builtinName":0,"events":[],"inheritsTrackColour":true,"interpolation":1,"isCreationTrack":false,"keyframes":{"$KeyframeStore<SpriteFrameKeyframe>":"","Keyframes":[
             {"$Keyframe<SpriteFrameKeyframe>":"","Channels":{
-                "0":{"$SpriteFrameKeyframe":"","Id":{"name":"3a581845-f2f6-4590-8dc6-e7b69d5ada99","path":"sprites/sprSummerMountainsFront16/sprSummerMountainsFront16.yy",},"resourceType":"SpriteFrameKeyframe","resourceVersion":"2.0",},
+                "0":{"$SpriteFrameKeyframe":"","Id":{"name":"3a581845-f2f6-4590-8dc6-e7b69d5ada99","path":"sprites/sprSummerMountainsMiddle16/sprSummerMountainsMiddle16.yy",},"resourceType":"SpriteFrameKeyframe","resourceVersion":"2.0",},
               },"Disabled":false,"id":"4cb9c7df-02c6-414c-93b5-adffa43442da","IsCreationKey":false,"Key":0.0,"Length":1.0,"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"2.0","Stretch":false,},
           ],"resourceType":"KeyframeStore<SpriteFrameKeyframe>","resourceVersion":"2.0",},"modifiers":[],"name":"frames","resourceType":"GMSpriteFramesTrack","resourceVersion":"2.0","spriteId":null,"trackColour":0,"tracks":[],"traits":0,},
     ],
