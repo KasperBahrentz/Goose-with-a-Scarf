@@ -19,6 +19,7 @@
   "height":2160,
   "HTile":false,
   "layers":[
+    {"$GMImageLayer":"","%Name":"3fc709b8-cbf9-40ae-acf6-32d915c446ae","blendMode":0,"displayName":"default (2)","isLocked":false,"name":"3fc709b8-cbf9-40ae-acf6-32d915c446ae","opacity":100.0,"resourceType":"GMImageLayer","resourceVersion":"2.0","visible":false,},
     {"$GMImageLayer":"","%Name":"fd57379e-d1f8-4633-b2b6-4935ee83148d","blendMode":0,"displayName":"default","isLocked":false,"name":"fd57379e-d1f8-4633-b2b6-4935ee83148d","opacity":100.0,"resourceType":"GMImageLayer","resourceVersion":"2.0","visible":true,},
   ],
   "name":"sprSummerMountainsFront",

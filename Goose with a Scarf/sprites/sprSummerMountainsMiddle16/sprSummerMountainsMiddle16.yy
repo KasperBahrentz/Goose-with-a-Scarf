@@ -19,9 +19,9 @@
   "height":270,
   "HTile":false,
   "layers":[
-    {"$GMImageLayer":"","%Name":"b7654e27-efe8-462f-9236-3ea16ba1f637","blendMode":0,"displayName":"Layer_Front_Mountains","isLocked":false,"name":"b7654e27-efe8-462f-9236-3ea16ba1f637","opacity":100.0,"resourceType":"GMImageLayer","resourceVersion":"2.0","visible":false,},
+    {"$GMImageLayer":"","%Name":"b7654e27-efe8-462f-9236-3ea16ba1f637","blendMode":0,"displayName":"Layer_Front_Mountains","isLocked":true,"name":"b7654e27-efe8-462f-9236-3ea16ba1f637","opacity":100.0,"resourceType":"GMImageLayer","resourceVersion":"2.0","visible":false,},
     {"$GMImageLayer":"","%Name":"31cac40d-dfe7-4498-b327-f0d66031cd96","blendMode":0,"displayName":"Layer_Back_Mountains (2)","isLocked":false,"name":"31cac40d-dfe7-4498-b327-f0d66031cd96","opacity":100.0,"resourceType":"GMImageLayer","resourceVersion":"2.0","visible":true,},
-    {"$GMImageLayer":"","%Name":"8c90aebb-ba03-414b-9c7c-5ca0feba57fb","blendMode":0,"displayName":"Layer_Back_Mountains","isLocked":false,"name":"8c90aebb-ba03-414b-9c7c-5ca0feba57fb","opacity":100.0,"resourceType":"GMImageLayer","resourceVersion":"2.0","visible":false,},
+    {"$GMImageLayer":"","%Name":"8c90aebb-ba03-414b-9c7c-5ca0feba57fb","blendMode":0,"displayName":"Layer_Back_Mountains","isLocked":true,"name":"8c90aebb-ba03-414b-9c7c-5ca0feba57fb","opacity":100.0,"resourceType":"GMImageLayer","resourceVersion":"2.0","visible":false,},
   ],
   "name":"sprSummerMountainsMiddle16",
   "nineSlice":null,
