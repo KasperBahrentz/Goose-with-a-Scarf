@@ -1,6 +1,6 @@
 {
   "$GMSprite":"",
-  "%Name":"sprTilesGroundSpringSummer16",
+  "%Name":"sprTilesGroundFallWinter16",
   "bboxMode":0,
   "bbox_bottom":223,
   "bbox_left":16,
@@ -22,7 +22,7 @@
     {"$GMImageLayer":"","%Name":"861e4fb5-266b-4879-a7fa-3b7329554c48","blendMode":0,"displayName":"default","isLocked":false,"name":"861e4fb5-266b-4879-a7fa-3b7329554c48","opacity":100.0,"resourceType":"GMImageLayer","resourceVersion":"2.0","visible":true,},
     {"$GMImageLayer":"","%Name":"073d7df1-f717-43c7-a09d-10c665271e33","blendMode":0,"displayName":"Layer 1","isLocked":false,"name":"073d7df1-f717-43c7-a09d-10c665271e33","opacity":100.0,"resourceType":"GMImageLayer","resourceVersion":"2.0","visible":false,},
   ],
-  "name":"sprTilesGroundSpringSummer16",
+  "name":"sprTilesGroundFallWinter16",
   "nineSlice":null,
   "origin":0,
   "parent":{
@@ -34,7 +34,7 @@
   "resourceVersion":"2.0",
   "sequence":{
     "$GMSequence":"",
-    "%Name":"sprTilesGroundSpringSummer16",
+    "%Name":"sprTilesGroundFallWinter16",
     "autoRecord":true,
     "backdropHeight":768,
     "backdropImageOpacity":0.5,
@@ -58,7 +58,7 @@
       "resourceType":"KeyframeStore<MomentsEventKeyframe>",
       "resourceVersion":"2.0",
     },
-    "name":"sprTilesGroundSpringSummer16",
+    "name":"sprTilesGroundFallWinter16",
     "playback":1,
     "playbackSpeed":8.0,
     "playbackSpeedType":0,
@@ -70,7 +70,7 @@
     "tracks":[
       {"$GMSpriteFramesTrack":"","builtinName":0,"events":[],"inheritsTrackColour":true,"interpolation":1,"isCreationTrack":false,"keyframes":{"$KeyframeStore<SpriteFrameKeyframe>":"","Keyframes":[
             {"$Keyframe<SpriteFrameKeyframe>":"","Channels":{
-                "0":{"$SpriteFrameKeyframe":"","Id":{"name":"2cd86df6-e4c5-4e1e-a028-af34f6257cc0","path":"sprites/sprTilesGroundSpringSummer16/sprTilesGroundSpringSummer16.yy",},"resourceType":"SpriteFrameKeyframe","resourceVersion":"2.0",},
+                "0":{"$SpriteFrameKeyframe":"","Id":{"name":"2cd86df6-e4c5-4e1e-a028-af34f6257cc0","path":"sprites/sprTilesGroundFallWinter16/sprTilesGroundFallWinter16.yy",},"resourceType":"SpriteFrameKeyframe","resourceVersion":"2.0",},
               },"Disabled":false,"id":"ab0b361c-acaf-4480-898a-bc2c833a91cf","IsCreationKey":false,"Key":0.0,"Length":1.0,"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"2.0","Stretch":false,},
           ],"resourceType":"KeyframeStore<SpriteFrameKeyframe>","resourceVersion":"2.0",},"modifiers":[],"name":"frames","resourceType":"GMSpriteFramesTrack","resourceVersion":"2.0","spriteId":null,"trackColour":0,"tracks":[],"traits":0,},
     ],

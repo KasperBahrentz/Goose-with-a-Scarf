@@ -5,22 +5,21 @@
   "bbox_bottom":2159,
   "bbox_left":0,
   "bbox_right":3839,
-  "bbox_top":184,
+  "bbox_top":408,
   "collisionKind":1,
   "collisionTolerance":0,
   "DynamicTexturePage":false,
   "edgeFiltering":false,
   "For3D":false,
   "frames":[
-    {"$GMSpriteFrame":"","%Name":"4792fc1e-5711-4977-aa7e-19c395be0c61","name":"4792fc1e-5711-4977-aa7e-19c395be0c61","resourceType":"GMSpriteFrame","resourceVersion":"2.0",},
+    {"$GMSpriteFrame":"","%Name":"6a7c58eb-27f8-4076-b007-6d675faf909d","name":"6a7c58eb-27f8-4076-b007-6d675faf909d","resourceType":"GMSpriteFrame","resourceVersion":"2.0",},
   ],
   "gridX":0,
   "gridY":0,
   "height":2160,
   "HTile":false,
   "layers":[
-    {"$GMImageLayer":"","%Name":"3fc709b8-cbf9-40ae-acf6-32d915c446ae","blendMode":0,"displayName":"default (2)","isLocked":false,"name":"3fc709b8-cbf9-40ae-acf6-32d915c446ae","opacity":100.0,"resourceType":"GMImageLayer","resourceVersion":"2.0","visible":false,},
-    {"$GMImageLayer":"","%Name":"fd57379e-d1f8-4633-b2b6-4935ee83148d","blendMode":0,"displayName":"default","isLocked":false,"name":"fd57379e-d1f8-4633-b2b6-4935ee83148d","opacity":100.0,"resourceType":"GMImageLayer","resourceVersion":"2.0","visible":true,},
+    {"$GMImageLayer":"","%Name":"6297e76b-cbed-4c86-9067-2f1488e37cef","blendMode":0,"displayName":"default","isLocked":false,"name":"6297e76b-cbed-4c86-9067-2f1488e37cef","opacity":100.0,"resourceType":"GMImageLayer","resourceVersion":"2.0","visible":true,},
   ],
   "name":"sprSummerMountainsFront",
   "nineSlice":null,
@@ -70,8 +69,8 @@
     "tracks":[
       {"$GMSpriteFramesTrack":"","builtinName":0,"events":[],"inheritsTrackColour":true,"interpolation":1,"isCreationTrack":false,"keyframes":{"$KeyframeStore<SpriteFrameKeyframe>":"","Keyframes":[
             {"$Keyframe<SpriteFrameKeyframe>":"","Channels":{
-                "0":{"$SpriteFrameKeyframe":"","Id":{"name":"4792fc1e-5711-4977-aa7e-19c395be0c61","path":"sprites/sprSummerMountainsFront/sprSummerMountainsFront.yy",},"resourceType":"SpriteFrameKeyframe","resourceVersion":"2.0",},
-              },"Disabled":false,"id":"d6b0065a-0b39-4f9e-a28d-2f256effeef1","IsCreationKey":false,"Key":0.0,"Length":1.0,"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"2.0","Stretch":false,},
+                "0":{"$SpriteFrameKeyframe":"","Id":{"name":"6a7c58eb-27f8-4076-b007-6d675faf909d","path":"sprites/sprSummerMountainsFront/sprSummerMountainsFront.yy",},"resourceType":"SpriteFrameKeyframe","resourceVersion":"2.0",},
+              },"Disabled":false,"id":"1e0020d3-caef-4a04-a870-ffc5dcf9063f","IsCreationKey":false,"Key":0.0,"Length":1.0,"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"2.0","Stretch":false,},
           ],"resourceType":"KeyframeStore<SpriteFrameKeyframe>","resourceVersion":"2.0",},"modifiers":[],"name":"frames","resourceType":"GMSpriteFramesTrack","resourceVersion":"2.0","spriteId":null,"trackColour":0,"tracks":[],"traits":0,},
     ],
     "visibleRange":null,
