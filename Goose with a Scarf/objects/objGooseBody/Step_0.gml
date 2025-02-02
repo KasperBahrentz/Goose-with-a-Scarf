@@ -6,6 +6,14 @@ switch (state){
 	case player_state.PAUSE: break;	
 }
 
+// Add the player's current position to the queue
+array_insert(follow_queue, 0, [x, y]);
+
+// Ensure the queue doesn't exceed the set size
+if (array_length(follow_queue) > queue_size) {
+    array_delete(follow_queue, queue_size, 1);
+}
+
 function move(){
 	
 	// Screen shake test

@@ -4,10 +4,15 @@
 instance_create_layer(x, y, layer, objGooseFeet);
 instance_create_layer(x, y, layer, objGooseHead);
 
+repeat(1) instance_create_layer(x, y, layer, objEgg);
+
 enum player_state{
 	MOVE,
 	PAUSE	
 }
+
+follow_queue = [];
+queue_size = 300; // Adjust for more or less delay
 
 state = player_state.MOVE;
 

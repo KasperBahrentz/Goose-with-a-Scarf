@@ -1,11 +1,11 @@
 {
   "$GMSprite":"",
-  "%Name":"sprEgg",
-  "bboxMode":2,
-  "bbox_bottom":95,
-  "bbox_left":56,
-  "bbox_right":63,
-  "bbox_top":64,
+  "%Name":"sprEgg16",
+  "bboxMode":0,
+  "bbox_bottom":11,
+  "bbox_left":3,
+  "bbox_right":11,
+  "bbox_top":3,
   "collisionKind":1,
   "collisionTolerance":0,
   "DynamicTexturePage":false,
@@ -18,14 +18,14 @@
   ],
   "gridX":0,
   "gridY":0,
-  "height":128,
+  "height":16,
   "HTile":false,
   "layers":[
     {"$GMImageLayer":"","%Name":"4a4c19d4-0a84-48ec-bfde-147665796c89","blendMode":0,"displayName":"default","isLocked":false,"name":"4a4c19d4-0a84-48ec-bfde-147665796c89","opacity":100.0,"resourceType":"GMImageLayer","resourceVersion":"2.0","visible":true,},
   ],
-  "name":"sprEgg",
+  "name":"sprEgg16",
   "nineSlice":null,
-  "origin":9,
+  "origin":0,
   "parent":{
     "name":"Sprites",
     "path":"folders/Sprites.yy",
@@ -35,7 +35,7 @@
   "resourceVersion":"2.0",
   "sequence":{
     "$GMSequence":"",
-    "%Name":"sprEgg",
+    "%Name":"sprEgg16",
     "autoRecord":true,
     "backdropHeight":768,
     "backdropImageOpacity":0.5,
@@ -59,7 +59,7 @@
       "resourceType":"KeyframeStore<MomentsEventKeyframe>",
       "resourceVersion":"2.0",
     },
-    "name":"sprEgg",
+    "name":"sprEgg16",
     "playback":1,
     "playbackSpeed":0.0,
     "playbackSpeedType":0,
@@ -71,20 +71,20 @@
     "tracks":[
       {"$GMSpriteFramesTrack":"","builtinName":0,"events":[],"inheritsTrackColour":true,"interpolation":1,"isCreationTrack":false,"keyframes":{"$KeyframeStore<SpriteFrameKeyframe>":"","Keyframes":[
             {"$Keyframe<SpriteFrameKeyframe>":"","Channels":{
-                "0":{"$SpriteFrameKeyframe":"","Id":{"name":"a27bdc8a-5278-4524-9a40-42bd21374549","path":"sprites/sprEgg/sprEgg.yy",},"resourceType":"SpriteFrameKeyframe","resourceVersion":"2.0",},
+                "0":{"$SpriteFrameKeyframe":"","Id":{"name":"a27bdc8a-5278-4524-9a40-42bd21374549","path":"sprites/sprEgg16/sprEgg16.yy",},"resourceType":"SpriteFrameKeyframe","resourceVersion":"2.0",},
               },"Disabled":false,"id":"716369c0-a785-4074-911c-df17ad29ac4d","IsCreationKey":false,"Key":0.0,"Length":1.0,"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"2.0","Stretch":false,},
             {"$Keyframe<SpriteFrameKeyframe>":"","Channels":{
-                "0":{"$SpriteFrameKeyframe":"","Id":{"name":"cb925d09-8b80-47e8-a5cb-7880286a0a69","path":"sprites/sprEgg/sprEgg.yy",},"resourceType":"SpriteFrameKeyframe","resourceVersion":"2.0",},
+                "0":{"$SpriteFrameKeyframe":"","Id":{"name":"cb925d09-8b80-47e8-a5cb-7880286a0a69","path":"sprites/sprEgg16/sprEgg16.yy",},"resourceType":"SpriteFrameKeyframe","resourceVersion":"2.0",},
               },"Disabled":false,"id":"d6b14f53-dd56-460f-90da-c9c182f86322","IsCreationKey":false,"Key":1.0,"Length":1.0,"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"2.0","Stretch":false,},
             {"$Keyframe<SpriteFrameKeyframe>":"","Channels":{
-                "0":{"$SpriteFrameKeyframe":"","Id":{"name":"4b0774dc-70c2-4c22-8b55-3ca90669ab66","path":"sprites/sprEgg/sprEgg.yy",},"resourceType":"SpriteFrameKeyframe","resourceVersion":"2.0",},
+                "0":{"$SpriteFrameKeyframe":"","Id":{"name":"4b0774dc-70c2-4c22-8b55-3ca90669ab66","path":"sprites/sprEgg16/sprEgg16.yy",},"resourceType":"SpriteFrameKeyframe","resourceVersion":"2.0",},
               },"Disabled":false,"id":"fe3dd209-d81e-4d67-b168-75193b486bfc","IsCreationKey":false,"Key":2.0,"Length":1.0,"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"2.0","Stretch":false,},
           ],"resourceType":"KeyframeStore<SpriteFrameKeyframe>","resourceVersion":"2.0",},"modifiers":[],"name":"frames","resourceType":"GMSpriteFramesTrack","resourceVersion":"2.0","spriteId":null,"trackColour":0,"tracks":[],"traits":0,},
     ],
     "visibleRange":null,
     "volume":1.0,
-    "xorigin":64,
-    "yorigin":96,
+    "xorigin":0,
+    "yorigin":0,
   },
   "swatchColours":[
     4278190335,4294967295,4294439913,4293648840,4291673765,4289040760,4286407765,4284105015,4282129945,4284106260,
@@ -103,5 +103,5 @@
   },
   "type":0,
   "VTile":false,
-  "width":128,
+  "width":16,
 }
