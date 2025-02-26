@@ -16,6 +16,8 @@ queue_size = 300; // Adjust for more or less delay
 
 state = player_state.MOVE;
 
+debug_message = 0;
+
 spr_body_idle = sprGooseBodyIdle;
 spr_body_run = sprGooseBodyRun;
 

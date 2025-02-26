@@ -6,9 +6,6 @@ switch (state){
 	case player_state.PAUSE: break;	
 }
 
-// Add the player's current position to the queue
-array_insert(follow_queue, 0, [x, y]);
-
 // Ensure the queue doesn't exceed the set size
 if (array_length(follow_queue) > queue_size) {
     array_delete(follow_queue, queue_size, 1);
@@ -25,6 +22,9 @@ function move(){
 	var _key_right = keyboard_check(ord("D"));
 	var _key_left = keyboard_check(ord("A"));
 	var _moving = (_key_right - _key_left) != 0;
+	
+	// Add the player's current position to the queue
+	if (_moving) array_insert(follow_queue, 0, [x, y]);
 	
 	if (_key_right){
 		image_xscale = 1;
