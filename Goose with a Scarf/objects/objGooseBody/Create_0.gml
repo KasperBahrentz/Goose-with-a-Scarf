@@ -10,6 +10,7 @@ enum player_state{
 }
 
 follow_queue = [];
+egg_queue = []
 
 state = player_state.MOVE;
 

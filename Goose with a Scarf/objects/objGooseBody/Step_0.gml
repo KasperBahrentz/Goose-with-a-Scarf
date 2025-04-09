@@ -12,6 +12,17 @@ function move(){
 		screenshake(15, 3, 0.3);	
 	}
 	
+	// Egg drop
+	if (array_length(egg_queue) >= 1) and (keyboard_check_pressed(vk_space)){
+		var _egg_id = array_pop(egg_queue);
+		for (var i = 0; i < instance_number(objEgg); i++){
+			var _inst = instance_find(objEgg, i);
+			if (_inst.egg_id = _egg_id){
+				with(_inst) instance_destroy();	
+			}
+		}
+	}
+	
 	// Move horizontally
 	var _key_right = keyboard_check(ord("D"));
 	var _key_left = keyboard_check(ord("A"));
