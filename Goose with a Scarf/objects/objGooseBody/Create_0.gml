@@ -12,6 +12,12 @@ enum player_state{
 follow_queue = [];
 egg_queue = []
 
+egg_count = 10;
+
+for (var i = 0; i <= egg_count; i++){
+	instance_create_layer(objGooseBody.x, objGooseBody.y, "instances", objEgg, {egg_id : i})
+}
+
 state = player_state.MOVE;
 
 spr_body_idle = sprGooseBodyIdle;
