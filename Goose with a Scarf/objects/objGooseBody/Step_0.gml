@@ -6,13 +6,7 @@ switch (state){
 	case player_state.PAUSE: break;	
 }
 
-// Ensure the queue doesn't exceed the set size
-if (array_length(follow_queue) > queue_size) {
-    array_delete(follow_queue, queue_size, 1);
-}
-
 function move(){
-	
 	// Screen shake test
 	if (keyboard_check_pressed(ord("M"))){
 		screenshake(15, 3, 0.3);	
@@ -24,7 +18,7 @@ function move(){
 	var _moving = (_key_right - _key_left) != 0;
 	
 	// Add the player's current position to the queue
-	if (_moving) array_insert(follow_queue, 0, [x, y]);
+	with(objEgg) array_insert(my_queue, 0, [other.x, other.y]);
 	
 	if (_key_right){
 		image_xscale = 1;

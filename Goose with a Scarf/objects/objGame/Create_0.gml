@@ -1,6 +1,8 @@
 /// @description Insert description here
 // You can write your code in this editor
 
+egg_count = 0;
+
 window_set_fullscreen(true);
 
 tile_size = 128;
