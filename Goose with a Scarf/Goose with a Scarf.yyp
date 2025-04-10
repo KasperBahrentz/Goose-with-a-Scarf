@@ -1,5 +1,5 @@
 {
-  "$GMProject":"",
+  "$GMProject":"v1",
   "%Name":"Goose with a Scarf",
   "AudioGroups":[
     {"$GMAudioGroup":"","%Name":"audiogroup_default","name":"audiogroup_default","resourceType":"GMAudioGroup","resourceVersion":"2.0","targets":-1,},
@@ -30,11 +30,12 @@
     {"$GMFolder":"","%Name":"Tile Sets","folderPath":"folders/Tile Sets.yy","name":"Tile Sets","resourceType":"GMFolder","resourceVersion":"2.0",},
     {"$GMFolder":"","%Name":"Timelines","folderPath":"folders/Timelines.yy","name":"Timelines","resourceType":"GMFolder","resourceVersion":"2.0",},
   ],
+  "ForcedPrefabProjectReferences":[],
   "IncludedFiles":[],
   "isEcma":false,
   "LibraryEmitters":[],
   "MetaData":{
-    "IDEVersion":"2024.11.0.179",
+    "IDEVersion":"2024.13.0.190",
   },
   "name":"Goose with a Scarf",
   "resources":[
@@ -42,6 +43,7 @@
     {"id":{"name":"objCollision","path":"objects/objCollision/objCollision.yy",},},
     {"id":{"name":"objCollisionWall","path":"objects/objCollisionWall/objCollisionWall.yy",},},
     {"id":{"name":"objEgg","path":"objects/objEgg/objEgg.yy",},},
+    {"id":{"name":"objEggShell","path":"objects/objEggShell/objEggShell.yy",},},
     {"id":{"name":"objGame","path":"objects/objGame/objGame.yy",},},
     {"id":{"name":"objGooseBody","path":"objects/objGooseBody/objGooseBody.yy",},},
     {"id":{"name":"objGooseFeet","path":"objects/objGooseFeet/objGooseFeet.yy",},},
@@ -61,6 +63,8 @@
     {"id":{"name":"sprColourPalette","path":"sprites/sprColourPalette/sprColourPalette.yy",},},
     {"id":{"name":"sprEgg","path":"sprites/sprEgg/sprEgg.yy",},},
     {"id":{"name":"sprEgg16","path":"sprites/sprEgg16/sprEgg16.yy",},},
+    {"id":{"name":"sprEggShell","path":"sprites/sprEggShell/sprEggShell.yy",},},
+    {"id":{"name":"sprEggShell16","path":"sprites/sprEggShell16/sprEggShell16.yy",},},
     {"id":{"name":"sprGooseBodyIdle","path":"sprites/sprGooseBodyIdle/sprGooseBodyIdle.yy",},},
     {"id":{"name":"sprGooseBodyRun","path":"sprites/sprGooseBodyRun/sprGooseBodyRun.yy",},},
     {"id":{"name":"sprGooseFeetIdle","path":"sprites/sprGooseFeetIdle/sprGooseFeetIdle.yy",},},

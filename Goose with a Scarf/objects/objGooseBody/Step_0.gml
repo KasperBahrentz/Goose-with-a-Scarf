@@ -12,17 +12,6 @@ function move(){
 		screenshake(15, 3, 0.3);	
 	}
 	
-	// Egg drop
-	if (array_length(egg_queue) >= 1) and (keyboard_check_pressed(vk_space)){
-		var _egg_id = array_pop(egg_queue);
-		for (var i = 0; i < instance_number(objEgg); i++){
-			var _inst = instance_find(objEgg, i);
-			if (_inst.egg_id = _egg_id){
-				with(_inst) instance_destroy();	
-			}
-		}
-	}
-	
 	// Move horizontally
 	var _key_right = keyboard_check(ord("D"));
 	var _key_left = keyboard_check(ord("A"));
@@ -64,10 +53,9 @@ function move(){
 	
 	
 	// Move vertically
-	
 	var _ceiling_hit =  check_collision(0, -10*objGame.pixel_size);
 	
-	if (check_collision(0, 4*objGame.pixel_size)){ // Stop
+	if (check_collision(0, 4*objGame.pixel_size)){ // Stop on ground
 		map_y = tilemap_get_cell_y_at_pixel(objGame.collision_tilemap, x, y + 4*objGame.pixel_size);
 		vspeed = 0;
 		y = (map_y * objGame.tile_size);
@@ -83,6 +71,22 @@ function move(){
 	}
 	else { // Move
 		vspeed = grav;	
+		
+		// Egg drop
+		if (array_length(egg_queue) >= 1) and (keyboard_check_pressed(vk_space)){
+			screenshake(15, 3, 0.3);
+			var _egg_id = array_pop(egg_queue);
+			for (var i = 0; i < instance_number(objEgg); i++){
+				var _inst = instance_find(objEgg, i);
+				if (_inst.egg_id = _egg_id){
+					with(_inst){
+						x = other.x;
+						y = other.y;
+						state = egg_state.DROP;
+					}
+				}
+			}
+		}
 	}
 	
 	if (!_ceiling_hit) and (jump_timer < max_jump_timer){
