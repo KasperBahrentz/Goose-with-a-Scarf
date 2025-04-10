@@ -43,6 +43,7 @@
     {"id":{"name":"objCollision","path":"objects/objCollision/objCollision.yy",},},
     {"id":{"name":"objCollisionWall","path":"objects/objCollisionWall/objCollisionWall.yy",},},
     {"id":{"name":"objEgg","path":"objects/objEgg/objEgg.yy",},},
+    {"id":{"name":"objEggRespawn","path":"objects/objEggRespawn/objEggRespawn.yy",},},
     {"id":{"name":"objEggShell","path":"objects/objEggShell/objEggShell.yy",},},
     {"id":{"name":"objGame","path":"objects/objGame/objGame.yy",},},
     {"id":{"name":"objGooseBody","path":"objects/objGooseBody/objGooseBody.yy",},},

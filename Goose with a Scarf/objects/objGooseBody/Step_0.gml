@@ -51,7 +51,6 @@ function move(){
 		hspeed = h_spd * move_dir;	
 	}
 	
-	
 	// Move vertically
 	var _ceiling_hit =  check_collision(0, -10*objGame.pixel_size);
 	
@@ -62,37 +61,38 @@ function move(){
 		
 		if (keyboard_check_pressed(vk_space)){
 			jump_timer = 0;
+			current_max_jump_timer = max_jump_timer;
 		}
 	} 
 	else if (vspeed < 0) and (_ceiling_hit){ // Stop at ceiling
 		map_y = tilemap_get_cell_y_at_pixel(objGame.collision_tilemap, x, y-8*objGame.pixel_size) + 1;
-		vspeed = 0;
+		jump_timer = max(jump_timer, current_max_jump_timer/2 + current_max_jump_timer/4);
+		vspeed = max(vspeed - jump_height * (1 - jump_timer/current_max_jump_timer), 0);
 		y = (map_y * objGame.tile_size);
 	}
 	else { // Move
 		vspeed = grav;	
-		
-		// Egg drop
-		if (array_length(egg_queue) >= 1) and (keyboard_check_pressed(vk_space)){
-			screenshake(15, 3, 0.3);
-			var _egg_id = array_pop(egg_queue);
-			for (var i = 0; i < instance_number(objEgg); i++){
-				var _inst = instance_find(objEgg, i);
-				if (_inst.egg_id = _egg_id){
-					with(_inst){
-						x = other.x;
-						y = other.y;
-						state = egg_state.DROP;
-					}
+	}
+	
+	// Egg drop
+	if (array_length(egg_queue) >= 1) and (keyboard_check_pressed(vk_space)) and (vspeed != 0){
+		jump_timer = 0;
+		current_max_jump_timer = egg_drop_max_jump_timer;
+		screenshake(15, 3, 0.3);
+		var _egg_id = array_pop(egg_queue);
+		for (var i = 0; i < instance_number(objEgg); i++){
+			var _inst = instance_find(objEgg, i);
+			if (_inst.egg_id = _egg_id){
+				with(_inst){
+					x = other.x;
+					y = other.y;
+					state = egg_state.DROP;
 				}
 			}
 		}
 	}
 	
-	if (!_ceiling_hit) and (jump_timer < max_jump_timer){
-		vspeed -= jump_height * (1 - jump_timer/max_jump_timer);
-		jump_timer++;	
-	} else jump_timer = max_jump_timer;
+	jump();
 
 	if (hspeed != 0){ // Change to running sprite
 		if (image_index <= 1) sprite_index = spr_body_run;
@@ -102,4 +102,11 @@ function move(){
 		if (image_index <= 1) sprite_index = spr_body_idle;
 		objGooseFeet.sprite_index = spr_feet_idle;
 	}
+}
+
+function jump(){
+	if (jump_timer < current_max_jump_timer){
+		vspeed -= jump_height * (1 - jump_timer/current_max_jump_timer);
+		jump_timer++;	
+	} else jump_timer = current_max_jump_timer;	
 }

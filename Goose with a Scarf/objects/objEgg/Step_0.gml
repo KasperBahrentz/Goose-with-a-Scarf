@@ -39,7 +39,8 @@ function drop(){
 		repeat(random_range(2, 3)){ // Left
 			instance_create_layer(x, (map_y * objGame.tile_size)-4*objGame.pixel_size, "instances", objEggShell, {shell_id: "left"});	
 		}
-		instance_destroy();	
+		instance_create_layer(x, y, "instances", objEggRespawn, {egg_id : egg_id});
+		instance_destroy();
 	}
 	else if (!has_collided){
 		y += 32;	

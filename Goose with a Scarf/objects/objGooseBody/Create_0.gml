@@ -39,7 +39,10 @@ jump_height = 44;
 v_deceleration = 0.5;
 grav = 18;
 max_jump_timer = 20;
+egg_drop_max_jump_timer = 30;
 jump_timer = max_jump_timer;
+
+current_max_jump_timer = 0;
 
 spr_number = 0;
 

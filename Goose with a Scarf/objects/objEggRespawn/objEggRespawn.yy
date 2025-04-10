@@ -1,13 +1,12 @@
 {
   "$GMObject":"",
-  "%Name":"objEgg",
+  "%Name":"objEggRespawn",
   "eventList":[
-    {"$GMEvent":"v1","%Name":"","collisionObjectId":null,"eventNum":0,"eventType":3,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
     {"$GMEvent":"v1","%Name":"","collisionObjectId":null,"eventNum":0,"eventType":0,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
     {"$GMEvent":"v1","%Name":"","collisionObjectId":null,"eventNum":0,"eventType":2,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
   ],
   "managed":true,
-  "name":"objEgg",
+  "name":"objEggRespawn",
   "overriddenProperties":[],
   "parent":{
     "name":"Objects",
@@ -28,14 +27,14 @@
   "physicsShapePoints":[],
   "physicsStartAwake":true,
   "properties":[
-    {"$GMObjectProperty":"v1","%Name":"egg_id","filters":[],"listItems":[],"multiselect":false,"name":"egg_id","rangeEnabled":false,"rangeMax":10.0,"rangeMin":0.0,"resourceType":"GMObjectProperty","resourceVersion":"2.0","value":"1","varType":1,},
+    {"$GMObjectProperty":"v1","%Name":"egg_id","filters":[],"listItems":[],"multiselect":false,"name":"egg_id","rangeEnabled":false,"rangeMax":10.0,"rangeMin":0.0,"resourceType":"GMObjectProperty","resourceVersion":"2.0","value":"1","varType":0,},
   ],
   "resourceType":"GMObject",
   "resourceVersion":"2.0",
   "solid":false,
   "spriteId":{
-    "name":"sprEgg",
-    "path":"sprites/sprEgg/sprEgg.yy",
+    "name":"sprCollision",
+    "path":"sprites/sprCollision/sprCollision.yy",
   },
   "spriteMaskId":null,
   "visible":true,
