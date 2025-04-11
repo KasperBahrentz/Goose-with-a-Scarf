@@ -12,7 +12,7 @@ enum player_state{
 follow_queue = [];
 egg_queue = []
 
-egg_count = 5;
+egg_count = 3;
 
 for (var i = 1; i <= egg_count; i++){
 	instance_create_layer(objGooseBody.x, objGooseBody.y, "instances", objEgg, {egg_id : i})

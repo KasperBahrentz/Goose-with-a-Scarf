@@ -1,6 +1,8 @@
 /// @description Insert description here
 // You can write your code in this editor
 
+alarm[1] = 15;
+
 enum egg_state{
 	MOVE,
 	DROP
@@ -16,4 +18,4 @@ has_collided = false;
 
 depth += egg_id;
 
-array_insert(objGooseBody.egg_queue, -1, egg_id);
+objGooseBody.egg_queue = array_concat(objGooseBody.egg_queue, [egg_id]);

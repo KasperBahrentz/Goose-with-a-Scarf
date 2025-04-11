@@ -76,6 +76,7 @@ function move(){
 	
 	// Egg drop
 	if (array_length(egg_queue) >= 1) and (keyboard_check_pressed(vk_space)) and (vspeed != 0){
+		instance_create_layer(x, y, "instances", objWoosh);
 		jump_timer = 0;
 		current_max_jump_timer = egg_drop_max_jump_timer;
 		screenshake(15, 3, 0.3);
