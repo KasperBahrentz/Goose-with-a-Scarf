@@ -1,7 +1,9 @@
 /// @description Insert description here
 // You can write your code in this editor
 
-alarm[1] = 15;
+index = 0;
+
+alarm[1] = 8;
 
 enum egg_state{
 	MOVE,

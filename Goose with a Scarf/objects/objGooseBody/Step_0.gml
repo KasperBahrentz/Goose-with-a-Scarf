@@ -18,7 +18,18 @@ function move(){
 	var _moving = (_key_right - _key_left) != 0;
 	
 	// Add the player's current position to the queue
-	with(objEgg) array_insert(my_queue, 0, [other.x, other.y]);
+	var _offset = 0;
+	if (hspeed == 0 and vspeed == 0){
+		_offset = -image_xscale*8*objGame.pixel_size;
+	}
+	
+	// Provide correct positions to the array of any given egg
+	for (var i = 0; i < instance_number(objEgg); i++){
+		var _inst = instance_find(objEgg, i);
+		with(_inst){
+			array_insert(my_queue, 0, [other.x + _offset - other.image_xscale*objGame.pixel_size*index, other.y]);
+		}
+	}
 	
 	if (_key_right){
 		image_xscale = 1;
@@ -61,7 +72,7 @@ function move(){
 		
 		if (just_landed){
 			spawn_dust();
-			with(objEggRespawn) alarm[0] = 1;
+			with(objEggRespawn) alarm[0] = egg_id*4;
 			just_landed = false;
 		}
 		
@@ -150,5 +161,7 @@ function spawn_dust(){
 
 function honk(){
 	objGooseHead.sprite_index = spr_head_honk;
-	alarm[1] = 30;	
+	alarm[1] = 30;
+	audio_sound_pitch(sndHonk, random_range(0.9, 1.1));
+	audio_play_sound(sndHonk, 10, false);
 }

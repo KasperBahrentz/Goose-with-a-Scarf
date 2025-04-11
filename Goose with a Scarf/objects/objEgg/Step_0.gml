@@ -5,14 +5,15 @@ switch (state){
 
 
 function move(){
-	var _index = 1 + array_find_index(objGooseBody.egg_queue, function(_element, _index){
+	index = 1 + array_find_index(objGooseBody.egg_queue, function(_element, _index){
 	    return (_element == egg_id);
 	}, -1, -infinity);
 	
-	if (array_length(my_queue) > 6*_index){
+	if (array_length(my_queue) > 6*index){ // Change position in room based on current position in array
 	
 		// Get the oldest stored position
 		var _pos = array_pop(my_queue);
+		var _offset = 0;
 		var _target_x = _pos[0];
 		var _target_y = _pos[1];
 
