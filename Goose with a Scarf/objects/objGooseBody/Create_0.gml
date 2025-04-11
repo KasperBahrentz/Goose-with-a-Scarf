@@ -29,6 +29,7 @@ spr_head_idle = sprGooseHeadIdle;
 
 spr_feet_idle = sprGooseFeetIdle;
 spr_feet_run = sprGooseFeetRun;
+spr_feet_jump = sprGooseFeetJump;
 
 move_dir = dir.RIGHT;
 

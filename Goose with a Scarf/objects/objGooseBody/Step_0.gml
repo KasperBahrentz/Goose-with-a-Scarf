@@ -81,6 +81,7 @@ function move(){
 		vspeed = grav;	
 	}
 	
+	// If in air
 	if (vspeed != 0){
 		just_landed = true;
 	}
@@ -106,9 +107,12 @@ function move(){
 	
 	jump();
 
-	if (hspeed != 0){ // Change to running sprite
+	if (hspeed != 0) and (vspeed == 0){ // Change to running sprite
 		if (image_index <= 1) sprite_index = spr_body_run;
 		objGooseFeet.sprite_index = spr_feet_run;
+	}
+	else if (vspeed < 0){
+		objGooseFeet.sprite_index = spr_feet_jump;	
 	}
 	else { // Change to idle sprite
 		if (image_index <= 1) sprite_index = spr_body_idle;
