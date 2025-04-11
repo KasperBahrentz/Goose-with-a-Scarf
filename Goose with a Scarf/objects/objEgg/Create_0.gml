@@ -16,4 +16,4 @@ has_collided = false;
 
 depth += egg_id;
 
-array_insert(objGooseBody.egg_queue, 0, egg_id);
+array_insert(objGooseBody.egg_queue, -1, egg_id);

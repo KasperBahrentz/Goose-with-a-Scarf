@@ -45,7 +45,7 @@ function move(){
 		map_x = tilemap_get_cell_x_at_pixel(objGame.collision_tilemap, x, y);
 		if (move_dir == dir.RIGHT) map_x++;
 		hspeed = 0;
-		x = (map_x * objGame.tile_size) - spr_bbox_right*move_dir - objGame.pixel_size*move_dir;
+		if (y > 0 ) x = (map_x * objGame.tile_size) - spr_bbox_right*move_dir - objGame.pixel_size*move_dir;
 	}
 	else { // Move
 		hspeed = h_spd * move_dir;	
