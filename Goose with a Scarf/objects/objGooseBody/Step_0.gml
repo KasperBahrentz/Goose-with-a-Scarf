@@ -59,9 +59,11 @@ function move(){
 		vspeed = 0;
 		y = (map_y * objGame.tile_size);
 		
+		// Jump
 		if (keyboard_check_pressed(vk_space)){
 			jump_timer = 0;
 			current_max_jump_timer = max_jump_timer;
+			spawn_dust();
 		}
 	} 
 	else if (vspeed < 0) and (_ceiling_hit){ // Stop at ceiling
@@ -110,4 +112,16 @@ function jump(){
 		vspeed -= jump_height * (1 - jump_timer/current_max_jump_timer);
 		jump_timer++;	
 	} else jump_timer = current_max_jump_timer;	
+}
+
+function spawn_dust(){
+	repeat(choose(1, 1, 2)){ // Down
+		instance_create_layer(x, (map_y * objGame.tile_size)-4*objGame.pixel_size, "instances", objDust, {dust_id: "down"});	
+	}
+	repeat(choose(1, 1, 2)){ // Left
+		instance_create_layer(x, (map_y * objGame.tile_size)-4*objGame.pixel_size, "instances", objDust, {dust_id: "left"});	
+	}
+	repeat(choose(1, 1, 2)){ // Right
+		instance_create_layer(x, (map_y * objGame.tile_size)-4*objGame.pixel_size, "instances", objDust, {dust_id: "right"});	
+	}
 }
