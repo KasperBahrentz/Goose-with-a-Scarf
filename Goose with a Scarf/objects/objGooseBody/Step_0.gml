@@ -59,6 +59,11 @@ function move(){
 		vspeed = 0;
 		y = (map_y * objGame.tile_size);
 		
+		if (just_landed){
+			spawn_dust();
+			just_landed = false;
+		}
+		
 		// Jump
 		if (keyboard_check_pressed(vk_space)){
 			jump_timer = 0;
@@ -74,6 +79,10 @@ function move(){
 	}
 	else { // Move
 		vspeed = grav;	
+	}
+	
+	if (vspeed != 0){
+		just_landed = true;
 	}
 	
 	// Egg drop
@@ -116,12 +125,12 @@ function jump(){
 
 function spawn_dust(){
 	repeat(choose(1, 1, 2)){ // Down
-		instance_create_layer(x, (map_y * objGame.tile_size)-4*objGame.pixel_size, "instances", objDust, {dust_id: "down"});	
+		instance_create_layer(x + random_range(-3, 3), y + random_range(0, 2), "instances", objDust, {dust_id: "down"});	
 	}
 	repeat(choose(1, 1, 2)){ // Left
-		instance_create_layer(x, (map_y * objGame.tile_size)-4*objGame.pixel_size, "instances", objDust, {dust_id: "left"});	
+		instance_create_layer(x + random_range(-7, 1), y + random_range(0, 2), "instances", objDust, {dust_id: "left"});	
 	}
 	repeat(choose(1, 1, 2)){ // Right
-		instance_create_layer(x, (map_y * objGame.tile_size)-4*objGame.pixel_size, "instances", objDust, {dust_id: "right"});	
+		instance_create_layer(x + random_range(-1, 7), y + random_range(0, 2), "instances", objDust, {dust_id: "right"});	
 	}
 }

@@ -2,10 +2,10 @@
 // You can write your code in this editor
 
 if (image_index >= image_number/2){
-	image_alpha *= 0.9;	
+	image_alpha *= 0.95;	
 }
-speed *= 0.9;
+speed *= 0.95;
 
-if (speed <= 1){
+if (image_index >= image_number-1){
 	instance_destroy();
 }

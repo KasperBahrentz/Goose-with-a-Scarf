@@ -12,6 +12,8 @@ enum player_state{
 follow_queue = [];
 egg_queue = []
 
+just_landed = false;
+
 egg_count = 3;
 
 for (var i = 1; i <= egg_count; i++){
