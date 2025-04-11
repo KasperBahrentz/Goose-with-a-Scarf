@@ -70,6 +70,10 @@ function move(){
 			jump_timer = 0;
 			current_max_jump_timer = max_jump_timer;
 			spawn_dust();
+			
+			// Honk at random
+			var _number = random_range(0, 1);
+			if (_number >= 0.9) honk();
 		}
 	} 
 	else if (vspeed < 0) and (_ceiling_hit){ // Stop at ceiling
@@ -104,6 +108,10 @@ function move(){
 				}
 			}
 		}
+		
+		// Honk at random
+		var _number = random_range(0, 1);
+		if (_number >= 0.8) honk();
 	}
 	
 	jump();
@@ -138,4 +146,9 @@ function spawn_dust(){
 	repeat(choose(1, 1, 2)){ // Right
 		instance_create_layer(x + random_range(-1, 7), y + random_range(0, 2), "instances", objDust, {dust_id: "right"});	
 	}
+}
+
+function honk(){
+	objGooseHead.sprite_index = spr_head_honk;
+	alarm[1] = 30;	
 }

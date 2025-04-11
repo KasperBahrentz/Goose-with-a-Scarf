@@ -26,6 +26,7 @@ spr_body_idle = sprGooseBodyIdle;
 spr_body_run = sprGooseBodyRun;
 
 spr_head_idle = sprGooseHeadIdle;
+spr_head_honk = sprGooseHeadHonk;
 
 spr_feet_idle = sprGooseFeetIdle;
 spr_feet_run = sprGooseFeetRun;

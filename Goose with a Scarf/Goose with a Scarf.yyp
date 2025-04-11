@@ -76,6 +76,8 @@
     {"id":{"name":"sprGooseFeetJump","path":"sprites/sprGooseFeetJump/sprGooseFeetJump.yy",},},
     {"id":{"name":"sprGooseFeetJump16","path":"sprites/sprGooseFeetJump16/sprGooseFeetJump16.yy",},},
     {"id":{"name":"sprGooseFeetRun","path":"sprites/sprGooseFeetRun/sprGooseFeetRun.yy",},},
+    {"id":{"name":"sprGooseHeadHonk","path":"sprites/sprGooseHeadHonk/sprGooseHeadHonk.yy",},},
+    {"id":{"name":"sprGooseHeadHonk16","path":"sprites/sprGooseHeadHonk16/sprGooseHeadHonk16.yy",},},
     {"id":{"name":"sprGooseHeadIdle","path":"sprites/sprGooseHeadIdle/sprGooseHeadIdle.yy",},},
     {"id":{"name":"sprGooseIdle16","path":"sprites/sprGooseIdle16/sprGooseIdle16.yy",},},
     {"id":{"name":"sprGooseJump16","path":"sprites/sprGooseJump16/sprGooseJump16.yy",},},
