@@ -61,6 +61,7 @@ function move(){
 		
 		if (just_landed){
 			spawn_dust();
+			with(objEggRespawn) alarm[0] = 1;
 			just_landed = false;
 		}
 		
