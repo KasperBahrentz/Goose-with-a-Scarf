@@ -31,6 +31,10 @@ function drop(){
 	if (check_collision(0, 0)) and (!has_collided){ // Destroy on ground
 		map_y = tilemap_get_cell_y_at_pixel(objGame.collision_tilemap, x, y + 4*objGame.pixel_size);
 		vspeed = 0;
+		
+		audio_sound_pitch(sndThumb, random_range(0.9, 1.1));
+		audio_play_sound(sndThumb, 5, false);
+		
 		repeat(choose(1, 2, 2, 2, 3)){ // Down
 			instance_create_layer(x, (map_y * objGame.tile_size)-4*objGame.pixel_size, "instances", objEggShell, {shell_id: "down"});	
 		}

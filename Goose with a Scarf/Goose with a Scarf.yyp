@@ -64,6 +64,7 @@
     {"id":{"name":"general_functions","path":"scripts/general_functions/general_functions.yy",},},
     {"id":{"name":"sndHonk","path":"sounds/sndHonk/sndHonk.yy",},},
     {"id":{"name":"sndPop","path":"sounds/sndPop/sndPop.yy",},},
+    {"id":{"name":"sndThumb","path":"sounds/sndThumb/sndThumb.yy",},},
     {"id":{"name":"sndWoosh","path":"sounds/sndWoosh/sndWoosh.yy",},},
     {"id":{"name":"sndWoosh2","path":"sounds/sndWoosh2/sndWoosh2.yy",},},
     {"id":{"name":"sprCollision","path":"sprites/sprCollision/sprCollision.yy",},},
