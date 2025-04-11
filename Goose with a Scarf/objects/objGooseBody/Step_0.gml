@@ -120,6 +120,10 @@ function move(){
 			}
 		}
 		
+		// Play woosh sound
+		audio_sound_pitch(sndWoosh, random_range(1, 1.2));
+		audio_play_sound(sndWoosh, 5, false);
+		
 		// Honk at random
 		var _number = random_range(0, 1);
 		if (_number >= 0.8) honk();
