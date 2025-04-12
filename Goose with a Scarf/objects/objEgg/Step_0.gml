@@ -48,6 +48,11 @@ function drop(){
 		instance_destroy();
 	}
 	else if (!has_collided){
-		y += 32;	
+		y += 32;	// Fall
+	}
+	
+	if (y > room_height){
+		instance_create_layer(x, y, "instances", objEggRespawn, {egg_id : egg_id});
+		instance_destroy();
 	}
 }
