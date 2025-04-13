@@ -27,12 +27,7 @@
           -4,258,1,291,-4,-2147483648,4,46,41,41,74,-17,-2147483648,-3,258,2,289,295,-4,-2147483648,4,46,41,72,
           78,-17,-2147483648,-3,293,1,295,-5,-2147483648,3,77,76,78,-438,-2147483648,
         ],"TileDataFormat":1,},"tilesetId":{"name":"tlsGroundSpringSummer16","path":"tilesets/tlsGroundSpringSummer16/tlsGroundSpringSummer16.yy",},"userdefinedDepth":false,"visible":true,"x":0,"y":0,},
-    {"$GMRTileLayer":"","%Name":"water_front","depth":400,"effectEnabled":true,"effectType":null,"gridX":32,"gridY":32,"hierarchyFrozen":false,"inheritLayerDepth":false,"inheritLayerSettings":false,"inheritSubLayers":true,"inheritVisibility":true,"layers":[],"name":"water_front","properties":[],"resourceType":"GMRTileLayer","resourceVersion":"2.0","tiles":{"SerialiseHeight":17,"SerialiseWidth":30,"TileCompressedData":[
-          -391,-2147483648,1,1,-7,-2147483648,1,37,-7,-2147483648,1,73,-7,-2147483648,1,109,-5,-2147483648,1,10,
-          -7,-2147483648,1,46,-7,-2147483648,1,82,-7,-2147483648,1,118,-5,-2147483648,1,19,-7,-2147483648,1,55,
-          -7,-2147483648,1,91,-7,-2147483648,1,127,-5,-2147483648,1,28,-7,-2147483648,1,64,-7,-2147483648,1,100,
-          -7,-2147483648,1,136,-4,-2147483648,
-        ],"TileDataFormat":1,},"tilesetId":{"name":"tlsWater16","path":"tilesets/tlsWater16/tlsWater16.yy",},"userdefinedDepth":false,"visible":true,"x":0,"y":0,},
+    {"$GMRTileLayer":"","%Name":"water_front","depth":400,"effectEnabled":true,"effectType":null,"gridX":32,"gridY":32,"hierarchyFrozen":false,"inheritLayerDepth":false,"inheritLayerSettings":false,"inheritSubLayers":true,"inheritVisibility":true,"layers":[],"name":"water_front","properties":[],"resourceType":"GMRTileLayer","resourceVersion":"2.0","tiles":{"SerialiseHeight":17,"SerialiseWidth":30,"TileCompressedData":[-510,0,],"TileDataFormat":1,},"tilesetId":{"name":"tlsWater16","path":"tilesets/tlsWater16/tlsWater16.yy",},"userdefinedDepth":false,"visible":true,"x":0,"y":0,},
     {"$GMRTileLayer":"","%Name":"ground_winter","depth":500,"effectEnabled":true,"effectType":null,"gridX":32,"gridY":32,"hierarchyFrozen":false,"inheritLayerDepth":false,"inheritLayerSettings":false,"inheritSubLayers":true,"inheritVisibility":true,"layers":[],"name":"ground_winter","properties":[],"resourceType":"GMRTileLayer","resourceVersion":"2.0","tiles":{"SerialiseHeight":17,"SerialiseWidth":30,"TileCompressedData":[
           -16,0,1,94,-4,32,4,125,0,0,112,-5,50,-16,0,1,94,-4,32,4,125,0,0,112,-5,50,-16,0,1,94,-3,32,5,36,162,
           0,0,112,-3,50,2,54,147,-16,0,1,187,-3,129,1,162,-3,0,1,205,-3,147,1,180,-228,0,1,158,-3,98,1,160,-3,
@@ -60,11 +55,7 @@
           174,-13,0,1,200,-7,0,1,191,-7,0,1,209,-16,0,2,384,386,-6,0,2,167,169,-6,0,2,176,178,-12,0,2,413,388,
           -6,0,2,196,171,-6,0,2,205,180,-248,0,
         ],"TileDataFormat":1,},"tilesetId":{"name":"tlsLeaves16","path":"tilesets/tlsLeaves16/tlsLeaves16.yy",},"userdefinedDepth":false,"visible":true,"x":0,"y":0,},
-    {"$GMRTileLayer":"","%Name":"water_back","depth":1000,"effectEnabled":true,"effectType":null,"gridX":32,"gridY":32,"hierarchyFrozen":false,"inheritLayerDepth":false,"inheritLayerSettings":false,"inheritSubLayers":true,"inheritVisibility":true,"layers":[],"name":"water_back","properties":[],"resourceType":"GMRTileLayer","resourceVersion":"2.0","tiles":{"SerialiseHeight":17,"SerialiseWidth":30,"TileCompressedData":[
-          -272,-2147483648,1,1,-7,-2147483648,1,37,-7,-2147483648,1,73,-7,-2147483648,1,109,-5,-2147483648,1,10,
-          -7,-2147483648,1,46,-7,-2147483648,1,82,-7,-2147483648,1,118,-13,-2147483648,1,0,-29,-2147483648,1,0,
-          -29,-2147483648,1,0,-109,-2147483648,
-        ],"TileDataFormat":1,},"tilesetId":{"name":"tlsWater16","path":"tilesets/tlsWater16/tlsWater16.yy",},"userdefinedDepth":false,"visible":true,"x":0,"y":0,},
+    {"$GMRTileLayer":"","%Name":"water_back","depth":1000,"effectEnabled":true,"effectType":null,"gridX":32,"gridY":32,"hierarchyFrozen":false,"inheritLayerDepth":false,"inheritLayerSettings":false,"inheritSubLayers":true,"inheritVisibility":true,"layers":[],"name":"water_back","properties":[],"resourceType":"GMRTileLayer","resourceVersion":"2.0","tiles":{"SerialiseHeight":17,"SerialiseWidth":30,"TileCompressedData":[-510,0,],"TileDataFormat":1,},"tilesetId":{"name":"tlsWater16","path":"tilesets/tlsWater16/tlsWater16.yy",},"userdefinedDepth":false,"visible":true,"x":0,"y":0,},
     {"$GMRTileLayer":"","%Name":"back_winter","depth":1100,"effectEnabled":true,"effectType":null,"gridX":32,"gridY":32,"hierarchyFrozen":false,"inheritLayerDepth":false,"inheritLayerSettings":false,"inheritSubLayers":true,"inheritVisibility":true,"layers":[],"name":"back_winter","properties":[],"resourceType":"GMRTileLayer","resourceVersion":"2.0","tiles":{"SerialiseHeight":17,"SerialiseWidth":30,"TileCompressedData":[
           -19,-2147483648,3,311,249,342,-27,-2147483648,3,311,249,342,-26,-2147483648,4,375,250,249,342,-4,-2147483648,
           1,393,-3,333,-18,-2147483648,4,311,249,249,342,-4,-2147483648,1,329,-3,267,-18,-2147483648,4,404,280,

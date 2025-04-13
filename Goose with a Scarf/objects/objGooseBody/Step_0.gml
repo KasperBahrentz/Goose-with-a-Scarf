@@ -2,8 +2,9 @@
 // You can write your code in this editor
 
 switch (state){
-	case player_state.MOVE: move(); break;
-	case player_state.PAUSE: break;	
+	case player_state.MOVE:
+	case player_state.CROUCH:	move(); break;
+	case player_state.PAUSE:	break;	
 }
 
 function move(){
@@ -44,8 +45,11 @@ function move(){
 		h_spd = 0;	
 	}
 	
+	var _top_spd = h_top_spd;
+	if (state == player_state.CROUCH) _top_spd = h_top_spd / 2;
+	
 	if (_moving){ // Accelerate
-		h_spd = min(max(deceleration, h_spd*acceleration), h_top_spd);
+		h_spd = min(max(deceleration, h_spd*acceleration), _top_spd);
 	}
 	else { // Decelerate
 		if (h_spd > 1) h_spd = max(0, h_spd*deceleration);
@@ -76,8 +80,16 @@ function move(){
 			just_landed = false;
 		}
 		
+		// Crouch
+		if (keyboard_check(ord("S"))){
+			state = player_state.CROUCH;
+			sprite_index = spr_body_crouch;
+			
+		}
+		else state = player_state.MOVE;
+		
 		// Jump
-		if (keyboard_check_pressed(vk_space)){
+		if (keyboard_check_pressed(vk_space)) and (state == player_state.MOVE){
 			jump_timer = 0;
 			current_max_jump_timer = max_jump_timer;
 			spawn_dust();
@@ -131,16 +143,18 @@ function move(){
 	
 	jump();
 
-	if (hspeed != 0) and (vspeed == 0){ // Change to running sprite
-		if (image_index <= 1) sprite_index = spr_body_run;
-		objGooseFeet.sprite_index = spr_feet_run;
-	}
-	else if (vspeed < 0){
-		objGooseFeet.sprite_index = spr_feet_jump;	
-	}
-	else { // Change to idle sprite
-		if (image_index <= 1) sprite_index = spr_body_idle;
-		objGooseFeet.sprite_index = spr_feet_idle;
+	if (state == player_state.MOVE){
+		if (hspeed != 0) and (vspeed == 0){ // Change to running sprite
+			if (image_index <= 1) sprite_index = spr_body_run;
+			objGooseFeet.sprite_index = spr_feet_run;
+		}
+		else if (vspeed < 0){
+			objGooseFeet.sprite_index = spr_feet_jump;	
+		}
+		else { // Change to idle sprite
+			if (image_index <= 1) sprite_index = spr_body_idle;
+			objGooseFeet.sprite_index = spr_feet_idle;
+		}
 	}
 }
 

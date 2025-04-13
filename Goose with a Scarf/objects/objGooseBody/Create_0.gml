@@ -6,6 +6,7 @@ instance_create_layer(x, y, layer, objGooseHead);
 
 enum player_state{
 	MOVE,
+	CROUCH,
 	PAUSE	
 }
 
@@ -24,6 +25,7 @@ state = player_state.MOVE;
 
 spr_body_idle = sprGooseBodyIdle;
 spr_body_run = sprGooseBodyRun;
+spr_body_crouch = sprGooseCrouch;
 
 spr_head_idle = sprGooseHeadIdle;
 spr_head_honk = sprGooseHeadHonk;
