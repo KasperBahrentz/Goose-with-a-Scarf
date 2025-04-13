@@ -12,14 +12,14 @@
   "edgeFiltering":false,
   "For3D":false,
   "frames":[
-    {"$GMSpriteFrame":"","%Name":"d1103ad7-8954-44b2-9c7d-f53760435be4","name":"d1103ad7-8954-44b2-9c7d-f53760435be4","resourceType":"GMSpriteFrame","resourceVersion":"2.0",},
+    {"$GMSpriteFrame":"","%Name":"2beec4ba-205c-4637-88d3-f102aa2eaaf9","name":"2beec4ba-205c-4637-88d3-f102aa2eaaf9","resourceType":"GMSpriteFrame","resourceVersion":"2.0",},
   ],
-  "gridX":16,
-  "gridY":16,
+  "gridX":8,
+  "gridY":8,
   "height":1984,
   "HTile":false,
   "layers":[
-    {"$GMImageLayer":"","%Name":"6e2633f0-92db-41ef-88a6-6cbaf05f1da4","blendMode":0,"displayName":"default","isLocked":false,"name":"6e2633f0-92db-41ef-88a6-6cbaf05f1da4","opacity":100.0,"resourceType":"GMImageLayer","resourceVersion":"2.0","visible":true,},
+    {"$GMImageLayer":"","%Name":"7850bc35-f6b5-4417-8821-0fa8f2605fa2","blendMode":0,"displayName":"default","isLocked":false,"name":"7850bc35-f6b5-4417-8821-0fa8f2605fa2","opacity":100.0,"resourceType":"GMImageLayer","resourceVersion":"2.0","visible":true,},
   ],
   "name":"sprTilesGroundSpringSummer",
   "nineSlice":null,
@@ -71,8 +71,8 @@
     "tracks":[
       {"$GMSpriteFramesTrack":"","builtinName":0,"events":[],"inheritsTrackColour":true,"interpolation":1,"isCreationTrack":false,"keyframes":{"$KeyframeStore<SpriteFrameKeyframe>":"","Keyframes":[
             {"$Keyframe<SpriteFrameKeyframe>":"","Channels":{
-                "0":{"$SpriteFrameKeyframe":"","Id":{"name":"d1103ad7-8954-44b2-9c7d-f53760435be4","path":"sprites/sprTilesGroundSpringSummer/sprTilesGroundSpringSummer.yy",},"resourceType":"SpriteFrameKeyframe","resourceVersion":"2.0",},
-              },"Disabled":false,"id":"2aa80fc3-9036-4182-9f5e-448879fcb525","IsCreationKey":false,"Key":0.0,"Length":1.0,"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"2.0","Stretch":false,},
+                "0":{"$SpriteFrameKeyframe":"","Id":{"name":"2beec4ba-205c-4637-88d3-f102aa2eaaf9","path":"sprites/sprTilesGroundSpringSummer/sprTilesGroundSpringSummer.yy",},"resourceType":"SpriteFrameKeyframe","resourceVersion":"2.0",},
+              },"Disabled":false,"id":"b8fe22ad-a8cf-4f21-8f9a-c8cf0b380e40","IsCreationKey":false,"Key":0.0,"Length":1.0,"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"2.0","Stretch":false,},
           ],"resourceType":"KeyframeStore<SpriteFrameKeyframe>","resourceVersion":"2.0",},"modifiers":[],"name":"frames","resourceType":"GMSpriteFramesTrack","resourceVersion":"2.0","spriteId":null,"trackColour":0,"tracks":[],"traits":0,},
     ],
     "visibleRange":null,

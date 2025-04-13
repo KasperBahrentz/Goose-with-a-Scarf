@@ -1,0 +1,43 @@
+{
+  "$GMTileSet":"v1",
+  "%Name":"tlsWater",
+  "autoTileSets":[],
+  "macroPageTiles":{
+    "SerialiseHeight":0,
+    "SerialiseWidth":0,
+    "TileSerialiseData":[],
+  },
+  "name":"tlsWater",
+  "out_columns":6,
+  "out_tilehborder":2,
+  "out_tilevborder":2,
+  "parent":{
+    "name":"Tile Sets",
+    "path":"folders/Tile Sets.yy",
+  },
+  "resourceType":"GMTileSet",
+  "resourceVersion":"2.0",
+  "spriteId":{
+    "name":"sprWaterTiles",
+    "path":"sprites/sprWaterTiles/sprWaterTiles.yy",
+  },
+  "spriteNoExport":false,
+  "textureGroupId":{
+    "name":"Default",
+    "path":"texturegroups/Default",
+  },
+  "tileAnimationFrames":[
+    {"$GMTileAnimation":"","%Name":"animation_1","frames":[1,2,3,4,5,6,7,8,],"name":"animation_1","resourceType":"GMTileAnimation","resourceVersion":"2.0",},
+    {"$GMTileAnimation":"","%Name":"animation_2","frames":[10,11,12,13,14,15,16,17,],"name":"animation_2","resourceType":"GMTileAnimation","resourceVersion":"2.0",},
+    {"$GMTileAnimation":"","%Name":"animation_3","frames":[19,20,21,22,23,24,25,26,],"name":"animation_3","resourceType":"GMTileAnimation","resourceVersion":"2.0",},
+    {"$GMTileAnimation":"","%Name":"animation_4","frames":[28,29,30,31,32,33,34,35,],"name":"animation_4","resourceType":"GMTileAnimation","resourceVersion":"2.0",},
+  ],
+  "tileAnimationSpeed":8.0,
+  "tileHeight":128,
+  "tilehsep":0,
+  "tilevsep":0,
+  "tileWidth":128,
+  "tilexoff":0,
+  "tileyoff":0,
+  "tile_count":36,
+}
