@@ -2,8 +2,7 @@
 // You can write your code in this editor
 
 switch (state){
-	case player_state.MOVE:
-	case player_state.CROUCH:	move(); break;
+	case player_state.MOVE:		move(); break;
 	case player_state.PAUSE:	break;	
 }
 
@@ -11,6 +10,11 @@ function move(){
 	// Screen shake test
 	if (keyboard_check_pressed(ord("M"))){
 		screenshake(15, 3, 0.3);	
+	}
+	
+	if (!audio_is_playing(sndHonk)){
+		objGooseHead.sprite_index = spr_head_idle;
+		if (sprite_index == spr_body_crouch) image_index = 0;
 	}
 	
 	// Move horizontally
@@ -46,7 +50,7 @@ function move(){
 	}
 	
 	var _top_spd = h_top_spd;
-	if (state == player_state.CROUCH) _top_spd = h_top_spd / 2;
+	if (sprite_index == spr_body_crouch) _top_spd = h_top_spd / 2;
 	
 	if (_moving){ // Accelerate
 		h_spd = min(max(deceleration, h_spd*acceleration), _top_spd);
@@ -95,14 +99,14 @@ function move(){
 		
 		// Crouch
 		if (keyboard_check(ord("S"))){
-			state = player_state.CROUCH;
 			sprite_index = spr_body_crouch;
-			
 		}
-		else state = player_state.MOVE;
+		else {
+			sprite_index = spr_body_idle;
+		}
 		
 		// Jump
-		if (keyboard_check_pressed(vk_space)) and (state == player_state.MOVE){
+		if (keyboard_check_pressed(vk_space)) and (sprite_index != spr_body_crouch){
 			jump_timer = 0;
 			current_max_jump_timer = max_jump_timer;
 			spawn_dust();
@@ -161,7 +165,7 @@ function move(){
 	
 	jump();
 
-	if (state == player_state.MOVE){
+	if (sprite_index != spr_body_crouch){
 		if (hspeed != 0) and (vspeed == 0){ // Change to running sprite
 			if (image_index <= 1) sprite_index = spr_body_run;
 			objGooseFeet.sprite_index = spr_feet_run;
@@ -196,10 +200,12 @@ function spawn_dust(){
 }
 
 function honk(){
-	objGooseHead.sprite_index = spr_head_honk;
-	alarm[1] = 30;
 	audio_sound_pitch(sndHonk, random_range(0.9, 1.1));
 	audio_play_sound(sndHonk, 10, false);
+	objGooseHead.sprite_index = spr_head_honk;
+	if (sprite_index == spr_body_crouch){
+		image_index = 1;
+	}
 }
 
 function play_grass_sound(){

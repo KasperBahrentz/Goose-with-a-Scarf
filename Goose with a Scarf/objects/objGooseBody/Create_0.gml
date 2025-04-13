@@ -6,7 +6,6 @@ instance_create_layer(x, y, layer, objGooseHead);
 
 enum player_state{
 	MOVE,
-	CROUCH,
 	PAUSE	
 }
 
