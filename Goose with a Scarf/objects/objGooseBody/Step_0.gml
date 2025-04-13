@@ -50,6 +50,17 @@ function move(){
 	
 	if (_moving){ // Accelerate
 		h_spd = min(max(deceleration, h_spd*acceleration), _top_spd);
+		
+		if (grass_timer == 0){
+			var _play_sound = random_range(0, 1);
+		
+			if (_play_sound >= 0.95){	
+				play_grass_sound();
+				grass_timer = grass_timer_max;
+			}
+		} else {
+			grass_timer--;
+		}
 	}
 	else { // Decelerate
 		if (h_spd > 1) h_spd = max(0, h_spd*deceleration);
@@ -74,10 +85,12 @@ function move(){
 		vspeed = 0;
 		y = (map_y * objGame.tile_size);
 		
-		if (just_landed){
+		// If just landed
+		if (was_in_air){
+			play_grass_sound();
 			spawn_dust();
 			with(objEggRespawn) alarm[0] = egg_id*4;
-			just_landed = false;
+			was_in_air = false;
 		}
 		
 		// Crouch
@@ -93,6 +106,8 @@ function move(){
 			jump_timer = 0;
 			current_max_jump_timer = max_jump_timer;
 			spawn_dust();
+			
+			play_grass_sound();
 			
 			// Honk at random
 			var _number = random_range(0, 1);
@@ -111,7 +126,10 @@ function move(){
 	
 	// If in air
 	if (vspeed != 0){
-		just_landed = true;
+		was_in_air = true;
+		if (keyboard_check(ord("S"))){
+			vspeed += grav/2;
+		}
 	}
 	
 	// Egg drop
@@ -182,4 +200,10 @@ function honk(){
 	alarm[1] = 30;
 	audio_sound_pitch(sndHonk, random_range(0.9, 1.1));
 	audio_play_sound(sndHonk, 10, false);
+}
+
+function play_grass_sound(){
+	var _grass_sound = choose(sndGrass1, sndGrass2, sndGrass3, sndGrass4, sndGrass5, sndGrass6, sndGrass7, sndGrass8);
+	audio_sound_pitch(_grass_sound, random_range(0.9, 1.1));
+	audio_play_sound(_grass_sound, 2, false);
 }
