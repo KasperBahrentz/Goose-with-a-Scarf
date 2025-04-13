@@ -19,7 +19,6 @@
   "height":248,
   "HTile":false,
   "layers":[
-    {"$GMImageLayer":"","%Name":"fa5f48be-4453-48ce-ac1f-d30ce5ef020c","blendMode":0,"displayName":"Layer 1","isLocked":false,"name":"fa5f48be-4453-48ce-ac1f-d30ce5ef020c","opacity":90.0,"resourceType":"GMImageLayer","resourceVersion":"2.0","visible":false,},
     {"$GMImageLayer":"","%Name":"77a68d8e-9d4c-4284-9047-8c630913a96f","blendMode":0,"displayName":"Layer 2","isLocked":false,"name":"77a68d8e-9d4c-4284-9047-8c630913a96f","opacity":100.0,"resourceType":"GMImageLayer","resourceVersion":"2.0","visible":true,},
   ],
   "name":"sprTilesDeco16",

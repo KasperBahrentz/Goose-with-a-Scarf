@@ -29,7 +29,7 @@
   "tileAnimationFrames":[
     {"$GMTileAnimation":"","%Name":"animation_1","frames":[1,2,3,4,5,6,7,8,],"name":"animation_1","resourceType":"GMTileAnimation","resourceVersion":"2.0",},
     {"$GMTileAnimation":"","%Name":"animation_4","frames":[28,29,30,31,32,33,34,35,],"name":"animation_4","resourceType":"GMTileAnimation","resourceVersion":"2.0",},
-    {"$GMTileAnimation":"","%Name":"animation_8","frames":[55,56,57,58,59,60,61,9,],"name":"animation_8","resourceType":"GMTileAnimation","resourceVersion":"2.0",},
+    {"$GMTileAnimation":"","%Name":"animation_8","frames":[55,56,57,58,59,60,61,62,],"name":"animation_8","resourceType":"GMTileAnimation","resourceVersion":"2.0",},
     {"$GMTileAnimation":"","%Name":"animation_9","frames":[82,83,84,86,85,87,88,89,],"name":"animation_9","resourceType":"GMTileAnimation","resourceVersion":"2.0",},
     {"$GMTileAnimation":"","%Name":"animation_2","frames":[11,10,12,13,14,15,16,17,],"name":"animation_2","resourceType":"GMTileAnimation","resourceVersion":"2.0",},
     {"$GMTileAnimation":"","%Name":"animation_3","frames":[19,20,21,22,23,24,25,26,],"name":"animation_3","resourceType":"GMTileAnimation","resourceVersion":"2.0",},
