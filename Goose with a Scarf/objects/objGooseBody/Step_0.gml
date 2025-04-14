@@ -84,8 +84,17 @@ function move(){
 	// Move vertically
 	var _ceiling_hit =  check_collision(0, -10*objGame.pixel_size);
 	
-	if (check_collision(0, 4*objGame.pixel_size)){ // Stop on ground
-		map_y = tilemap_get_cell_y_at_pixel(objGame.collision_tilemap, x, y + 4*objGame.pixel_size);
+	var _landed_on_semi_solid = false;
+		
+	// Semi-solid platforms
+	if (vspeed >= 0) and (place_meeting(x , y + 4*objGame.pixel_size, objCollisionSemiSolid)){
+		_landed_on_semi_solid = true;
+	}	
+	
+	if (_landed_on_semi_solid) or (check_collision(0, 4*objGame.pixel_size)){ // Stop on ground
+		var _tilemap = objGame.collision_tilemap;
+		if (_landed_on_semi_solid) _tilemap = layer_tilemap_get_id("back");
+		map_y = tilemap_get_cell_y_at_pixel(_tilemap, x, y + 4*objGame.pixel_size);
 		vspeed = 0;
 		y = (map_y * objGame.tile_size);
 		
@@ -95,6 +104,7 @@ function move(){
 			spawn_dust();
 			with(objEggRespawn) alarm[0] = egg_id*4;
 			was_in_air = false;
+			current_max_jump_timer = max_jump_timer;
 		}
 		
 		// Crouch

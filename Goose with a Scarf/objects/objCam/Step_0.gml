@@ -11,8 +11,8 @@ x += (x_to - x) / 25;
 y += (y_to - y) / 25;
 
 //Update camera view
-x = clamp(x,view_w_half,room_width-view_w_half);
-y = clamp(y,view_h_half,room_height-view_h_half);
+x = clamp(x,view_w_half+objGame.tile_size,room_width-view_w_half-objGame.tile_size);
+y = clamp(y,view_h_half+objGame.tile_size,room_height-view_h_half-objGame.tile_size);
 
 // Screen shake
 if (shake) {

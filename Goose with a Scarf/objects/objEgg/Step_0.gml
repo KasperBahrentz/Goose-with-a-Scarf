@@ -28,7 +28,7 @@ function move(){
 }
 
 function drop(){
-	if (check_collision(0, 0)) and (!has_collided){ // Destroy on ground
+	if (check_collision(0, 0) or place_meeting(x, y, objCollisionSemiSolid)) and (!has_collided){ // Destroy on ground
 		map_y = tilemap_get_cell_y_at_pixel(objGame.collision_tilemap, x, y + 4*objGame.pixel_size);
 		vspeed = 0;
 		

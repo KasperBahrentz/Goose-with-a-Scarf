@@ -10,6 +10,7 @@ function check_collision(_move_x, _move_y)
 		// If there was an object collision, return true, and end the function
 		return true;
 	}
+	
 
 	// The function continues if there were no object collisions. In this case we check for tile
 	// collisions, at each corner of the instance's bounding box.
