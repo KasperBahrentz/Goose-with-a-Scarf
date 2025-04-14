@@ -40,6 +40,7 @@
   "name":"Goose with a Scarf",
   "resources":[
     {"id":{"name":"fnt_16_bit","path":"fonts/fnt_16_bit/fnt_16_bit.yy",},},
+    {"id":{"name":"objCam","path":"objects/objCam/objCam.yy",},},
     {"id":{"name":"objCollision","path":"objects/objCollision/objCollision.yy",},},
     {"id":{"name":"objCollisionWall","path":"objects/objCollisionWall/objCollisionWall.yy",},},
     {"id":{"name":"objDust","path":"objects/objDust/objDust.yy",},},

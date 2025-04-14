@@ -8,7 +8,7 @@
 /// @description    Set the screenshake object variables.
 
 function screenshake(_time, _magnitude, _fade){
-   with (objGame) {
+   with (objCam) {
       shake = true;
       shake_time = _time;
       shake_magnitude = _magnitude;
