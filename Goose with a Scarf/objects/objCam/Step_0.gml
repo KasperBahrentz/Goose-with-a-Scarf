@@ -32,3 +32,6 @@ if (shake) {
 }
 
 camera_set_view_pos(cam,x-view_w_half,y-view_h_half);
+layer_x("mountains_front", x/8);
+layer_x("mountains_middle", x/16);
+layer_x("mountains_back", x/32);
