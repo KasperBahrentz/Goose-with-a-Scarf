@@ -33,8 +33,8 @@
   "resourceVersion":"2.0",
   "solid":false,
   "spriteId":{
-    "name":"sprCollision",
-    "path":"sprites/sprCollision/sprCollision.yy",
+    "name":"sprCollisionWall",
+    "path":"sprites/sprCollisionWall/sprCollisionWall.yy",
   },
   "spriteMaskId":null,
   "visible":true,

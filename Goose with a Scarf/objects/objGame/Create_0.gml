@@ -9,5 +9,3 @@ window_set_fullscreen(true);
 
 tile_size = 128;
 pixel_size = 8;
-
-audio_play_sound(sndRunningWater, 3, true);

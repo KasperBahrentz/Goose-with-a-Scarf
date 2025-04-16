@@ -9,6 +9,11 @@ enum player_state{
 	PAUSE	
 }
 
+debug_string = 0;
+
+// Play water sound
+audio_play_sound(sndRunningWater, 3, true);
+
 follow_queue = [];
 egg_queue = []
 

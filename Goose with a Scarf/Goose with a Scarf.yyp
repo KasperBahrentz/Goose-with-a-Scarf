@@ -80,6 +80,7 @@
     {"id":{"name":"sndWoosh2","path":"sounds/sndWoosh2/sndWoosh2.yy",},},
     {"id":{"name":"sprCollision","path":"sprites/sprCollision/sprCollision.yy",},},
     {"id":{"name":"sprCollisionSemiSolid","path":"sprites/sprCollisionSemiSolid/sprCollisionSemiSolid.yy",},},
+    {"id":{"name":"sprCollisionWall","path":"sprites/sprCollisionWall/sprCollisionWall.yy",},},
     {"id":{"name":"sprColourPalette","path":"sprites/sprColourPalette/sprColourPalette.yy",},},
     {"id":{"name":"sprDust","path":"sprites/sprDust/sprDust.yy",},},
     {"id":{"name":"sprDust16","path":"sprites/sprDust16/sprDust16.yy",},},
