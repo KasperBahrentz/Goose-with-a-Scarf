@@ -1,6 +1,19 @@
 switch (state){
+	case egg_state.IDLE: idle(); break;
 	case egg_state.MOVE: move(); break;
 	case egg_state.DROP: drop(); break;
+}
+
+function idle(){
+	if (point_distance(x, y, objGooseBody.x, objGooseBody.y) <= 8*objGame.pixel_size){
+		egg_id = array_length(objGooseBody.egg_queue) + 1;
+		just_picked_up = true;
+		audio_sound_pitch(sndPop, 0.85 + egg_id*0.01);
+		audio_play_sound(sndPop, 5, false);
+		state = egg_state.MOVE;
+		with (instance_nearest(x, y, objNest)) nest_id = other.egg_id;
+		add_to_egg_queue();
+	}
 }
 
 
@@ -9,17 +22,30 @@ function move(){
 	    return (_element == egg_id);
 	}, -1, -infinity);
 	
-	if (array_length(my_queue) > 6*index){ // Change position in room based on current position in array
+	
+	if (just_picked_up) and (array_length(my_queue) >= 1){ // Move egg immediately to its position
+		just_picked_up = false;
+		
+		// Get the oldest stored position
+		var _pos = array_pop(my_queue);
+		var _offset = 0;
+
+		// Move
+		x = _pos[0];
+		y = _pos[1];
+	}
+	else if (array_length(my_queue) > 6*index){ // Change position in room based on current position in array
 	
 		// Get the oldest stored position
 		var _pos = array_pop(my_queue);
 		var _offset = 0;
 		var _target_x = _pos[0];
 		var _target_y = _pos[1];
-
-		// Calculate distance to the player
-		var _dist_x = abs(objGooseBody.x - x);	
-		var _dist_y = abs(objGooseBody.y - y);	
+		
+		if (just_picked_up){
+			just_picked_up = false;
+			
+		}
 
 		// Move
 		x = lerp(x, _target_x, 0.5);
@@ -44,7 +70,7 @@ function drop(){
 		repeat(choose(1, 2, 2, 2, 3)){ // Right
 			instance_create_layer(x, (map_y * objGame.tile_size)-4*objGame.pixel_size, "instances", objEggShell, {shell_id: "right"});	
 		}
-		instance_create_layer(x, y, "instances", objEggRespawn, {egg_id : egg_id});
+		instance_create_layer(x, y, "instances", objEggRespawn, {egg_id : egg_id, spawn_at_nest : temporary, spawn_coordinate : spawn_coordinate});
 		instance_destroy();
 	}
 	else if (!has_collided){

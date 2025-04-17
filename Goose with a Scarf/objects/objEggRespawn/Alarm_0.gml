@@ -16,5 +16,8 @@ for (var i = 0; i < instance_number(objEgg); i++){
 	}
 }
 
-instance_create_layer(_x,_y, "instances", objEgg, {egg_id : egg_id});
+if (spawn_at_nest){
+	instance_create_layer(spawn_coordinate[0], spawn_coordinate[1], "instances", objEgg, {egg_id : egg_id, temporary : true, spawn_coordinate : spawn_coordinate});
+}
+else instance_create_layer(_x,_y, "instances", objEgg, {egg_id : egg_id, state : egg_state.MOVE});
 instance_destroy();

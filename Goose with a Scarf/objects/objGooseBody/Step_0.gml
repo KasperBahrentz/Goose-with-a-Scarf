@@ -32,7 +32,7 @@ function move(){
 	for (var i = 0; i < instance_number(objEgg); i++){
 		var _inst = instance_find(objEgg, i);
 		with(_inst){
-			array_insert(my_queue, 0, [other.x + _offset - other.image_xscale*objGame.pixel_size*index, other.y]);
+			if (_inst.state = egg_state.MOVE) array_insert(my_queue, 0, [other.x + _offset - other.image_xscale*objGame.pixel_size*index, other.y]);
 		}
 	}
 	
@@ -263,7 +263,8 @@ function calc_dist_to_water(_tilemap){
 		water_x = nearest_pixel_x;
 		water_y = nearest_pixel_y;
 		var _dist_to_water = distance_to_point(nearest_pixel_x, nearest_pixel_y);
-		if (_tilemap == "water_windows") _dist_to_water *= 2;
+		if (_tilemap == "water_back") _dist_to_water *= 1.5;
+		else if (_tilemap == "water_windows") _dist_to_water *= 2;
 		return _dist_to_water;
 	}
 	return nearest_dist; // If no tiles were found

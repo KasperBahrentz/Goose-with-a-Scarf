@@ -22,7 +22,7 @@ was_in_air = false;
 egg_count = 3;
 
 for (var i = 1; i <= egg_count; i++){
-	instance_create_layer(objGooseBody.x, objGooseBody.y, "instances", objEgg, {egg_id : i})
+	instance_create_layer(objGooseBody.x, objGooseBody.y, "instances", objEgg, {state : egg_state.MOVE, egg_id : i});
 }
 
 grass_timer_max = 60;
