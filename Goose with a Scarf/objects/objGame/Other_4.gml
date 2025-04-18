@@ -12,3 +12,12 @@ layer_y("mountains_middle", random_range(-2*objGame.tile_size, 2*objGame.tile_si
 
 layer_x("mountains_back", random_range(0, 8*objGame.tile_size));
 layer_y("mountains_back", random_range(-2*objGame.tile_size, 2*objGame.tile_size));
+
+
+// Colour temprary eggs
+for (var i = 0; i < instance_number(objNest); i++){
+	var _inst = instance_find(objNest, i);
+	var _index = (2*i);
+	_inst.temporary_index = _index;
+	_inst.alarm[0] = 1;
+}

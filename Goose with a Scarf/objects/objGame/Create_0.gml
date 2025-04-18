@@ -5,6 +5,8 @@ if (!instance_exists(objCam)) instance_create_layer(x, y, "instances", objCam);
 
 egg_count = 0;
 
+temporary_eggs = [];
+
 window_set_fullscreen(true);
 
 tile_size = 128;

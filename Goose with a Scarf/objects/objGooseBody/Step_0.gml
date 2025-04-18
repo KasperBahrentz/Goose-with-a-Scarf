@@ -25,14 +25,14 @@ function move(){
 	// Add the player's current position to the queue
 	var _offset = 0;
 	if (hspeed == 0 and vspeed == 0){
-		_offset = -image_xscale*8*objGame.pixel_size;
+		//_offset = -image_xscale*8*objGame.pixel_size;
 	}
 	
 	// Provide correct positions to the array of any given egg
 	for (var i = 0; i < instance_number(objEgg); i++){
 		var _inst = instance_find(objEgg, i);
 		with(_inst){
-			if (_inst.state = egg_state.MOVE) array_insert(my_queue, 0, [other.x + _offset - other.image_xscale*objGame.pixel_size*index, other.y]);
+			if (_inst.state = egg_state.MOVE) array_insert(my_queue, 0, [other.x + _offset - other.image_xscale*objGame.pixel_size, other.y]);
 		}
 	}
 	
@@ -102,7 +102,7 @@ function move(){
 		if (was_in_air){
 			play_grass_sound();
 			spawn_dust();
-			with(objEggRespawn) alarm[0] = egg_id*4;
+			with(objEggRespawn) alarm[0] = 4;
 			was_in_air = false;
 			current_max_jump_timer = max_jump_timer;
 		}
@@ -115,18 +115,7 @@ function move(){
 			sprite_index = spr_body_idle;
 		}
 		
-		// Jump
-		if (keyboard_check_pressed(vk_space)) and (sprite_index != spr_body_crouch){
-			jump_timer = 0;
-			current_max_jump_timer = max_jump_timer;
-			spawn_dust();
-			
-			play_grass_sound();
-			
-			// Honk at random
-			var _number = random_range(0, 1);
-			if (_number >= 0.9) honk();
-		}
+		was_on_ground_timer = was_on_ground_timer_max;
 	} 
 	else if (vspeed < 0) and (_ceiling_hit){ // Stop at ceiling
 		map_y = tilemap_get_cell_y_at_pixel(objGame.collision_tilemap, x, y-8*objGame.pixel_size) + 1;
@@ -144,18 +133,40 @@ function move(){
 		if (keyboard_check(ord("S"))){
 			vspeed += grav/2;
 		}
+		
+		was_on_ground_timer--;
+		
 	}
 	
-	// Egg drop
+	// Jump
+	if (was_on_ground_timer > 0) and (keyboard_check_pressed(vk_space)) and (sprite_index != spr_body_crouch){
+		jump_timer = 0;
+		current_max_jump_timer = max_jump_timer;
+		spawn_dust();
+			
+		play_grass_sound();
+			
+		// Honk at random
+		var _number = random_range(0, 1);
+		if (_number >= 0.9) honk();
+		
+		was_on_ground_timer = 0;
+	} else // Egg drop
 	if (array_length(egg_queue) >= 1) and (keyboard_check_pressed(vk_space)) and (vspeed != 0){
 		instance_create_layer(x, y, "instances", objWoosh);
 		jump_timer = 0;
 		current_max_jump_timer = egg_drop_max_jump_timer;
 		screenshake(15, 3, 0.3);
-		var _egg_id = array_pop(egg_queue);
+		var _egg_id = array_shift(egg_queue);
+		with(objEgg){
+			repeat(6*index){
+				array_pop(my_queue);
+			}
+		}
+		
 		for (var i = 0; i < instance_number(objEgg); i++){
 			var _inst = instance_find(objEgg, i);
-			if (_inst.egg_id = _egg_id){
+			if (_inst.egg_id == _egg_id){
 				with(_inst){
 					x = other.x;
 					y = other.y;

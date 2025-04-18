@@ -1,6 +1,8 @@
 /// @description Insert description here
 // You can write your code in this editor
 
+depth -= 5;
+
 instance_create_layer(x, y, layer, objGooseFeet);
 instance_create_layer(x, y, layer, objGooseHead);
 
@@ -22,8 +24,11 @@ was_in_air = false;
 egg_count = 3;
 
 for (var i = 1; i <= egg_count; i++){
-	instance_create_layer(objGooseBody.x, objGooseBody.y, "instances", objEgg, {state : egg_state.MOVE, egg_id : i});
+	instance_create_layer(objGooseBody.x, objGooseBody.y, "instances", objEgg, {state : egg_state.MOVE});
 }
+
+was_on_ground_timer_max = 6;
+was_on_ground_timer = was_on_ground_timer_max;
 
 grass_timer_max = 60;
 grass_timer = 0;
