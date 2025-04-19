@@ -1,7 +1,12 @@
 {
   "$GMTileSet":"v1",
   "%Name":"tlsDeco",
-  "autoTileSets":[],
+  "autoTileSets":[
+    {"$GMAutoTileSet":"","%Name":"scaffolding","closed_edge":false,"name":"scaffolding","resourceType":"GMAutoTileSet","resourceVersion":"2.0","tiles":[
+        301,302,303,304,305,306,307,308,332,333,334,335,336,337,338,339,363,364,365,366,367,368,369,370,394,
+        395,396,397,398,399,400,401,425,426,427,428,429,430,431,432,456,457,458,459,460,461,462,
+      ],},
+  ],
   "macroPageTiles":{
     "SerialiseHeight":0,
     "SerialiseWidth":0,
