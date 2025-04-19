@@ -2,7 +2,7 @@
   "$GMSprite":"",
   "%Name":"sprTilesDeco16",
   "bboxMode":0,
-  "bbox_bottom":223,
+  "bbox_bottom":239,
   "bbox_left":18,
   "bbox_right":479,
   "bbox_top":16,
@@ -20,6 +20,7 @@
   "HTile":false,
   "layers":[
     {"$GMImageLayer":"","%Name":"77a68d8e-9d4c-4284-9047-8c630913a96f","blendMode":0,"displayName":"Layer 2","isLocked":false,"name":"77a68d8e-9d4c-4284-9047-8c630913a96f","opacity":100.0,"resourceType":"GMImageLayer","resourceVersion":"2.0","visible":true,},
+    {"$GMImageLayer":"","%Name":"677e7643-8fed-479c-b2a8-e81e888a650e","blendMode":0,"displayName":"Layer 1","isLocked":false,"name":"677e7643-8fed-479c-b2a8-e81e888a650e","opacity":100.0,"resourceType":"GMImageLayer","resourceVersion":"2.0","visible":true,},
   ],
   "name":"sprTilesDeco16",
   "nineSlice":null,
