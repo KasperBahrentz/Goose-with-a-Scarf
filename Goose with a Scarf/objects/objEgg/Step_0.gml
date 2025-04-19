@@ -8,7 +8,7 @@ function idle(){
 	if (point_distance(x, y, objGooseBody.x, objGooseBody.y) <= 8*objGame.pixel_size){
 		depth = start_depth-1;
 		just_picked_up = true;
-		audio_sound_pitch(sndPop, 0.85 + egg_id*0.01);
+		audio_sound_pitch(sndPop, 0.9 + array_length(objGooseBody.egg_queue)*0.05);
 		audio_play_sound(sndPop, 5, false);
 		state = egg_state.MOVE;
 		with (instance_nearest(x, y, objNest)) nest_id = other.egg_id; // Set nest_id to egg_id
@@ -21,6 +21,8 @@ function move(){
 	index = 1 + array_find_index(objGooseBody.egg_queue, function(_element, _index){
 	    return (_element == egg_id);
 	});
+	
+	depth = start_depth + index;
 	
 	
 	if (just_picked_up){ // Move egg immediately to its position
@@ -51,14 +53,23 @@ function drop(){
 		audio_sound_pitch(sndThumb, random_range(0.9, 1.1));
 		audio_play_sound(sndThumb, 5, false);
 		
+		var _color = "white";
+		if (temporary){
+			switch(image_index){
+				case 1:	_color = "pink";	break;
+				case 3: _color = "orange";	break;
+				case 5: _color = "green";	break;
+			}
+		}
+		
 		repeat(choose(1, 2, 2, 2, 3)){ // Down
-			instance_create_layer(x, (map_y * objGame.tile_size)-4*objGame.pixel_size, "instances", objEggShell, {shell_id: "down"});	
+			instance_create_layer(x, (map_y * objGame.tile_size)-4*objGame.pixel_size, "instances", objEggShell, {shell_id: "down", color : _color});	
 		}
 		repeat(choose(1, 2, 2, 2, 3)){ // Left
-			instance_create_layer(x, (map_y * objGame.tile_size)-4*objGame.pixel_size, "instances", objEggShell, {shell_id: "left"});	
+			instance_create_layer(x, (map_y * objGame.tile_size)-4*objGame.pixel_size, "instances", objEggShell, {shell_id: "left", color : _color});	
 		}
 		repeat(choose(1, 2, 2, 2, 3)){ // Right
-			instance_create_layer(x, (map_y * objGame.tile_size)-4*objGame.pixel_size, "instances", objEggShell, {shell_id: "right"});	
+			instance_create_layer(x, (map_y * objGame.tile_size)-4*objGame.pixel_size, "instances", objEggShell, {shell_id: "right", color : _color});	
 		}
 		instance_create_layer(x, y, "instances", objEggRespawn, {egg_id : egg_id, spawn_at_nest : temporary, spawn_coordinate : spawn_coordinate, temporary_index : temporary_index});
 		instance_destroy();

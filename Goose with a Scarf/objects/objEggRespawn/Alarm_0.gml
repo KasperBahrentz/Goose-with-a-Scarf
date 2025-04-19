@@ -2,7 +2,7 @@
 // You can write your code in this editor
 
 audio_sound_pitch(sndPop, 0.85);
-audio_play_sound(sndPop, 5, false);
+if (!audio_is_playing(sndPop)) audio_play_sound(sndPop, 5, false);
 
 // Spawn at appropriate position
 var _x = objGooseBody.x;

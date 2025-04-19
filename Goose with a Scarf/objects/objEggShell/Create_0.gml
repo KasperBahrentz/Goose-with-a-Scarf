@@ -13,3 +13,9 @@ switch(shell_id){
 	case "right":	direction = random_range(315, 360+45);	break;
 }
 
+switch(color){
+	case "pink":	sprite_index = sprEggShellPink;		break;
+	case "orange":	sprite_index = sprEggShellOrange;	break;
+	case "green":	sprite_index = sprEggShellGreen;	break;
+}
+
