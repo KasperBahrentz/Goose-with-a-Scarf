@@ -13,13 +13,16 @@ enum player_state{
 
 debug_string = 0;
 
+water_timer_max = 30;
+water_timer = water_timer_max;
+
 // Play water sound
 audio_play_sound(sndRunningWater, 3, true);
 
 follow_queue = [];
 egg_queue = []
 
-was_in_air = false;
+was_in_air = true;
 
 egg_count = 3;
 

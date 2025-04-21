@@ -12,8 +12,8 @@
   "duration":299.808,
   "name":"sndRunningWater",
   "parent":{
-    "name":"Sounds",
-    "path":"folders/Sounds.yy",
+    "name":"water",
+    "path":"folders/Sounds/water.yy",
   },
   "preload":false,
   "resourceType":"GMSound",

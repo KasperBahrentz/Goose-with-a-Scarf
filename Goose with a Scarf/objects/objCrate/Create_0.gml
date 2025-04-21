@@ -1,9 +1,9 @@
 /// @description Insert description here
 // You can write your code in this editor
 
-if (collision_line(x, y, x, y + 12*objGame.pixel_size, prtCrate, false, true)){
+if (place_meeting(x, y + 12*pixel_size, prtCrate)){
 	image_index = 1;
 }
-else if (collision_line(x, y, x - 12*objGame.pixel_size, y, prtCrate, false, true)){
+else if (place_meeting(x - 12*pixel_size, y, prtCrate)){
 	image_index = 2;	
 }

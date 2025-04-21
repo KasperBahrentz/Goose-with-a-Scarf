@@ -21,5 +21,5 @@
   "sampleRate":44100,
   "soundFile":"sndThumb.MP3",
   "type":0,
-  "volume":0.7,
+  "volume":0.3,
 }

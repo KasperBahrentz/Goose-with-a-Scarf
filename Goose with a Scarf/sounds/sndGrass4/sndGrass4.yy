@@ -12,8 +12,8 @@
   "duration":0.44408163,
   "name":"sndGrass4",
   "parent":{
-    "name":"Sounds",
-    "path":"folders/Sounds.yy",
+    "name":"grass",
+    "path":"folders/Sounds/grass.yy",
   },
   "preload":false,
   "resourceType":"GMSound",
