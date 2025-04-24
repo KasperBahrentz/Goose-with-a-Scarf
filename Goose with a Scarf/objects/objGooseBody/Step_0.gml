@@ -111,7 +111,7 @@ function move(){
 		if (keyboard_check(ord("S"))){
 			sprite_index = spr_body_crouch;
 		}
-		else {
+		else if (keyboard_check_released(ord("S"))){
 			sprite_index = spr_body_idle;
 		}
 		

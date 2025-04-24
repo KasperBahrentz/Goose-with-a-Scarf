@@ -1,0 +1,25 @@
+{
+  "$GMSound":"",
+  "%Name":"sndWoodCrack1",
+  "audioGroupId":{
+    "name":"audiogroup_default",
+    "path":"audiogroups/audiogroup_default",
+  },
+  "bitDepth":1,
+  "bitRate":128,
+  "compression":0,
+  "conversionMode":0,
+  "duration":0.4702041,
+  "name":"sndWoodCrack1",
+  "parent":{
+    "name":"wood",
+    "path":"folders/Sounds/wood.yy",
+  },
+  "preload":false,
+  "resourceType":"GMSound",
+  "resourceVersion":"2.0",
+  "sampleRate":44100,
+  "soundFile":"sndWoodCrack1.MP3",
+  "type":0,
+  "volume":1.0,
+}

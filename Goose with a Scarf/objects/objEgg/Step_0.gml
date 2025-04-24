@@ -46,6 +46,7 @@ function move(){
 }
 
 function drop(){
+	// Check ground collision
 	if (check_collision(0, 0) or place_meeting(x, y, objCollisionSemiSolid)) and (!has_collided){ // Destroy on ground
 		map_y = tilemap_get_cell_y_at_pixel(objGame.collision_tilemap, x, y + 4*pixel_size);
 		vspeed = 0;
@@ -72,6 +73,21 @@ function drop(){
 			instance_create_layer(x, (map_y * tile_size)-4*pixel_size, "instances", objEggShell, {shell_id: "right", color : _color});	
 		}
 		instance_create_layer(x, y, "instances", objEggRespawn, {egg_id : egg_id, spawn_at_nest : temporary, spawn_coordinate : spawn_coordinate, temporary_index : temporary_index});
+		
+		if (place_meeting(x, y+8*pixel_size, prtCrate)){
+			with instance_nearest(x, y, prtCrate){
+				if (hp == 3){
+					audio_sound_pitch(sndWoodCrack1, random_range(0.9, 1.1));
+					audio_play_sound(sndWoodCrack1, 5, false);
+				}
+				else if (hp == 2){
+					audio_sound_pitch(sndWoodCrack2, random_range(0.9, 1.1));
+					audio_play_sound(sndWoodCrack2, 5, false);
+				}
+				hp--;
+			}
+		}
+		
 		instance_destroy();
 	}
 	else if (!has_collided){
