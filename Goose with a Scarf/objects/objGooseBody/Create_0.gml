@@ -11,6 +11,10 @@ enum player_state{
 	PAUSE	
 }
 
+hidden_assets = layer_get_all_elements(layer_get_id("hidden"));
+found_hidden_blocks = [];
+hidden_block_id = -1;
+
 debug_string = 0;
 
 water_timer_max = 30;

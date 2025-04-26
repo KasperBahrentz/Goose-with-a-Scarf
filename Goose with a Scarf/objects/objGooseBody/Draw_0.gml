@@ -15,6 +15,6 @@ else {
 //draw_set_color(c_white);
 
 
-//draw_text(x, y, egg_queue);
+draw_text(x, y, hidden_assets);
 //draw_text(x, y+64, debug_string);
 //if (array_length(follow_queue) >= 0) draw_text(x, y + 32 * pixel_size,  follow_queue[0]);

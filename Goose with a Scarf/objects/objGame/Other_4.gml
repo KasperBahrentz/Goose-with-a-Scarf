@@ -18,7 +18,6 @@ repeat(random_range(20, 25)) instance_create_layer(random_range(0, room_width), 
 
 
 
-
 layer_x("mountains_front", random_range(-2*tile_size, 8*tile_size));
 layer_y("mountains_front", random_range(-tile_size, 2*tile_size));
 
