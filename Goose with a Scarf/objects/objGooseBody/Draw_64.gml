@@ -12,4 +12,4 @@
 //draw_text(16*_UI_pixel-_UI_pixel, 16*_UI_pixel-_UI_pixel, _num);
 
 //draw_set_colour(c_white);
-//draw_text(16*_UI_pixel, 16*_UI_pixel, _num);
+//draw_text(debug_x, debug_y, debug_string);

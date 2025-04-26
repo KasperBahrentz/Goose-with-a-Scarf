@@ -259,25 +259,7 @@ function change_water_audio_level(_dist_to_water){
 	audio_sound_gain(sndRunningWater, _gain, 0);
 }
 
-
-
-
-for (var i = 0; i < array_length(found_hidden_blocks); i++){
-	var _element_id = found_hidden_blocks[i];
-	var _my_x =  layer_sprite_get_x(_element_id);
-	var _my_y =  layer_sprite_get_y(_element_id);
-	for (var j = 0; j < array_length(hidden_assets); j++){
-		var _element_to_add_id = hidden_assets[j];
-		var _x = layer_sprite_get_x(_element_to_add_id);
-		var _y = layer_sprite_get_y(_element_to_add_id);
-		if (point_distance(_my_x, _my_y, _x, _y) <= tile_size) and (!array_contains(found_hidden_blocks, _element_to_add_id)){	
-			array_push(found_hidden_blocks, _element_to_add_id);
-		}
-	}
-	var _current_alpha = layer_sprite_get_alpha(_element_id);
-	layer_sprite_alpha(_element_id, lerp(_current_alpha, 0, 0.25));
-}
-	
+// Check if player is colliding with any hidden blocks
 for (var i = 0; i < array_length(hidden_assets); i++){
 	hidden_block_id = hidden_assets[i];
 	if (hidden_block_id == -1){
@@ -294,4 +276,30 @@ for (var i = 0; i < array_length(hidden_assets); i++){
 	else if (collision_rectangle(_x, _y, _x+128, _y+128, self, false, false)){	
 		array_push(found_hidden_blocks, hidden_block_id);
 	} 
+}
+
+// TO-DO: Play sound only if new hidden block is found and found_hidden_blocks is empty
+
+// Check if hidden blocks are next to other hidden_blocks
+for (var i = 0; i < array_length(found_hidden_blocks); i++){
+	hidden_block_id = found_hidden_blocks[i];
+	var _my_x =  layer_sprite_get_x(hidden_block_id);
+	var _my_y =  layer_sprite_get_y(hidden_block_id);
+	
+	for (var j = 0; j < array_length(hidden_assets); j++){
+		var _element_to_add_id = hidden_assets[j];
+		var _x = layer_sprite_get_x(_element_to_add_id);
+		var _y = layer_sprite_get_y(_element_to_add_id);
+		if (point_distance(_my_x, _my_y, _x, _y) <= tile_size) and (!array_contains(found_hidden_blocks, _element_to_add_id)){	
+			array_push(found_hidden_blocks, _element_to_add_id);
+		}
+	}
+	var _current_alpha = layer_sprite_get_alpha(hidden_block_id);
+	if (_current_alpha <= 0){
+		var _index = array_find_index(hidden_assets, function(_element, _index){
+			return (_element == hidden_block_id);
+		});
+		array_delete(found_hidden_blocks, _index, 1);
+	}
+	else layer_sprite_alpha(hidden_block_id, lerp(_current_alpha, 0, 0.25));
 }
