@@ -262,23 +262,17 @@ function change_water_audio_level(_dist_to_water){
 // Check if player is colliding with any hidden blocks
 for (var i = 0; i < array_length(hidden_assets); i++){
 	hidden_block_id = hidden_assets[i];
-	if (hidden_block_id == -1){
-		break;		
-	}
 	var _x = layer_sprite_get_x(hidden_block_id);
 	var _y = layer_sprite_get_y(hidden_block_id);
 	if (layer_sprite_get_alpha(hidden_block_id) <= 0){
-		var _index = array_find_index(hidden_assets, function(_element, _index){
-			return (_element == hidden_block_id);
-		});
-		array_delete(hidden_assets, _index, 1);
+		array_delete(hidden_assets, array_get_index(hidden_assets, hidden_block_id), 1);
 	}
-	else if (collision_rectangle(_x, _y, _x+128, _y+128, self, false, false)){	
+	else if (collision_rectangle(_x, _y, _x+128, _y+128, self, false, false)){ // Check for collision with player
+		audio_sound_pitch(sndWooshHidden, random_range(0.9, 1.1));
+		audio_play_sound(sndWooshHidden, 7, false);
 		array_push(found_hidden_blocks, hidden_block_id);
 	} 
 }
-
-// TO-DO: Play sound only if new hidden block is found and found_hidden_blocks is empty
 
 // Check if hidden blocks are next to other hidden_blocks
 for (var i = 0; i < array_length(found_hidden_blocks); i++){
@@ -294,12 +288,13 @@ for (var i = 0; i < array_length(found_hidden_blocks); i++){
 			array_push(found_hidden_blocks, _element_to_add_id);
 		}
 	}
+	
+	// Remove block from foun dhidden blocks array
 	var _current_alpha = layer_sprite_get_alpha(hidden_block_id);
 	if (_current_alpha <= 0){
-		var _index = array_find_index(hidden_assets, function(_element, _index){
-			return (_element == hidden_block_id);
-		});
-		array_delete(found_hidden_blocks, _index, 1);
+		array_delete(found_hidden_blocks, array_get_index(found_hidden_blocks, found_hidden_blocks), 1);
 	}
-	else layer_sprite_alpha(hidden_block_id, lerp(_current_alpha, 0, 0.25));
+	else {
+		layer_sprite_alpha(hidden_block_id, lerp(_current_alpha, 0, 0.2));
+	}
 }
