@@ -23,7 +23,7 @@
   ],
   "name":"sprCrate",
   "nineSlice":null,
-  "origin":4,
+  "origin":0,
   "parent":{
     "name":"crate",
     "path":"folders/Sprites/crate.yy",
@@ -77,8 +77,8 @@
     ],
     "visibleRange":null,
     "volume":1.0,
-    "xorigin":64,
-    "yorigin":64,
+    "xorigin":0,
+    "yorigin":0,
   },
   "swatchColours":[
     4278190335,4294967295,4294439913,4293648840,4291673765,4289040760,4286407765,4284105015,4282129945,4284106260,

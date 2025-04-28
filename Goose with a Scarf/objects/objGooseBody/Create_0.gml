@@ -39,8 +39,8 @@ for (var i = 1; i <= egg_count; i++){
 was_on_ground_timer_max = 6;
 was_on_ground_timer = was_on_ground_timer_max;
 
-grass_timer_max = 60;
-grass_timer = 0;
+sound_timer_max = 60;
+sound_timer = 0;
 
 state = player_state.MOVE;
 

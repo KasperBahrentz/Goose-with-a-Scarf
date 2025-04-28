@@ -3,6 +3,7 @@
 collision_tilemap = layer_tilemap_get_id("ground");
 water_front_tilemap = layer_tilemap_get_id("water_front");
 water_back_tilemap = layer_tilemap_get_id("water_back");
+deco_tilemap = layer_tilemap_get_id("deco_middle");
 
 var _clouds_front = layer_create(layer_get_depth("mountains_front")-5, "clouds_front");
 repeat(random_range(20, 25)) instance_create_layer(random_range(0, room_width), random_range(2*tile_size, room_height-room_height/3), _clouds_front, objCloud);

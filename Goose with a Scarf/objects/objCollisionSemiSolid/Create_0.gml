@@ -1,9 +1,9 @@
 /// @description Insert description here
 // You can write your code in this editor
 
-alarm[0] = 10;
+alarm[0] = 10; // wait calling functions until tiles have loaded in
 
-function is_on_water(_tilemap_id, _y){
+function is_on_tilemap(_tilemap_id, _y){
 	// Convert object position to tile coordinates
 	var tile_x = tilemap_get_cell_x_at_pixel(_tilemap_id, x, _y);
 	var tile_y = tilemap_get_cell_y_at_pixel(_tilemap_id, x, _y);

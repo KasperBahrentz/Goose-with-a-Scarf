@@ -55,15 +55,15 @@ function move(){
 	if (_moving){ // Accelerate
 		h_spd = min(max(deceleration, h_spd*acceleration), _top_spd);
 		
-		if (grass_timer == 0){
+		if (sound_timer == 0){
 			var _play_sound = random_range(0, 1);
 		
-			if (_play_sound >= 0.95){	
+			if (_play_sound >= 0.9){	
 				play_material_sound();
-				grass_timer = grass_timer_max;
+				sound_timer = sound_timer_max;
 			}
 		} else {
-			grass_timer--;
+			sound_timer--;
 		}
 	}
 	else { // Decelerate
@@ -230,15 +230,38 @@ function honk(){
 }
 
 function play_material_sound(){
-	var _sound = choose(sndGrass1, sndGrass2, sndGrass3, sndGrass4, sndGrass5, sndGrass6, sndGrass7, sndGrass8);
-
+	var _material = "grass";
+	var _sound = sndGrass1;
 	
+	// If there is a different  material below us
 	if (place_meeting(x , y + 4*pixel_size, objCollisionSemiSolid)){
 		var _semi_solid = instance_nearest(x, y, objCollisionSemiSolid);
 		if (_semi_solid.material == "water"){
-			_sound = sndWater2;
+			_material = "water"
+		} else if (_semi_solid.material == "wood"){
+			_material = "wood";
 		}
-		audio_sound_gain(_sound, 2, 0);
+	}
+	else if (place_meeting(x, y + 4*pixel_size, prtCrate)){
+		_material = "wood";
+	}
+	
+	switch(_material){
+		case "grass": {
+			_sound = choose(sndGrass1, sndGrass2, sndGrass3, sndGrass4, sndGrass5, sndGrass6, sndGrass7, sndGrass8);
+			audio_sound_gain(_sound, 2, 0);
+			break;
+		}
+		case "water": {
+			_sound = sndWater2;
+			audio_sound_gain(_sound, 2, 0);	
+			break;
+		}
+		case "wood": {
+			_sound = choose(sndWood1, sndWood2, sndWood3, sndWood4, sndWood5);
+			audio_sound_gain(_sound, 3, 0);	
+			break;
+		}
 	}
 	
 	audio_sound_pitch(_sound, random_range(0.9, 1.1));
@@ -269,7 +292,7 @@ for (var i = 0; i < array_length(hidden_assets); i++){
 	}
 	else if (collision_rectangle(_x, _y, _x+128, _y+128, self, false, false)){ // Check for collision with player
 		audio_sound_pitch(sndWooshHidden, random_range(0.9, 1.1));
-		audio_play_sound(sndWooshHidden, 7, false);
+		if (array_length(found_hidden_blocks) == 0) audio_play_sound(sndWooshHidden, 7, false);
 		array_push(found_hidden_blocks, hidden_block_id);
 	} 
 }
