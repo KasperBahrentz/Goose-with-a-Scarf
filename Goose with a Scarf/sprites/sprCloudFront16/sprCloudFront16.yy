@@ -2,7 +2,7 @@
   "$GMSprite":"",
   "%Name":"sprCloudFront16",
   "bboxMode":0,
-  "bbox_bottom":45,
+  "bbox_bottom":48,
   "bbox_left":8,
   "bbox_right":189,
   "bbox_top":5,
