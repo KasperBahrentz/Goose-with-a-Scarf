@@ -21,5 +21,5 @@
   "sampleRate":44100,
   "soundFile":"sndWoodCrack2.MP3",
   "type":0,
-  "volume":0.5,
+  "volume":0.6,
 }

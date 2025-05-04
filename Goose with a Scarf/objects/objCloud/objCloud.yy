@@ -31,8 +31,8 @@
   "resourceVersion":"2.0",
   "solid":false,
   "spriteId":{
-    "name":"sprCloudFront",
-    "path":"sprites/sprCloudFront/sprCloudFront.yy",
+    "name":"sprCloud",
+    "path":"sprites/sprCloud/sprCloud.yy",
   },
   "spriteMaskId":null,
   "visible":true,
