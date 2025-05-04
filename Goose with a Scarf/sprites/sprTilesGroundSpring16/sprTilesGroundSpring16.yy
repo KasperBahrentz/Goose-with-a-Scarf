@@ -2,7 +2,7 @@
   "$GMSprite":"",
   "%Name":"sprTilesGroundSpring16",
   "bboxMode":0,
-  "bbox_bottom":236,
+  "bbox_bottom":223,
   "bbox_left":16,
   "bbox_right":431,
   "bbox_top":16,
