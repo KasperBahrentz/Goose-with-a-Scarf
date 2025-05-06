@@ -7,6 +7,8 @@ switch (state){
 }
 
 function move(){
+	vspeed = grav;
+	
 	// Screen shake test
 	if (keyboard_check_pressed(ord("M"))){
 		screenshake(15, 3, 0.3);	
@@ -123,20 +125,6 @@ function move(){
 		vspeed = max(vspeed - jump_height * (1 - jump_timer/current_max_jump_timer), 0);
 		y = (map_y * tile_size);
 	}
-	else { // Move
-		vspeed = grav;	
-	}
-	
-	// If in air
-	if (vspeed != 0){
-		was_in_air = true;
-		if (keyboard_check(ord("S"))){
-			vspeed += grav/2;
-		}
-		
-		was_on_ground_timer--;
-		
-	}
 	
 	// Jump
 	if (was_on_ground_timer > 0) and (keyboard_check_pressed(vk_space)) and (sprite_index != spr_body_crouch){
@@ -153,6 +141,8 @@ function move(){
 		was_on_ground_timer = 0;
 	} else // Egg drop
 	if (array_length(egg_queue) >= 1) and (keyboard_check_pressed(vk_space)) and (vspeed != 0){
+		glide_timer = glide_timer_max;
+				
 		instance_create_layer(x, y, "instances", objWoosh);
 		jump_timer = 0;
 		current_max_jump_timer = egg_drop_max_jump_timer;
@@ -185,6 +175,37 @@ function move(){
 	}
 	
 	jump();
+	
+		// If in air
+	if (vspeed != 0){
+		was_in_air = true;
+		if (keyboard_check(ord("S"))){
+			vspeed += (grav/2);
+		}
+		
+		was_on_ground_timer--;		
+		
+		// Gliding
+		if (keyboard_check(vk_space) and glide_timer > 0){
+			if (vspeed >= grav){
+				vspeed -= grav*0.8;
+				glide_timer--;
+				sprite_index = spr_body_glide;
+			}
+			else {
+				vspeed -= (grav/2);
+			}
+		}
+		else{
+			sprite_index = spr_body_idle;
+			if (keyboard_check_released(vk_space)){
+				glide_timer = 0;	
+			}
+		}
+	}
+	else {
+		sprite_index = spr_body_idle;
+	}
 
 	if (sprite_index != spr_body_crouch){
 		if (hspeed != 0) and (vspeed == 0){ // Change to running sprite

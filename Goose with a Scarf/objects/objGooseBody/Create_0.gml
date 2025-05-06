@@ -11,6 +11,10 @@ enum player_state{
 	PAUSE	
 }
 
+grav = 18;
+glide_timer_max = 60;
+glide_timer = 0;
+
 hidden_assets = layer_get_all_elements(layer_get_id("hidden"));
 found_hidden_blocks = [];
 hidden_block_id = -1;
@@ -47,6 +51,7 @@ state = player_state.MOVE;
 spr_body_idle = sprGooseBodyIdle;
 spr_body_run = sprGooseBodyRun;
 spr_body_crouch = sprGooseCrouch;
+spr_body_glide = sprGooseBodyGlide;
 
 spr_head_idle = sprGooseHeadIdle;
 spr_head_honk = sprGooseHeadHonk;
@@ -64,7 +69,6 @@ deceleration = 0.8;
 
 jump_height = 44;
 v_deceleration = 0.5;
-grav = 18;
 max_jump_timer = 20;
 egg_drop_max_jump_timer = 30;
 jump_timer = max_jump_timer;
