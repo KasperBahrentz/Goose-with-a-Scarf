@@ -7,7 +7,7 @@ if (collision_circle(x, y, 32*pixel_size, objCloud, false, true)) instance_destr
 
 state = "front";
 x_start = x;
-parallax_factor = 8;
+parallax_factor = 16;
 
 if (layer == layer_get_id("clouds_front")){
 	image_alpha = random_range(0.8, 0.9);
@@ -15,17 +15,20 @@ if (layer == layer_get_id("clouds_front")){
 else if (layer == layer_get_id("clouds_middle")){
 	image_alpha = random_range(0.7, 0.8);
 	state = "middle";
-	parallax_factor = 16;
+	parallax_factor = 24;
+	sprite_index = sprCloudMiddle;
 }
 else if (layer == layer_get_id("clouds_back")){
 	image_alpha = random_range(0.6, 0.7);
 	state = "back";
-	parallax_factor = 32;
+	parallax_factor = 48;
+	sprite_index = sprCloudBack;
 }
 else if (layer == layer_get_id("clouds_back")){
 	image_alpha = random_range(0.5, 0.6);
 	state = "back_back";
 	parallax_factor = 64;
+	sprite_index = sprCloudBack;
 }
 
 

@@ -6,16 +6,16 @@ water_back_tilemap = layer_tilemap_get_id("water_back");
 deco_tilemap = layer_tilemap_get_id("deco_middle");
 
 var _clouds_front = layer_create(layer_get_depth("mountains_front")-5, "clouds_front");
-repeat(random_range(20, 25)) instance_create_layer(random_range(0, room_width), random_range(2*tile_size, room_height-room_height/3), _clouds_front, objCloud);
+repeat(random_range(20, 25)) instance_create_layer(random_range(0, room_width), random_range(3*tile_size, room_height-room_height/3), _clouds_front, objCloud);
 
 var _clouds_middle = layer_create(layer_get_depth("mountains_middle")-5, "clouds_middle");
 repeat(random_range(20, 25)) instance_create_layer(random_range(0, room_width), random_range(3*tile_size, room_height-room_height/3), _clouds_middle, objCloud);
 
 var _clouds_back = layer_create(layer_get_depth("mountains_back")-5, "clouds_back");
-repeat(random_range(20, 25)) instance_create_layer(random_range(0, room_width), random_range(4*tile_size, room_height-room_height/3), _clouds_back, objCloud);
+repeat(random_range(20, 25)) instance_create_layer(random_range(0, room_width), random_range(3*tile_size, room_height-room_height/3), _clouds_back, objCloud);
 
 var _clouds_back_back = layer_create(layer_get_depth("mountains_back")+5, "clouds_back_back");
-repeat(random_range(20, 25)) instance_create_layer(random_range(0, room_width), random_range(5*tile_size, room_height-room_height/3), _clouds_back_back, objCloud);
+repeat(random_range(20, 25)) instance_create_layer(random_range(0, room_width), random_range(3*tile_size, room_height-room_height/3), _clouds_back_back, objCloud);
 
 
 

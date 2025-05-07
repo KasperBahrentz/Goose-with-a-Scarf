@@ -24,17 +24,11 @@ function move(){
 	var _key_left = keyboard_check(ord("A"));
 	var _moving = (_key_right - _key_left) != 0;
 	
-	// Add the player's current position to the queue
-	var _offset = 0;
-	if (hspeed == 0 and vspeed == 0){
-		//_offset = -image_xscale*8*pixel_size;
-	}
-	
 	// Provide correct positions to the array of any given egg
 	for (var i = 0; i < instance_number(objEgg); i++){
 		var _inst = instance_find(objEgg, i);
 		with(_inst){
-			if (_inst.state = egg_state.MOVE) array_insert(my_queue, 0, [other.x + _offset - other.image_xscale*pixel_size, other.y]);
+			if (_inst.state = egg_state.MOVE) array_insert(my_queue, 0, [other.x - other.image_xscale*pixel_size, other.y]);
 		}
 	}
 	
@@ -84,8 +78,6 @@ function move(){
 	}
 	
 	// Move vertically
-	var _ceiling_hit =  check_collision(0, -10*pixel_size);
-	
 	var _landed_on_semi_solid = false;
 		
 	// Semi-solid platforms
@@ -93,6 +85,7 @@ function move(){
 		_landed_on_semi_solid = true;
 	}	
 	
+	var _ceiling_hit =  check_collision(0, -10*pixel_size);
 	if (_landed_on_semi_solid) or (check_collision(0, 4*pixel_size)){ // Stop on ground
 		var _tilemap = objGame.collision_tilemap;
 		if (_landed_on_semi_solid) _tilemap = layer_tilemap_get_id("back");
@@ -119,7 +112,7 @@ function move(){
 		
 		was_on_ground_timer = was_on_ground_timer_max;
 	} 
-	else if (vspeed < 0) and (_ceiling_hit){ // Stop at ceiling
+	else if (vspeed != 0) and (_ceiling_hit){ // Stop at ceiling
 		map_y = tilemap_get_cell_y_at_pixel(objGame.collision_tilemap, x, y-8*pixel_size) + 1;
 		jump_timer = max(jump_timer, current_max_jump_timer/2 + current_max_jump_timer/4);
 		vspeed = max(vspeed - jump_height * (1 - jump_timer/current_max_jump_timer), 0);
@@ -128,6 +121,7 @@ function move(){
 	
 	// Jump
 	if (was_on_ground_timer > 0) and (keyboard_check_pressed(vk_space)) and (sprite_index != spr_body_crouch){
+		glide_timer = glide_timer_max;
 		jump_timer = 0;
 		current_max_jump_timer = max_jump_timer;
 		spawn_dust();
@@ -139,10 +133,9 @@ function move(){
 		if (_number >= 0.9) honk();
 		
 		was_on_ground_timer = 0;
-	} else // Egg drop
-	if (array_length(egg_queue) >= 1) and (keyboard_check_pressed(vk_space)) and (vspeed != 0){
+	} else // egg drop
+	if (array_length(egg_queue) >= 1) and (keyboard_check_pressed(vk_space)) and (vspeed != 0){	
 		glide_timer = glide_timer_max;
-				
 		instance_create_layer(x, y, "instances", objWoosh);
 		jump_timer = 0;
 		current_max_jump_timer = egg_drop_max_jump_timer;
@@ -176,7 +169,7 @@ function move(){
 	
 	jump();
 	
-		// If in air
+	// If in air
 	if (vspeed != 0){
 		was_in_air = true;
 		if (keyboard_check(ord("S"))){
@@ -203,19 +196,16 @@ function move(){
 			}
 		}
 	}
-	else {
-		sprite_index = spr_body_idle;
-	}
 
 	if (sprite_index != spr_body_crouch){
 		if (hspeed != 0) and (vspeed == 0){ // Change to running sprite
 			if (image_index <= 1) sprite_index = spr_body_run;
 			objGooseFeet.sprite_index = spr_feet_run;
 		}
-		else if (vspeed < 0){
+		else if (vspeed < 0 or glide_timer > 0) {
 			objGooseFeet.sprite_index = spr_feet_jump;	
 		}
-		else { // Change to idle sprite
+		else if (vspeed == 0) { // Change to idle sprite
 			if (image_index <= 1) sprite_index = spr_body_idle;
 			objGooseFeet.sprite_index = spr_feet_idle;
 		}
