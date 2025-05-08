@@ -9,8 +9,8 @@
   "name":"objCrateFragment",
   "overriddenProperties":[],
   "parent":{
-    "name":"Objects",
-    "path":"folders/Objects.yy",
+    "name":"crates",
+    "path":"folders/Objects/crates.yy",
   },
   "parentObjectId":null,
   "persistent":false,

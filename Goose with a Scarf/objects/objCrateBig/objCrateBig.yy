@@ -12,8 +12,8 @@
     {"$GMOverriddenProperty":"v1","%Name":"","name":"","objectId":{"name":"prtCrate","path":"objects/prtCrate/prtCrate.yy",},"propertyId":{"name":"frag_max","path":"objects/prtCrate/prtCrate.yy",},"resourceType":"GMOverriddenProperty","resourceVersion":"2.0","value":"10",},
   ],
   "parent":{
-    "name":"Objects",
-    "path":"folders/Objects.yy",
+    "name":"crates",
+    "path":"folders/Objects/crates.yy",
   },
   "parentObjectId":{
     "name":"prtCrate",

@@ -17,16 +17,17 @@ repeat(random_range(20, 25)) instance_create_layer(random_range(0, room_width), 
 var _clouds_back_back = layer_create(layer_get_depth("mountains_back")+5, "clouds_back_back");
 repeat(random_range(20, 25)) instance_create_layer(random_range(0, room_width), random_range(3*tile_size, room_height-room_height/3), _clouds_back_back, objCloud);
 
+var _x = random_range(-2*tile_size, 8*tile_size);
+var _y = (room_height - sprite_get_height(sprSummerMountainsFront)) + random_range(-tile_size, 2*tile_size);
 
+layer_x("mountains_front", _x);
+layer_y("mountains_front", _y);
 
-layer_x("mountains_front", random_range(-2*tile_size, 8*tile_size));
-layer_y("mountains_front", random_range(-tile_size, 2*tile_size));
+layer_x("mountains_middle", _x);
+layer_y("mountains_middle", _y);
 
-layer_x("mountains_middle", random_range(0, 8*tile_size));
-layer_y("mountains_middle", random_range(-2*tile_size, 2*tile_size));
-
-layer_x("mountains_back", random_range(0, 8*tile_size));
-layer_y("mountains_back", random_range(-2*tile_size, 2*tile_size));
+layer_x("mountains_back", _x);
+layer_y("mountains_back", _y);
 
 
 // Colour temprary eggs
