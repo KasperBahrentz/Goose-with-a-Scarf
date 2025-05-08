@@ -8,8 +8,8 @@
   "name":"objCrate",
   "overriddenProperties":[],
   "parent":{
-    "name":"Objects",
-    "path":"folders/Objects.yy",
+    "name":"crates",
+    "path":"folders/Objects/crates.yy",
   },
   "parentObjectId":{
     "name":"prtCrate",
