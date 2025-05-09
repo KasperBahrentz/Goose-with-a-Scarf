@@ -83,7 +83,7 @@ function move(){
 	// Semi-solid platforms
 	if (vspeed >= 0) and (place_meeting(x , y + 4*pixel_size, objCollisionSemiSolid)){
 		_landed_on_semi_solid = true;
-	}	
+	}
 	
 	var _ceiling_hit =  check_collision(0, -10*pixel_size);
 	if (_landed_on_semi_solid) or (check_collision(0, 4*pixel_size)){ // Stop on ground
@@ -116,7 +116,7 @@ function move(){
 		map_y = tilemap_get_cell_y_at_pixel(objGame.collision_tilemap, x, y-8*pixel_size) + 1;
 		jump_timer = max(jump_timer, current_max_jump_timer/2 + current_max_jump_timer/4);
 		vspeed = max(vspeed - jump_height * (1 - jump_timer/current_max_jump_timer), 0);
-		y = (map_y * tile_size);
+		y = (map_y * tile_size) + pixel_size;
 	}
 	
 	// Jump
@@ -182,19 +182,23 @@ function move(){
 		if (keyboard_check(vk_space) and glide_timer > 0){
 			if (vspeed >= grav){
 				vspeed -= grav*0.8;
-				glide_timer--;
+				if (parasol == noone) glide_timer--;
 				sprite_index = spr_body_glide;
 			}
 			else {
 				vspeed -= (grav/2);
 			}
 		}
-		else{
+		else {
 			sprite_index = spr_body_idle;
 			if (keyboard_check_released(vk_space)){
 				glide_timer = 0;	
 			}
 		}
+	}
+	else if (glide_timer > 0){ // If we landed but still have time on the timer
+		glide_timer = 0;
+		sprite_index = spr_body_idle;		
 	}
 
 	if (sprite_index != spr_body_crouch){
@@ -205,7 +209,7 @@ function move(){
 		else if (vspeed < 0 or glide_timer > 0) {
 			objGooseFeet.sprite_index = spr_feet_jump;	
 		}
-		else if (vspeed == 0) { // Change to idle sprite
+		else { // Change to idle sprite
 			if (image_index <= 1) sprite_index = spr_body_idle;
 			objGooseFeet.sprite_index = spr_feet_idle;
 		}

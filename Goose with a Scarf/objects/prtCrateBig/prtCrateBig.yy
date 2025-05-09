@@ -1,24 +1,23 @@
 {
   "$GMObject":"",
-  "%Name":"objCrateBigBow",
+  "%Name":"prtCrateBig",
   "eventList":[
     {"$GMEvent":"v1","%Name":"","collisionObjectId":null,"eventNum":0,"eventType":3,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
   ],
   "managed":true,
-  "name":"objCrateBigBow",
+  "name":"prtCrateBig",
   "overriddenProperties":[
     {"$GMOverriddenProperty":"v1","%Name":"","name":"","objectId":{"name":"prtCrate","path":"objects/prtCrate/prtCrate.yy",},"propertyId":{"name":"hp","path":"objects/prtCrate/prtCrate.yy",},"resourceType":"GMOverriddenProperty","resourceVersion":"2.0","value":"3",},
     {"$GMOverriddenProperty":"v1","%Name":"","name":"","objectId":{"name":"prtCrate","path":"objects/prtCrate/prtCrate.yy",},"propertyId":{"name":"frag_min","path":"objects/prtCrate/prtCrate.yy",},"resourceType":"GMOverriddenProperty","resourceVersion":"2.0","value":"7",},
     {"$GMOverriddenProperty":"v1","%Name":"","name":"","objectId":{"name":"prtCrate","path":"objects/prtCrate/prtCrate.yy",},"propertyId":{"name":"frag_max","path":"objects/prtCrate/prtCrate.yy",},"resourceType":"GMOverriddenProperty","resourceVersion":"2.0","value":"10",},
-    {"$GMOverriddenProperty":"v1","%Name":"","name":"","objectId":{"name":"prtCrate","path":"objects/prtCrate/prtCrate.yy",},"propertyId":{"name":"extra_frag","path":"objects/prtCrate/prtCrate.yy",},"resource":{"name":"objCrateFragmentChristmas","path":"objects/objCrateFragmentChristmas/objCrateFragmentChristmas.yy",},"resourceType":"GMOverriddenProperty","resourceVersion":"2.0","value":"objCrateFragmentChristmas",},
   ],
   "parent":{
     "name":"crates",
     "path":"folders/Objects/crates.yy",
   },
   "parentObjectId":{
-    "name":"prtCrateBig",
-    "path":"objects/prtCrateBig/prtCrateBig.yy",
+    "name":"prtCrate",
+    "path":"objects/prtCrate/prtCrate.yy",
   },
   "persistent":false,
   "physicsAngularDamping":0.1,
@@ -37,10 +36,7 @@
   "resourceType":"GMObject",
   "resourceVersion":"2.0",
   "solid":false,
-  "spriteId":{
-    "name":"sprChristmasCrateBig",
-    "path":"sprites/sprChristmasCrateBig/sprChristmasCrateBig.yy",
-  },
+  "spriteId":null,
   "spriteMaskId":null,
   "visible":true,
 }

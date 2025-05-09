@@ -16,8 +16,8 @@
     "path":"folders/Objects/crates.yy",
   },
   "parentObjectId":{
-    "name":"prtCrate",
-    "path":"objects/prtCrate/prtCrate.yy",
+    "name":"prtCrateBig",
+    "path":"objects/prtCrateBig/prtCrateBig.yy",
   },
   "persistent":false,
   "physicsAngularDamping":0.1,
