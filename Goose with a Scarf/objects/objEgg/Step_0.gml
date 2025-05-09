@@ -74,6 +74,7 @@ function drop(){
 		}
 		instance_create_layer(x, y, "instances", objEggRespawn, {egg_id : egg_id, spawn_at_nest : temporary, spawn_coordinate : spawn_coordinate, temporary_index : temporary_index});
 		
+		// Crate collisions
 		if (place_meeting(x, y+8*pixel_size, prtCrate)){
 			with instance_nearest(x, y, prtCrate){
 				if (hp == 3){
