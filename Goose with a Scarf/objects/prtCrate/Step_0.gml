@@ -8,5 +8,9 @@ if (hp <= 0){
 	if (extra_frag != noone) repeat(random_range(frag_min, frag_max)) instance_create_layer(_x, _y, "instances", extra_frag);
 	audio_sound_pitch(sndCrateDestroy, random_range(0.9, 1.1));
 	audio_play_sound(sndCrateDestroy, 7, false);
+	if (fruit != noone){
+		audio_play_sound(sndBonus, 7, false);
+		instance_create_layer(_x, _y, "instances", fruit);	
+	}
 	instance_destroy();	
 }

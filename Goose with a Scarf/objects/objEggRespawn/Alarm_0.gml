@@ -1,8 +1,10 @@
 /// @description Insert description here
 // You can write your code in this editor
 
-audio_sound_pitch(sndPop, 0.85);
-if (!audio_is_playing(sndPop)) audio_play_sound(sndPop, 5, false);
+var _pop_sound = choose(sndPop, sndPop2);
+audio_sound_pitch(_pop_sound, random_range(0.85, 1.1));
+
+if (!audio_is_playing(sndPop2) and !audio_is_playing(sndPop)) audio_play_sound(_pop_sound, 5, false);
 
 // Spawn at appropriate position
 var _x = objGooseBody.x;
