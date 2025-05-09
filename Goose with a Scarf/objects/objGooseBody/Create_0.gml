@@ -11,6 +11,8 @@ enum player_state{
 	PAUSE	
 }
 
+parasol = noone;
+
 grav = 18;
 glide_timer_max = 60;
 glide_timer = 0;

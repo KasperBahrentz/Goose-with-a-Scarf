@@ -11,8 +11,8 @@
   "name":"objEgg",
   "overriddenProperties":[],
   "parent":{
-    "name":"Objects",
-    "path":"folders/Objects.yy",
+    "name":"egg",
+    "path":"folders/Objects/egg.yy",
   },
   "parentObjectId":null,
   "persistent":false,

@@ -1,16 +1,17 @@
 {
   "$GMObject":"",
-  "%Name":"objEggShell",
+  "%Name":"objParasol",
   "eventList":[
     {"$GMEvent":"v1","%Name":"","collisionObjectId":null,"eventNum":0,"eventType":0,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
     {"$GMEvent":"v1","%Name":"","collisionObjectId":null,"eventNum":0,"eventType":3,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
+    {"$GMEvent":"v1","%Name":"","collisionObjectId":null,"eventNum":0,"eventType":8,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
   ],
   "managed":true,
-  "name":"objEggShell",
+  "name":"objParasol",
   "overriddenProperties":[],
   "parent":{
-    "name":"egg",
-    "path":"folders/Objects/egg.yy",
+    "name":"Objects",
+    "path":"folders/Objects.yy",
   },
   "parentObjectId":null,
   "persistent":false,
@@ -31,8 +32,8 @@
   "resourceVersion":"2.0",
   "solid":false,
   "spriteId":{
-    "name":"sprEggShell",
-    "path":"sprites/sprEggShell/sprEggShell.yy",
+    "name":"sprParasol",
+    "path":"sprites/sprParasol/sprParasol.yy",
   },
   "spriteMaskId":null,
   "visible":true,

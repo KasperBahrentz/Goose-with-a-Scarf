@@ -13,3 +13,5 @@ temporary_eggs = [];
 window_set_fullscreen(true);
 
 draw_set_font(fnt_16_bit);
+
+audio_stop_all(); // only for debugging
