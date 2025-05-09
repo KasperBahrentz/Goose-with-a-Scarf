@@ -112,7 +112,7 @@ function move(){
 		
 		was_on_ground_timer = was_on_ground_timer_max;
 	} 
-	else if (vspeed != 0) and (_ceiling_hit){ // Stop at ceiling
+	else if (_ceiling_hit){ // Stop at ceiling
 		map_y = tilemap_get_cell_y_at_pixel(objGame.collision_tilemap, x, y-8*pixel_size) + 1;
 		jump_timer = max(jump_timer, current_max_jump_timer/2 + current_max_jump_timer/4);
 		vspeed = max(vspeed - jump_height * (1 - jump_timer/current_max_jump_timer), 0);
