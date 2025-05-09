@@ -28,11 +28,11 @@ function open(){
 		objGooseBody.parasol = noone;
 	}
 	else {	
-		if (objGooseBody.glide_timer <= 0){
-			image_index = objGooseBody.image_xscale == 1 ? sprite_state.CLOSED_RIGHT: sprite_state.CLOSED_LEFT;
+		if (keyboard_check(vk_space)){
+			image_index = objGooseBody.image_xscale == 1 ? sprite_state.OPEN_RIGHT: sprite_state.OPEN_LEFT;
 		}
 		else {
-			image_index = objGooseBody.image_xscale == 1 ? sprite_state.OPEN_RIGHT: sprite_state.OPEN_LEFT;
+			image_index = objGooseBody.image_xscale == 1 ? sprite_state.CLOSED_RIGHT: sprite_state.CLOSED_LEFT;
 		}
 	}
 }

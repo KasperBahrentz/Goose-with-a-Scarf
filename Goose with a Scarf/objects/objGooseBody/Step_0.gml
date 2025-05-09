@@ -191,7 +191,7 @@ function move(){
 		}
 		else {
 			sprite_index = spr_body_idle;
-			if (keyboard_check_released(vk_space)){
+			if (keyboard_check_released(vk_space) && parasol == noone){
 				glide_timer = 0;	
 			}
 		}

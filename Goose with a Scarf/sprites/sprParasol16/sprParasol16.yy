@@ -3,7 +3,7 @@
   "%Name":"sprParasol16",
   "bboxMode":0,
   "bbox_bottom":27,
-  "bbox_left":7,
+  "bbox_left":6,
   "bbox_right":25,
   "bbox_top":6,
   "collisionKind":1,
