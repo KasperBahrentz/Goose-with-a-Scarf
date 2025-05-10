@@ -1,7 +1,7 @@
 /// @description Insert description here
 // You can write your code in this editor
 
-if (sprite_index == spr_body_crouch){
+if (sprite_index == spr_body_crouch || sprite_index == spr_body_die){
 	draw_self();
 }
 else {
@@ -16,11 +16,6 @@ else {
 }
 
 draw_set_font(fnt_16_bit);
-
-//if (sprite_index == spr_body_glide){
-//	draw_sprite(sprParasol, 0, x, y-8*pixel_size);
-//}
-
 
 //draw_set_color(c_red);
 //draw_rectangle(bbox_left, bbox_top - 10*pixel_size, bbox_right, bbox_bottom + 4*pixel_size, false);

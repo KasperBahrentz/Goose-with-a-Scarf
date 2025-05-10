@@ -8,7 +8,7 @@ instance_create_layer(x, y, layer, objGooseHead);
 
 enum player_state{
 	MOVE,
-	PAUSE	
+	DIE,	
 }
 
 parasol = noone;
@@ -52,8 +52,10 @@ state = player_state.MOVE;
 
 spr_body_idle = sprGooseBodyIdle;
 spr_body_run = sprGooseBodyRun;
-spr_body_crouch = sprGooseCrouch;
 spr_body_glide = sprGooseBodyGlide;
+
+spr_body_crouch = sprGooseCrouch;
+spr_body_die = sprGooseDie;
 
 spr_head_idle = sprGooseHeadIdle;
 spr_head_honk = sprGooseHeadHonk;

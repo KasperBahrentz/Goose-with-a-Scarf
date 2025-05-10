@@ -24,7 +24,11 @@ function follow(){
 	x = lerp(x, objGooseBody.x, _lerp_amount);
 	y = lerp(y, objGooseBody.y-16*pixel_size, _lerp_amount);
 		
-	if (objGooseBody.vspeed == 0){
+	if (objGooseBody.state == player_state.DIE){
+		instance_destroy();	
+	}
+		
+	if (objGooseBody.vspeed == 0 && objGooseBody.state == player_state.MOVE){
 		state = fruit_state.COLLECT;
 		audio_play_sound(sndFruit2, 15, false);
 		image_speed = img_speed;

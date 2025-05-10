@@ -3,15 +3,24 @@
 
 switch (state){
 	case player_state.MOVE:		move(); break;
-	case player_state.PAUSE:	break;	
+	case player_state.DIE:		die();	break;	
+}
+
+function die(){
+	if (alarm[2] <= 0){
+		audio_sound_pitch(sndHonk, 1.3);
+		audio_play_sound(sndHonk,10, false);
+		alarm[2] = 60;
+		hspeed = 0;
+		vspeed = 0;
+		sprite_index = spr_body_die;
+		instance_create_layer(x, y, "instances", objDarkCircle);
+	}
 }
 
 function move(){
-		
 	if (y > room_height){
-		audio_sound_pitch(sndHonk, 1.3);
-		audio_play_sound(sndHonk,10, false);
-		room_restart();
+		state = player_state.DIE;
 	}
 	
 	vspeed = grav;

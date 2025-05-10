@@ -5,9 +5,6 @@ switch(state){
 	case gui_state.MOVE_OUT:	move_out();	break;
 }
 
-// y is fixed relative to top of GUI
-y = 32 * pixel_size;
-
 function move_in(){
 	var _target_x = display_get_gui_width() - 24 * pixel_size;
 	x = lerp(x, _target_x, 0.1);

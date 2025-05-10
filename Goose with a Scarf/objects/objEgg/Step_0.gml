@@ -16,8 +16,12 @@ function idle(){
 	}
 }
 
-
 function move(){
+	if (objGooseBody.state == player_state.DIE){
+		instance_destroy();	
+	}
+
+
 	index = 1 + array_find_index(objGooseBody.egg_queue, function(_element, _index){
 	    return (_element == egg_id);
 	});
