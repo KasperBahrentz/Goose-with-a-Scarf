@@ -18,8 +18,8 @@
   "resourceType":"GMTileSet",
   "resourceVersion":"2.0",
   "spriteId":{
-    "name":"sprWaterTiles",
-    "path":"sprites/sprWaterTiles/sprWaterTiles.yy",
+    "name":"sprWaterTilesSpring",
+    "path":"sprites/sprWaterTilesSpring/sprWaterTilesSpring.yy",
   },
   "spriteNoExport":false,
   "textureGroupId":{
