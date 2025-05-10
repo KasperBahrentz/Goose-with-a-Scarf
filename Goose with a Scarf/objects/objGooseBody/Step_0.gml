@@ -7,6 +7,13 @@ switch (state){
 }
 
 function move(){
+		
+	if (y > room_height){
+		audio_sound_pitch(sndHonk, 1.3);
+		audio_play_sound(sndHonk,10, false);
+		room_restart();
+	}
+	
 	vspeed = grav;
 	
 	// Screen shake test

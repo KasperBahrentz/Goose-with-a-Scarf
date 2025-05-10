@@ -1,18 +1,16 @@
-/// @description Insert description here
-// You can write your code in this editor
-
+// draw_gui event
 switch(state){
 	case gui_state.MOVE_IN:		move_in();	break;
 	case gui_state.STAY:		stay();		break;
 	case gui_state.MOVE_OUT:	move_out();	break;
 }
 
-y = camera_get_view_y(cam) + 16 * pixel_size;
+// y is fixed relative to top of GUI
+y = 32 * pixel_size;
 
 function move_in(){
-	var _target_x = camera_get_view_x(cam) + camera_get_view_width(cam) - 24 * pixel_size;
-	
-	x = lerp(x, _target_x, 0.1);	
+	var _target_x = display_get_gui_width() - 24 * pixel_size;
+	x = lerp(x, _target_x, 0.1);
 	
 	if (abs(x - _target_x) <= 0.1){
 		alarm[0] = 120;	
@@ -21,7 +19,7 @@ function move_in(){
 }
 
 function stay(){
-	x = camera_get_view_x(cam) + camera_get_view_width(cam) - 24 * pixel_size;
+	x = display_get_gui_width() - 24 * pixel_size;
 }
 
 function move_out(){

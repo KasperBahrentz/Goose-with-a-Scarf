@@ -16,7 +16,7 @@ img_index = fruit.image_number-1;
 cam = objCam.cam;
 
 start_x = camera_get_view_x(cam) + camera_get_view_width(cam) + 32 * pixel_size;
-y = camera_get_view_y(cam) + 16 * pixel_size;
+y = 32 * pixel_size;
 
 x = start_x;
 
