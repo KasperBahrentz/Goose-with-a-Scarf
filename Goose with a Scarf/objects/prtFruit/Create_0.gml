@@ -7,15 +7,13 @@ enum fruit_state {
 	COLLECT
 }
 
-image_index++;
-
 fruit_index = fruit_counter.PEAR;
 
 switch (sprite_index){
-	case sprPear:		fruit = fruit_counter.PEAR;			break;	
-	case sprStrawberry:	fruit = fruit_counter.STRAWBERRY;	break;
-	case sprGrape:		fruit = fruit_counter.GRAPE;		break;
-	case sprOrange:		fruit = fruit_counter.ORANGE;		break;
+	case sprPear:		fruit_index = fruit_counter.PEAR;			break;	
+	case sprStrawberry:	fruit_index = fruit_counter.STRAWBERRY;	break;
+	case sprGrape:		fruit_index = fruit_counter.GRAPE;		break;
+	case sprOrange:		fruit_index = fruit_counter.ORANGE;		break;
 }
 
 state = fruit_state.ITEM;
