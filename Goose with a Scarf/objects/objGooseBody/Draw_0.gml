@@ -15,6 +15,8 @@ else {
 	}
 }
 
+draw_set_font(fnt_16_bit);
+
 //if (sprite_index == spr_body_glide){
 //	draw_sprite(sprParasol, 0, x, y-8*pixel_size);
 //}
@@ -24,6 +26,6 @@ else {
 //draw_rectangle(bbox_left, bbox_top - 10*pixel_size, bbox_right, bbox_bottom + 4*pixel_size, false);
 //draw_set_color(c_white);
 
-//draw_text(x, y, vspeed>grav/2);
+//draw_text(x, y, objGame.fruit_collected);
 //draw_text(x, y+64, debug_string);
 //if (array_length(follow_queue) >= 0) draw_text(x, y + 32 * pixel_size,  follow_queue[0]);
