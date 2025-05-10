@@ -7,10 +7,8 @@ switch(state){
 }
 
 function closed(){
-	y = ystart + sin(timer)*pixel_size;
+	event_inherited();
 
-	timer += timer_speed;
-	
 	if (place_meeting(x, y, objGooseBody) and objGooseBody.parasol == noone){
 		objGooseBody.parasol = self;
 		state = parasol_state.OPEN;	
