@@ -155,6 +155,8 @@
     {"id":{"name":"sprCrateStrawberry16","path":"sprites/sprCrateStrawberry16/sprCrateStrawberry16.yy",},},
     {"id":{"name":"sprDarkCircle","path":"sprites/sprDarkCircle/sprDarkCircle.yy",},},
     {"id":{"name":"sprDarkCircle16","path":"sprites/sprDarkCircle16/sprDarkCircle16.yy",},},
+    {"id":{"name":"sprDarkCircle16Big","path":"sprites/sprDarkCircle16Big/sprDarkCircle16Big.yy",},},
+    {"id":{"name":"sprDarkCircleBig","path":"sprites/sprDarkCircleBig/sprDarkCircleBig.yy",},},
     {"id":{"name":"sprDust","path":"sprites/sprDust/sprDust.yy",},},
     {"id":{"name":"sprDust16","path":"sprites/sprDust16/sprDust16.yy",},},
     {"id":{"name":"sprEgg","path":"sprites/sprEgg/sprEgg.yy",},},

@@ -32,8 +32,8 @@
   "resourceVersion":"2.0",
   "solid":false,
   "spriteId":{
-    "name":"sprDarkCircle",
-    "path":"sprites/sprDarkCircle/sprDarkCircle.yy",
+    "name":"sprDarkCircleBig",
+    "path":"sprites/sprDarkCircleBig/sprDarkCircleBig.yy",
   },
   "spriteMaskId":null,
   "visible":true,
