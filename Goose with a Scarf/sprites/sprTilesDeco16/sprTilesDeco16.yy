@@ -3,7 +3,7 @@
   "%Name":"sprTilesDeco16",
   "bboxMode":0,
   "bbox_bottom":239,
-  "bbox_left":18,
+  "bbox_left":16,
   "bbox_right":479,
   "bbox_top":7,
   "collisionKind":1,
