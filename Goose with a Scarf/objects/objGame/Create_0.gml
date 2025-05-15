@@ -8,6 +8,9 @@ enum fruit_counter {
 	ORANGE	
 }
 
+display_set_gui_maximise();
+display_set_gui_size(3584*0.75, 1904*0.75);
+
 #macro pixel_size 8
 #macro tile_size 128
 

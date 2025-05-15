@@ -7,3 +7,5 @@ image_yscale = choose(1, -1);
 initial_speed = random_range(16, 32);
 speed = initial_speed
 direction = random_range(0, 360);
+
+set_direction(spawn_direction);

@@ -7,6 +7,15 @@
 /// @param  {real}  _fade       How quickly the screenshake effect will fade out
 /// @description    Set the screenshake object variables.
 
+function set_direction(_direction){
+	switch(_direction){	
+		case "up":		direction = random_range(35, 145);	break;
+		case "left":	direction = random_range(145, 225);	break;
+		case "down":	direction = random_range(225, 315);	break;
+		case "right":	direction = random_range(315, 360+35);	break;
+	}
+}
+
 function screenshake(_time, _magnitude, _fade){
    with (objCam) {
       shake = true;

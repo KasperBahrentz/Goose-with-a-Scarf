@@ -8,8 +8,6 @@
   "name":"objCrateBig",
   "overriddenProperties":[
     {"$GMOverriddenProperty":"v1","%Name":"","name":"","objectId":{"name":"prtCrate","path":"objects/prtCrate/prtCrate.yy",},"propertyId":{"name":"hp","path":"objects/prtCrate/prtCrate.yy",},"resourceType":"GMOverriddenProperty","resourceVersion":"2.0","value":"3",},
-    {"$GMOverriddenProperty":"v1","%Name":"","name":"","objectId":{"name":"prtCrate","path":"objects/prtCrate/prtCrate.yy",},"propertyId":{"name":"frag_min","path":"objects/prtCrate/prtCrate.yy",},"resourceType":"GMOverriddenProperty","resourceVersion":"2.0","value":"7",},
-    {"$GMOverriddenProperty":"v1","%Name":"","name":"","objectId":{"name":"prtCrate","path":"objects/prtCrate/prtCrate.yy",},"propertyId":{"name":"frag_max","path":"objects/prtCrate/prtCrate.yy",},"resourceType":"GMOverriddenProperty","resourceVersion":"2.0","value":"10",},
   ],
   "parent":{
     "name":"crates",
