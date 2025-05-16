@@ -1,12 +1,13 @@
 {
   "$GMObject":"",
-  "%Name":"objDarkCircle",
+  "%Name":"objGoal",
   "eventList":[
     {"$GMEvent":"v1","%Name":"","collisionObjectId":null,"eventNum":0,"eventType":0,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
-    {"$GMEvent":"v1","%Name":"","collisionObjectId":null,"eventNum":0,"eventType":3,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
+    {"$GMEvent":"v1","%Name":"","collisionObjectId":{"name":"objGooseBody","path":"objects/objGooseBody/objGooseBody.yy",},"eventNum":0,"eventType":4,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
+    {"$GMEvent":"v1","%Name":"","collisionObjectId":null,"eventNum":0,"eventType":2,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
   ],
   "managed":true,
-  "name":"objDarkCircle",
+  "name":"objGoal",
   "overriddenProperties":[],
   "parent":{
     "name":"Objects",
@@ -26,15 +27,13 @@
   "physicsShape":1,
   "physicsShapePoints":[],
   "physicsStartAwake":true,
-  "properties":[
-    {"$GMObjectProperty":"v1","%Name":"alpha_speed","filters":[],"listItems":[],"multiselect":false,"name":"alpha_speed","rangeEnabled":false,"rangeMax":10.0,"rangeMin":0.0,"resourceType":"GMObjectProperty","resourceVersion":"2.0","value":"0.08","varType":0,},
-  ],
+  "properties":[],
   "resourceType":"GMObject",
   "resourceVersion":"2.0",
   "solid":false,
   "spriteId":{
-    "name":"sprDarkCircleBig",
-    "path":"sprites/sprDarkCircleBig/sprDarkCircleBig.yy",
+    "name":"sprEggGoalBottom",
+    "path":"sprites/sprEggGoalBottom/sprEggGoalBottom.yy",
   },
   "spriteMaskId":null,
   "visible":true,

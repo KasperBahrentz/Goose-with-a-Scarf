@@ -1,16 +1,18 @@
 /// @description Insert description here
 // You can write your code in this editor
 
-if (sprite_index == spr_body_crouch || sprite_index == spr_body_die){
-	draw_self();
-}
-else {
-	draw_sprite_custom(objGooseHead.sprite_index);
-	draw_self();
-	draw_sprite_custom(objGooseFeet.sprite_index);
-	if (parasol != noone){
-		with (parasol){
-			draw_sprite_ext(sprite_index, image_index, other.x, other.y-7*pixel_size, image_xscale, image_yscale, 0, c_white, 1);
+if (state != player_state.GONE){
+	if (sprite_index == spr_body_crouch || sprite_index == spr_body_die){
+		draw_self();
+	}
+	else {
+		draw_sprite_custom(objGooseHead.sprite_index);
+		draw_self();
+		draw_sprite_custom(objGooseFeet.sprite_index);
+		if (parasol != noone){
+			with (parasol){
+				draw_sprite_ext(sprite_index, image_index, other.x, other.y-7*pixel_size, image_xscale, image_yscale, 0, c_white, 1);
+			}
 		}
 	}
 }

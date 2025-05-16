@@ -4,6 +4,12 @@
 switch (state){
 	case player_state.MOVE:		move(); break;
 	case player_state.DIE:		die();	break;	
+	case player_state.GONE:		gone();	break;
+}
+
+function gone(){
+	hspeed = 0;
+	vspeed = 0;
 }
 
 function die(){
@@ -248,15 +254,6 @@ function spawn_dust(){
 	}
 	repeat(choose(1, 1, 2)){ // Right
 		instance_create_layer(x + random_range(-1, 7), y + random_range(0, 2), "instances", objDust, {dust_id: "right"});	
-	}
-}
-
-function honk(){
-	audio_sound_pitch(sndHonk, random_range(0.9, 1.1));
-	audio_play_sound(sndHonk, 10, false);
-	objGooseHead.sprite_index = spr_head_honk;
-	if (sprite_index == spr_body_crouch){
-		image_index = 1;
 	}
 }
 
