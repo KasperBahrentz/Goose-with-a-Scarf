@@ -9,6 +9,7 @@ instance_create_layer(x, y, layer, objGooseHead);
 enum player_state{
 	MOVE,
 	DIE,	
+	GONE,
 }
 
 parasol = noone;
@@ -91,4 +92,14 @@ spr_bbox_bottom = sprite_get_bbox_bottom(sprite_index) - sprite_get_yoffset(spri
 map_x = 0;
 map_y = 0;
 
-has_jumped = false;
+function honk(){
+	audio_sound_pitch(sndHonk, random_range(0.9, 1.1));
+	audio_play_sound(sndHonk, 10, false);
+	objGooseHead.sprite_index = spr_head_honk;
+	if (sprite_index == spr_body_crouch){
+		image_index = 1;
+	}
+}
+
+// Honk at spawn
+honk();
