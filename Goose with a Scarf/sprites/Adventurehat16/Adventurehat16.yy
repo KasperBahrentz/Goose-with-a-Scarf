@@ -2,7 +2,7 @@
   "$GMSprite":"",
   "%Name":"Adventurehat16",
   "bboxMode":0,
-  "bbox_bottom":8,
+  "bbox_bottom":6,
   "bbox_left":5,
   "bbox_right":11,
   "bbox_top":4,
@@ -20,7 +20,6 @@
   "HTile":false,
   "layers":[
     {"$GMImageLayer":"","%Name":"fc7e2292-fdc3-4f31-ac19-a293aadfc575","blendMode":0,"displayName":"default","isLocked":false,"name":"fc7e2292-fdc3-4f31-ac19-a293aadfc575","opacity":100.0,"resourceType":"GMImageLayer","resourceVersion":"2.0","visible":true,},
-    {"$GMImageLayer":"","%Name":"4d0e5dca-6a12-4444-965c-5e38c9541929","blendMode":0,"displayName":"Layer 1","isLocked":false,"name":"4d0e5dca-6a12-4444-965c-5e38c9541929","opacity":100.0,"resourceType":"GMImageLayer","resourceVersion":"2.0","visible":true,},
   ],
   "name":"Adventurehat16",
   "nineSlice":null,
