@@ -29,8 +29,6 @@ function move(){
 		state = player_state.DIE;
 	}
 	
-	vspeed = grav;
-	
 	// Screen shake test
 	if (keyboard_check_pressed(ord("M"))){
 		screenshake(15, 3, 0.3);	
@@ -99,16 +97,19 @@ function move(){
 		hspeed = h_spd * move_dir;	
 	}
 	
+	jump();
+	
 	// Move vertically
 	var _landed_on_semi_solid = false;
 		
 	// Semi-solid platforms
-	if (vspeed >= 0) and (place_meeting(x , y + 4*pixel_size, objCollisionSemiSolid)){
+	if (vspeed > 0) and (place_meeting(x , y + 4*pixel_size, objCollisionSemiSolid)){
 		_landed_on_semi_solid = true;
 	}
 	
-	var _ceiling_hit =  check_collision(0, -10*pixel_size);
-	if (_landed_on_semi_solid) or (check_collision(0, 4*pixel_size)){ // Stop on ground
+	var _ceiling_hit = check_collision(0, -10*pixel_size);
+	
+	if (_landed_on_semi_solid) or (vspeed > 0 and check_collision(0, 4*pixel_size)){ // Stop on ground
 		var _tilemap = objGame.collision_tilemap;
 		if (_landed_on_semi_solid) _tilemap = layer_tilemap_get_id("back");
 		map_y = tilemap_get_cell_y_at_pixel(_tilemap, x, y + 4*pixel_size);
@@ -180,6 +181,25 @@ function move(){
 			}
 		}
 		
+		// Flower platforms
+		if (instance_exists(objFlowerPlatform) or instance_exists(objFlowerBud)){
+			_sound = sndGrass1;
+			audio_sound_pitch(_sound, random_range(0.9, 1.1));
+			audio_play_sound(_sound, 1.8, false);
+			if (active_flower = flower_color.RED){
+				active_flower = flower_color.BLUE;	
+				with(objFlowerPlatform){
+					if (color == flower_color.RED) state = flower_state.BUD;
+				}
+			}
+			else {
+				active_flower = flower_color.RED;	
+				with(objFlowerPlatform){
+					if (color == flower_color.BLUE) state = flower_state.BUD;
+				}
+			}
+		}
+		
 		// Play woosh sound
 		audio_sound_pitch(sndWoosh, random_range(1, 1.2));
 		audio_play_sound(sndWoosh, 5, false);
@@ -188,8 +208,6 @@ function move(){
 		var _number = random_range(0, 1);
 		if (_number >= 0.8) honk();
 	}
-	
-	jump();
 	
 	// If in air
 	if (vspeed != 0){
@@ -218,10 +236,6 @@ function move(){
 			}
 		}
 	}
-	else if (glide_timer > 0){ // If we landed but still have time on the timer
-		glide_timer = 0;
-		sprite_index = spr_body_idle;		
-	}
 
 	if (sprite_index != spr_body_crouch){
 		if (hspeed != 0) and (vspeed == 0){ // Change to running sprite
@@ -239,6 +253,7 @@ function move(){
 }
 
 function jump(){
+	vspeed = grav;
 	if (jump_timer < current_max_jump_timer){
 		vspeed -= jump_height * (1 - jump_timer/current_max_jump_timer);
 		jump_timer++;	

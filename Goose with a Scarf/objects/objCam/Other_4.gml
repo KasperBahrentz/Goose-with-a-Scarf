@@ -12,13 +12,13 @@ repeat(random_range(20, 25)) instance_create_layer(random_range(0, room_width), 
 
 
 layer_x("mountains_front", random_range(-2*tile_size, 8*tile_size));
-layer_y("mountains_front", layer_get_y("mountains_front") + random_range(-4*tile_size, 2*tile_size));
+layer_y("mountains_front", layer_get_y("mountains_front") + random_range(-3*tile_size, 2*tile_size));
 
 layer_x("mountains_middle", random_range(-2*tile_size, 8*tile_size));
-layer_y("mountains_middle", layer_get_y("mountains_front") + random_range(-3*tile_size, 2*tile_size));
+layer_y("mountains_middle", layer_get_y("mountains_front") + random_range(-2*tile_size, 2*tile_size));
 
 layer_x("mountains_back", random_range(-2*tile_size, 8*tile_size));
-layer_y("mountains_back", layer_get_y("mountains_front") + random_range(-2*tile_size, 2*tile_size));
+layer_y("mountains_back", layer_get_y("mountains_front") + random_range(-1*tile_size, 2*tile_size));
 
 mountains_front_x = layer_get_x("mountains_front");
 mountains_front_y = layer_get_y("mountains_front");

@@ -12,6 +12,13 @@ enum player_state{
 	GONE,
 }
 
+enum flower_color {
+	RED,
+	BLUE
+}
+
+active_flower = flower_color.RED;
+
 parasol = noone;
 
 grav = 18;
@@ -35,7 +42,7 @@ audio_play_sound(sndRunningWater, 3, true);
 follow_queue = [];
 egg_queue = []
 
-was_in_air = true;
+was_in_air = false;
 
 egg_count = 3;
 
@@ -44,7 +51,7 @@ for (var i = 1; i <= egg_count; i++){
 }
 
 was_on_ground_timer_max = 6;
-was_on_ground_timer = was_on_ground_timer_max;
+was_on_ground_timer = 0;
 
 sound_timer_max = 60;
 sound_timer = 0;
@@ -76,7 +83,7 @@ jump_height = 44;
 v_deceleration = 0.5;
 max_jump_timer = 20;
 egg_drop_max_jump_timer = 30;
-jump_timer = max_jump_timer;
+jump_timer = 0;
 
 current_max_jump_timer = 0;
 
