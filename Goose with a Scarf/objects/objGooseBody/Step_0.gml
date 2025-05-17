@@ -183,9 +183,14 @@ function move(){
 		
 		// Flower platforms
 		if (instance_exists(objFlowerPlatform) or instance_exists(objFlowerBud)){
-			_sound = sndGrass1;
-			audio_sound_pitch(_sound, random_range(0.9, 1.1));
-			audio_play_sound(_sound, 1.8, false);
+			var _nearest_flower = instance_nearest(x, y, objFlowerPlatform);
+			if (point_distance(x, y, _nearest_flower.x, _nearest_flower.y) <= 14*tile_size){
+				_sound = sndPoof;
+				image_blend = c_red;
+				audio_sound_pitch(_sound, random_range(0.9, 1.1));
+				audio_play_sound(_sound, 1.8, false);
+			}
+			else image_blend = c_white;
 			if (active_flower = flower_color.RED){
 				active_flower = flower_color.BLUE;	
 				with(objFlowerPlatform){

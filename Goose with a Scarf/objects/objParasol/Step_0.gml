@@ -11,6 +11,7 @@ function closed(){
 
 	if (place_meeting(x, y, objGooseBody) and objGooseBody.parasol == noone){
 		objGooseBody.parasol = self;
+		objGooseBody.glide_timer = objGooseBody.glide_timer_max;
 		state = parasol_state.OPEN;	
 		image_index = objGooseBody.image_xscale == 1 ? sprite_state.OPEN_RIGHT: sprite_state.OPEN_LEFT;
 	}

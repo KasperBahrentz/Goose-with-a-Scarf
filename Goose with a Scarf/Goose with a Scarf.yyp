@@ -125,6 +125,7 @@
     {"id":{"name":"sndGrass7","path":"sounds/sndGrass7/sndGrass7.yy",},},
     {"id":{"name":"sndGrass8","path":"sounds/sndGrass8/sndGrass8.yy",},},
     {"id":{"name":"sndHonk","path":"sounds/sndHonk/sndHonk.yy",},},
+    {"id":{"name":"sndPoof","path":"sounds/sndPoof/sndPoof.yy",},},
     {"id":{"name":"sndPop","path":"sounds/sndPop/sndPop.yy",},},
     {"id":{"name":"sndPop2","path":"sounds/sndPop2/sndPop2.yy",},},
     {"id":{"name":"sndRunningWater","path":"sounds/sndRunningWater/sndRunningWater.yy",},},
