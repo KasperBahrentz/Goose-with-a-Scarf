@@ -2,16 +2,16 @@
   "$GMTileSet":"v1",
   "%Name":"tlsGroundSpring",
   "autoTileSets":[
-    {"$GMAutoTileSet":"","%Name":"spring_fill","closed_edge":false,"name":"spring_fill","resourceType":"GMAutoTileSet","resourceVersion":"2.0","tiles":[41,42,43,44,45,46,47,48,72,73,74,75,76,77,78,79,],},
-    {"$GMAutoTileSet":"","%Name":"spring","closed_edge":false,"name":"spring","resourceType":"GMAutoTileSet","resourceVersion":"2.0","tiles":[
+    {"$GMAutoTileSet":"","%Name":"fill","closed_edge":false,"name":"fill","resourceType":"GMAutoTileSet","resourceVersion":"2.0","tiles":[41,42,43,44,45,46,47,48,72,73,74,75,76,77,78,79,],},
+    {"$GMAutoTileSet":"","%Name":"ground","closed_edge":false,"name":"ground","resourceType":"GMAutoTileSet","resourceVersion":"2.0","tiles":[
         50,51,52,53,54,55,56,57,81,82,83,84,85,86,87,88,112,113,114,115,116,117,118,119,143,144,145,146,147,
         148,149,150,174,175,176,177,178,179,180,181,205,206,207,208,209,210,211,
       ],},
-    {"$GMAutoTileSet":"","%Name":"spring_back","closed_edge":false,"name":"spring_back","resourceType":"GMAutoTileSet","resourceVersion":"2.0","tiles":[
+    {"$GMAutoTileSet":"","%Name":"back","closed_edge":false,"name":"back","resourceType":"GMAutoTileSet","resourceVersion":"2.0","tiles":[
         267,268,269,270,271,272,273,274,298,299,300,301,302,303,304,305,329,330,331,332,333,334,335,336,360,
         361,362,363,364,365,366,367,391,392,393,394,395,396,397,398,422,423,424,425,426,427,428,
       ],},
-    {"$GMAutoTileSet":"","%Name":"spring_window","closed_edge":false,"name":"spring_window","resourceType":"GMAutoTileSet","resourceVersion":"2.0","tiles":[
+    {"$GMAutoTileSet":"","%Name":"window","closed_edge":false,"name":"window","resourceType":"GMAutoTileSet","resourceVersion":"2.0","tiles":[
         249,250,251,252,253,254,255,256,280,281,282,283,284,285,286,287,311,312,313,314,315,316,317,318,342,
         343,344,345,346,347,348,349,373,374,375,376,377,378,379,380,404,405,406,407,408,409,410,
       ],},

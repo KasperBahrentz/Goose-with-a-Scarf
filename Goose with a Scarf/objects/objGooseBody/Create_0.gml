@@ -3,6 +3,10 @@
 
 depth -= 5;
 
+if (!instance_exists(objGame)){
+	instance_create_layer(x, y, "instances", objGame);	
+}
+
 instance_create_layer(x, y, layer, objGooseFeet);
 instance_create_layer(x, y, layer, objGooseHead);
 
@@ -43,8 +47,6 @@ follow_queue = [];
 egg_queue = []
 
 was_in_air = false;
-
-egg_count = 3;
 
 for (var i = 1; i <= egg_count; i++){
 	instance_create_layer(objGooseBody.x, objGooseBody.y, "instances", objEgg, {state : egg_state.MOVE});

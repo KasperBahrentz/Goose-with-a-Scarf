@@ -110,6 +110,7 @@ function move(){
 	var _ceiling_hit = check_collision(0, -10*pixel_size);
 	
 	if (_landed_on_semi_solid) or (vspeed > 0 and check_collision(0, 4*pixel_size)){ // Stop on ground
+		glide_timer = 0;
 		var _tilemap = objGame.collision_tilemap;
 		if (_landed_on_semi_solid) _tilemap = layer_tilemap_get_id("back");
 		map_y = tilemap_get_cell_y_at_pixel(_tilemap, x, y + 4*pixel_size);
