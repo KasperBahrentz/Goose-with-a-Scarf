@@ -8,7 +8,7 @@ enum flower_state {
 
 state = flower_state.PLATFORM;
 
-depth += 50;
+depth = objGooseBody.depth + 10;
 
 // Inherit the parent event
 event_inherited();
