@@ -40,10 +40,10 @@
         ],"TileDataFormat":1,},"tilesetId":{"name":"tlsGroundFallWinter16","path":"tilesets/tlsGroundFallWinter16/tlsGroundFallWinter16.yy",},"userdefinedDepth":false,"visible":true,"x":0,"y":0,},
     {"$GMRTileLayer":"","%Name":"deco_front","depth":600,"effectEnabled":true,"effectType":null,"gridX":32,"gridY":32,"hierarchyFrozen":false,"inheritLayerDepth":false,"inheritLayerSettings":false,"inheritSubLayers":true,"inheritVisibility":true,"layers":[],"name":"deco_front","properties":[],"resourceType":"GMRTileLayer","resourceVersion":"2.0","tiles":{"SerialiseHeight":17,"SerialiseWidth":30,"TileCompressedData":[
           -108,-2147483648,2,244,246,-28,-2147483648,2,244,246,-28,-2147483648,2,244,246,-28,-2147483648,2,270,
-          272,-8,-2147483648,-2,0,-26,-2147483648,-4,0,-24,-2147483648,-3,0,3,351,-2147483648,350,-21,-2147483648,
-          3,0,-2147483648,-2147483648,-3,0,3,382,-2147483648,381,-19,-2147483648,-8,0,3,413,231,412,-16,-2147483648,
-          5,268435770,268435769,-2147483648,0,-2147483648,-5,0,4,-2147483648,232,232,231,-22,-2147483648,-4,0,
-          -27,-2147483648,2,0,290,-57,-2147483648,2,315,316,-36,-2147483648,
+          272,-8,-2147483648,-2,0,-26,-2147483648,-4,0,-24,-2147483648,6,0,201,199,200,-2147483648,350,-20,-2147483648,
+          10,0,234,-2147483648,-2147483648,0,232,230,231,0,381,-19,-2147483648,-2,0,9,203,204,0,0,264,0,264,0,
+          412,-16,-2147483648,5,268435770,268435769,-2147483648,0,-2147483648,-5,0,4,-2147483648,232,0,231,-22,
+          -2147483648,-4,0,-27,-2147483648,2,263,0,-57,-2147483648,2,315,316,-36,-2147483648,
         ],"TileDataFormat":1,},"tilesetId":{"name":"tlsDeco16","path":"tilesets/tlsDeco16/tlsDeco16.yy",},"userdefinedDepth":false,"visible":true,"x":0,"y":0,},
     {"$GMRTileLayer":"","%Name":"ground","depth":700,"effectEnabled":true,"effectType":null,"gridX":32,"gridY":32,"hierarchyFrozen":false,"inheritLayerDepth":false,"inheritLayerSettings":false,"inheritSubLayers":true,"inheritVisibility":true,"layers":[],"name":"ground","properties":[],"resourceType":"GMRTileLayer","resourceVersion":"2.0","tiles":{"SerialiseHeight":17,"SerialiseWidth":30,"TileCompressedData":[
           -5,50,1,143,-21,0,-3,-2147483648,-5,50,1,143,-21,0,-3,-2147483648,-4,50,2,54,180,-21,0,-3,-2147483648,
