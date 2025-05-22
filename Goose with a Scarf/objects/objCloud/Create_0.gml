@@ -4,7 +4,6 @@
 var tilemap_id = layer_tilemap_get_id("ground");
 var tileset_id = tilemap_get_tileset(tilemap_id);
 var tileset_name = tileset_get_name(tileset_id);
-show_debug_message("Tileset: " + tileset_name);
 
 // Destroy cloud if too close to other clouds at spawn
 if (collision_circle(x, y, 32*pixel_size, objCloud, false, true)) instance_destroy();
