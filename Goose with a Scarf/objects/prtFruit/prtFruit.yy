@@ -10,8 +10,8 @@
   "name":"prtFruit",
   "overriddenProperties":[],
   "parent":{
-    "name":"Objects",
-    "path":"folders/Objects.yy",
+    "name":"fruit",
+    "path":"folders/Objects/fruit.yy",
   },
   "parentObjectId":{
     "name":"prtFly",

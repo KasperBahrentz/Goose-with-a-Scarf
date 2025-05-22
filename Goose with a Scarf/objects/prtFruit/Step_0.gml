@@ -9,7 +9,7 @@ switch(state){
 
 function item(){
 	event_inherited();		
-	if (place_meeting(x, y, objGooseBody)){
+	if (place_meeting(x, y, objGooseBody)) or (place_meeting(x, y, objEgg)){
 		audio_sound_pitch(sndBlub, random_range(0.8, 0.9));
 		audio_play_sound(sndBlub, 5, false); 
 		image_index++;

@@ -104,6 +104,8 @@
     {"id":{"name":"prtCrateBig","path":"objects/prtCrateBig/prtCrateBig.yy",},},
     {"id":{"name":"prtFly","path":"objects/prtFly/prtFly.yy",},},
     {"id":{"name":"prtFruit","path":"objects/prtFruit/prtFruit.yy",},},
+    {"id":{"name":"room_level_spring_1","path":"rooms/room_level_spring_1/room_level_spring_1.yy",},},
+    {"id":{"name":"room_level_spring_template","path":"rooms/room_level_spring_template/room_level_spring_template.yy",},},
     {"id":{"name":"room_level_test","path":"rooms/room_level_test/room_level_test.yy",},},
     {"id":{"name":"room_level_tutorial","path":"rooms/room_level_tutorial/room_level_tutorial.yy",},},
     {"id":{"name":"room_tile_test","path":"rooms/room_tile_test/room_tile_test.yy",},},
@@ -310,9 +312,11 @@
   "resourceType":"GMProject",
   "resourceVersion":"2.0",
   "RoomOrderNodes":[
+    {"roomId":{"name":"room_level_spring_1","path":"rooms/room_level_spring_1/room_level_spring_1.yy",},},
     {"roomId":{"name":"room_level_tutorial","path":"rooms/room_level_tutorial/room_level_tutorial.yy",},},
     {"roomId":{"name":"room_level_test","path":"rooms/room_level_test/room_level_test.yy",},},
     {"roomId":{"name":"room_tile_test","path":"rooms/room_tile_test/room_tile_test.yy",},},
+    {"roomId":{"name":"room_level_spring_template","path":"rooms/room_level_spring_template/room_level_spring_template.yy",},},
   ],
   "templateType":"game",
   "TextureGroups":[
