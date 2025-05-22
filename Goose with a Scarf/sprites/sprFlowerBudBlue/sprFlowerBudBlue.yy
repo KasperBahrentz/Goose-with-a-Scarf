@@ -12,19 +12,18 @@
   "edgeFiltering":false,
   "For3D":false,
   "frames":[
-    {"$GMSpriteFrame":"","%Name":"5955fdc7-4398-405d-8c4b-e4372b2751ea","name":"5955fdc7-4398-405d-8c4b-e4372b2751ea","resourceType":"GMSpriteFrame","resourceVersion":"2.0",},
+    {"$GMSpriteFrame":"","%Name":"1a70b144-cb68-413f-8be7-af3fef228b7f","name":"1a70b144-cb68-413f-8be7-af3fef228b7f","resourceType":"GMSpriteFrame","resourceVersion":"2.0",},
   ],
   "gridX":8,
   "gridY":8,
   "height":256,
   "HTile":false,
   "layers":[
-    {"$GMImageLayer":"","%Name":"3cc6a39e-0448-4c49-9cc8-cbe00d528659","blendMode":0,"displayName":"default","isLocked":false,"name":"3cc6a39e-0448-4c49-9cc8-cbe00d528659","opacity":100.0,"resourceType":"GMImageLayer","resourceVersion":"2.0","visible":true,},
-    {"$GMImageLayer":"","%Name":"6681f1fe-d9b0-409f-88d8-7c72fc347965","blendMode":0,"displayName":"Layer 1","isLocked":false,"name":"6681f1fe-d9b0-409f-88d8-7c72fc347965","opacity":100.0,"resourceType":"GMImageLayer","resourceVersion":"2.0","visible":false,},
+    {"$GMImageLayer":"","%Name":"815deed0-d4a9-4d6d-8a84-b9d272d779b8","blendMode":0,"displayName":"default","isLocked":false,"name":"815deed0-d4a9-4d6d-8a84-b9d272d779b8","opacity":100.0,"resourceType":"GMImageLayer","resourceVersion":"2.0","visible":true,},
   ],
   "name":"sprFlowerBudBlue",
   "nineSlice":null,
-  "origin":4,
+  "origin":9,
   "parent":{
     "name":"flower_platforms",
     "path":"folders/Sprites/flower_platforms.yy",
@@ -72,14 +71,14 @@
     "tracks":[
       {"$GMSpriteFramesTrack":"","builtinName":0,"events":[],"inheritsTrackColour":true,"interpolation":1,"isCreationTrack":false,"keyframes":{"$KeyframeStore<SpriteFrameKeyframe>":"","Keyframes":[
             {"$Keyframe<SpriteFrameKeyframe>":"","Channels":{
-                "0":{"$SpriteFrameKeyframe":"","Id":{"name":"5955fdc7-4398-405d-8c4b-e4372b2751ea","path":"sprites/sprFlowerBudBlue/sprFlowerBudBlue.yy",},"resourceType":"SpriteFrameKeyframe","resourceVersion":"2.0",},
-              },"Disabled":false,"id":"7a1b87b7-811c-4052-b4f5-b81a65cc56db","IsCreationKey":false,"Key":0.0,"Length":1.0,"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"2.0","Stretch":false,},
+                "0":{"$SpriteFrameKeyframe":"","Id":{"name":"1a70b144-cb68-413f-8be7-af3fef228b7f","path":"sprites/sprFlowerBudBlue/sprFlowerBudBlue.yy",},"resourceType":"SpriteFrameKeyframe","resourceVersion":"2.0",},
+              },"Disabled":false,"id":"61cbc5c1-b118-4cb6-92a2-4e6474829b05","IsCreationKey":false,"Key":0.0,"Length":1.0,"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"2.0","Stretch":false,},
           ],"resourceType":"KeyframeStore<SpriteFrameKeyframe>","resourceVersion":"2.0",},"modifiers":[],"name":"frames","resourceType":"GMSpriteFramesTrack","resourceVersion":"2.0","spriteId":null,"trackColour":0,"tracks":[],"traits":0,},
     ],
     "visibleRange":null,
     "volume":1.0,
     "xorigin":128,
-    "yorigin":128,
+    "yorigin":120,
   },
   "swatchColours":[
     4278190335,4294967295,4294439913,4293648840,4291673765,4289040760,4286407765,4284105015,4282129945,4284106260,
