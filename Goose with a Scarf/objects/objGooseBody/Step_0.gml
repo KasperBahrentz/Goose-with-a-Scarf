@@ -325,7 +325,6 @@ else water_timer++;
 
 function change_water_audio_level(_dist_to_water){
 	var _gain = min(max(0.6, 500/_dist_to_water), 1.2);
-	debug_string = _gain;
 	audio_sound_gain(sndRunningWater, _gain, 0);
 }
 
