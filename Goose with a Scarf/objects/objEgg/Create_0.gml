@@ -5,6 +5,8 @@ start_y = y;
 
 start_depth = depth;
 
+has_created_respawn = false;
+
 if (temporary){
 	depth += 1;
 	sprite_index = sprEggTemporary;

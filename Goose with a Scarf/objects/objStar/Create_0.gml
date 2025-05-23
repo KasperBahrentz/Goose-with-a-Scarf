@@ -8,4 +8,4 @@ else {
 	image_yscale = choose(-1, 1);
 }
 
-timer = irandom_range(0, 1000);
+timer = irandom_range(0, 360);
