@@ -44,8 +44,6 @@ debug_y = 0;
 water_timer_max = 30;
 water_timer = water_timer_max;
 
-// Play water sound
-audio_play_sound(sndRunningWater, 3, true);
 
 follow_queue = [];
 egg_queue = []
@@ -113,6 +111,12 @@ function honk(){
 		image_index = 1;
 	}
 }
+
+// Play water sound if water is in room
+if (layer_has_tiles("water_front") or (layer_has_tiles("water_back")) or layer_has_tiles("water_windows")){
+	if (!audio_is_playing(sndRunningWater)) audio_play_sound(sndRunningWater, 3, true);	
+}
+else audio_stop_sound(sndRunningWater);
 
 // Honk at spawn
 honk();

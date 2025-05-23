@@ -69,3 +69,32 @@ function calc_dist_to_water(_tilemap){
 	}
 	return nearest_dist; // If no tiles were found
 }
+
+
+function layer_has_tiles(layer_name){
+	var tilemap_id = layer_tilemap_get_id(layer_get_id(layer_name));
+
+	var found_tile = false;
+	var tile_width = tilemap_get_tile_width(tilemap_id);
+	var tile_height = tilemap_get_tile_height(tilemap_id);
+	var width = tilemap_get_width(tilemap_id);
+	var height = tilemap_get_height(tilemap_id);
+
+	// Loop through all tiles in the tilemap
+	for (var ty = 0; ty < height; ty++) {
+	    for (var tx = 0; tx < width; tx++) {
+	        var tile_index = tilemap_get(tilemap_id, tx, ty);
+	        if (tile_index != 0) {
+	            found_tile = true;
+	            break; // Found a tile, exit inner loop
+	        }
+	    }
+	    if (found_tile) break; // Exit outer loop as well
+	}
+
+	if (found_tile) {
+	   return true;
+	} else {
+	    return false;
+	}
+}
