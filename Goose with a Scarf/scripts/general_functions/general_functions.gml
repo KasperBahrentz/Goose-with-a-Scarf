@@ -26,7 +26,7 @@ function screenshake(_time, _magnitude, _fade){
 }
 
 function draw_sprite_custom(sprite){
-	draw_sprite_ext(sprite, image_index, x, y, image_xscale, image_yscale, 0, c_white, 1);
+	draw_sprite_ext(sprite, image_index, x, y, image_xscale, image_yscale, 0, objGooseBody.image_blend, 1);
 }
 
 function calc_dist_to_water(_tilemap){

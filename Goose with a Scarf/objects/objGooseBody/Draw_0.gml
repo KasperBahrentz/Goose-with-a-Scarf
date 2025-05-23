@@ -1,5 +1,9 @@
-/// @description Insert description here
-// You can write your code in this editor
+var deep_space_blue = make_colour_rgb(10, 12, 25);
+
+if (place_meeting(x, y, objMoon)){
+	image_blend = deep_space_blue;	
+}
+else image_blend = c_white;
 
 if (state != player_state.GONE){
 	if (sprite_index == spr_body_crouch || sprite_index == spr_body_die){
