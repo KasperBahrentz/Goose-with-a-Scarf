@@ -50,6 +50,10 @@ function move(){
 }
 
 function drop(){
+	if (!has_created_respawn){
+		instance_create_layer(x, y, "instances", objEggRespawn, {egg_id : egg_id, spawn_at_nest : temporary, spawn_coordinate : spawn_coordinate, temporary_index : temporary_index});	
+		has_created_respawn = true;
+	}
 	// Check ground collision
 	if (check_collision(0, 0) or place_meeting(x, y, objCollisionSemiSolid)) and (!has_collided){ // Destroy on ground
 		map_y = tilemap_get_cell_y_at_pixel(objGame.collision_tilemap, x, y + 4*pixel_size);
@@ -76,7 +80,6 @@ function drop(){
 		repeat(choose(1, 2, 2, 2, 3)){ // Right
 			instance_create_layer(x, (map_y * tile_size)-4*pixel_size, "instances", objEggShell, {shell_id: "right", color : _color});	
 		}
-		instance_create_layer(x, y, "instances", objEggRespawn, {egg_id : egg_id, spawn_at_nest : temporary, spawn_coordinate : spawn_coordinate, temporary_index : temporary_index});
 		
 		// Crate collisions
 		if (place_meeting(x, y+8*pixel_size, prtCrate)){
@@ -100,7 +103,6 @@ function drop(){
 	}
 	
 	if (y > room_height){
-		instance_create_layer(x, y, "instances", objEggRespawn, {egg_id : egg_id, spawn_at_nest : temporary, spawn_coordinate : spawn_coordinate, temporary_index : temporary_index});
 		instance_destroy();
 	}
 }
