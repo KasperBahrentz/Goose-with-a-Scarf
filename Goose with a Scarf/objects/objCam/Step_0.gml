@@ -34,9 +34,9 @@ if (shake) {
 camera_set_view_pos(cam,x-view_w_half,y-view_h_half);
 
 // Parallax Scrolling
-layer_x("mountains_front", mountains_front_x + x / 8);
+layer_x("mountains_front", mountains_front_x + x / 32);
 layer_x("mountains_middle", mountains_middle_x + x / 16);
-layer_x("mountains_back", mountains_back_x + x / 32);
+layer_x("mountains_back", mountains_back_x + x / 8);
 
 layer_y("mountains_front", mountains_front_y + y / 16);
 layer_y("mountains_middle", mountains_middle_y + y / 32);
