@@ -1,6 +1,6 @@
 /// @description Insert description here
 // You can write your code in this editor
 
-if (y > -10*pixel_size * 16){
-	instance_create_layer(x, y-16*pixel_size, "collision", objCollisionWall);	
+for (var i = y; i >= -20*tile_size; i-=tile_size){
+	instance_create_layer(x, i, layer, objCollision);	
 }

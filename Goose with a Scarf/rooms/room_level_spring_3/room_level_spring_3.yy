@@ -29,7 +29,6 @@
     {"name":"inst_5582090B","path":"rooms/room_level_spring_3/room_level_spring_3.yy",},
     {"name":"inst_60549E14","path":"rooms/room_level_spring_3/room_level_spring_3.yy",},
     {"name":"inst_7CA7BF95","path":"rooms/room_level_spring_3/room_level_spring_3.yy",},
-    {"name":"inst_137DA907","path":"rooms/room_level_spring_3/room_level_spring_3.yy",},
     {"name":"inst_775AFCD2","path":"rooms/room_level_spring_3/room_level_spring_3.yy",},
     {"name":"inst_42B9F0C4","path":"rooms/room_level_spring_3/room_level_spring_3.yy",},
     {"name":"inst_1B200A22","path":"rooms/room_level_spring_3/room_level_spring_3.yy",},
@@ -50,6 +49,7 @@
     {"name":"inst_5D34FC09","path":"rooms/room_level_spring_3/room_level_spring_3.yy",},
     {"name":"inst_4AE848D8","path":"rooms/room_level_spring_3/room_level_spring_3.yy",},
     {"name":"inst_461B94C7","path":"rooms/room_level_spring_3/room_level_spring_3.yy",},
+    {"name":"inst_137DA907","path":"rooms/room_level_spring_3/room_level_spring_3.yy",},
   ],
   "isDnd":false,
   "layers":[
