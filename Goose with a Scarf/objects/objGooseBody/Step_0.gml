@@ -31,7 +31,7 @@ function move(){
 	
 	// Screen shake test
 	if (keyboard_check_pressed(ord("M"))){
-		screenshake(15, 3, 0.3);	
+		screenshake(30, 10, 0.3);	
 	}
 	
 	if (!audio_is_playing(sndHonk)){

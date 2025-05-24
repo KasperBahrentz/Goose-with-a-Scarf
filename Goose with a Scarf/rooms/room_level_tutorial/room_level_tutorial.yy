@@ -69,11 +69,11 @@
           -60,0,-30,-2147483648,-60,0,-30,-2147483648,
         ],"TileDataFormat":1,},"tilesetId":{"name":"tlsLeaves","path":"tilesets/tlsLeaves/tlsLeaves.yy",},"userdefinedDepth":false,"visible":true,"x":0,"y":0,},
     {"$GMRTileLayer":"","%Name":"deco_front","depth":500,"effectEnabled":true,"effectType":null,"gridX":32,"gridY":32,"hierarchyFrozen":false,"inheritLayerDepth":false,"inheritLayerSettings":false,"inheritSubLayers":true,"inheritVisibility":true,"layers":[],"name":"deco_front","properties":[],"resourceType":"GMRTileLayer","resourceVersion":"2.0","tiles":{"SerialiseHeight":17,"SerialiseWidth":90,"TileCompressedData":[
-          -60,0,-30,-2147483648,-60,0,-28,-2147483648,2,379,380,-60,0,-28,-2147483648,2,377,378,-60,0,-28,-2147483648,
-          2,408,409,-60,0,-30,-2147483648,-11,0,2,346,347,-47,0,-30,-2147483648,-11,0,2,377,378,-47,0,-30,-2147483648,
-          -11,0,2,408,409,-47,0,-30,-2147483648,-11,0,2,439,440,-8,0,1,719,-38,0,-3,-2147483648,1,286,-26,-2147483648,
-          -60,0,-30,-2147483648,-60,0,-21,-2147483648,-7,0,-2,-2147483648,-60,0,-30,-2147483648,-60,0,-30,-2147483648,
-          -60,0,-30,-2147483648,-60,0,-30,-2147483648,-60,0,-30,-2147483648,-60,0,-30,-2147483648,
+          -60,0,-30,-2147483648,-60,0,-28,-2147483648,-62,0,-28,-2147483648,-62,0,-28,-2147483648,-62,0,-30,-2147483648,
+          -11,0,2,346,347,-47,0,-30,-2147483648,-11,0,2,377,378,-47,0,-30,-2147483648,-11,0,2,408,409,-47,0,-30,
+          -2147483648,-11,0,2,439,440,-8,0,1,719,-38,0,-3,-2147483648,1,286,-26,-2147483648,-60,0,-30,-2147483648,
+          -60,0,-21,-2147483648,-7,0,-2,-2147483648,-60,0,-30,-2147483648,-60,0,-30,-2147483648,-60,0,-30,-2147483648,
+          -60,0,-30,-2147483648,-60,0,-30,-2147483648,-60,0,-30,-2147483648,
         ],"TileDataFormat":1,},"tilesetId":{"name":"tlsDeco","path":"tilesets/tlsDeco/tlsDeco.yy",},"userdefinedDepth":false,"visible":true,"x":0,"y":0,},
     {"$GMRTileLayer":"","%Name":"fill","depth":600,"effectEnabled":true,"effectType":null,"gridX":32,"gridY":32,"hierarchyFrozen":false,"inheritLayerDepth":false,"inheritLayerSettings":false,"inheritSubLayers":true,"inheritVisibility":true,"layers":[],"name":"fill","properties":[],"resourceType":"GMRTileLayer","resourceVersion":"2.0","tiles":{"SerialiseHeight":17,"SerialiseWidth":90,"TileCompressedData":[
           -496,0,4,48,44,44,75,-37,0,3,48,44,44,-46,0,4,46,41,41,74,-37,0,3,46,41,41,-46,0,4,46,41,72,78,-36,0,

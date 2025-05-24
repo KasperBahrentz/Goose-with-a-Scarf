@@ -84,9 +84,10 @@
         ],"TileDataFormat":1,},"tilesetId":{"name":"tlsGroundSpring","path":"tilesets/tlsGroundSpring/tlsGroundSpring.yy",},"userdefinedDepth":false,"visible":true,"x":0,"y":0,},
     {"$GMRTileLayer":"","%Name":"water_back_details","depth":1100,"effectEnabled":true,"effectType":null,"gridX":32,"gridY":32,"hierarchyFrozen":false,"inheritLayerDepth":false,"inheritLayerSettings":false,"inheritSubLayers":true,"inheritVisibility":true,"layers":[],"name":"water_back_details","properties":[],"resourceType":"GMRTileLayer","resourceVersion":"2.0","tiles":{"SerialiseHeight":34,"SerialiseWidth":30,"TileCompressedData":[-510,0,-510,-2147483648,],"TileDataFormat":1,},"tilesetId":{"name":"tlsWater","path":"tilesets/tlsWater/tlsWater.yy",},"userdefinedDepth":false,"visible":true,"x":0,"y":0,},
     {"$GMRTileLayer":"","%Name":"deco_middle","depth":1200,"effectEnabled":true,"effectType":null,"gridX":32,"gridY":32,"hierarchyFrozen":false,"inheritLayerDepth":false,"inheritLayerSettings":false,"inheritSubLayers":true,"inheritVisibility":true,"layers":[],"name":"deco_middle","properties":[],"resourceType":"GMRTileLayer","resourceVersion":"2.0","tiles":{"SerialiseHeight":34,"SerialiseWidth":30,"TileCompressedData":[
-          -326,0,2,268435593,268435592,-55,0,2,344,345,-28,0,2,375,376,-7,0,2,134,135,-19,0,2,406,407,-24,0,4,
-          270,271,272,272,-37,0,-33,-2147483648,1,156,-29,-2147483648,6,156,-2147483648,521,522,523,524,-71,-2147483648,
-          5,140,521,522,523,524,-200,-2147483648,-2,0,-163,-2147483648,
+          -68,0,1,268435700,-29,0,1,268435700,-29,0,1,268435700,-29,0,1,268435700,-29,0,1,268435700,-29,0,1,268435700,
+          -29,0,1,268435700,-77,0,2,268435593,268435592,-55,0,2,344,345,-28,0,2,375,376,-7,0,2,134,135,-19,0,2,
+          406,407,-24,0,4,270,271,272,272,-37,0,-33,-2147483648,1,156,-29,-2147483648,6,156,-2147483648,521,522,
+          523,524,-71,-2147483648,5,140,521,522,523,524,-200,-2147483648,-2,0,-163,-2147483648,
         ],"TileDataFormat":1,},"tilesetId":{"name":"tlsDeco","path":"tilesets/tlsDeco/tlsDeco.yy",},"userdefinedDepth":false,"visible":true,"x":0,"y":0,},
     {"$GMRTileLayer":"","%Name":"deco_back","depth":1300,"effectEnabled":true,"effectType":null,"gridX":32,"gridY":32,"hierarchyFrozen":false,"inheritLayerDepth":false,"inheritLayerSettings":false,"inheritSubLayers":true,"inheritVisibility":true,"layers":[],"name":"deco_back","properties":[],"resourceType":"GMRTileLayer","resourceVersion":"2.0","tiles":{"SerialiseHeight":34,"SerialiseWidth":30,"TileCompressedData":[
           -66,0,3,244,0,246,-27,0,3,244,0,246,-27,0,3,244,0,246,-27,0,3,244,0,246,-27,0,3,244,0,246,-27,0,3,244,
