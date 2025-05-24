@@ -4,6 +4,7 @@ collision_tilemap = layer_tilemap_get_id("ground");
 water_front_tilemap = layer_tilemap_get_id("water_front");
 water_back_tilemap = layer_tilemap_get_id("water_back");
 deco_tilemap = layer_tilemap_get_id("deco_middle");
+back_tilemap = layer_tilemap_get_id("back");
 
 // Colour temprary eggs
 for (var i = 0; i < instance_number(objNest); i++){

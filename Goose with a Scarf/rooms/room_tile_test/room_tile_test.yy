@@ -40,11 +40,12 @@
         ],"TileDataFormat":1,},"tilesetId":{"name":"tlsGroundFallWinter16","path":"tilesets/tlsGroundFallWinter16/tlsGroundFallWinter16.yy",},"userdefinedDepth":false,"visible":true,"x":0,"y":0,},
     {"$GMRTileLayer":"","%Name":"deco_front","depth":600,"effectEnabled":true,"effectType":null,"gridX":32,"gridY":32,"hierarchyFrozen":false,"inheritLayerDepth":false,"inheritLayerSettings":false,"inheritSubLayers":true,"inheritVisibility":true,"layers":[],"name":"deco_front","properties":[],"resourceType":"GMRTileLayer","resourceVersion":"2.0","tiles":{"SerialiseHeight":17,"SerialiseWidth":30,"TileCompressedData":[
           -108,-2147483648,2,244,246,-28,-2147483648,2,244,246,-28,-2147483648,2,244,246,-28,-2147483648,2,270,
-          272,-8,-2147483648,-2,0,-7,-2147483648,1,0,-18,-2147483648,-17,0,-11,-2147483648,6,0,201,199,200,-2147483648,
-          350,-4,-2147483648,-4,0,-2,-2147483648,-4,0,-2,-2147483648,-2,0,12,549,550,551,552,-2147483648,0,0,549,
-          550,551,552,381,-4,-2147483648,-5,0,1,-2147483648,-6,0,14,612,613,581,582,581,582,581,582,581,582,581,
-          582,583,0,-16,-2147483648,5,268435770,0,-2147483648,0,-2147483648,-5,0,4,-2147483648,232,0,231,-22,-2147483648,
-          -4,0,-27,-2147483648,2,263,0,-57,-2147483648,2,315,316,-36,-2147483648,
+          272,-8,-2147483648,-2,0,-7,-2147483648,1,0,-18,-2147483648,-6,0,3,644,645,646,-8,0,-4,-2147483648,3,
+          644,645,646,-4,-2147483648,11,0,201,199,200,-2147483648,350,-2147483648,-2147483648,675,676,677,-3,0,
+          -2,-2147483648,-4,0,-2,-2147483648,14,0,675,676,677,551,552,-2147483648,0,0,549,550,551,552,381,-4,-2147483648,
+          -5,0,1,-2147483648,-6,0,6,612,613,581,677,678,679,-3,0,5,646,647,648,583,0,-16,-2147483648,5,268435770,
+          0,-2147483648,0,-2147483648,-5,0,4,-2147483648,232,0,231,-22,-2147483648,-4,0,-27,-2147483648,2,263,
+          0,-57,-2147483648,2,315,316,-36,-2147483648,
         ],"TileDataFormat":1,},"tilesetId":{"name":"tlsDeco16","path":"tilesets/tlsDeco16/tlsDeco16.yy",},"userdefinedDepth":false,"visible":true,"x":0,"y":0,},
     {"$GMRTileLayer":"","%Name":"ground","depth":700,"effectEnabled":true,"effectType":null,"gridX":32,"gridY":32,"hierarchyFrozen":false,"inheritLayerDepth":false,"inheritLayerSettings":false,"inheritSubLayers":true,"inheritVisibility":true,"layers":[],"name":"ground","properties":[],"resourceType":"GMRTileLayer","resourceVersion":"2.0","tiles":{"SerialiseHeight":17,"SerialiseWidth":30,"TileCompressedData":[
           -5,50,1,143,-21,0,-3,-2147483648,-5,50,1,143,-21,0,-3,-2147483648,-4,50,2,54,180,-21,0,-3,-2147483648,

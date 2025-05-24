@@ -25,6 +25,10 @@ enum flower_color {
 	BLUE
 }
 
+// Create Event of objGooseBody
+_blend_amount = 0; // 0 = white, 1 = deep space blue
+
+
 active_flower = flower_color.RED;
 
 parasol = noone;
