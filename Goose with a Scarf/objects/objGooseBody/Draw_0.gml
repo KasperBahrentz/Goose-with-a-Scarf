@@ -1,32 +1,21 @@
 var deep_space_blue = make_colour_rgb(10, 12, 25);
 
-var _target_blend = 0;
-if ((!is_on_tilemap(objGame.back_tilemap, y - 1 * pixel_size)) and (place_meeting(x, y, objMoon))){
-	_target_blend = 1;
+if (place_meeting(x, y, objMoon)){
+	image_blend = deep_space_blue;	
 }
+else image_blend = c_white;
 
-// Smoothly approach target blend
-_blend_amount = lerp(_blend_amount, _target_blend, 0.25); // adjust 0.25 for speed
-
-var _blend_col = merge_color(c_white, deep_space_blue, _blend_amount);
-image_blend = _blend_col;
-draw_goose();
-
-
-
-function draw_goose(){
-	if (state != player_state.GONE){
-		if (sprite_index == spr_body_crouch || sprite_index == spr_body_die){
-			draw_self();
-		}
-		else {
-			draw_sprite_custom(objGooseHead.sprite_index);
-			draw_self();
-			draw_sprite_custom(objGooseFeet.sprite_index);
-			if (parasol != noone){
-				with (parasol){
-					draw_sprite_ext(sprite_index, image_index, other.x, other.y-7*pixel_size, image_xscale, image_yscale, 0, c_white, 1);
-				}
+if (state != player_state.GONE){
+	if (sprite_index == spr_body_crouch || sprite_index == spr_body_die){
+		draw_self();
+	}
+	else {
+		draw_sprite_custom(objGooseHead.sprite_index);
+		draw_self();
+		draw_sprite_custom(objGooseFeet.sprite_index);
+		if (parasol != noone){
+			with (parasol){
+				draw_sprite_ext(sprite_index, image_index, other.x, other.y-7*pixel_size, image_xscale, image_yscale, 0, c_white, 1);
 			}
 		}
 	}
