@@ -13,8 +13,6 @@ depth = objGooseBody.depth + 10;
 // Inherit the parent event
 event_inherited();
 
-image_index = random_range(0, image_number-1);
-
 timer = random_range(-1, 1);
 draw_y = y;
 
