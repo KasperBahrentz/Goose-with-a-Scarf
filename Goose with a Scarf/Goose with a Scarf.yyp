@@ -200,6 +200,8 @@
     {"id":{"name":"sprDarkCircle16","path":"sprites/sprDarkCircle16/sprDarkCircle16.yy",},},
     {"id":{"name":"sprDust","path":"sprites/sprDust/sprDust.yy",},},
     {"id":{"name":"sprDust16","path":"sprites/sprDust16/sprDust16.yy",},},
+    {"id":{"name":"sprDustSnow","path":"sprites/sprDustSnow/sprDustSnow.yy",},},
+    {"id":{"name":"sprDustSnow16","path":"sprites/sprDustSnow16/sprDustSnow16.yy",},},
     {"id":{"name":"sprEgg","path":"sprites/sprEgg/sprEgg.yy",},},
     {"id":{"name":"sprEgg16","path":"sprites/sprEgg16/sprEgg16.yy",},},
     {"id":{"name":"sprEggGoalBottom","path":"sprites/sprEggGoalBottom/sprEggGoalBottom.yy",},},
