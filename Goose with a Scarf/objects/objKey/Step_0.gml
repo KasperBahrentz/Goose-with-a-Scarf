@@ -9,7 +9,7 @@ switch(state) {
 
 function idle(){
 	event_inherited();
-	if (distance_to_object(objGooseBody) < open_distance) {
+	if (distance_to_object(objGooseBody) < collect_distance) {
 		state = key_state.FOLLOW;	
 		audio_play_sound(sndKeyCollect, 5, false);
 	}
@@ -20,13 +20,14 @@ function follow(){
 }
 
 function to_chest(){
-	var _lerp_amount = 0.1;
+	var _lerp_amount = 0.2;
 	x = lerp(x, objChest.x, _lerp_amount);
 	y = lerp(y, objChest.y-5*pixel_size, _lerp_amount);
 	
-	if (distance_to_object(objChest) < open_distance){
+	if (distance_to_object(objChest) < 1*pixel_size){
+		if (!audio_is_playing(sndUnlock)) audio_play_sound(sndUnlock, 30, false);
 		with (objChest){
-			 state = chest_state.KEY_INSERTED;
+			state = chest_state.KEY_INSERTED;
 	        unlock_timer = 40; // show key for a moment
 	        image_index = 1;
 		}

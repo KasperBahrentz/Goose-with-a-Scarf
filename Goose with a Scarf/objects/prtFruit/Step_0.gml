@@ -21,7 +21,7 @@ function item(){
 function follow(){
 	follow_player(0.1, 16);
 	
-	if (objGooseBody.vspeed == 0 && objGooseBody.state == player_state.MOVE){
+	if (objGooseBody.vspeed == 0 && objGooseBody.state == player_state.MOVE) or (objGoal.goal_touched == true){
 		state = fruit_state.COLLECT;
 		audio_play_sound(sndPling, 15, false);
 		image_speed = img_speed;

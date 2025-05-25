@@ -5,7 +5,7 @@ switch (state){
 }
 
 function idle(){
-	if (point_distance(x, y, objGooseBody.x, objGooseBody.y) <= 8*pixel_size){
+	if (distance_to_object(objGooseBody) <= 12*pixel_size){
 		depth = start_depth-1;
 		just_picked_up = true;
 		audio_sound_pitch(sndPop, 0.9 + array_length(objGooseBody.egg_queue)*0.05);

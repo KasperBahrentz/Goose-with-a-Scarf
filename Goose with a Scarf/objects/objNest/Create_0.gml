@@ -4,3 +4,4 @@
 event_inherited();
 
 alarm[1] = 8;
+wings = noone;

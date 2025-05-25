@@ -12,4 +12,4 @@ enum key_state {
 state = key_state.IDLE;
 
 // Distance threshold for detecting player
-open_distance = 6*pixel_size; // or whatever feels right
+collect_distance = 6*pixel_size; // or whatever feels right
