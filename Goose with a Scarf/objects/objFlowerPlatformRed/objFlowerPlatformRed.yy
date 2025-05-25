@@ -31,8 +31,8 @@
   "resourceVersion":"2.0",
   "solid":false,
   "spriteId":{
-    "name":"sprFlowerPlatformRed",
-    "path":"sprites/sprFlowerPlatformRed/sprFlowerPlatformRed.yy",
+    "name":"sprFlowerPlatformPurple",
+    "path":"sprites/sprFlowerPlatformPurple/sprFlowerPlatformPurple.yy",
   },
   "spriteMaskId":null,
   "visible":true,

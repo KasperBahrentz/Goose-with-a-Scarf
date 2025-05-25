@@ -31,8 +31,8 @@
   "resourceVersion":"2.0",
   "solid":false,
   "spriteId":{
-    "name":"sprFlowerBudRed",
-    "path":"sprites/sprFlowerBudRed/sprFlowerBudRed.yy",
+    "name":"sprFlowerBudPurple",
+    "path":"sprites/sprFlowerBudPurple/sprFlowerBudPurple.yy",
   },
   "spriteMaskId":null,
   "visible":true,
