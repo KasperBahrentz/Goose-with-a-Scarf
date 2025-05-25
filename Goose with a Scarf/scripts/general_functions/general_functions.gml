@@ -7,6 +7,16 @@
 /// @param  {real}  _fade       How quickly the screenshake effect will fade out
 /// @description    Set the screenshake object variables.
 
+// Make things fly above the player and follow them
+function follow_player(_lerp_amount, _y_distance_to_player){
+	x = lerp(x, objGooseBody.x, _lerp_amount);
+	y = lerp(y, objGooseBody.y-_y_distance_to_player*pixel_size, _lerp_amount);
+		
+	if (objGooseBody.state == player_state.DIE){
+		instance_destroy();	
+	}	
+}
+
 function is_on_tilemap(_tilemap_id, _y){
 	// Convert object position to tile coordinates
 	var tile_x = tilemap_get_cell_x_at_pixel(_tilemap_id, x, _y);

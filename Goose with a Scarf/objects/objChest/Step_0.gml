@@ -1,10 +1,10 @@
 switch (state) {
     case chest_state.LOCKED:
         if (distance_to_object(objGooseBody) < open_distance) {
-			if (!audio_is_playing(sndUnlock)) audio_play_sound(sndUnlock, 30, false);
-            state = chest_state.KEY_INSERTED;
-            unlock_timer = 40; // show key for a moment
-            image_index = 1;
+			if (instance_exists(objKey) and objKey.state == key_state.FOLLOW){
+				if (!audio_is_playing(sndUnlock)) audio_play_sound(sndUnlock, 30, false);
+					objKey.state = key_state.TO_CHEST;
+			}
         }
         break;
 
