@@ -5,14 +5,7 @@ if (dist < player_range) {
     visible = false;
 }
 
-// Smoothly animate scale if visible
-if (visible) {
-    scale = lerp(scale, target_scale, scale_speed);
-} else {
-    scale = lerp(scale, 0, scale_speed);
-}
-
-if (scale > 0.9 && text_index < string_length(text)) {
+if (visible and text_index < string_length(text)) {
     if (text_pause > 0) {
         text_pause -= 1;
     } else {
@@ -23,12 +16,21 @@ if (scale > 0.9 && text_index < string_length(text)) {
             text_timer -= 1;
 
             var current_char = string_char_at(text, text_index);
+
 			
-			// Play sound if not whitespace or punctuation (optional)
-            if (current_char != " " && current_char != "." && current_char != "," && current_char != ":" && current_char != ";") {
-                audio_sound_pitch(sndHonk, random_range(0.97, 1.03));
-				audio_play_sound(sndHonk, 0, false);
-            }
+			if (sound_timer <= 0){
+					audio_play_sound(sound, 0, false);
+					audio_sound_pitch(sound, random_range(0.8, 1.2));
+					sound_timer = sound_timer_max + irandom_range(0, 3);
+			}
+			else {
+				sound_timer--;	
+			}
+			
+						
+			if (current_char == "." || current_char == "!" || current_char == "?"){
+				sound_timer = sound_timer_max*2;	
+			}
 
             // Pause on punctuation
             switch (current_char) {
@@ -48,10 +50,11 @@ if (scale > 0.9 && text_index < string_length(text)) {
     }
 
     text_shown = string_copy(text, 1, text_index);
-} else if (scale <= 0.9) {
+} else if (!visible) {
     // Reset when bubble shrinks
     text_index = 0;
     text_timer = 0;
     text_shown = "";
     text_pause = 0;
+	sound_timer = 0;
 }
