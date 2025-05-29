@@ -15,10 +15,8 @@ space_between_lines = 10 * pixel_size;
 max_line_width = 100 * pixel_size;
 bubble_h = 0;
 
-depth = -1000;
-
-image_index = 1;
-
 sound = sndTypewriter;
 sound_timer_max = 4;
 sound_timer = 0;
+
+fade = false;

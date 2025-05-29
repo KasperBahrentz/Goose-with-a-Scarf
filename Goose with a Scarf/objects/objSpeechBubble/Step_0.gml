@@ -1,8 +1,20 @@
-var dist = point_distance(x, y, objGooseBody.x, objGooseBody.y);
+var dist = point_distance(x+4*pixel_size, y, objGooseBody.x, objGooseBody.y);
 if (dist < player_range) {
     visible = true;
+	fade = false;
+	image_alpha = 1;
 } else {
-    visible = false;
+    fade = true;
+}
+
+
+if (fade){
+	image_alpha = lerp(image_alpha, 0, 0.3);	
+	if (image_alpha <= 0.1){
+		visible = false;
+		fade = false;
+		image_alpha = 1;
+	}
 }
 
 if (visible and text_index < string_length(text)) {
@@ -43,9 +55,6 @@ if (visible and text_index < string_length(text)) {
                 case ";":
                     text_pause = 8; break;  // short pause
             }
-
-            // Optional: sound effect here
-            // audio_play_sound(snd_type, 0, false);
         }
     }
 

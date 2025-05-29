@@ -73,8 +73,8 @@
         ],"TileDataFormat":1,},"tilesetId":{"name":"tlsLeaves","path":"tilesets/tlsLeaves/tlsLeaves.yy",},"userdefinedDepth":false,"visible":true,"x":0,"y":0,},
     {"$GMRTileLayer":"","%Name":"deco_front","depth":500,"effectEnabled":true,"effectType":null,"gridX":32,"gridY":32,"hierarchyFrozen":false,"inheritLayerDepth":false,"inheritLayerSettings":false,"inheritSubLayers":true,"inheritVisibility":true,"layers":[],"name":"deco_front","properties":[],"resourceType":"GMRTileLayer","resourceVersion":"2.0","tiles":{"SerialiseHeight":17,"SerialiseWidth":90,"TileCompressedData":[
           -60,0,-30,-2147483648,-60,0,-28,-2147483648,-62,0,-28,-2147483648,-62,0,-28,-2147483648,-62,0,-30,-2147483648,
-          -60,0,-30,-2147483648,-10,0,2,346,347,-48,0,-30,-2147483648,-10,0,2,377,378,-48,0,-30,-2147483648,-10,
-          0,3,408,409,440,-8,0,1,719,-38,0,-3,-2147483648,1,286,-26,-2147483648,-60,0,-30,-2147483648,-60,0,-21,
+          -60,0,-30,-2147483648,-9,0,2,346,347,-49,0,-30,-2147483648,-9,0,2,377,378,-49,0,-30,-2147483648,-9,0,
+          4,408,409,0,440,-8,0,1,719,-38,0,-3,-2147483648,1,286,-26,-2147483648,-60,0,-30,-2147483648,-60,0,-21,
           -2147483648,-7,0,-2,-2147483648,-60,0,-30,-2147483648,-60,0,-30,-2147483648,-60,0,-30,-2147483648,-60,
           0,-30,-2147483648,-60,0,-30,-2147483648,-60,0,-30,-2147483648,
         ],"TileDataFormat":1,},"tilesetId":{"name":"tlsDeco","path":"tilesets/tlsDeco/tlsDeco.yy",},"userdefinedDepth":false,"visible":true,"x":0,"y":0,},
@@ -99,15 +99,15 @@
             {"$GMOverriddenProperty":"v1","%Name":"","name":"","objectId":{"name":"objGooseBody","path":"objects/objGooseBody/objGooseBody.yy",},"propertyId":{"name":"egg_count","path":"objects/objGooseBody/objGooseBody.yy",},"resourceType":"GMOverriddenProperty","resourceVersion":"2.0","value":"0",},
           ],"resourceType":"GMRInstance","resourceVersion":"2.0","rotation":0.0,"scaleX":1.0,"scaleY":1.0,"x":576.0,"y":1152.0,},
         {"$GMRInstance":"v2","%Name":"inst_58AE83F6","colour":4294967295,"frozen":false,"hasCreationCode":false,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"name":"inst_58AE83F6","objectId":{"name":"objGoal","path":"objects/objGoal/objGoal.yy",},"properties":[],"resourceType":"GMRInstance","resourceVersion":"2.0","rotation":0.0,"scaleX":1.0,"scaleY":1.0,"x":11200.0,"y":512.0,},
-        {"$GMRInstance":"v2","%Name":"inst_1BDBFFE0","colour":4294967295,"frozen":false,"hasCreationCode":false,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"name":"inst_1BDBFFE0","objectId":{"name":"objSpeechBubble","path":"objects/objSpeechBubble/objSpeechBubble.yy",},"properties":[
-            {"$GMOverriddenProperty":"v1","%Name":"","name":"","objectId":{"name":"objSpeechBubble","path":"objects/objSpeechBubble/objSpeechBubble.yy",},"propertyId":{"name":"text","path":"objects/objSpeechBubble/objSpeechBubble.yy",},"resourceType":"GMOverriddenProperty","resourceVersion":"2.0","value":"Move right using ~D~\\nMove left using. ~W~",},
-          ],"resourceType":"GMRInstance","resourceVersion":"2.0","rotation":0.0,"scaleX":1.0,"scaleY":1.0,"x":640.0,"y":960.0,},
-        {"$GMRInstance":"v2","%Name":"inst_7E2566F1","colour":4294967295,"frozen":false,"hasCreationCode":false,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"name":"inst_7E2566F1","objectId":{"name":"objSpeechBubble","path":"objects/objSpeechBubble/objSpeechBubble.yy",},"properties":[
-            {"$GMOverriddenProperty":"v1","%Name":"","name":"","objectId":{"name":"objSpeechBubble","path":"objects/objSpeechBubble/objSpeechBubble.yy",},"propertyId":{"name":"text","path":"objects/objSpeechBubble/objSpeechBubble.yy",},"resourceType":"GMOverriddenProperty","resourceVersion":"2.0","value":"Glide by holding down ~SPACE~ ",},
-          ],"resourceType":"GMRInstance","resourceVersion":"2.0","rotation":0.0,"scaleX":1.0,"scaleY":1.0,"x":2560.0,"y":576.0,},
-        {"$GMRInstance":"v2","%Name":"inst_33D7FF42","colour":4294967295,"frozen":false,"hasCreationCode":false,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"name":"inst_33D7FF42","objectId":{"name":"objSpeechBubble","path":"objects/objSpeechBubble/objSpeechBubble.yy",},"properties":[
-            {"$GMOverriddenProperty":"v1","%Name":"","name":"","objectId":{"name":"objSpeechBubble","path":"objects/objSpeechBubble/objSpeechBubble.yy",},"propertyId":{"name":"text","path":"objects/objSpeechBubble/objSpeechBubble.yy",},"resourceType":"GMOverriddenProperty","resourceVersion":"2.0","value":"Jump using ~SPACE~",},
-          ],"resourceType":"GMRInstance","resourceVersion":"2.0","rotation":0.0,"scaleX":1.0,"scaleY":1.0,"x":1408.0,"y":960.0,},
+        {"$GMRInstance":"v2","%Name":"inst_1BDBFFE0","colour":4294967295,"frozen":false,"hasCreationCode":false,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"name":"inst_1BDBFFE0","objectId":{"name":"objSign","path":"objects/objSign/objSign.yy",},"properties":[
+            {"$GMOverriddenProperty":"v1","%Name":"","name":"","objectId":{"name":"objSign","path":"objects/objSign/objSign.yy",},"propertyId":{"name":"text","path":"objects/objSign/objSign.yy",},"resourceType":"GMOverriddenProperty","resourceVersion":"2.0","value":"Move right using ~D~\\nMove left using ~W~",},
+          ],"resourceType":"GMRInstance","resourceVersion":"2.0","rotation":0.0,"scaleX":1.0,"scaleY":1.0,"x":768.0,"y":1152.0,},
+        {"$GMRInstance":"v2","%Name":"inst_7E2566F1","colour":4294967295,"frozen":false,"hasCreationCode":false,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"name":"inst_7E2566F1","objectId":{"name":"objSign","path":"objects/objSign/objSign.yy",},"properties":[
+            {"$GMOverriddenProperty":"v1","%Name":"","name":"","objectId":{"name":"objSign","path":"objects/objSign/objSign.yy",},"propertyId":{"name":"text","path":"objects/objSign/objSign.yy",},"resourceType":"GMOverriddenProperty","resourceVersion":"2.0","value":"Glide by holding down ~SPACE~ ",},
+          ],"resourceType":"GMRInstance","resourceVersion":"2.0","rotation":0.0,"scaleX":1.0,"scaleY":1.0,"x":2752.0,"y":768.0,},
+        {"$GMRInstance":"v2","%Name":"inst_33D7FF42","colour":4294967295,"frozen":false,"hasCreationCode":false,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"name":"inst_33D7FF42","objectId":{"name":"objSign","path":"objects/objSign/objSign.yy",},"properties":[
+            {"$GMOverriddenProperty":"v1","%Name":"","name":"","objectId":{"name":"objSign","path":"objects/objSign/objSign.yy",},"propertyId":{"name":"text","path":"objects/objSign/objSign.yy",},"resourceType":"GMOverriddenProperty","resourceVersion":"2.0","value":"Jump using ~SPACE~",},
+          ],"resourceType":"GMRInstance","resourceVersion":"2.0","rotation":0.0,"scaleX":1.0,"scaleY":1.0,"x":1472.0,"y":1152.0,},
       ],"layers":[],"name":"instances","properties":[],"resourceType":"GMRInstanceLayer","resourceVersion":"2.0","userdefinedDepth":false,"visible":true,},
     {"$GMRTileLayer":"","%Name":"ground","depth":900,"effectEnabled":true,"effectType":null,"gridX":32,"gridY":32,"hierarchyFrozen":false,"inheritLayerDepth":true,"inheritLayerSettings":false,"inheritSubLayers":true,"inheritVisibility":false,"layers":[],"name":"ground","properties":[],"resourceType":"GMRTileLayer","resourceVersion":"2.0","tiles":{"SerialiseHeight":17,"SerialiseWidth":90,"TileCompressedData":[
           -255,0,1,176,-3,116,1,178,-85,0,6,205,81,50,50,52,178,-54,0,1,176,-5,116,1,178,-24,0,5,205,81,50,50,
@@ -139,7 +139,7 @@
           -25,0,6,284,0,580,581,582,583,-57,0,2,268436066,268436065,-59,0,2,268435746,268435745,-3,0,2,268435754,
           268435753,-22,0,2,268436097,268436096,-21,0,1,251,-19,0,2,547,548,-14,0,1,689,-3,0,5,270,271,272,268435785,
           268435784,-65,0,2,578,579,-14,0,5,268436175,0,0,177,178,-22,0,3,252,253,292,-3,0,1,688,-10,0,2,468,469,
-          -10,0,2,268435754,268435753,-16,0,2,609,610,-17,0,2,208,209,-9,0,2,257,258,-6,0,5,103,0,0,268435752,
+          -10,0,2,268435754,268435753,-16,0,2,609,610,-17,0,2,208,209,-9,0,2,257,258,-5,0,1,103,-3,0,2,268435752,
           268435751,-6,0,1,719,-10,0,2,499,500,-4,0,1,105,-23,0,2,640,641,-8,0,1,103,-8,0,2,239,240,-39,0,2,530,
           531,-34,0,4,209,210,211,212,-7,0,1,627,-4,0,2,149,212,-44,0,5,255,256,0,268435752,268435751,-22,0,5,
           239,240,241,242,243,-7,0,2,658,286,-549,0,

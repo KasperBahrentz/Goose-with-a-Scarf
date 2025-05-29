@@ -13,6 +13,8 @@ var wrap_width = max_line_width;
 var i = 1;
 var word = "";
 
+draw_set_alpha(image_alpha);
+
 while (i <= string_length(text_shown)) {
     var ch = string_char_at(text_shown, i);
 
@@ -85,3 +87,5 @@ if (word != "") {
 }
 
 draw_set_colour(c_white);
+
+draw_set_alpha(1);

@@ -1,6 +1,4 @@
-gpu_set_tex_filter(true);
-
-if (string_length(text_shown) >= 1) {
+if (visible and string_length(text_shown) >= 1) {
     // Remove formatting markers (~) for measurement only
     var text_plain = "";
     var in_tag = false;
@@ -46,8 +44,6 @@ if (string_length(text_shown) >= 1) {
         x, y,
         bubble_w_world / sprite_get_width(sprite_index),
         bubble_h_world / sprite_get_height(sprite_index),
-        0, c_white, 1
+        0, c_white, image_alpha
     );
 }
-
-gpu_set_tex_filter(false);
