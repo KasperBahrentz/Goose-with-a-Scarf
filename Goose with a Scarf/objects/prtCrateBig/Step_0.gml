@@ -2,4 +2,8 @@
 // You can write your code in this editor
 
 event_inherited();
-image_index = image_number-hp;
+
+switch(hp){
+	case 2:	image_index = start_broken ? 1 : 0;	break;
+	case 1:	image_index = 2;					break;
+}

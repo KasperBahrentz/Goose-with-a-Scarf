@@ -265,6 +265,7 @@
     {"id":{"name":"sprGrape","path":"sprites/sprGrape/sprGrape.yy",},},
     {"id":{"name":"sprGrape16","path":"sprites/sprGrape16/sprGrape16.yy",},},
     {"id":{"name":"sprHiddenTiles","path":"sprites/sprHiddenTiles/sprHiddenTiles.yy",},},
+    {"id":{"name":"sprHiddenTilesWinter","path":"sprites/sprHiddenTilesWinter/sprHiddenTilesWinter.yy",},},
     {"id":{"name":"sprKey","path":"sprites/sprKey/sprKey.yy",},},
     {"id":{"name":"sprKey16","path":"sprites/sprKey16/sprKey16.yy",},},
     {"id":{"name":"sprLeafPropeller","path":"sprites/sprLeafPropeller/sprLeafPropeller.yy",},},

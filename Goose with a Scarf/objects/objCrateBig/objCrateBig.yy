@@ -1,14 +1,10 @@
 {
   "$GMObject":"",
   "%Name":"objCrateBig",
-  "eventList":[
-    {"$GMEvent":"v1","%Name":"","collisionObjectId":null,"eventNum":0,"eventType":3,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
-  ],
+  "eventList":[],
   "managed":true,
   "name":"objCrateBig",
-  "overriddenProperties":[
-    {"$GMOverriddenProperty":"v1","%Name":"","name":"","objectId":{"name":"prtCrate","path":"objects/prtCrate/prtCrate.yy",},"propertyId":{"name":"hp","path":"objects/prtCrate/prtCrate.yy",},"resourceType":"GMOverriddenProperty","resourceVersion":"2.0","value":"3",},
-  ],
+  "overriddenProperties":[],
   "parent":{
     "name":"crates",
     "path":"folders/Objects/crates.yy",

@@ -31,8 +31,8 @@ if (visible and text_index < string_length(text)) {
 
 			
 			if (sound_timer <= 0){
-					audio_play_sound(sound, 0, false);
 					audio_sound_pitch(sound, random_range(0.8, 1.2));
+					audio_play_sound(sound, 0, false);
 					sound_timer = sound_timer_max + irandom_range(0, 3);
 			}
 			else {

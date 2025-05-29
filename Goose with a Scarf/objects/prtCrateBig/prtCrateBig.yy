@@ -7,7 +7,7 @@
   "managed":true,
   "name":"prtCrateBig",
   "overriddenProperties":[
-    {"$GMOverriddenProperty":"v1","%Name":"","name":"","objectId":{"name":"prtCrate","path":"objects/prtCrate/prtCrate.yy",},"propertyId":{"name":"hp","path":"objects/prtCrate/prtCrate.yy",},"resourceType":"GMOverriddenProperty","resourceVersion":"2.0","value":"3",},
+    {"$GMOverriddenProperty":"v1","%Name":"","name":"","objectId":{"name":"prtCrate","path":"objects/prtCrate/prtCrate.yy",},"propertyId":{"name":"hp","path":"objects/prtCrate/prtCrate.yy",},"resourceType":"GMOverriddenProperty","resourceVersion":"2.0","value":"2",},
     {"$GMOverriddenProperty":"v1","%Name":"","name":"","objectId":{"name":"prtCrate","path":"objects/prtCrate/prtCrate.yy",},"propertyId":{"name":"frag_min","path":"objects/prtCrate/prtCrate.yy",},"resourceType":"GMOverriddenProperty","resourceVersion":"2.0","value":"2",},
     {"$GMOverriddenProperty":"v1","%Name":"","name":"","objectId":{"name":"prtCrate","path":"objects/prtCrate/prtCrate.yy",},"propertyId":{"name":"frag_max","path":"objects/prtCrate/prtCrate.yy",},"resourceType":"GMOverriddenProperty","resourceVersion":"2.0","value":"3",},
   ],
@@ -32,7 +32,9 @@
   "physicsShape":1,
   "physicsShapePoints":[],
   "physicsStartAwake":true,
-  "properties":[],
+  "properties":[
+    {"$GMObjectProperty":"v1","%Name":"start_broken","filters":[],"listItems":[],"multiselect":false,"name":"start_broken","rangeEnabled":false,"rangeMax":10.0,"rangeMin":0.0,"resourceType":"GMObjectProperty","resourceVersion":"2.0","value":"False","varType":3,},
+  ],
   "resourceType":"GMObject",
   "resourceVersion":"2.0",
   "solid":false,
