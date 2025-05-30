@@ -5,6 +5,59 @@ switch (state){
 	case player_state.MOVE:		move(); break;
 	case player_state.DIE:		die();	break;	
 	case player_state.GONE:		gone();	break;
+	case player_state.SIT:		sit();	break;
+}
+
+function sit(){
+	if (lay == false){ // Do the little feet dance
+		sprite_index = spr_body_sit;
+		objGooseFeet.sprite_index = spr_feet_sit;
+		if (feet_dance_timer <= 0){
+			if (dance_cycles > 0) objGooseFeet.image_speed = 1;
+			else {
+				objGooseFeet.image_speed = 0;
+				objGooseFeet.image_index = 0;
+			}
+			if (objGooseFeet.image_index >= objGooseFeet.image_number){
+				objGooseFeet.image_index = 1;
+				dance_cycles--;
+			
+				if (dance_cycles <= 0){
+					objGooseFeet.image_speed = 0;
+					objGooseFeet.image_index = 0;
+					if (alarm[3] == -1 or alarm[3] >= 400) {
+						feet_dance_timer = feet_dance_timer_max + irandom_range(0, feet_dance_timer_max);
+						if (alarm[3] == -1) dance_cycles = irandom_range(2, 6);
+						else dance_cycles = irandom_range(2, alarm[3]/100);
+					}
+				}
+			}
+		}
+		else {
+			feet_dance_timer--;
+		}
+				
+		// Sit on bench
+		if (instance_exists(objBench)){
+			var _bench = instance_nearest(x, y, objBench);
+			if (distance_to_object(_bench) <= 1*pixel_size){
+				y = _bench.y -8*pixel_size;
+				image_xscale = -_bench.image_xscale;	
+				objBenchHandle.depth = depth - 20;
+			}
+		}
+	}
+	else sprite_index = spr_body_crouch;
+	
+	if (idle_timer <= 0){
+		alarm[3] = idle_timer_max*2 + irandom_range(0, idle_timer_max);
+		idle_timer = idle_timer_max + irandom_range(0, idle_timer_max/3);
+	}
+	hspeed = 0;
+	vspeed = 0;
+	if (keyboard_check_pressed(ord("H")) or keyboard_check_pressed(ord("A")) or keyboard_check_pressed(ord("S")) or keyboard_check_pressed(ord("D")) or keyboard_check_pressed(vk_space)){
+		alarm[3] = 1;
+	}
 }
 
 function gone(){
@@ -24,7 +77,41 @@ function die(){
 	}
 }
 
+function set_sit(_force_sit = false){
+	feet_dance_timer = feet_dance_timer_max + irandom_range(0, feet_dance_timer_max);	
+	dance_cycles = irandom_range(2, 4);
+	objGooseFeet.image_speed = 0;
+	objGooseFeet.image_index = 0;
+	
+	var _choose = random_range(0, 1);
+	
+	if (_choose >= 0.1 or _force_sit){
+		lay = false;
+	}
+	else {
+		lay = true;
+	}
+	
+	state = player_state.SIT;	
+}
+
 function move(){
+	image_speed = 1;
+	if (hspeed == 0 and vspeed == 0){
+		if (idle_timer <= 0){
+			set_sit();
+		}
+		idle_timer--;	
+	}
+	else {
+		idle_timer = idle_timer_max + irandom_range(0, idle_timer_max/3);	
+	}
+	
+	// Sit on bench
+	if (distance_to_object(objBench) <= 1*pixel_size and is_on_ground == true and keyboard_check_pressed(ord("H"))){
+		set_sit(true);
+	}
+	
 	if (y > room_height){
 		state = player_state.DIE;
 	}

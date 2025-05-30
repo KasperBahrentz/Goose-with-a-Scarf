@@ -1,5 +1,18 @@
 /// @description Insert description here
 // You can write your code in this editor
+enum player_state{
+	MOVE,
+	DIE,	
+	GONE,
+	SIT,
+}
+
+enum flower_color {
+	RED,
+	BLUE
+}
+
+lay = false;
 
 if (!instance_exists(objCam)){
 	instance_create_layer(x, y, "instances", objCam);	
@@ -14,16 +27,11 @@ if (!instance_exists(objGame)){
 instance_create_layer(x, y, layer, objGooseFeet);
 instance_create_layer(x, y, layer, objGooseHead);
 
-enum player_state{
-	MOVE,
-	DIE,	
-	GONE,
-}
-
-enum flower_color {
-	RED,
-	BLUE
-}
+idle_timer_max = 400;
+idle_timer = idle_timer_max;
+feet_dance_timer_max = 110;
+feet_dance_timer = feet_dance_timer_max;
+dance_cycles = 0;
 
 // Create Event of objGooseBody
 _blend_amount = 0; // 0 = white, 1 = deep space blue
@@ -72,6 +80,7 @@ spr_body_glide = sprGooseBodyGlide;
 
 spr_body_crouch = sprGooseCrouch;
 spr_body_die = sprGooseDie;
+spr_body_sit = sprGooseBodySit;
 
 spr_head_idle = sprGooseHeadIdle;
 spr_head_honk = sprGooseHeadHonk;
@@ -79,6 +88,7 @@ spr_head_honk = sprGooseHeadHonk;
 spr_feet_idle = sprGooseFeetIdle;
 spr_feet_run = sprGooseFeetRun;
 spr_feet_jump = sprGooseFeetJump;
+spr_feet_sit = sprGooseFeetSit;
 
 move_dir = dir.RIGHT;
 
