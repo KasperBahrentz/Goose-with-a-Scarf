@@ -29,10 +29,7 @@ repeat(random_range(20, 25)) instance_create_layer(random_div8_range(0, room_wid
 var _clouds_back_back = layer_create(layer_get_depth("mountains_back")+5, "clouds_back_back");
 repeat(random_range(20, 25)) instance_create_layer(random_div8_range(0, room_width), random_div8_range(3*tile_size, room_height-room_height/3), _clouds_back_back, objCloud);
 
-var tilemap_id = layer_tilemap_get_id("ground");
-var tileset_id = tilemap_get_tileset(tilemap_id);
-var tileset_name = tileset_get_name(tileset_id);
-if (tileset_name == "tlsGroundWinter"){
+if (get_tileset_name() == "tlsGroundWinter"){
 	var _stars = layer_create(layer_get_depth(_clouds_back_back)+5, "stars");
 	repeat(random_range(40, 50)) instance_create_layer(random_div8_range(tile_size, room_width-tile_size), random_div8_range(2*tile_size, room_height-room_height/2), _stars, objStar);
 	instance_create_layer(random_div8_range(0, room_width), random_div8_range(2*tile_size, room_height-room_height/3), _stars, objMoon);

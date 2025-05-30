@@ -1,14 +1,12 @@
 /// @description Insert description here
 // You can write your code in this editor
 
-var tilemap_id = layer_tilemap_get_id("ground");
-var tileset_id = tilemap_get_tileset(tilemap_id);
-var tileset_name = tileset_get_name(tileset_id);
-
 // Destroy cloud if too close to other clouds at spawn
 if (collision_circle(x, y, 32*pixel_size, objCloud, false, true)) instance_destroy();
 
-if (tileset_name == "tlsGroundWinter"){
+var _tileset_name = get_tileset_name();
+
+if (_tileset_name == "tlsGroundWinter"){
 	sprite_index = sprCloudWinterFront;	
 }
 
@@ -24,7 +22,7 @@ else if (layer == layer_get_id("clouds_middle")){
 	state = "middle";
 	parallax_factor = 24;
 	sprite_index = sprCloudMiddle;
-	if (tileset_name == "tlsGroundWinter"){
+	if (_tileset_name == "tlsGroundWinter"){
 		sprite_index = sprCloudWinterMiddle;	
 	}
 }
@@ -33,7 +31,7 @@ else if (layer == layer_get_id("clouds_back")){
 	state = "back";
 	parallax_factor = 48;
 	sprite_index = sprCloudBack;
-	if (tileset_name == "tlsGroundWinter"){
+	if (_tileset_name == "tlsGroundWinter"){
 		sprite_index = sprCloudWinterBack;	
 	}
 }
@@ -42,7 +40,7 @@ else if (layer == layer_get_id("clouds_back")){
 	state = "back_back";
 	parallax_factor = 64;
 	sprite_index = sprCloudBack;
-	if (tileset_name == "tlsGroundWinter"){
+	if (_tileset_name == "tlsGroundWinter"){
 		sprite_index = sprCloudWinterBack;	
 	}
 }

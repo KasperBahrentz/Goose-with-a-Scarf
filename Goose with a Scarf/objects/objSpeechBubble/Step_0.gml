@@ -5,6 +5,7 @@ if (dist < player_range) {
 	image_alpha = 1;
 } else {
     fade = true;
+	text_speed = default_text_speed;
 }
 
 

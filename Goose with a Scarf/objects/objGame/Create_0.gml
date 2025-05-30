@@ -26,4 +26,5 @@ draw_set_font(fnt_smooth);
 
 audio_stop_all(); // only for debugging
 
-fruit_collected = [0, 0, 0, 0];
+fruit_collected = [];
+number_of_fruit_collected = [0, 0, 0, 0];

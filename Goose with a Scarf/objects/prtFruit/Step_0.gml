@@ -25,13 +25,14 @@ function follow(){
 		state = fruit_state.COLLECT;
 		audio_play_sound(sndPling, 15, false);
 		image_speed = img_speed;
-		objGame.fruit_collected[fruit_index]++;
+		objGame.number_of_fruit_collected[fruit_index]++;
 		instance_create_layer(-100, -100, "instances", objFruitCollectedGUI, {fruit : self.object_index});
 	}
 }
 
 function collect(){
 	if (image_index >= image_number-2){
+		array_insert(objGame.fruit_collected, -1, room_get_name(room));
 		instance_destroy();	
 	}	
 }

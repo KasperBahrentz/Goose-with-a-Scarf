@@ -4,5 +4,5 @@
 if (objGooseBody.state != player_state.DIE){
 	draw_set_font(fnt_gui);
 	draw_sprite(fruit_to_draw, img_index, x - 16*pixel_size, y + 8*pixel_size);
-	draw_text(x, y, objGame.fruit_collected[index]);
+	draw_text(x, y, objGame.number_of_fruit_collected[index]);
 }

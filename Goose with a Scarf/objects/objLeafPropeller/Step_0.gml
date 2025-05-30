@@ -18,3 +18,12 @@ function fly() {
 	y = min(ystart, y-sin(timer) / 4);
 	timer += 0.02;
 }
+
+if (sound_timer <= 0){
+	audio_sound_pitch(sndPropeller, random_range(0.9, 1));
+	if(!audio_is_playing(sndPropeller)) audio_play_sound(sndPropeller, 2, false);
+	sound_timer = sound_timer_max + irandom_range(-2, 2);
+}
+else {
+	sound_timer--;	
+}

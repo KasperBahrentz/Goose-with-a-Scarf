@@ -71,15 +71,17 @@ function move(){
 	if (_moving){ // Accelerate
 		h_spd = min(max(deceleration, h_spd*acceleration), _top_spd);
 		
-		if (sound_timer == 0){
-			var _play_sound = random_range(0, 1);
+		if (vspeed == 0){
+			if (sound_timer == 0){
+				var _play_sound = random_range(0, 1);
 		
-			if (_play_sound >= 0.9){	
-				play_material_sound();
-				sound_timer = sound_timer_max;
+				if (_play_sound >= 0.9){	
+					play_material_sound();
+					sound_timer = sound_timer_max;
+				}
+			} else {
+				sound_timer--;
 			}
-		} else {
-			sound_timer--;
 		}
 	}
 	else { // Decelerate
@@ -280,6 +282,10 @@ function play_material_sound(){
 	var _material = "grass";
 	var _sound = sndGrass1;
 	
+	if (get_tileset_name() == "tlsGroundWinter"){
+		_material = "snow";	
+	}
+	
 	// If there is a different  material below us
 	if (place_meeting(x , y + 4*pixel_size, objCollisionSemiSolid)){
 		var _semi_solid = instance_nearest(x, y, objCollisionSemiSolid);
@@ -297,6 +303,10 @@ function play_material_sound(){
 		case "grass": {
 			_sound = choose(sndGrass1, sndGrass2, sndGrass3, sndGrass4, sndGrass5, sndGrass6, sndGrass7, sndGrass8);
 			audio_sound_gain(_sound, 2, 0);
+			break;
+		}
+		case "snow": {
+			_sound = choose(sndSnow1, sndSnow2, sndSnow3, sndSnow4, sndSnow5, sndSnow6, sndSnow7, sndSnow8, sndSnow9 ,sndSnow10);
 			break;
 		}
 		case "water": {

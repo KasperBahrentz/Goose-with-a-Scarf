@@ -4,7 +4,8 @@ player_range = 32*pixel_size;      // Distance to trigger the bubble
 
 text_shown = "";             // What’s currently visible
 text_index = 0;              // Current character index
-text_speed = 0.8;            // Characters per frame (adjust as needed)
+default_text_speed = 0.8;
+text_speed = default_text_speed;   // Characters per frame (adjust as needed)
 text_timer = 0;              // Fractional counter
 text_pause = 0; // how many frames to wait on punctuation
 
@@ -20,3 +21,10 @@ sound_timer_max = 4;
 sound_timer = 0;
 
 fade = false;
+
+// Check if spawned in player circumference
+var dist = point_distance(x+4*pixel_size, y, objGooseBody.x, objGooseBody.y);
+if (dist < player_range) {
+	text_speed = 100;
+	sound_timer = 100;
+}

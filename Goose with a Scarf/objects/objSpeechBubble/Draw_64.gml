@@ -14,6 +14,7 @@ var i = 1;
 var word = "";
 
 draw_set_alpha(image_alpha);
+draw_set_font(fnt_smooth);
 
 while (i <= string_length(text_shown)) {
     var ch = string_char_at(text_shown, i);
