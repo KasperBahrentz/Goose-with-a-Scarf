@@ -50,6 +50,7 @@
     {"name":"inst_4AE848D8","path":"rooms/room_level_spring_3/room_level_spring_3.yy",},
     {"name":"inst_461B94C7","path":"rooms/room_level_spring_3/room_level_spring_3.yy",},
     {"name":"inst_137DA907","path":"rooms/room_level_spring_3/room_level_spring_3.yy",},
+    {"name":"inst_12266853","path":"rooms/room_level_spring_3/room_level_spring_3.yy",},
   ],
   "isDnd":false,
   "layers":[
@@ -67,6 +68,7 @@
         {"$GMRInstance":"v2","%Name":"inst_55D85E67","colour":4294967295,"frozen":false,"hasCreationCode":false,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"name":"inst_55D85E67","objectId":{"name":"objCollisionSemiSolid","path":"objects/objCollisionSemiSolid/objCollisionSemiSolid.yy",},"properties":[],"resourceType":"GMRInstance","resourceVersion":"2.0","rotation":0.0,"scaleX":1.0,"scaleY":1.0,"x":7232.0,"y":768.0,},
         {"$GMRInstance":"v2","%Name":"inst_4AE848D8","colour":4294967295,"frozen":false,"hasCreationCode":false,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"name":"inst_4AE848D8","objectId":{"name":"objCollisionSemiSolid","path":"objects/objCollisionSemiSolid/objCollisionSemiSolid.yy",},"properties":[],"resourceType":"GMRInstance","resourceVersion":"2.0","rotation":0.0,"scaleX":1.0,"scaleY":1.0,"x":2496.0,"y":1408.0,},
         {"$GMRInstance":"v2","%Name":"inst_461B94C7","colour":4294967295,"frozen":false,"hasCreationCode":false,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"name":"inst_461B94C7","objectId":{"name":"objCollisionSemiSolid","path":"objects/objCollisionSemiSolid/objCollisionSemiSolid.yy",},"properties":[],"resourceType":"GMRInstance","resourceVersion":"2.0","rotation":0.0,"scaleX":1.0,"scaleY":1.0,"x":2624.0,"y":1408.0,},
+        {"$GMRInstance":"v2","%Name":"inst_12266853","colour":4294967295,"frozen":false,"hasCreationCode":false,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"name":"inst_12266853","objectId":{"name":"objCollisionWall","path":"objects/objCollisionWall/objCollisionWall.yy",},"properties":[],"resourceType":"GMRInstance","resourceVersion":"2.0","rotation":0.0,"scaleX":1.0,"scaleY":1.0,"x":2304.0,"y":-128.0,},
       ],"layers":[],"name":"collision","properties":[],"resourceType":"GMRInstanceLayer","resourceVersion":"2.0","userdefinedDepth":false,"visible":false,},
     {"$GMRTileLayer":"","%Name":"water_front_details","depth":200,"effectEnabled":true,"effectType":null,"gridX":32,"gridY":32,"hierarchyFrozen":false,"inheritLayerDepth":false,"inheritLayerSettings":false,"inheritSubLayers":true,"inheritVisibility":true,"layers":[],"name":"water_front_details","properties":[],"resourceType":"GMRTileLayer","resourceVersion":"2.0","tiles":{"SerialiseHeight":17,"SerialiseWidth":60,"TileCompressedData":[
           -30,0,-30,-2147483648,-30,0,-30,-2147483648,-30,0,-30,-2147483648,-30,0,-30,-2147483648,-30,0,-30,-2147483648,

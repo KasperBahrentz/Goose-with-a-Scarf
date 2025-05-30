@@ -109,9 +109,10 @@ function move(){
 		_landed_on_semi_solid = true;
 	}
 	
-	var _ceiling_hit = check_collision(0, -10*pixel_size);
+	var _ceiling_hit = check_collision(0, -8*pixel_size);
 	
 	if (_landed_on_semi_solid) or (vspeed > 0 and check_collision(0, 4*pixel_size)){ // Stop on ground
+		is_on_ground = true;
 		glide_timer = 0;
 		var _tilemap = objGame.collision_tilemap;
 		if (_landed_on_semi_solid) _tilemap = layer_tilemap_get_id("back");
@@ -138,7 +139,11 @@ function move(){
 		
 		was_on_ground_timer = was_on_ground_timer_max;
 	} 
-	else if (_ceiling_hit){ // Stop at ceiling
+	else {
+		is_on_ground = false;	
+	}
+	
+	if (_ceiling_hit){ // Stop at ceiling
 		map_y = tilemap_get_cell_y_at_pixel(objGame.collision_tilemap, x, y-8*pixel_size) + 1;
 		jump_timer = max(jump_timer, current_max_jump_timer/2 + current_max_jump_timer/4);
 		vspeed = max(vspeed - jump_height * (1 - jump_timer/current_max_jump_timer), 0);
