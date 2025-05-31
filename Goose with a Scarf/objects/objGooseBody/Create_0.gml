@@ -46,6 +46,8 @@ glide_timer_max = 60;
 glide_timer = 0;
 
 hidden_assets = layer_get_all_elements(layer_get_id("hidden"));
+hidden_assets = array_concat(hidden_assets, layer_get_all_elements(layer_get_id("hidden_front")));
+
 found_hidden_blocks = [];
 hidden_block_id = -1;
 

@@ -1,6 +1,6 @@
 {
   "$GMTileSet":"v1",
-  "%Name":"tlsHouse16",
+  "%Name":"tlsHouse",
   "autoTileSets":[
     {"$GMAutoTileSet":"","%Name":"scaffolding","closed_edge":false,"name":"scaffolding","resourceType":"GMAutoTileSet","resourceVersion":"2.0","tiles":[
         301,302,303,304,305,306,307,308,332,333,334,335,336,337,338,339,363,364,365,366,367,368,369,370,394,
@@ -12,7 +12,7 @@
     "SerialiseWidth":0,
     "TileSerialiseData":[],
   },
-  "name":"tlsHouse16",
+  "name":"tlsHouse",
   "out_columns":31,
   "out_tilehborder":2,
   "out_tilevborder":2,
@@ -22,7 +22,10 @@
   },
   "resourceType":"GMTileSet",
   "resourceVersion":"2.0",
-  "spriteId":null,
+  "spriteId":{
+    "name":"sprTilesHouse",
+    "path":"sprites/sprTilesHouse/sprTilesHouse.yy",
+  },
   "spriteNoExport":false,
   "textureGroupId":{
     "name":"Default",
@@ -30,10 +33,10 @@
   },
   "tileAnimationFrames":[],
   "tileAnimationSpeed":15.0,
-  "tileHeight":16,
+  "tileHeight":128,
   "tilehsep":0,
   "tilevsep":0,
-  "tileWidth":16,
+  "tileWidth":128,
   "tilexoff":0,
   "tileyoff":0,
   "tile_count":961,

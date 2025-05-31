@@ -238,6 +238,12 @@ function move(){
 		y = (map_y * tile_size) + pixel_size;
 	}
 	
+	// Only put chimneys in front if is on ground
+	if (is_on_ground){
+		layer_depth(layer_get_id("house_chimneys"), objGooseBody.depth-20);	
+	}
+	else layer_depth(layer_get_id("house_chimneys"), objGooseBody.depth+20);	
+	
 	// Jump
 	if (was_on_ground_timer > 0) and (keyboard_check_pressed(vk_space)) and (sprite_index != spr_body_crouch){
 		glide_timer = glide_timer_max;

@@ -20,8 +20,7 @@
   "height":32,
   "HTile":false,
   "layers":[
-    {"$GMImageLayer":"","%Name":"ead0970e-79f2-4808-a616-b428ad1511bc","blendMode":0,"displayName":"Layer 1","isLocked":false,"name":"ead0970e-79f2-4808-a616-b428ad1511bc","opacity":100.0,"resourceType":"GMImageLayer","resourceVersion":"2.0","visible":true,},
-    {"$GMImageLayer":"","%Name":"eb293f31-fd75-4348-93c8-67f6d7ff2529","blendMode":0,"displayName":"default","isLocked":false,"name":"eb293f31-fd75-4348-93c8-67f6d7ff2529","opacity":100.0,"resourceType":"GMImageLayer","resourceVersion":"2.0","visible":true,},
+    {"$GMImageLayer":"","%Name":"1c8bfe5f-7e6d-45b1-8079-ec86e406421d","blendMode":0,"displayName":"default","isLocked":false,"name":"1c8bfe5f-7e6d-45b1-8079-ec86e406421d","opacity":100.0,"resourceType":"GMImageLayer","resourceVersion":"2.0","visible":true,},
   ],
   "name":"sprSwan16",
   "nineSlice":null,
