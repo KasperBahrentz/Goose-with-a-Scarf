@@ -18,7 +18,7 @@ function closed(){
 }
 
 function open(){
-	if (objGooseBody.vspeed == 0){
+	if (objGooseBody.is_on_ground){
 		state = parasol_state.CLOSED;
 		//var _x = x + random_range(-5, 5)*pixel_size;
 		//var _y = y + random_range(-10, 5)*pixel_size;

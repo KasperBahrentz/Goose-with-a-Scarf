@@ -13,6 +13,11 @@ function sit(){
 		sprite_index = spr_body_sit;
 		objGooseFeet.sprite_index = spr_feet_sit;
 		if (feet_dance_timer <= 0){
+			if (dance_cycles <= 0){
+				if (alarm[3] == -1) dance_cycles = irandom_range(2, 6);
+				else if (alarm[3] >= 300) dance_cycles = irandom_range(2, alarm[3]/100);
+			}
+						
 			if (dance_cycles > 0) objGooseFeet.image_speed = 1;
 			else {
 				objGooseFeet.image_speed = 0;
@@ -25,11 +30,7 @@ function sit(){
 				if (dance_cycles <= 0){
 					objGooseFeet.image_speed = 0;
 					objGooseFeet.image_index = 0;
-					if (alarm[3] == -1 or alarm[3] >= 400) {
-						feet_dance_timer = feet_dance_timer_max + irandom_range(0, feet_dance_timer_max);
-						if (alarm[3] == -1) dance_cycles = irandom_range(2, 6);
-						else dance_cycles = irandom_range(2, alarm[3]/100);
-					}
+					feet_dance_timer = feet_dance_timer_max + irandom_range(0, feet_dance_timer_max);
 				}
 			}
 		}
@@ -97,7 +98,7 @@ function set_sit(_force_sit = false){
 
 function move(){
 	image_speed = 1;
-	if (hspeed == 0 and vspeed == 0){
+	if (hspeed == 0 and vspeed == 0 and !keyboard_check_pressed(ord("S"))){
 		if (idle_timer <= 0){
 			set_sit();
 		}
@@ -158,7 +159,7 @@ function move(){
 	if (_moving){ // Accelerate
 		h_spd = min(max(deceleration, h_spd*acceleration), _top_spd);
 		
-		if (vspeed == 0){
+		if (is_on_ground == 0){
 			if (sound_timer == 0){
 				var _play_sound = random_range(0, 1);
 		
