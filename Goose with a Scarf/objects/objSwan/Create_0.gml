@@ -1,1 +1,6 @@
-sprite_index = sprSwanIdle;
+enum swan_state {
+	IDLE,
+	POSE	
+}
+
+s
