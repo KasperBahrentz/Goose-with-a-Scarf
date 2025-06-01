@@ -17,7 +17,7 @@ function idle(){
 }
 
 function move(){
-	if (objGooseBody.state != player_state.MOVE){
+	if (objGooseBody.state == player_state.DIE or objGooseBody.state == player_state.GONE){
 		instance_destroy();	
 	}
 

@@ -3,7 +3,7 @@
 
 start_y = y;
 
-start_depth = depth;
+start_depth = objGooseBody.depth+1;
 
 has_created_respawn = false;
 

@@ -28,8 +28,8 @@
   "resourceVersion":"2.0",
   "solid":false,
   "spriteId":{
-    "name":"sprSwanPeacock",
-    "path":"sprites/sprSwanPeacock/sprSwanPeacock.yy",
+    "name":"sprPeacock",
+    "path":"sprites/sprPeacock/sprPeacock.yy",
   },
   "spriteMaskId":null,
   "visible":true,
