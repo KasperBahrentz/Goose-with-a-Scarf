@@ -12,4 +12,4 @@ if (image_index != 2){
 	}
 	else depth = objGooseBody.depth+50;	
 }
-else depth = objTurkey.depth + 50;
+else depth = layer_get_depth(layer_get_id("house_back")) + 100;

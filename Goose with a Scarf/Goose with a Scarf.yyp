@@ -362,6 +362,7 @@
     {"id":{"name":"sprSwan16","path":"sprites/sprSwan16/sprSwan16.yy",},},
     {"id":{"name":"sprSwanIdle","path":"sprites/sprSwanIdle/sprSwanIdle.yy",},},
     {"id":{"name":"sprSwanIdle16","path":"sprites/sprSwanIdle16/sprSwanIdle16.yy",},},
+    {"id":{"name":"sprSwanPoseLeft","path":"sprites/sprSwanPoseLeft/sprSwanPoseLeft.yy",},},
     {"id":{"name":"sprSwanPoseLeft16","path":"sprites/sprSwanPoseLeft16/sprSwanPoseLeft16.yy",},},
     {"id":{"name":"sprTilesDeco","path":"sprites/sprTilesDeco/sprTilesDeco.yy",},},
     {"id":{"name":"sprTilesDeco16","path":"sprites/sprTilesDeco16/sprTilesDeco16.yy",},},

@@ -3,4 +3,6 @@ enum swan_state {
 	POSE	
 }
 
-s
+state = swan_state.POSE;
+
+idle_timer = 240;

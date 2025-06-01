@@ -13,7 +13,7 @@ image_blend = dark_grey;
 image_speed = irandom_range(8, 11);
 
 if (smoke_in_back){
-	depth = objGooseBody.depth + 5;
+	depth = layer_get_depth(layer_get_id("house_back")) + 50;
 }
 else depth = objChimney.depth - 5;
 depth_start = depth;
