@@ -5,7 +5,7 @@
   "bbox_bottom":255,
   "bbox_left":48,
   "bbox_right":215,
-  "bbox_top":72,
+  "bbox_top":64,
   "collisionKind":1,
   "collisionTolerance":0,
   "DynamicTexturePage":false,
@@ -22,8 +22,7 @@
   "height":256,
   "HTile":false,
   "layers":[
-    {"$GMImageLayer":"","%Name":"5b956e7e-9707-4b4b-850d-6e2777cb6599","blendMode":0,"displayName":"Layer 1","isLocked":false,"name":"5b956e7e-9707-4b4b-850d-6e2777cb6599","opacity":100.0,"resourceType":"GMImageLayer","resourceVersion":"2.0","visible":true,},
-    {"$GMImageLayer":"","%Name":"eb293f31-fd75-4348-93c8-67f6d7ff2529","blendMode":0,"displayName":"default","isLocked":false,"name":"eb293f31-fd75-4348-93c8-67f6d7ff2529","opacity":100.0,"resourceType":"GMImageLayer","resourceVersion":"2.0","visible":true,},
+    {"$GMImageLayer":"","%Name":"ec574dfd-95df-4663-9104-a4cb7f7c5a86","blendMode":0,"displayName":"default","isLocked":false,"name":"ec574dfd-95df-4663-9104-a4cb7f7c5a86","opacity":100.0,"resourceType":"GMImageLayer","resourceVersion":"2.0","visible":true,},
   ],
   "name":"sprDodo",
   "nineSlice":null,

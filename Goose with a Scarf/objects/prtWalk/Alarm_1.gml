@@ -1,0 +1,1 @@
+sprite_index = choose(normal_sprite, idle_sprite);

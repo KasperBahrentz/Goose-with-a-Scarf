@@ -1,0 +1,1 @@
+state = walk_state.EXIT_WAIT;
