@@ -8,6 +8,9 @@ enum fruit_counter {
 	ORANGE	
 }
 
+hidden_assets = layer_get_all_elements(layer_get_id("hidden"));
+found_hidden_blocks = [];
+
 display_set_gui_maximise();
 display_set_gui_size(3584*0.75, 1904*0.75);
 

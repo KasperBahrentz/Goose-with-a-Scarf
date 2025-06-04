@@ -4,12 +4,21 @@
   "eventList":[],
   "managed":true,
   "name":"objDuck",
-  "overriddenProperties":[],
+  "overriddenProperties":[
+    {"$GMOverriddenProperty":"v1","%Name":"","name":"","objectId":{"name":"prtWalk","path":"objects/prtWalk/prtWalk.yy",},"propertyId":{"name":"normal_sprite","path":"objects/prtWalk/prtWalk.yy",},"resource":{"name":"sprDuck","path":"sprites/sprDuck/sprDuck.yy",},"resourceType":"GMOverriddenProperty","resourceVersion":"2.0","value":"sprDuck",},
+    {"$GMOverriddenProperty":"v1","%Name":"","name":"","objectId":{"name":"prtWalk","path":"objects/prtWalk/prtWalk.yy",},"propertyId":{"name":"walking_range","path":"objects/prtWalk/prtWalk.yy",},"resourceType":"GMOverriddenProperty","resourceVersion":"2.0","value":"floor(2.5*tile_size)",},
+    {"$GMOverriddenProperty":"v1","%Name":"","name":"","objectId":{"name":"prtWalk","path":"objects/prtWalk/prtWalk.yy",},"propertyId":{"name":"walk_sprite","path":"objects/prtWalk/prtWalk.yy",},"resource":{"name":"sprTurkeyWalk","path":"sprites/sprTurkeyWalk/sprTurkeyWalk.yy",},"resourceType":"GMOverriddenProperty","resourceVersion":"2.0","value":"sprDuckWalk",},
+    {"$GMOverriddenProperty":"v1","%Name":"","name":"","objectId":{"name":"prtWalk","path":"objects/prtWalk/prtWalk.yy",},"propertyId":{"name":"walking_speed_start","path":"objects/prtWalk/prtWalk.yy",},"resourceType":"GMOverriddenProperty","resourceVersion":"2.0","value":"2.6",},
+    {"$GMOverriddenProperty":"v1","%Name":"","name":"","objectId":{"name":"prtWalk","path":"objects/prtWalk/prtWalk.yy",},"propertyId":{"name":"idle_sprite","path":"objects/prtWalk/prtWalk.yy",},"resource":{"name":"sprDuckIdle","path":"sprites/sprDuckIdle/sprDuckIdle.yy",},"resourceType":"GMOverriddenProperty","resourceVersion":"2.0","value":"sprDuckIdle",},
+  ],
   "parent":{
     "name":"NPCs",
     "path":"folders/Objects/NPCs.yy",
   },
-  "parentObjectId":null,
+  "parentObjectId":{
+    "name":"prtWalk",
+    "path":"objects/prtWalk/prtWalk.yy",
+  },
   "persistent":false,
   "physicsAngularDamping":0.1,
   "physicsDensity":0.5,

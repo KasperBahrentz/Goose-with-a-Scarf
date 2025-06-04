@@ -10,13 +10,15 @@ function walk_left(){
 	image_xscale = facing_right ? -1 : 1;
 	
 	set_walking_speed();
+
 	
-	x -= walking_speed;
-	
-	if (abs(x-xstart) >= walking_range-4*pixel_size){
-		set_idle();
-		next_state = walk_state.WALK_RIGHT;
+	if (x-xstart <= -walking_range){
+		if (floor(image_index) == image_number-1){
+			set_idle();
+			next_state = walk_state.WALK_RIGHT;
+		}
 	}
+	else x -= walking_speed;
 }
 
 function walk_right(){
@@ -25,12 +27,11 @@ function walk_right(){
 	
 	set_walking_speed();
 	
-	x += walking_speed;
-	
-	if (abs(x-xstart) >= walking_range-4*pixel_size){
+	if (x-xstart >= walking_range) and (floor(image_index) == image_number-1){
 		set_idle();
 		next_state = walk_state.WALK_LEFT;
 	}
+	else x += walking_speed;
 }
 
 function set_idle(){

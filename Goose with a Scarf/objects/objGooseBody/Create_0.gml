@@ -45,11 +45,6 @@ grav = 18;
 glide_timer_max = 60;
 glide_timer = 0;
 
-hidden_assets = layer_get_all_elements(layer_get_id("hidden"));
-
-found_hidden_blocks = [];
-hidden_block_id = -1;
-
 debug_string = 0;
 debug_x = 0;
 debug_y = 0;
