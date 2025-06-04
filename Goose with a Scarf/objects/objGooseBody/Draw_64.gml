@@ -14,6 +14,6 @@
 //draw_set_colour(c_white);
 //draw_text(debug_x, debug_y, debug_string);
 
-//draw_text(x, y, idle_timer);
+//draw_text(x, y, glide_timer);
 //draw_text(x, y-80, feet_dance_timer);
 //draw_text(x, y-160, dance_cycles);

@@ -64,6 +64,7 @@
     {"name":"inst_785B9AE0","path":"rooms/room_level_spring_village/room_level_spring_village.yy",},
     {"name":"inst_205118C7","path":"rooms/room_level_spring_village/room_level_spring_village.yy",},
     {"name":"inst_6778383F","path":"rooms/room_level_spring_village/room_level_spring_village.yy",},
+    {"name":"inst_50D4750","path":"rooms/room_level_spring_village/room_level_spring_village.yy",},
   ],
   "isDnd":false,
   "layers":[
@@ -637,6 +638,7 @@
         {"$GMRInstance":"v2","%Name":"inst_785B9AE0","colour":4294967295,"frozen":false,"hasCreationCode":false,"ignore":false,"imageIndex":2,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"name":"inst_785B9AE0","objectId":{"name":"objChimney","path":"objects/objChimney/objChimney.yy",},"properties":[],"resourceType":"GMRInstance","resourceVersion":"2.0","rotation":0.0,"scaleX":1.0,"scaleY":1.0,"x":10368.0,"y":512.0,},
         {"$GMRInstance":"v2","%Name":"inst_205118C7","colour":4294967295,"frozen":false,"hasCreationCode":false,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"name":"inst_205118C7","objectId":{"name":"objBalloon","path":"objects/objBalloon/objBalloon.yy",},"properties":[],"resourceType":"GMRInstance","resourceVersion":"2.0","rotation":0.0,"scaleX":1.0,"scaleY":1.0,"x":3008.0,"y":1664.0,},
         {"$GMRInstance":"v2","%Name":"inst_6778383F","colour":4294967295,"frozen":false,"hasCreationCode":false,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"name":"inst_6778383F","objectId":{"name":"objDodo","path":"objects/objDodo/objDodo.yy",},"properties":[],"resourceType":"GMRInstance","resourceVersion":"2.0","rotation":0.0,"scaleX":1.0,"scaleY":1.0,"x":3008.0,"y":1792.0,},
+        {"$GMRInstance":"v2","%Name":"inst_50D4750","colour":4294967295,"frozen":false,"hasCreationCode":false,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"name":"inst_50D4750","objectId":{"name":"objGoal","path":"objects/objGoal/objGoal.yy",},"properties":[],"resourceType":"GMRInstance","resourceVersion":"2.0","rotation":0.0,"scaleX":1.0,"scaleY":1.0,"x":2240.0,"y":1792.0,},
       ],"layers":[],"name":"instances","properties":[],"resourceType":"GMRInstanceLayer","resourceVersion":"2.0","userdefinedDepth":false,"visible":true,},
     {"$GMRTileLayer":"","%Name":"ground","depth":1000,"effectEnabled":true,"effectType":null,"gridX":32,"gridY":32,"hierarchyFrozen":false,"inheritLayerDepth":true,"inheritLayerSettings":false,"inheritSubLayers":true,"inheritVisibility":false,"layers":[],"name":"ground","properties":[],"resourceType":"GMRTileLayer","resourceVersion":"2.0","tiles":{"SerialiseHeight":34,"SerialiseWidth":90,"TileCompressedData":[
           -30,0,-60,-2147483648,-30,0,-60,-2147483648,-30,0,-60,-2147483648,-30,0,-60,-2147483648,-30,0,-60,-2147483648,
