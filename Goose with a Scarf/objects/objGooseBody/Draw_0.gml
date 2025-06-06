@@ -38,7 +38,7 @@ function draw_goose(){
 
 draw_set_font(fnt_smooth);
 
-draw_text(x, y, fall_through_semi_solid_timer);
+//draw_text(x, y, fall_through_semi_solid_timer);
 //draw_set_color(c_red);
 //draw_rectangle(bbox_left, bbox_top - 10*pixel_size, bbox_right, bbox_bottom + 4*pixel_size, false);
 //draw_set_color(c_white);
