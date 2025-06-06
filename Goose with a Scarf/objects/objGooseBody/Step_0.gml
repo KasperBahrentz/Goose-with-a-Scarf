@@ -182,20 +182,20 @@ function move(){
 	// Horizontal movement with pixel precision to avoid clipping
 	var _steps = abs(h_spd * move_dir);
 	var _dir = sign(h_spd * move_dir);
-for (var i = 0; i < _steps; i++) {
-    if (!check_collision(_dir, 0)) {
-        x += _dir;
-    } else {
-        // Nudge out of wall depending on direction
-        if (_dir > 0) {
-            while (check_collision(1, 0)) x -= 1;
-        } else {
-            while (check_collision(-1, 0)) x += 1;
-        }
-        h_spd = 0;
-        break;
-    }
-}
+	for (var i = 0; i < _steps; i++) {
+	    if (!check_collision(_dir, 0)) {
+	        x += _dir;
+	    } else {
+	        // Nudge out of wall depending on direction
+	        if (_dir > 0) {
+	            while (check_collision(1, 0)) x -= 1;
+	        } else {
+	            while (check_collision(-1, 0)) x += 1;
+	        }
+	        h_spd = 0;
+	        break;
+	    }
+	}
 	hspeed_tracker = h_spd * move_dir
 	
 	jump();
@@ -226,6 +226,28 @@ for (var i = 0; i < _steps; i++) {
 			was_in_air = false;
 			current_max_jump_timer = max_jump_timer;
 		}
+		
+
+		// --- FALL THROUGH SEMI-SOLID (double tap S) ---
+
+		// Check if S was just pressed
+		if (keyboard_check_pressed(ord("S"))) {
+		    if (fall_through_semi_solid_timer > 0 && _landed_on_semi_solid) {
+		        // Second press detected in time — fall through
+		        y += 4 * pixel_size;
+		        fall_through_semi_solid_timer = 0; // Reset to avoid triple-taps
+		    } else {
+		        // First press — start the timer
+		        fall_through_semi_solid_timer = fall_through_semi_solid_timer_max;
+		    }
+		}
+
+		// Decrease timer each frame
+		if (fall_through_semi_solid_timer > 0) {
+		    fall_through_semi_solid_timer--;
+		}
+
+		
 		
 		// Crouch
 		if (keyboard_check(ord("S"))){

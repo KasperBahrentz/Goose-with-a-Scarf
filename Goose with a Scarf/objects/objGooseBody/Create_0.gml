@@ -29,6 +29,9 @@ if (!instance_exists(objGame)){
 instance_create_layer(x, y, layer, objGooseFeet);
 instance_create_layer(x, y, layer, objGooseHead);
 
+fall_through_semi_solid_timer_max = 20;
+fall_through_semi_solid_timer = 0;
+
 idle_timer_max = 400;
 idle_timer = idle_timer_max;
 feet_dance_timer_max = 110;
