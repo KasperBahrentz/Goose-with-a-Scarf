@@ -58,5 +58,5 @@ function on(){
 			}
 		}
 	}
-	if (array_length(objGame.found_hidden_blocks) <= 0) master = false;
+	if (array_length(objGame.found_hidden_blocks) <= 0) instance_destroy();
 }

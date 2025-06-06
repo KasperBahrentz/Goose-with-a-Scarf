@@ -234,7 +234,7 @@ function move(){
 		if (keyboard_check_pressed(ord("S"))) {
 		    if (fall_through_semi_solid_timer > 0 && _landed_on_semi_solid) {
 		        // Second press detected in time — fall through
-		        y += 4 * pixel_size;
+		        if(!check_collision(0, 3*pixel_size)) and (!place_meeting(x, y+8*pixel_size, objHiddenDetection)) vspeed = 3 * pixel_size;
 		        fall_through_semi_solid_timer = 0; // Reset to avoid triple-taps
 		    } else {
 		        // First press — start the timer
