@@ -22,8 +22,7 @@
   "height":32,
   "HTile":false,
   "layers":[
-    {"$GMImageLayer":"","%Name":"5b956e7e-9707-4b4b-850d-6e2777cb6599","blendMode":0,"displayName":"Layer 1","isLocked":false,"name":"5b956e7e-9707-4b4b-850d-6e2777cb6599","opacity":100.0,"resourceType":"GMImageLayer","resourceVersion":"2.0","visible":true,},
-    {"$GMImageLayer":"","%Name":"eb293f31-fd75-4348-93c8-67f6d7ff2529","blendMode":0,"displayName":"default","isLocked":false,"name":"eb293f31-fd75-4348-93c8-67f6d7ff2529","opacity":100.0,"resourceType":"GMImageLayer","resourceVersion":"2.0","visible":true,},
+    {"$GMImageLayer":"","%Name":"8da96c51-0f77-49d0-8992-e4c9ed99458c","blendMode":0,"displayName":"default","isLocked":false,"name":"8da96c51-0f77-49d0-8992-e4c9ed99458c","opacity":100.0,"resourceType":"GMImageLayer","resourceVersion":"2.0","visible":true,},
   ],
   "name":"sprDodo16",
   "nineSlice":null,

@@ -22,7 +22,8 @@ if (get_tileset_name() == "tlsGroundWinter"){
 	repeat(random_range(40, 50)) instance_create_layer(random_div8_range(tile_size, room_width-tile_size), random_div8_range(2*tile_size, room_height-room_height/2), _stars, objStar);
 	//instance_create_layer(random_div8_range(0, room_width), random_div8_range(2*tile_size, room_height-room_height/3), _stars, objMoon);
 }
-else {
+
+if (layer_get_x("mountains_front") == 0) {
 	// Mountains front
 	layer_x("mountains_front", random_div8_range(-2 * tile_size, 480*pixel_size));
 	layer_y("mountains_front", layer_get_y("mountains_front") + random_div8_range(-3 * tile_size, 0));
