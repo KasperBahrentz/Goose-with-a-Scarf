@@ -105,3 +105,51 @@ function layer_has_tiles(layer_name){
 	    return false;
 	}
 }
+
+
+function play_material_sound(){
+	var _material = "grass";
+	var _sound = sndGrass1;
+	
+	if (get_tileset_name() == "tlsGroundWinter"){
+		_material = "snow";	
+	}
+	
+	// If there is a different  material below us
+	if (place_meeting(x , y + 4*pixel_size, objCollisionSemiSolid)){
+		var _semi_solid = instance_nearest(x, y, objCollisionSemiSolid);
+		if (_semi_solid.material == "water"){
+			_material = "water"
+		} else if (_semi_solid.material == "wood"){
+			_material = "wood";
+		}
+	}
+	else if (place_meeting(x, y + 4*pixel_size, prtCrate)){
+		_material = "wood";
+	}
+	
+	switch(_material){
+		case "grass": {
+			_sound = choose(sndGrass1, sndGrass2, sndGrass3, sndGrass4, sndGrass5, sndGrass6, sndGrass7, sndGrass8);
+			audio_sound_gain(_sound, 2, 0);
+			break;
+		}
+		case "snow": {
+			_sound = choose(sndSnow1, sndSnow2, sndSnow3, sndSnow4, sndSnow5, sndSnow6, sndSnow7, sndSnow8, sndSnow9 ,sndSnow10);
+			break;
+		}
+		case "water": {
+			_sound = sndWater2;
+			audio_sound_gain(_sound, 2, 0);	
+			break;
+		}
+		case "wood": {
+			_sound = choose(sndWood1, sndWood2, sndWood3, sndWood4, sndWood5);
+			audio_sound_gain(_sound, 3, 0);	
+			break;
+		}
+	}
+	
+	audio_sound_pitch(_sound, random_range(0.9, 1.1));
+	audio_play_sound(_sound, 1.8, false);
+}

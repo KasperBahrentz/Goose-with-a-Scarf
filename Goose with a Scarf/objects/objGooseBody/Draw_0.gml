@@ -9,7 +9,7 @@ if ((!is_on_tilemap(objGame.back_tilemap, y - 1 * pixel_size)) and (place_meetin
 _blend_amount = lerp(_blend_amount, _target_blend, 0.25); // adjust 0.25 for speed
 
 var _blend_col = merge_color(c_white, deep_space_blue, _blend_amount);
-//image_blend = _blend_col;
+image_blend = _blend_col;
 draw_goose();
 
 
@@ -38,7 +38,7 @@ function draw_goose(){
 
 draw_set_font(fnt_smooth);
 
-//draw_text(x, y, fall_through_semi_solid_timer);
+//draw_text(x, y, is_on_ground);
 //draw_set_color(c_red);
 //draw_rectangle(bbox_left, bbox_top - 10*pixel_size, bbox_right, bbox_bottom + 4*pixel_size, false);
 //draw_set_color(c_white);
