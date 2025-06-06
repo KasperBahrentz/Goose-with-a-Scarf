@@ -12,6 +12,8 @@ enum flower_color {
 	BLUE
 }
 
+hspeed_tracker = 0;
+
 lay = false;
 
 if (!instance_exists(objCam)){

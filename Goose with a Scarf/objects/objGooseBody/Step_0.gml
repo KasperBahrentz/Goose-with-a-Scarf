@@ -98,7 +98,7 @@ function set_sit(_force_sit = false){
 
 function move(){
 	image_speed = 1;
-	if (hspeed == 0 and vspeed == 0 and !keyboard_check_pressed(ord("S"))){
+	if (hspeed_tracker == 0 and vspeed == 0 and !keyboard_check_pressed(ord("S"))){
 		if (idle_timer <= 0){
 			set_sit();
 		}
@@ -149,7 +149,7 @@ function move(){
 		move_dir = dir.LEFT;	
 	}
 	
-	if (move_dir != sign(hspeed)){
+	if (move_dir != sign(hspeed_tracker)){
 		h_spd = 0;	
 	}
 	
@@ -177,15 +177,26 @@ function move(){
 		else h_spd = 0;
 	}
 	
-	if (check_collision(h_top_spd * move_dir, 0)){ // Stop
-		map_x = tilemap_get_cell_x_at_pixel(objGame.collision_tilemap, x, y);
-		if (move_dir == dir.RIGHT) map_x++;
-		hspeed = 0;
-		if (y > 0 ) x = (map_x * tile_size) - spr_bbox_right*move_dir - pixel_size*move_dir;
-	}
-	else { // Move
-		hspeed = h_spd * move_dir;	
-	}
+	var _tilemap = objGame.collision_tilemap;
+	
+	// Horizontal movement with pixel precision to avoid clipping
+	var _steps = abs(h_spd * move_dir);
+	var _dir = sign(h_spd * move_dir);
+for (var i = 0; i < _steps; i++) {
+    if (!check_collision(_dir, 0)) {
+        x += _dir;
+    } else {
+        // Nudge out of wall depending on direction
+        if (_dir > 0) {
+            while (check_collision(1, 0)) x -= 1;
+        } else {
+            while (check_collision(-1, 0)) x += 1;
+        }
+        h_spd = 0;
+        break;
+    }
+}
+	hspeed_tracker = h_spd * move_dir
 	
 	jump();
 	
@@ -197,12 +208,11 @@ function move(){
 		_landed_on_semi_solid = true;
 	}
 	
-	var _ceiling_hit = check_collision(0, -8*pixel_size);
+	var _ceiling_hit = vspeed < 0 and check_collision(0, -8*pixel_size);
 	
 	if (_landed_on_semi_solid) or (vspeed > 0 and check_collision(0, 4*pixel_size)){ // Stop on ground
 		is_on_ground = true;
 		glide_timer = 0;
-		var _tilemap = objGame.collision_tilemap;
 		if (_landed_on_semi_solid) _tilemap = layer_tilemap_get_id("back");
 		map_y = tilemap_get_cell_y_at_pixel(_tilemap, x, y + 4*pixel_size);
 		vspeed = 0;
@@ -234,7 +244,7 @@ function move(){
 	if (_ceiling_hit){ // Stop at ceiling
 		map_y = tilemap_get_cell_y_at_pixel(objGame.collision_tilemap, x, y-8*pixel_size) + 1;
 		jump_timer = max(jump_timer, current_max_jump_timer/2 + current_max_jump_timer/4);
-		vspeed = max(vspeed - jump_height * (1 - jump_timer/current_max_jump_timer), 0);
+		vspeed = floor(max(vspeed - jump_height * (1 - jump_timer/current_max_jump_timer), 0));
 		y = (map_y * tile_size) + pixel_size;
 	}
 	
@@ -312,7 +322,7 @@ function move(){
 	if (vspeed != 0){
 		was_in_air = true;
 		if (keyboard_check(ord("S"))){
-			vspeed += (grav/2);
+			vspeed += floor((grav/2));
 		}
 		
 		was_on_ground_timer--;		
@@ -320,12 +330,12 @@ function move(){
 		// Gliding
 		if (keyboard_check(vk_space) and glide_timer > 0){
 			if (vspeed >= grav){
-				vspeed -= grav*0.8;
+				vspeed -= floor(grav*0.8);
 				if (parasol == noone) glide_timer--;
 				sprite_index = spr_body_glide;
 			}
 			else {
-				vspeed -= (grav/2);
+				vspeed -= floor(grav/2);
 			}
 		}
 		else {
@@ -337,7 +347,7 @@ function move(){
 	}
 
 	if (sprite_index != spr_body_crouch){
-		if (hspeed != 0) and (vspeed == 0){ // Change to running sprite
+		if (hspeed_tracker != 0) and (vspeed == 0){ // Change to running sprite
 			if (image_index <= 1) sprite_index = spr_body_run;
 			objGooseFeet.sprite_index = spr_feet_run;
 		}
@@ -354,7 +364,7 @@ function move(){
 function jump(){
 	vspeed = grav;
 	if (jump_timer < current_max_jump_timer){
-		vspeed -= jump_height * (1 - jump_timer/current_max_jump_timer);
+		vspeed -= floor(jump_height * (1 - jump_timer/current_max_jump_timer));
 		jump_timer++;	
 	} else jump_timer = current_max_jump_timer;	
 }
