@@ -54,7 +54,7 @@ debug_string = 0;
 debug_x = 0;
 debug_y = 0;
 
-water_timer_max = 30;
+water_timer_max = 5;
 water_timer = water_timer_max;
 
 
@@ -127,9 +127,16 @@ function honk(){
 	}
 }
 
+var _has_water_front = layer_has_tiles("water_front");
+var _has_water_back = layer_has_tiles("water_back");
+var _has_water_windows = layer_has_tiles("water_windows");
+
 // Play water sound if water is in room
-if (layer_has_tiles("water_front") or (layer_has_tiles("water_back")) or layer_has_tiles("water_windows")){
+if (_has_water_front or _has_water_back or _has_water_windows){
 	if (!audio_is_playing(sndRunningWater)) audio_play_sound(sndRunningWater, 3, true);	
+	if (_has_water_front) cover_all_water_tiles("water_front");
+	if (_has_water_back) cover_all_water_tiles("water_back");
+	if (_has_water_windows) cover_all_water_tiles("water_windows");
 }
 else audio_stop_sound(sndRunningWater);
 

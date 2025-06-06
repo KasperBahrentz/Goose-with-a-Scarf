@@ -452,8 +452,7 @@ function play_material_sound(){
 
 
 if (water_timer >= water_timer_max){ // Change how often to check for distance to water and hidden blocks
-	var _dist_to_water = min(calc_dist_to_water("water_front"), calc_dist_to_water("water_windows"), calc_dist_to_water("water_back"));
-	change_water_audio_level(_dist_to_water);
+	change_water_audio_level(distance_to_object(objWaterDetection));
 	water_timer = 0;
 }
 else water_timer++;

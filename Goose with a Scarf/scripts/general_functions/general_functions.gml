@@ -61,47 +61,22 @@ function draw_sprite_custom(_sprite, _image_index){
 	draw_sprite_ext(_sprite, _image_index, x, y, image_xscale, image_yscale, 0, objGooseBody.image_blend, 1);
 }
 
-function calc_dist_to_water(_tilemap){
-	var tilemap_id = layer_tilemap_get_id(_tilemap);
+function cover_all_water_tiles(_tilemap_layer_name) {
+    var tilemap_id = layer_tilemap_get_id(_tilemap_layer_name);
+    var tilemap_width = tilemap_get_width(tilemap_id);     // In tiles
+    var tilemap_height = tilemap_get_height(tilemap_id);   // In tiles
 
-	var origin_tile_x = tilemap_get_cell_x_at_pixel(tilemap_id, x, y);
-	var origin_tile_y = tilemap_get_cell_y_at_pixel(tilemap_id, x, y);
-
-	var search_radius = 7;
-	var nearest_dist = 1000000;
-	var nearest_tile_x = -1;
-	var nearest_tile_y = -1;
-
-	for (var yy = -search_radius; yy <= search_radius; yy++) {
-	    for (var xx = -search_radius; xx <= search_radius; xx++) {
-	        var tx = origin_tile_x + xx;
-	        var ty = origin_tile_y + yy;
-	        var tile = tilemap_get(tilemap_id, tx, ty);
-
-	        // Skip empty tiles
-	        if (tile > 0) {
-	            var dist = point_distance(x, y, tx * tile_size - tile_size / 2, ty * tile_size - tile_size / 2);
-	            if (dist < nearest_dist) {
-	                nearest_dist = dist;
-	                nearest_tile_x = tx;
-	                nearest_tile_y = ty;
-	            }
-	        }
-	    }
-	}
-	
-	// Calculate distance to nearest tile
-	if (nearest_tile_x != -1) {
-		var nearest_pixel_x = nearest_tile_x * tile_size;
-		var nearest_pixel_y = nearest_tile_y * tile_size;
-		var _dist_to_water = distance_to_point(nearest_pixel_x, nearest_pixel_y);
-		if (_tilemap == "water_back") _dist_to_water *= 1.5;
-		else if (_tilemap == "water_windows") _dist_to_water *= 2;
-		return _dist_to_water;
-	}
-	return nearest_dist; // If no tiles were found
+    for (var ty = 0; ty < tilemap_height; ty++) {
+        for (var tx = 0; tx < tilemap_width; tx++) {
+            var tile = tilemap_get(tilemap_id, tx, ty);
+            if (tile > 0) {
+                var pixel_x = tx * tile_size;
+                var pixel_y = ty * tile_size;
+                instance_create_layer(pixel_x, pixel_y, "collision", objWaterDetection);
+            }
+        }
+    }
 }
-
 
 function layer_has_tiles(layer_name){
 	var tilemap_id = layer_tilemap_get_id(layer_get_id(layer_name));
