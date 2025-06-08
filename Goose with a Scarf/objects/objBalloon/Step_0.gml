@@ -27,8 +27,12 @@ function fly_up(){
 	objCam.follow = objBalloon;
 	image_index = 2;
 	vspeed = lerp(vspeed, -fly_speed, 0.01);
-	if (y <= stop_limit){
+	if (!level_goal and y <= stop_limit){
 		state = balloon_state.STOP_IN_AIR;	
+	}
+	else if (y <= tile_size){
+		if (alarm[0] <= 0) alarm[0] = 120;
+		instance_create_layer(x, y, "instances", objDarkCircle);
 	}
 }
 

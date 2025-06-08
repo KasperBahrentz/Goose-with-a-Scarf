@@ -11,6 +11,7 @@
     {"$GMOverriddenProperty":"v1","%Name":"","name":"","objectId":{"name":"prtWalk","path":"objects/prtWalk/prtWalk.yy",},"propertyId":{"name":"walk_sprite","path":"objects/prtWalk/prtWalk.yy",},"resource":{"name":"sprDodoWalk","path":"sprites/sprDodoWalk/sprDodoWalk.yy",},"resourceType":"GMOverriddenProperty","resourceVersion":"2.0","value":"sprDodoWalk",},
     {"$GMOverriddenProperty":"v1","%Name":"","name":"","objectId":{"name":"prtWalk","path":"objects/prtWalk/prtWalk.yy",},"propertyId":{"name":"facing_right","path":"objects/prtWalk/prtWalk.yy",},"resourceType":"GMOverriddenProperty","resourceVersion":"2.0","value":"False",},
     {"$GMOverriddenProperty":"v1","%Name":"","name":"","objectId":{"name":"prtWalk","path":"objects/prtWalk/prtWalk.yy",},"propertyId":{"name":"walking_speed_start","path":"objects/prtWalk/prtWalk.yy",},"resourceType":"GMOverriddenProperty","resourceVersion":"2.0","value":"2",},
+    {"$GMOverriddenProperty":"v1","%Name":"","name":"","objectId":{"name":"prtWalk","path":"objects/prtWalk/prtWalk.yy",},"propertyId":{"name":"stationary","path":"objects/prtWalk/prtWalk.yy",},"resourceType":"GMOverriddenProperty","resourceVersion":"2.0","value":"True",},
   ],
   "parent":{
     "name":"NPCs",
