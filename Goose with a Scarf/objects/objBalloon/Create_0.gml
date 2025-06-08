@@ -9,6 +9,10 @@ enum balloon_state {
 	FLOAT	
 }
 
+
+instance_create_layer(x, y, "instances", objFire);
+instance_create_layer(x, y, "instances", objBrazier);
+
 state = balloon_state.IDLE;
 
 keyboard = noone;

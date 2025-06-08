@@ -30,9 +30,9 @@ function fly_up(){
 	if (!level_goal and y <= stop_limit){
 		state = balloon_state.STOP_IN_AIR;	
 	}
-	else if (y <= tile_size){
-		if (alarm[0] <= 0) alarm[0] = 120;
-		instance_create_layer(x, y, "instances", objDarkCircle);
+	else if (y <5*tile_size){
+		if (alarm[0] <= 0) alarm[0] = 60;
+		instance_create_layer(x, y, "instances", objDarkSquare);
 	}
 }
 
@@ -73,3 +73,6 @@ function display_key(){
 		keyboard = noone;
 	}	
 }
+
+objBrazier.y = y;
+objFire.y = y-21*pixel_size;

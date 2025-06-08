@@ -8,17 +8,19 @@ if(instance_exists(follow))
 	    y_to=follow.y;
 	}
 	
-	if (objBalloon.state == balloon_state.STOP_IN_AIR){
-		var _target_pan_y = follow.y - 4*tile_size
-		y_to = min(follow.y, lerp(y_to, _target_pan_y, 0.01));
-		y_to = max(y_to, _target_pan_y);
-	}	
+	if (instance_exists(objBalloon)){
+		if (objBalloon.state == balloon_state.STOP_IN_AIR){
+			var _target_pan_y = follow.y - 4*tile_size
+			y_to = min(follow.y, lerp(y_to, _target_pan_y, 0.01));
+			y_to = max(y_to, _target_pan_y);
+		}	
 		
-	if (abs(objBalloon.vspeed) < 2.5){
-		objCloud.speed = lerp(objCloud.speed, objCloud.start_speed*4, 0.1);
-		var _target_pan_x = follow.x - 10*tile_size
-		x_to = min(follow.x, lerp(x_to, _target_pan_x, 0.01));
-		x_to = max(x_to, _target_pan_x); 
+		if (abs(objBalloon.vspeed) < 2.5){
+			objCloud.speed = lerp(objCloud.speed, objCloud.start_speed*4, 0.1);
+			var _target_pan_x = follow.x - 10*tile_size
+			x_to = min(follow.x, lerp(x_to, _target_pan_x, 0.01));
+			x_to = max(x_to, _target_pan_x); 
+		}
 	}
 }
 

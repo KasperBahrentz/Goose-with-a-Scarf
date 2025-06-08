@@ -1,5 +1,5 @@
 if (smoke_timer <= 0){
-	instance_create_layer(smoke_x + irandom_range(-smoke_x_range, smoke_x_range), smoke_y, "instances", objSmoke, {smoke_in_back : smoke_in_back});	
+	instance_create_layer(smoke_x + irandom_range(-smoke_x_range, smoke_x_range), smoke_y, "instances", objSmoke);	
 	smoke_timer = smoke_timer_max + irandom(smoke_timer_max/4);
 }
 else {

@@ -21,12 +21,12 @@ function draw_goose(){
 		}
 		else if (sprite_index == spr_body_sit){
 			draw_self();
-			draw_sprite_custom(objGooseFeet.sprite_index, objGooseFeet.image_index);
+			draw_sprite_custom(objGooseFeet.sprite_index, objGooseFeet.image_index, x, y);
 		}
 		else {
-			draw_sprite_custom(objGooseHead.sprite_index, image_index);
+			draw_sprite_custom(objGooseHead.sprite_index, image_index, x, y);
 			draw_self();
-			draw_sprite_custom(objGooseFeet.sprite_index, image_index);
+			draw_sprite_custom(objGooseFeet.sprite_index, image_index, x, y);
 			if (parasol != noone){
 				with (parasol){
 					draw_sprite_ext(sprite_index, image_index, other.x, other.y-7*pixel_size, image_xscale, image_yscale, 0, image_blend, 1);
