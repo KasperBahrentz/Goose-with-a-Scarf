@@ -37,6 +37,7 @@
     {"$GMObjectProperty":"v1","%Name":"idle_sprite","filters":[],"listItems":[],"multiselect":false,"name":"idle_sprite","rangeEnabled":false,"rangeMax":10.0,"rangeMin":0.0,"resource":{"name":"sprTurkeyIdle","path":"sprites/sprTurkeyIdle/sprTurkeyIdle.yy",},"resourceType":"GMObjectProperty","resourceVersion":"2.0","value":"sprTurkeyIdle","varType":5,},
     {"$GMObjectProperty":"v1","%Name":"walk_sprite","filters":[],"listItems":[],"multiselect":false,"name":"walk_sprite","rangeEnabled":false,"rangeMax":10.0,"rangeMin":0.0,"resource":{"name":"sprTurkeyWalk","path":"sprites/sprTurkeyWalk/sprTurkeyWalk.yy",},"resourceType":"GMObjectProperty","resourceVersion":"2.0","value":"sprTurkeyWalk","varType":5,},
     {"$GMObjectProperty":"v1","%Name":"facing_right","filters":[],"listItems":[],"multiselect":false,"name":"facing_right","rangeEnabled":false,"rangeMax":10.0,"rangeMin":0.0,"resourceType":"GMObjectProperty","resourceVersion":"2.0","value":"true","varType":3,},
+    {"$GMObjectProperty":"v1","%Name":"stationary","filters":[],"listItems":[],"multiselect":false,"name":"stationary","rangeEnabled":false,"rangeMax":10.0,"rangeMin":0.0,"resourceType":"GMObjectProperty","resourceVersion":"2.0","value":"False","varType":3,},
   ],
   "resourceType":"GMObject",
   "resourceVersion":"2.0",

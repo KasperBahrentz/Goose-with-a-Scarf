@@ -24,16 +24,22 @@ function prepare(){
 }
 
 function fly_up(){
-	objCam.follow = self;
+	objCam.follow = objBalloon;
 	image_index = 2;
 	vspeed = lerp(vspeed, -fly_speed, 0.01);
-	if (y <= stop_limit){
+	if (!level_goal and y <= stop_limit){
 		state = balloon_state.STOP_IN_AIR;	
+	}
+	else if (y <= tile_size){
+		if (alarm[0] <= 0) alarm[0] = 120;
+		instance_create_layer(x, y, "instances", objDarkCircle);
 	}
 }
 
 function stop_in_air(){
 	vspeed = lerp(vspeed, 0, 0.01);
+	pan_camera = true;
+	
 	if (abs(vspeed) < 1){
 		vspeed = 0;
 		state = balloon_state.FLOAT;

@@ -34,14 +34,6 @@ function walk_right(){
 	else x += walking_speed;
 }
 
-function set_idle(){
-	state = walk_state.WAIT;	
-	sprite_index = normal_sprite;
-	image_index = 0;
-	alarm[0] = wait_timer + random_range(0, wait_timer);	
-	alarm[1] = irandom_range(10, wait_timer/2);
-}
-
 function wait(){
 	
 }
@@ -60,6 +52,6 @@ function set_walking_speed(){
 	if (abs(x-xstart) >= walking_range/1.25) walking_speed = lerp(walking_speed, walking_speed_start/4, 0.5);	
 }
 
-depth = objChimney.depth + 5;
+if (instance_exists(objChimney)) depth = objChimney.depth + 5;
 
 
