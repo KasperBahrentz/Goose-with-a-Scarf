@@ -48,3 +48,4 @@ else if (layer == layer_get_id("clouds_back")){
 
 image_index = irandom_range(0, image_number-1);
 speed = -random_range(10, 20) / parallax_factor;
+start_speed = speed;

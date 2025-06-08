@@ -12,7 +12,7 @@ enum balloon_state {
 state = balloon_state.IDLE;
 
 keyboard = noone;
-keyboard_offset = 4*pixel_size;
+keyboard_offset = 3*pixel_size;
 
 fly_speed = 14;
 
