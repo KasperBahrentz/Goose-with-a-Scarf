@@ -31,7 +31,7 @@ function fly_up(){
 		state = balloon_state.STOP_IN_AIR;	
 	}
 	else if (y <5*tile_size){
-		if (alarm[0] <= 0) alarm[0] = 60;
+		if (alarm[0] <= 0) alarm[0] = 100;
 		instance_create_layer(x, y, "instances", objDarkSquare);
 	}
 }
