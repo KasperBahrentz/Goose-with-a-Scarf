@@ -289,6 +289,8 @@
     {"id":{"name":"sprEggShellPink","path":"sprites/sprEggShellPink/sprEggShellPink.yy",},},
     {"id":{"name":"sprEggTemporary","path":"sprites/sprEggTemporary/sprEggTemporary.yy",},},
     {"id":{"name":"sprEggUI16","path":"sprites/sprEggUI16/sprEggUI16.yy",},},
+    {"id":{"name":"sprFire","path":"sprites/sprFire/sprFire.yy",},},
+    {"id":{"name":"sprFire16","path":"sprites/sprFire16/sprFire16.yy",},},
     {"id":{"name":"sprFlowerBudBlue","path":"sprites/sprFlowerBudBlue/sprFlowerBudBlue.yy",},},
     {"id":{"name":"sprFlowerBudBlue16","path":"sprites/sprFlowerBudBlue16/sprFlowerBudBlue16.yy",},},
     {"id":{"name":"sprFlowerBudPurple","path":"sprites/sprFlowerBudPurple/sprFlowerBudPurple.yy",},},
