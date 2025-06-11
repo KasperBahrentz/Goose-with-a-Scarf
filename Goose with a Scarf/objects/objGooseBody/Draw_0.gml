@@ -38,8 +38,10 @@ function draw_goose(){
 
 draw_set_font(fnt_smooth);
 
+//draw_rectangle(bbox_left, bbox_top, bbox_right, bbox_bottom, false);
 
-//draw_text(objBalloon.x, objBalloon.y, objCam.y_to);
+
+//draw_text(x, y, objGame.found_hidden_blocks);
 //draw_text(objBalloon.x, objBalloon.y + tile_size, objBalloon.pan_camera);
 
 //draw_text(x, y, is_on_ground);

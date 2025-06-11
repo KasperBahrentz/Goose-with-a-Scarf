@@ -1,9 +1,5 @@
 /// @description Insert description here
 // You can write your code in this editor
-
-var _nearest_chimney = instance_nearest(x, y, objChimney);
-depth = _nearest_chimney.depth - 5;
-
 if (image_blend == dark_grey and image_index >= change_to_grey){
 	image_blend = grey;	
 	speed *= random_range(0.85, 0.95);

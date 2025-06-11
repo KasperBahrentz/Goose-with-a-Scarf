@@ -19,3 +19,7 @@ image_yscale = choose(1, -1);
 speed = random_range(2, 3);
 
 last_image_index = image_index;
+
+
+var _nearest_chimney = instance_nearest(x, y, objChimney);
+depth = _nearest_chimney.depth - 5;

@@ -24,7 +24,7 @@
   ],
   "name":"sprOwl16",
   "nineSlice":null,
-  "origin":7,
+  "origin":9,
   "parent":{
     "name":"NPCs",
     "path":"folders/Sprites/NPCs.yy",
@@ -78,7 +78,7 @@
     ],
     "visibleRange":null,
     "volume":1.0,
-    "xorigin":12,
+    "xorigin":14,
     "yorigin":32,
   },
   "swatchColours":[
