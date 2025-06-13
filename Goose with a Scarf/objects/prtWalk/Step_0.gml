@@ -52,6 +52,12 @@ function set_walking_speed(){
 	if (abs(x-xstart) >= walking_range/1.25) walking_speed = lerp(walking_speed, walking_speed_start/4, 0.5);	
 }
 
-if (instance_exists(objChimney)) depth = objChimney.depth + 5;
+if (instance_exists(objChimney)){
+	var _nearest_chimney = instance_nearest(x, y, objChimney);
+	if (_nearest_chimney.image_index == 2){
+		depth = _nearest_chimney.depth - 5;
+	}
+	else depth = _nearest_chimney.depth + 5;
+}
 
 

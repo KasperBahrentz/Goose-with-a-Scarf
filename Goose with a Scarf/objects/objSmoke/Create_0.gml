@@ -12,12 +12,6 @@ image_blend = dark_grey;
 
 image_speed = irandom_range(8, 11);
 
-if (smoke_in_back){
-	depth = layer_get_depth(layer_get_id("house_back")) + 50;
-}
-else depth = objChimney.depth - 5;
-depth_start = depth;
-
 direction = random_range(90, 100);
 image_index = random_range(0, 3);
 image_xscale = choose(1, -1);
@@ -25,3 +19,7 @@ image_yscale = choose(1, -1);
 speed = random_range(2, 3);
 
 last_image_index = image_index;
+
+
+var _nearest_chimney = instance_nearest(x, y, objChimney);
+depth = _nearest_chimney.depth - 5;

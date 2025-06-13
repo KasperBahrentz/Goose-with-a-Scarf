@@ -57,8 +57,8 @@ function screenshake(_time, _magnitude, _fade){
    }
 }
 
-function draw_sprite_custom(_sprite, _image_index){
-	draw_sprite_ext(_sprite, _image_index, x, y, image_xscale, image_yscale, 0, objGooseBody.image_blend, 1);
+function draw_sprite_custom(_sprite, _image_index, _x = x, _y = y, _x_scale = image_xscale){
+	draw_sprite_ext(_sprite, _image_index, _x, _y, _x_scale, image_yscale, 0, objGooseBody.image_blend, 1);
 }
 
 function cover_all_water_tiles(_tilemap_layer_name) {

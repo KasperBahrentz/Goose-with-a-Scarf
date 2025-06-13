@@ -45,7 +45,9 @@ function check(){
 }
 
 function on(){
+	image_blend = c_red;
 	if (master){
+		image_blend = c_yellow;
 		// Remove hidden blocks
 		for (var i = 0; i < array_length(objGame.found_hidden_blocks); i++){
 			var _hidden_block_id = objGame.found_hidden_blocks[i];

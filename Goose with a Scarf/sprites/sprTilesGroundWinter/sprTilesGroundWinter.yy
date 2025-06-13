@@ -12,15 +12,14 @@
   "edgeFiltering":false,
   "For3D":false,
   "frames":[
-    {"$GMSpriteFrame":"","%Name":"2cd86df6-e4c5-4e1e-a028-af34f6257cc0","name":"2cd86df6-e4c5-4e1e-a028-af34f6257cc0","resourceType":"GMSpriteFrame","resourceVersion":"2.0",},
+    {"$GMSpriteFrame":"","%Name":"82295cba-6601-4296-8134-7188dfbc2b76","name":"82295cba-6601-4296-8134-7188dfbc2b76","resourceType":"GMSpriteFrame","resourceVersion":"2.0",},
   ],
   "gridX":16,
   "gridY":16,
   "height":1984,
   "HTile":false,
   "layers":[
-    {"$GMImageLayer":"","%Name":"95c441cd-e5da-4ebe-af09-9022874b11f2","blendMode":0,"displayName":"Layer 2","isLocked":false,"name":"95c441cd-e5da-4ebe-af09-9022874b11f2","opacity":100.0,"resourceType":"GMImageLayer","resourceVersion":"2.0","visible":true,},
-    {"$GMImageLayer":"","%Name":"073d7df1-f717-43c7-a09d-10c665271e33","blendMode":0,"displayName":"Layer 1","isLocked":false,"name":"073d7df1-f717-43c7-a09d-10c665271e33","opacity":100.0,"resourceType":"GMImageLayer","resourceVersion":"2.0","visible":false,},
+    {"$GMImageLayer":"","%Name":"4dff0a5c-48b5-487f-bc67-6e194c9ae2f9","blendMode":0,"displayName":"default","isLocked":false,"name":"4dff0a5c-48b5-487f-bc67-6e194c9ae2f9","opacity":100.0,"resourceType":"GMImageLayer","resourceVersion":"2.0","visible":true,},
   ],
   "name":"sprTilesGroundWinter",
   "nineSlice":null,
@@ -72,8 +71,8 @@
     "tracks":[
       {"$GMSpriteFramesTrack":"","builtinName":0,"events":[],"inheritsTrackColour":true,"interpolation":1,"isCreationTrack":false,"keyframes":{"$KeyframeStore<SpriteFrameKeyframe>":"","Keyframes":[
             {"$Keyframe<SpriteFrameKeyframe>":"","Channels":{
-                "0":{"$SpriteFrameKeyframe":"","Id":{"name":"2cd86df6-e4c5-4e1e-a028-af34f6257cc0","path":"sprites/sprTilesGroundWinter/sprTilesGroundWinter.yy",},"resourceType":"SpriteFrameKeyframe","resourceVersion":"2.0",},
-              },"Disabled":false,"id":"ab0b361c-acaf-4480-898a-bc2c833a91cf","IsCreationKey":false,"Key":0.0,"Length":1.0,"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"2.0","Stretch":false,},
+                "0":{"$SpriteFrameKeyframe":"","Id":{"name":"82295cba-6601-4296-8134-7188dfbc2b76","path":"sprites/sprTilesGroundWinter/sprTilesGroundWinter.yy",},"resourceType":"SpriteFrameKeyframe","resourceVersion":"2.0",},
+              },"Disabled":false,"id":"86f0e0cd-5ff7-4260-8ef7-93adaabdddbb","IsCreationKey":false,"Key":0.0,"Length":1.0,"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"2.0","Stretch":false,},
           ],"resourceType":"KeyframeStore<SpriteFrameKeyframe>","resourceVersion":"2.0",},"modifiers":[],"name":"frames","resourceType":"GMSpriteFramesTrack","resourceVersion":"2.0","spriteId":null,"trackColour":0,"tracks":[],"traits":0,},
     ],
     "visibleRange":null,

@@ -21,12 +21,12 @@ function draw_goose(){
 		}
 		else if (sprite_index == spr_body_sit){
 			draw_self();
-			draw_sprite_custom(objGooseFeet.sprite_index, objGooseFeet.image_index);
+			draw_sprite_custom(objGooseFeet.sprite_index, objGooseFeet.image_index, x, y);
 		}
 		else {
-			draw_sprite_custom(objGooseHead.sprite_index, image_index);
+			draw_sprite_custom(objGooseHead.sprite_index, image_index, x, y);
 			draw_self();
-			draw_sprite_custom(objGooseFeet.sprite_index, image_index);
+			draw_sprite_custom(objGooseFeet.sprite_index, image_index, x, y);
 			if (parasol != noone){
 				with (parasol){
 					draw_sprite_ext(sprite_index, image_index, other.x, other.y-7*pixel_size, image_xscale, image_yscale, 0, image_blend, 1);
@@ -38,8 +38,10 @@ function draw_goose(){
 
 draw_set_font(fnt_smooth);
 
+//draw_rectangle(bbox_left, bbox_top, bbox_right, bbox_bottom, false);
 
-//draw_text(objBalloon.x, objBalloon.y, objCam.y_to);
+
+//draw_text(x, y, objGame.found_hidden_blocks);
 //draw_text(objBalloon.x, objBalloon.y + tile_size, objBalloon.pan_camera);
 
 //draw_text(x, y, is_on_ground);
