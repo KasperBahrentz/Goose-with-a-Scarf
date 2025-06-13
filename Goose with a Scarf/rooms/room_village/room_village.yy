@@ -78,6 +78,10 @@
     {"name":"inst_6259450B","path":"rooms/room_village/room_village.yy",},
     {"name":"inst_31C8464A","path":"rooms/room_village/room_village.yy",},
     {"name":"inst_27006EB5","path":"rooms/room_village/room_village.yy",},
+    {"name":"inst_20884ECC","path":"rooms/room_village/room_village.yy",},
+    {"name":"inst_2BB9413A","path":"rooms/room_village/room_village.yy",},
+    {"name":"inst_B01CDDE","path":"rooms/room_village/room_village.yy",},
+    {"name":"inst_55004D4D","path":"rooms/room_village/room_village.yy",},
   ],
   "isDnd":false,
   "layers":[
@@ -645,6 +649,10 @@
             {"$GMOverriddenProperty":"v1","%Name":"","name":"","objectId":{"name":"prtWalk","path":"objects/prtWalk/prtWalk.yy",},"propertyId":{"name":"stationary","path":"objects/prtWalk/prtWalk.yy",},"resourceType":"GMOverriddenProperty","resourceVersion":"2.0","value":"False",},
           ],"resourceType":"GMRInstance","resourceVersion":"2.0","rotation":0.0,"scaleX":1.0,"scaleY":1.0,"x":3008.0,"y":6144.0,},
         {"$GMRInstance":"v2","%Name":"inst_31C8464A","colour":4294967295,"frozen":false,"hasCreationCode":false,"ignore":false,"imageIndex":1,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"name":"inst_31C8464A","objectId":{"name":"objChimney","path":"objects/objChimney/objChimney.yy",},"properties":[],"resourceType":"GMRInstance","resourceVersion":"2.0","rotation":0.0,"scaleX":1.0,"scaleY":1.0,"x":7488.0,"y":6016.0,},
+        {"$GMRInstance":"v2","%Name":"inst_20884ECC","colour":4294967295,"frozen":false,"hasCreationCode":false,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"name":"inst_20884ECC","objectId":{"name":"objKeySilver","path":"objects/objKeySilver/objKeySilver.yy",},"properties":[],"resourceType":"GMRInstance","resourceVersion":"2.0","rotation":0.0,"scaleX":1.0,"scaleY":1.0,"x":3648.0,"y":6080.0,},
+        {"$GMRInstance":"v2","%Name":"inst_2BB9413A","colour":4294967295,"frozen":false,"hasCreationCode":false,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"name":"inst_2BB9413A","objectId":{"name":"objKeySilver","path":"objects/objKeySilver/objKeySilver.yy",},"properties":[],"resourceType":"GMRInstance","resourceVersion":"2.0","rotation":0.0,"scaleX":1.0,"scaleY":1.0,"x":3776.0,"y":6080.0,},
+        {"$GMRInstance":"v2","%Name":"inst_B01CDDE","colour":4294967295,"frozen":false,"hasCreationCode":false,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"name":"inst_B01CDDE","objectId":{"name":"objKeySilver","path":"objects/objKeySilver/objKeySilver.yy",},"properties":[],"resourceType":"GMRInstance","resourceVersion":"2.0","rotation":0.0,"scaleX":1.0,"scaleY":1.0,"x":3904.0,"y":6080.0,},
+        {"$GMRInstance":"v2","%Name":"inst_55004D4D","colour":4294967295,"frozen":false,"hasCreationCode":false,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"name":"inst_55004D4D","objectId":{"name":"objKey","path":"objects/objKey/objKey.yy",},"properties":[],"resourceType":"GMRInstance","resourceVersion":"2.0","rotation":0.0,"scaleX":1.0,"scaleY":1.0,"x":3776.0,"y":5952.0,},
       ],"layers":[],"name":"instances","properties":[],"resourceType":"GMRInstanceLayer","resourceVersion":"2.0","userdefinedDepth":false,"visible":true,},
     {"$GMRTileLayer":"","%Name":"ground","depth":1000,"effectEnabled":true,"effectType":null,"gridX":32,"gridY":32,"hierarchyFrozen":false,"inheritLayerDepth":true,"inheritLayerSettings":false,"inheritSubLayers":true,"inheritVisibility":false,"layers":[],"name":"ground","properties":[],"resourceType":"GMRTileLayer","resourceVersion":"2.0","tiles":{"SerialiseHeight":68,"SerialiseWidth":90,"TileCompressedData":[
           -4037,0,1,176,-12,116,-77,0,1,112,-12,50,-77,0,1,112,-12,50,-77,0,1,112,-5,50,1,54,-3,147,8,81,50,50,

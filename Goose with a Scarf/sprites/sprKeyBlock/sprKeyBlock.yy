@@ -27,8 +27,8 @@
   "name":"sprKeyBlock",
   "nineSlice":{
     "$GMNineSliceData":"",
-    "bottom":4,
-    "enabled":false,
+    "bottom":36,
+    "enabled":true,
     "guideColour":[4294902015,4294902015,4294902015,4294902015,],
     "highlightColour":1728023040,
     "highlightStyle":0,
@@ -43,7 +43,7 @@
       0,
       0,
     ],
-    "top":4,
+    "top":36,
   },
   "origin":0,
   "parent":{
@@ -81,7 +81,7 @@
     },
     "name":"sprKeyBlock",
     "playback":1,
-    "playbackSpeed":6.0,
+    "playbackSpeed":0.0,
     "playbackSpeedType":0,
     "resourceType":"GMSequence",
     "resourceVersion":"2.0",

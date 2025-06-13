@@ -5,3 +5,11 @@ enum dir{
 	RIGHT = 1,
 	LEFT = -1	
 }
+
+enum locked_state {
+    LOCKED,
+    KEY_INSERTED,
+    UNLOCKED,
+    OPENING,
+    OPEN
+}

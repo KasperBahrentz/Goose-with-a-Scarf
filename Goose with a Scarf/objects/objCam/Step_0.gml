@@ -16,7 +16,7 @@ if(instance_exists(follow))
 		}	
 		
 		if (abs(objBalloon.vspeed) < 2.5){
-			objCloud.speed = lerp(objCloud.speed, objCloud.start_speed*4, 0.1);
+			if (room == room_village) speed = lerp(objCloud.speed, objCloud.start_speed*4, 0.1);
 			var _target_pan_x = follow.x - 10*tile_size
 			x_to = min(follow.x, lerp(x_to, _target_pan_x, 0.01));
 			x_to = max(x_to, _target_pan_x); 

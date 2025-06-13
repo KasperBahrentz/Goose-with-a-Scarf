@@ -15,13 +15,21 @@ function get_tileset_name(){
 
 
 // Make things fly above the player and follow them
-function follow_player(_lerp_amount, _y_distance_to_player){
-	x = lerp(x, objGooseBody.x, _lerp_amount);
-	y = lerp(y, objGooseBody.y-_y_distance_to_player*pixel_size, _lerp_amount);
+function follow_player(_lerp_amount, _y_distance_to_player, _follow_factor = 1){
+	x = lerp(x, objGooseBody.x, _lerp_amount*_follow_factor);
+	y = lerp(y, objGooseBody.y-_y_distance_to_player*pixel_size, _lerp_amount*_follow_factor);
 		
 	if (objGooseBody.state == player_state.DIE){
 		instance_destroy();	
 	}	
+}
+
+function hex_to_color(hex_string) {
+    // hex_string like "#73ff73"
+    var r = real("0x" + string_copy(hex_string, 2, 2));
+    var g = real("0x" + string_copy(hex_string, 4, 2));
+    var b = real("0x" + string_copy(hex_string, 6, 2));
+    return make_color_rgb(r, g, b);
 }
 
 function is_on_tilemap(_tilemap_id, _y){
@@ -57,8 +65,8 @@ function screenshake(_time, _magnitude, _fade){
    }
 }
 
-function draw_sprite_custom(_sprite, _image_index, _x = x, _y = y, _x_scale = image_xscale){
-	draw_sprite_ext(_sprite, _image_index, _x, _y, _x_scale, image_yscale, 0, objGooseBody.image_blend, 1);
+function draw_sprite_custom(_sprite, _image_index, _x = x, _y = y, _x_scale = image_xscale, _y_scale = image_yscale, _color = image_blend, _alpha = image_alpha){
+	draw_sprite_ext(_sprite, _image_index, _x, _y, _x_scale, _y_scale, 0, _color, _alpha);
 }
 
 function cover_all_water_tiles(_tilemap_layer_name) {
@@ -152,4 +160,16 @@ function play_material_sound(){
 	
 	audio_sound_pitch(_sound, random_range(0.9, 1.1));
 	audio_play_sound(_sound, 1.8, false);
+}
+
+function check_for_unlock(_x, _y , _open_distance){
+	var _nearest_key = instance_nearest(_x, _y, objKey);
+	if (objGooseBody.state == player_state.MOVE and array_length(objGooseBody.keys) > 0 and objGooseBody.keys[0] == _nearest_key.id){
+		if (point_distance(_x, _y, objGooseBody.x, objGooseBody.y) <= _open_distance and instance_exists(objKey)){
+				if (_nearest_key.state == key_state.FOLLOW) {
+				    _nearest_key.state = key_state.TO_TARGET;
+					_nearest_key.target_instance = id;
+				}
+		 }	
+	}
 }
