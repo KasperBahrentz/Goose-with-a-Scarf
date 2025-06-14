@@ -4,9 +4,13 @@
 check_water_state(objGame.water_front_tilemap);
 check_water_state(objGame.water_back_tilemap);
 check_wood_state(objGame.deco_tilemap);
-check_wood_state(layer_tilemap_get_id("house"));
-check_wood_state(layer_tilemap_get_id("house_front"));
-check_wood_state(layer_tilemap_get_id("house_back"));
+
+if (room == room_village){
+	check_wood_state(layer_tilemap_get_id("house"));
+	check_wood_state(layer_tilemap_get_id("house_front"));
+	check_wood_state(layer_tilemap_get_id("house_back"));
+}
+
 if (get_tileset_name() == "tlsGroundWinter") check_snow_state(layer_tilemap_get_id("back"));
 
 function check_water_state(_tilemap){

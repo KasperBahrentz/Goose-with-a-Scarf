@@ -9,7 +9,7 @@ switch(state) {
 
 function idle(){
 	event_inherited();
-	if (distance_to_object(objGooseBody) < collect_distance) {
+	if (distance_to_object(objGooseBody) < collect_distance) or (place_meeting(x, y, objEgg)){
 		state = key_state.FOLLOW;	
 		audio_play_sound(sndKeyCollect, 5, false);
 		
