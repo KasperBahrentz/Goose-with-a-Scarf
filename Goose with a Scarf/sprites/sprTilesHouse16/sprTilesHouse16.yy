@@ -2,7 +2,7 @@
   "$GMSprite":"",
   "%Name":"sprTilesHouse16",
   "bboxMode":0,
-  "bbox_bottom":159,
+  "bbox_bottom":479,
   "bbox_left":16,
   "bbox_right":303,
   "bbox_top":9,
