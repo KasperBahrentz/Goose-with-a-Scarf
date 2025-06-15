@@ -56,6 +56,13 @@ function drop(){
 	}
 	// Check ground collision
 	if (check_collision(0, 0) or place_meeting(x, y, objCollisionSemiSolid)) and (!has_collided){ // Destroy on ground
+		var _material = get_material();
+		
+		if (place_meeting(x, y, objCollisionSemiSolid)){
+			if (_material == "water") repeat(irandom_range(5, 10)) instance_create_layer(x, y, "instances", objParticleWater);	
+			play_material_sound(_material);
+		}
+		
 		map_y = tilemap_get_cell_y_at_pixel(objGame.collision_tilemap, x, y + 4*pixel_size);
 		vspeed = 0;
 		

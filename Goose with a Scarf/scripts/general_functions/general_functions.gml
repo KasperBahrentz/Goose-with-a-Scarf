@@ -114,10 +114,8 @@ function layer_has_tiles(layer_name){
 	}
 }
 
-
-function play_material_sound(){
+function get_material(){
 	var _material = "grass";
-	var _sound = sndGrass1;
 	
 	if (get_tileset_name() == "tlsGroundWinter"){
 		_material = "snow";	
@@ -135,6 +133,12 @@ function play_material_sound(){
 	else if (place_meeting(x, y + 4*pixel_size, prtCrate)){
 		_material = "wood";
 	}
+	
+	return _material;
+}
+
+function play_material_sound(_material){
+	var _sound = sndGrass1;
 	
 	switch(_material){
 		case "grass": {
@@ -160,6 +164,25 @@ function play_material_sound(){
 	
 	audio_sound_pitch(_sound, random_range(0.9, 1.1));
 	audio_play_sound(_sound, 1.8, false);
+}
+
+function spawn_material_particle(){
+	var _material = get_material();
+	
+	if (_material == "water"){
+		repeat(irandom_range(3, 7)) instance_create_layer(x, y, "instances", objParticleWater);
+	}
+	else { // Spawn dust
+		repeat(choose(1, 1, 2)){ // Down
+		instance_create_layer(x + random_range(-3, 3), y + random_range(0, 2), "instances", objDust, {dust_id: "down"});	
+		}
+		repeat(choose(1, 1, 2)){ // Left
+			instance_create_layer(x + random_range(-7, 1), y + random_range(0, 2), "instances", objDust, {dust_id: "left"});	
+		}
+		repeat(choose(1, 1, 2)){ // Right
+			instance_create_layer(x + random_range(-1, 7), y + random_range(0, 2), "instances", objDust, {dust_id: "right"});	
+		}
+	}
 }
 
 function check_for_unlock(_x, _y , _open_distance){

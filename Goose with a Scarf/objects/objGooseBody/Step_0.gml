@@ -164,7 +164,7 @@ function move(){
 				var _play_sound = random_range(0, 1);
 		
 				if (_play_sound >= 0.9){	
-					play_material_sound();
+					play_material_sound(get_material());
 					sound_timer = sound_timer_max;
 				}
 			} else {
@@ -220,8 +220,8 @@ function move(){
 		
 		// If just landed
 		if (was_in_air){
-			play_material_sound();
-			spawn_dust();
+			play_material_sound(get_material());
+			spawn_material_particle();
 			with(objEggRespawn) alarm[0] = 4;
 			was_in_air = false;
 			current_max_jump_timer = max_jump_timer;
@@ -275,9 +275,9 @@ function move(){
 		glide_timer = glide_timer_max;
 		jump_timer = 0;
 		current_max_jump_timer = max_jump_timer;
-		spawn_dust();
+		spawn_material_particle();
 			
-		play_material_sound();
+		play_material_sound(get_material());
 			
 		// Honk at random
 		var _number = random_range(0, 1);
@@ -389,18 +389,6 @@ function jump(){
 		vspeed -= floor(jump_height * (1 - jump_timer/current_max_jump_timer));
 		jump_timer++;	
 	} else jump_timer = current_max_jump_timer;	
-}
-
-function spawn_dust(){
-	repeat(choose(1, 1, 2)){ // Down
-		instance_create_layer(x + random_range(-3, 3), y + random_range(0, 2), "instances", objDust, {dust_id: "down"});	
-	}
-	repeat(choose(1, 1, 2)){ // Left
-		instance_create_layer(x + random_range(-7, 1), y + random_range(0, 2), "instances", objDust, {dust_id: "left"});	
-	}
-	repeat(choose(1, 1, 2)){ // Right
-		instance_create_layer(x + random_range(-1, 7), y + random_range(0, 2), "instances", objDust, {dust_id: "right"});	
-	}
 }
 
 
