@@ -1,4 +1,4 @@
-/// @description Insert description here
+	/// @description Insert description here
 // You can write your code in this editor
 
 enum gui_state {
@@ -22,4 +22,4 @@ y = 16 * pixel_size;
 
 x = start_x;
 
-depth -= 1000;
+depth -= 2000;
