@@ -8,8 +8,8 @@
     {"$GMOverriddenProperty":"v1","%Name":"","name":"","objectId":{"name":"objKey","path":"objects/objKey/objKey.yy",},"propertyId":{"name":"target","path":"objects/objKey/objKey.yy",},"resource":{"name":"objKeyBlock","path":"objects/objKeyBlock/objKeyBlock.yy",},"resourceType":"GMOverriddenProperty","resourceVersion":"2.0","value":"objKeyBlock",},
   ],
   "parent":{
-    "name":"Objects",
-    "path":"folders/Objects.yy",
+    "name":"keys",
+    "path":"folders/Objects/keys.yy",
   },
   "parentObjectId":{
     "name":"objKey",

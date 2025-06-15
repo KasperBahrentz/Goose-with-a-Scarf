@@ -10,8 +10,8 @@
   "name":"objSpikes",
   "overriddenProperties":[],
   "parent":{
-    "name":"Objects",
-    "path":"folders/Objects.yy",
+    "name":"spikes",
+    "path":"folders/Objects/spikes.yy",
   },
   "parentObjectId":null,
   "persistent":false,

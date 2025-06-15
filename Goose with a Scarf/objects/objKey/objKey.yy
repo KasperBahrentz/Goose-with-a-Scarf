@@ -9,8 +9,8 @@
   "name":"objKey",
   "overriddenProperties":[],
   "parent":{
-    "name":"Objects",
-    "path":"folders/Objects.yy",
+    "name":"keys",
+    "path":"folders/Objects/keys.yy",
   },
   "parentObjectId":{
     "name":"prtFly",

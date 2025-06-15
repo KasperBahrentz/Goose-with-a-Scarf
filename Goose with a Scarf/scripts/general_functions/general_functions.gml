@@ -187,7 +187,7 @@ function spawn_material_particle(){
 
 function check_for_unlock(_x, _y , _open_distance){
 	var _nearest_key = instance_nearest(_x, _y, objKey);
-	if (objGooseBody.state == player_state.MOVE and array_length(objGooseBody.keys) > 0 and objGooseBody.keys[0] == _nearest_key.id){
+	if (objGooseBody.state == player_state.MOVE and array_length(objGooseBody.keys) > 0){
 		if (point_distance(_x, _y, objGooseBody.x, objGooseBody.y) <= _open_distance and instance_exists(objKey)){
 				if (_nearest_key.state == key_state.FOLLOW) {
 				    _nearest_key.state = key_state.TO_TARGET;

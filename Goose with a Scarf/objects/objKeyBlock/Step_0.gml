@@ -27,6 +27,6 @@ switch (state) {
     case locked_state.OPEN:
 	    repeat(30 + 15*confetti_factor) instance_create_layer(middle_x, middle_y, "instances", objConfetti);
         instance_destroy();
-		audio_play_sound(sndBonus, 10, false);
+		if (!audio_is_playing(sndBonus))  audio_play_sound(sndBonus, 10, false);
     break;
 }

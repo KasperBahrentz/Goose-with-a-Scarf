@@ -8,8 +8,8 @@
   "name":"objGooseFeet",
   "overriddenProperties":[],
   "parent":{
-    "name":"Objects",
-    "path":"folders/Objects.yy",
+    "name":"goose",
+    "path":"folders/Objects/goose.yy",
   },
   "parentObjectId":null,
   "persistent":false,
