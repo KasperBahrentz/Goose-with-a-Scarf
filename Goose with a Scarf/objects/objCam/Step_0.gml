@@ -3,7 +3,7 @@
 
 if(instance_exists(follow))
 {
-	if (follow != objBalloon or (follow == objBalloon and objBalloon.state == balloon_state.FLY_UP)){
+	if (follow != objBalloon or (follow == objBalloon and (objBalloon.state == balloon_state.FLY_UP or objBalloon.state == balloon_state.FLY_DOWN))){
 		x_to=follow.x;
 	    y_to=follow.y;
 	}

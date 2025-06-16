@@ -500,8 +500,8 @@
   "resourceType":"GMProject",
   "resourceVersion":"2.0",
   "RoomOrderNodes":[
-    {"roomId":{"name":"room_level_tutorial","path":"rooms/room_level_tutorial/room_level_tutorial.yy",},},
     {"roomId":{"name":"room_village","path":"rooms/room_village/room_village.yy",},},
+    {"roomId":{"name":"room_level_tutorial","path":"rooms/room_level_tutorial/room_level_tutorial.yy",},},
     {"roomId":{"name":"room_level_spring_1","path":"rooms/room_level_spring_1/room_level_spring_1.yy",},},
     {"roomId":{"name":"room_level_spring_2","path":"rooms/room_level_spring_2/room_level_spring_2.yy",},},
     {"roomId":{"name":"room_level_spring_3","path":"rooms/room_level_spring_3/room_level_spring_3.yy",},},

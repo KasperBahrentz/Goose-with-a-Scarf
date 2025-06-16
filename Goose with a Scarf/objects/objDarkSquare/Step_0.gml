@@ -1,13 +1,12 @@
-var vp_height = camera_get_view_height(view_camera[0]);
+var interpolated = lerp(grow_height, target, grow_speed);
 
-var target = vp_height;
-var interpolated = lerp(grow_height, target, 0.05);
-var min_step = 2 * pixel_size;
+grow_height = interpolated;
 
-if (interpolated - grow_height < min_step) {
-    grow_height += min_step;
-} else {
-    grow_height = interpolated;
+// Clamp between 0 and vp_height just in case
+grow_height = clamp(grow_height, 0, vp_height);
+
+grow_speed = lerp(grow_speed, grow_speed_max, 0.01);
+
+if (abs(target-grow_height) <= 2) {
+    if (from_top) instance_destroy();
 }
-
-grow_height = min(grow_height, vp_height);

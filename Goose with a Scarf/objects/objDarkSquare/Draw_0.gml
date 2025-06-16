@@ -16,11 +16,7 @@ var scale_y = grow_height / spr_h;
 var draw_x = cam_x + vp_w * 0.5; // center horizontally
 var draw_y;
 
-if (from_top) {
-    draw_y = cam_y + grow_height * 0.5; // grow down
-} else {
-    draw_y = cam_y + vp_h - grow_height * 0.5; // grow up
-}
+draw_y = cam_y + vp_h - grow_height * 0.5;
 
 
 // Draw

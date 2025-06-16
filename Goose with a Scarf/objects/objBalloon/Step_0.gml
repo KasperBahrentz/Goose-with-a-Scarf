@@ -6,6 +6,7 @@ switch(state){
 	case balloon_state.FLY_UP:			fly_up();			break;
 	case balloon_state.STOP_IN_AIR:		stop_in_air();		break;
 	case balloon_state.FLOAT:			float();			break;
+	case balloon_state.FLY_DOWN:		fly_down();			break;
 }
 
 function idle(){
@@ -31,8 +32,8 @@ function fly_up(){
 		state = balloon_state.STOP_IN_AIR;	
 	}
 	else if (y <5*tile_size){
-		if (alarm[0] <= 0) alarm[0] = 100;
-		instance_create_layer(x, y, "instances", objDarkSquare);
+		if (alarm[0] <= 0) alarm[0] = 160;
+		if (!instance_exists(objDarkSquare)) instance_create_layer(x, y, "instances", objDarkSquare, {from_top : false});
 	}
 }
 
@@ -70,6 +71,30 @@ function display_key(){
 		keyboard.state = keyboard_state.DISAPPEAR;
 		keyboard = noone;
 	}	
+}
+
+function fly_down(){
+	objGooseBody.state = player_state.GONE;
+	
+	if (objCam.follow != objBalloon){
+		instance_create_layer(x, y, "instances", objDarkSquare, {from_top : true});
+		objCam.x = x;
+		objCam.y = y;	
+		objCam.follow = objBalloon;	
+	}
+	
+	
+	image_index = 2;
+	vspeed = lerp(vspeed, fly_speed, 0.01);
+	if (!level_goal and y <= stop_limit){
+		//state = balloon_state.STOP_IN_AIR;	
+	}
+	//else if (y <5*tile_size){
+	//	if (alarm[0] <= 0) alarm[0] = 100;
+	//	instance_create_layer(x, y, "instances", objDarkSquare);
+	//}
+	
+	
 }
 
 objBrazier.y = y;

@@ -6,14 +6,16 @@ enum balloon_state {
 	PREPARE,
 	FLY_UP,
 	STOP_IN_AIR,
-	FLOAT	
+	FLOAT,
+	FLY_DOWN,
 }
 
 
 instance_create_layer(x, y, "instances", objFire);
 instance_create_layer(x, y, "instances", objBrazier);
 
-state = balloon_state.IDLE;
+if (!level_goal) state = balloon_state.FLY_DOWN;
+else state = balloon_state.IDLE;
 
 keyboard = noone;
 keyboard_offset = 3*pixel_size;
