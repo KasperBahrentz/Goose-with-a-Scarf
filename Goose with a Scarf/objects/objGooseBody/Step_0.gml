@@ -109,7 +109,7 @@ function move(){
 	}
 	
 	// Sit on bench
-	if (distance_to_object(objBench) <= 1*pixel_size and is_on_ground == true and keyboard_check_pressed(ord("H"))){
+	if (distance_to_object(objBench) <= 1*pixel_size and is_on_ground == true and keyboard_check_pressed(ord("W"))){
 		set_sit(true);
 	}
 	
