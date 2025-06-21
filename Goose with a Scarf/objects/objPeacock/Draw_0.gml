@@ -1,2 +1,2 @@
 draw_self();
-draw_sprite(sprite_beak, 0, x, y);
+draw_sprite_custom(sprite_beak, 0, x, y, image_xscale);

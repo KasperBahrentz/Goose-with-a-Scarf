@@ -7,12 +7,13 @@ if (image_index == 0){
 	check_wood_state(layer_tilemap_get_id("deco"));
 	check_wood_state(layer_tilemap_get_id("deco_back"));
 	check_wood_state(layer_tilemap_get_id("deco_middle"));
-}
-
-if (room == room_village){
-	check_wood_state(layer_tilemap_get_id("house"));
-	check_wood_state(layer_tilemap_get_id("house_front"));
-	check_wood_state(layer_tilemap_get_id("house_back"));
+	
+	
+	if (room == room_village){
+		check_wood_state(layer_tilemap_get_id("house"));
+		check_wood_state(layer_tilemap_get_id("house_front"));
+		check_wood_state(layer_tilemap_get_id("house_back"));
+	}
 }
 
 if (get_tileset_name() == "tlsGroundWinter") check_snow_state(layer_tilemap_get_id("back"));
