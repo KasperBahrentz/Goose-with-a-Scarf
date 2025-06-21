@@ -1,8 +1,13 @@
 /// @description Insert description here
 // You can write your code in this editor
-check_water_state(objGame.water_front_tilemap);
-check_water_state(objGame.water_back_tilemap);
-check_wood_state(objGame.deco_tilemap);
+check_water_state(layer_tilemap_get_id("water"));
+check_water_state(layer_tilemap_get_id("water_front"));
+
+if (image_index == 0){
+	check_wood_state(layer_tilemap_get_id("deco"));
+	check_wood_state(layer_tilemap_get_id("deco_back"));
+	check_wood_state(layer_tilemap_get_id("deco_middle"));
+}
 
 if (room == room_village){
 	check_wood_state(layer_tilemap_get_id("house"));
