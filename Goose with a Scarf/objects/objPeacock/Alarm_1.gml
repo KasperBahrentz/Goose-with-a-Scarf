@@ -1,1 +1,0 @@
-state = peacock_state.QUIET;
