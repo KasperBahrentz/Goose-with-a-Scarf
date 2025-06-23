@@ -5,9 +5,9 @@ enum peacock_state {
 
 state = peacock_state.QUIET;
 
-sprite_beak = sprPeacockBeak;
+sprite_beak = sprPeacockQuiet;
 
-sprite_index = sprPeacockIdleHair;
+sprite_index = sprPeacockHairIdle;
 
 quiet_timer = 240;
 sing_timer = 400;

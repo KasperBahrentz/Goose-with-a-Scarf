@@ -38,8 +38,3 @@ function check_snow_state(_tilemap){
 		material = "snow"	
 	}
 }
-
-
-
-
-

@@ -24,6 +24,5 @@ _timer = 0;
 
 // Alpha
 image_alpha = 1;
-	
-depth = objPeacock.depth - 20;
 
+depth = objPeacock.depth - 20;
