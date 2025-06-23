@@ -57,6 +57,7 @@
     {"name":"inst_5E494DC4","path":"rooms/room_village/room_village.yy",},
     {"name":"inst_4350DC16","path":"rooms/room_village/room_village.yy",},
     {"name":"inst_785B9AE0","path":"rooms/room_village/room_village.yy",},
+    {"name":"inst_205118C7","path":"rooms/room_village/room_village.yy",},
     {"name":"inst_2A758908","path":"rooms/room_village/room_village.yy",},
     {"name":"inst_2ECF667B","path":"rooms/room_village/room_village.yy",},
     {"name":"inst_34089742","path":"rooms/room_village/room_village.yy",},
@@ -85,7 +86,6 @@
     {"name":"inst_6F91BC33","path":"rooms/room_village/room_village.yy",},
     {"name":"inst_5AC0215E","path":"rooms/room_village/room_village.yy",},
     {"name":"inst_5B4332BD","path":"rooms/room_village/room_village.yy",},
-    {"name":"inst_205118C7","path":"rooms/room_village/room_village.yy",},
   ],
   "isDnd":false,
   "layers":[
