@@ -9,6 +9,9 @@ var _tileset_name = get_tileset_name();
 if (_tileset_name == "tlsGroundWinter"){
 	sprite_index = sprCloudWinterFront;	
 }
+else if (_tileset_name == "tlsGroundSummer"){
+	sprite_index = sprCloudSummerFront;	
+}
 
 state = "front";
 x_start = x;
@@ -25,6 +28,9 @@ else if (layer == layer_get_id("clouds_middle")){
 	if (_tileset_name == "tlsGroundWinter"){
 		sprite_index = sprCloudWinterMiddle;	
 	}
+	else if (_tileset_name == "tlsGroundSummer"){
+		sprite_index = sprCloudSummerMiddle;	
+	}
 }
 else if (layer == layer_get_id("clouds_back")){
 	image_alpha = random_range(0.6, 0.7);
@@ -34,6 +40,9 @@ else if (layer == layer_get_id("clouds_back")){
 	if (_tileset_name == "tlsGroundWinter"){
 		sprite_index = sprCloudWinterBack;	
 	}
+	else if (_tileset_name == "tlsGroundSummer"){
+		sprite_index = sprCloudSummerBack;	
+	}
 }
 else if (layer == layer_get_id("clouds_back")){
 	image_alpha = random_range(0.5, 0.6);
@@ -42,6 +51,9 @@ else if (layer == layer_get_id("clouds_back")){
 	sprite_index = sprCloudBack;
 	if (_tileset_name == "tlsGroundWinter"){
 		sprite_index = sprCloudWinterBack;	
+	}
+	else if (_tileset_name == "tlsGroundSummer"){
+		sprite_index = sprCloudSummerBack;	
 	}
 }
 

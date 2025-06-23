@@ -53,13 +53,13 @@
           -30,0,-30,-2147483648,-30,0,-30,-2147483648,-30,0,-30,-2147483648,-30,0,-30,-2147483648,-30,0,-30,-2147483648,
           -30,0,-30,-2147483648,-30,0,-30,-2147483648,-30,0,-30,-2147483648,-30,0,-30,-2147483648,-30,0,-30,-2147483648,
           -30,0,-30,-2147483648,-30,0,-30,-2147483648,
-        ],"TileDataFormat":1,},"tilesetId":{"name":"tlsWater","path":"tilesets/tlsWater/tlsWater.yy",},"userdefinedDepth":false,"visible":true,"x":0,"y":0,},
+        ],"TileDataFormat":1,},"tilesetId":{"name":"tlsWaterSpring","path":"tilesets/tlsWaterSpring/tlsWaterSpring.yy",},"userdefinedDepth":false,"visible":true,"x":0,"y":0,},
     {"$GMRTileLayer":"","%Name":"water_front","depth":300,"effectEnabled":true,"effectType":"none","gridX":32,"gridY":32,"hierarchyFrozen":false,"inheritLayerDepth":false,"inheritLayerSettings":false,"inheritSubLayers":true,"inheritVisibility":true,"layers":[],"name":"water_front","properties":[],"resourceType":"GMRTileLayer","resourceVersion":"2.0","tiles":{"SerialiseHeight":17,"SerialiseWidth":60,"TileCompressedData":[
           -30,0,-30,-2147483648,-30,0,-30,-2147483648,-30,0,-30,-2147483648,-30,0,-30,-2147483648,-30,0,-30,-2147483648,
           -30,0,-30,-2147483648,-30,0,-30,-2147483648,-30,0,-30,-2147483648,-30,0,-30,-2147483648,-30,0,-30,-2147483648,
           -30,0,-30,-2147483648,-30,0,-30,-2147483648,-30,0,-30,-2147483648,-30,0,-30,-2147483648,-30,0,-30,-2147483648,
           -30,0,-30,-2147483648,-30,0,-30,-2147483648,
-        ],"TileDataFormat":1,},"tilesetId":{"name":"tlsWater","path":"tilesets/tlsWater/tlsWater.yy",},"userdefinedDepth":false,"visible":true,"x":0,"y":0,},
+        ],"TileDataFormat":1,},"tilesetId":{"name":"tlsWaterSpring","path":"tilesets/tlsWaterSpring/tlsWaterSpring.yy",},"userdefinedDepth":false,"visible":true,"x":0,"y":0,},
     {"$GMRAssetLayer":"","%Name":"hidden","assets":[
         {"$GMRSpriteGraphic":"v1","%Name":"graphic_38FD0360","animationSpeed":1.0,"colour":4294967295,"frozen":false,"headPosition":1.0,"ignore":false,"inheritedItemId":null,"inheritItemSettings":false,"name":"graphic_38FD0360","resourceType":"GMRSpriteGraphic","resourceVersion":"2.0","rotation":0.0,"scaleX":1.0,"scaleY":1.0,"spriteId":{"name":"sprHiddenTiles","path":"sprites/sprHiddenTiles/sprHiddenTiles.yy",},"x":128.0,"y":768.0,},
         {"$GMRSpriteGraphic":"v1","%Name":"graphic_78D1B01B","animationSpeed":1.0,"colour":4294967295,"frozen":false,"headPosition":1.0,"ignore":false,"inheritedItemId":null,"inheritItemSettings":false,"name":"graphic_78D1B01B","resourceType":"GMRSpriteGraphic","resourceVersion":"2.0","rotation":0.0,"scaleX":1.0,"scaleY":1.0,"spriteId":{"name":"sprHiddenTiles","path":"sprites/sprHiddenTiles/sprHiddenTiles.yy",},"x":256.0,"y":768.0,},
@@ -180,7 +180,7 @@
           -30,0,-30,-2147483648,-30,0,-30,-2147483648,-30,0,-30,-2147483648,-30,0,-30,-2147483648,-30,0,-30,-2147483648,
           -30,0,-30,-2147483648,-30,0,-30,-2147483648,-30,0,-30,-2147483648,-30,0,-30,-2147483648,-30,0,-30,-2147483648,
           -30,0,-30,-2147483648,-30,0,-30,-2147483648,
-        ],"TileDataFormat":1,},"tilesetId":{"name":"tlsWater","path":"tilesets/tlsWater/tlsWater.yy",},"userdefinedDepth":false,"visible":true,"x":0,"y":0,},
+        ],"TileDataFormat":1,},"tilesetId":{"name":"tlsWaterSpring","path":"tilesets/tlsWaterSpring/tlsWaterSpring.yy",},"userdefinedDepth":false,"visible":true,"x":0,"y":0,},
     {"$GMRTileLayer":"","%Name":"deco_middle","depth":1200,"effectEnabled":true,"effectType":null,"gridX":32,"gridY":32,"hierarchyFrozen":false,"inheritLayerDepth":false,"inheritLayerSettings":false,"inheritSubLayers":true,"inheritVisibility":true,"layers":[],"name":"deco_middle","properties":[],"resourceType":"GMRTileLayer","resourceVersion":"2.0","tiles":{"SerialiseHeight":17,"SerialiseWidth":60,"TileCompressedData":[
           -30,0,-30,-2147483648,-30,0,-30,-2147483648,2,539,540,-28,0,-12,-2147483648,1,472,-4,-2147483648,2,131,
           132,-11,-2147483648,2,570,571,-28,0,-12,-2147483648,1,472,-17,-2147483648,2,601,602,-28,0,-12,-2147483648,
@@ -207,7 +207,7 @@
           -30,0,-30,-2147483648,-30,0,-30,-2147483648,-30,0,-30,-2147483648,-30,0,-30,-2147483648,-30,0,-30,-2147483648,
           -30,0,-30,-2147483648,-30,0,-30,-2147483648,-30,0,-30,-2147483648,-30,0,-30,-2147483648,-30,0,-30,-2147483648,
           -30,0,-30,-2147483648,-30,0,-30,-2147483648,
-        ],"TileDataFormat":1,},"tilesetId":{"name":"tlsWater","path":"tilesets/tlsWater/tlsWater.yy",},"userdefinedDepth":false,"visible":true,"x":0,"y":0,},
+        ],"TileDataFormat":1,},"tilesetId":{"name":"tlsWaterSpring","path":"tilesets/tlsWaterSpring/tlsWaterSpring.yy",},"userdefinedDepth":false,"visible":true,"x":0,"y":0,},
     {"$GMRTileLayer":"","%Name":"leaves_back","depth":1500,"effectEnabled":true,"effectType":null,"gridX":32,"gridY":32,"hierarchyFrozen":false,"inheritLayerDepth":false,"inheritLayerSettings":false,"inheritSubLayers":true,"inheritVisibility":true,"layers":[],"name":"leaves_back","properties":[],"resourceType":"GMRTileLayer","resourceVersion":"2.0","tiles":{"SerialiseHeight":17,"SerialiseWidth":60,"TileCompressedData":[
           -30,0,-30,-2147483648,-30,0,-30,-2147483648,-30,0,-30,-2147483648,-30,0,-30,-2147483648,1,386,-29,0,
           -30,-2147483648,2,260,386,-28,0,-7,-2147483648,5,0,384,386,0,0,-18,-2147483648,2,355,388,-28,0,-7,-2147483648,
@@ -239,7 +239,7 @@
           -30,0,-30,-2147483648,-30,0,-30,-2147483648,-30,0,-30,-2147483648,-30,0,-30,-2147483648,-30,0,-30,-2147483648,
           -30,0,-30,-2147483648,-30,0,-30,-2147483648,-30,0,-30,-2147483648,-30,0,-30,-2147483648,-30,0,-30,-2147483648,
           -30,0,-30,-2147483648,-30,0,-30,-2147483648,
-        ],"TileDataFormat":1,},"tilesetId":{"name":"tlsWater","path":"tilesets/tlsWater/tlsWater.yy",},"userdefinedDepth":false,"visible":true,"x":0,"y":0,},
+        ],"TileDataFormat":1,},"tilesetId":{"name":"tlsWaterSpring","path":"tilesets/tlsWaterSpring/tlsWaterSpring.yy",},"userdefinedDepth":false,"visible":true,"x":0,"y":0,},
     {"$GMRTileLayer":"","%Name":"leaves_windows","depth":1800,"effectEnabled":true,"effectType":null,"gridX":32,"gridY":32,"hierarchyFrozen":false,"inheritLayerDepth":false,"inheritLayerSettings":false,"inheritSubLayers":true,"inheritVisibility":true,"layers":[],"name":"leaves_windows","properties":[],"resourceType":"GMRTileLayer","resourceVersion":"2.0","tiles":{"SerialiseHeight":17,"SerialiseWidth":60,"TileCompressedData":[-337,-2147483648,-4,0,-56,-2147483648,-4,0,-35,-2147483648,2,384,386,-19,-2147483648,-4,0,-35,-2147483648,2,413,388,-522,-2147483648,],"TileDataFormat":1,},"tilesetId":{"name":"tlsLeaves","path":"tilesets/tlsLeaves/tlsLeaves.yy",},"userdefinedDepth":false,"visible":true,"x":0,"y":0,},
     {"$GMRBackgroundLayer":"","%Name":"mountains_front","animationFPS":8.0,"animationSpeedType":0,"colour":4294967295,"depth":1900,"effectEnabled":true,"effectType":null,"gridX":32,"gridY":32,"hierarchyFrozen":false,"hspeed":0.0,"htiled":true,"inheritLayerDepth":false,"inheritLayerSettings":false,"inheritSubLayers":true,"inheritVisibility":true,"layers":[],"name":"mountains_front","properties":[],"resourceType":"GMRBackgroundLayer","resourceVersion":"2.0","spriteId":{"name":"sprSummerMountainsFront","path":"sprites/sprSummerMountainsFront/sprSummerMountainsFront.yy",},"stretch":false,"userdefinedAnimFPS":false,"userdefinedDepth":false,"visible":true,"vspeed":0.0,"vtiled":false,"x":0,"y":0,},
     {"$GMRBackgroundLayer":"","%Name":"mountains_middle","animationFPS":8.0,"animationSpeedType":0,"colour":4294967295,"depth":2000,"effectEnabled":true,"effectType":null,"gridX":32,"gridY":32,"hierarchyFrozen":false,"hspeed":0.0,"htiled":true,"inheritLayerDepth":false,"inheritLayerSettings":false,"inheritSubLayers":true,"inheritVisibility":true,"layers":[],"name":"mountains_middle","properties":[],"resourceType":"GMRBackgroundLayer","resourceVersion":"2.0","spriteId":{"name":"sprSummerMountainsMiddle","path":"sprites/sprSummerMountainsMiddle/sprSummerMountainsMiddle.yy",},"stretch":false,"userdefinedAnimFPS":false,"userdefinedDepth":false,"visible":true,"vspeed":0.0,"vtiled":false,"x":0,"y":0,},

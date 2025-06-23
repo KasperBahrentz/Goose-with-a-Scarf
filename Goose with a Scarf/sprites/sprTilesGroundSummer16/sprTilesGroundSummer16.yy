@@ -19,7 +19,7 @@
   "height":248,
   "HTile":false,
   "layers":[
-    {"$GMImageLayer":"","%Name":"861e4fb5-266b-4879-a7fa-3b7329554c48","blendMode":0,"displayName":"default","isLocked":false,"name":"861e4fb5-266b-4879-a7fa-3b7329554c48","opacity":100.0,"resourceType":"GMImageLayer","resourceVersion":"2.0","visible":true,},
+    {"$GMImageLayer":"","%Name":"95c441cd-e5da-4ebe-af09-9022874b11f2","blendMode":0,"displayName":"Layer 2","isLocked":false,"name":"95c441cd-e5da-4ebe-af09-9022874b11f2","opacity":100.0,"resourceType":"GMImageLayer","resourceVersion":"2.0","visible":true,},
     {"$GMImageLayer":"","%Name":"073d7df1-f717-43c7-a09d-10c665271e33","blendMode":0,"displayName":"Layer 1","isLocked":false,"name":"073d7df1-f717-43c7-a09d-10c665271e33","opacity":100.0,"resourceType":"GMImageLayer","resourceVersion":"2.0","visible":false,},
   ],
   "name":"sprTilesGroundSummer16",
