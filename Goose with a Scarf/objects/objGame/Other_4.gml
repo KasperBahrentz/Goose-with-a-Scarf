@@ -3,9 +3,6 @@
 found_hidden_blocks = [];
 hidden_assets = layer_get_all_elements(layer_get_id("hidden"));
 collision_tilemap = layer_tilemap_get_id("ground");
-water_front_tilemap = layer_tilemap_get_id("water_front");
-water_back_tilemap = layer_tilemap_get_id("water_back");
-deco_tilemap = layer_tilemap_get_id("deco_middle");
 back_tilemap = layer_tilemap_get_id("back");
 
 if (room_height == 2160 or room_height == 4320){
