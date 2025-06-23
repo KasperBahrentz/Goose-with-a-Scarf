@@ -41,7 +41,7 @@ function is_on_tilemap(_tilemap_id, _y){
 	var tile_data = tilemap_get(_tilemap_id, tile_x, tile_y);
 
 	// Check if there's a tile (non-zero = tile exists)
-	if (tile_data > 0) {
+	if (tile_data != 0) {
 		return true;
 	}
 	return false;
@@ -138,8 +138,7 @@ function get_material(){
 }
 
 function play_material_sound(_material){
-	var _sound = sndGrass1
-	audio_sound_pitch(_sound, random_range(0.9, 1.1));
+	var _sound = sndGrass1;
 	
 	switch(_material){
 		case "grass": {
@@ -149,7 +148,6 @@ function play_material_sound(_material){
 		}
 		case "snow": {
 			_sound = choose(sndSnow1, sndSnow2, sndSnow3, sndSnow4, sndSnow5, sndSnow6, sndSnow7, sndSnow8, sndSnow9 ,sndSnow10);
-			audio_sound_pitch(_sound, random_range(0.6, 0.8));
 			break;
 		}
 		case "water": {
@@ -163,6 +161,8 @@ function play_material_sound(_material){
 			break;
 		}
 	}
+	
+	audio_sound_pitch(_sound, random_range(0.9, 1.1));
 	audio_play_sound(_sound, 1.8, false);
 }
 
