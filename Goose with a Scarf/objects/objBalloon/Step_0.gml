@@ -117,7 +117,7 @@ function exit_balloon(){
 }
 
 function check_for_exit_balloon() {
-	if (image_index == 1 or image_index == 3) and (keyboard_check(ord("A"))) or (keyboard_check(ord("D"))){
+	if (image_index == 1 or image_index == 2) and (keyboard_check(ord("A")) or keyboard_check(ord("D"))){
 		if (room == room_village or level_goal) state = balloon_state.IDLE;
 		else state = balloon_state.FLY_UP;
 		objGooseBody.state = player_state.MOVE;
