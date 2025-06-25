@@ -20,14 +20,7 @@ function item(){
 
 function follow(){
 	follow_player(0.1, 16);
-	
-	if (objGooseBody.is_on_ground && objGooseBody.state == player_state.MOVE) or (objGoal.goal_touched == true){
-		state = fruit_state.COLLECT;
-		audio_play_sound(sndPling, 15, false);
-		image_speed = img_speed;
-		objGame.number_of_fruit_collected[fruit_index]++;
-		instance_create_layer(-100, -100, "instances", objFruitCollectedGUI, {fruit : self.object_index});
-	}
+	if (objGooseBody.is_on_ground and alarm[1] <= 0) alarm[1] = 2;
 }
 
 function collect(){

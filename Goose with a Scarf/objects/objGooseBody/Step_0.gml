@@ -231,21 +231,21 @@ function move(){
 		// --- FALL THROUGH SEMI-SOLID (double tap S) ---
 
 		// Check if S was just pressed
-		if (keyboard_check_pressed(ord("S"))) {
-		    if (fall_through_semi_solid_timer > 0 && _landed_on_semi_solid) {
-		        // Second press detected in time — fall through
-		        if(!check_collision(0, 3*pixel_size)) and (!place_meeting(x, y+8*pixel_size, objHiddenDetection)) vspeed = 3 * pixel_size;
-		        fall_through_semi_solid_timer = 0; // Reset to avoid triple-taps
-		    } else {
-		        // First press — start the timer
-		        fall_through_semi_solid_timer = fall_through_semi_solid_timer_max;
-		    }
-		}
+		//if (keyboard_check_pressed(ord("S"))) {
+		//    if (fall_through_semi_solid_timer > 0 && _landed_on_semi_solid) {
+		//        // Second press detected in time — fall through
+		//        if(!check_collision(0, 3*pixel_size)) and (!place_meeting(x, y+8*pixel_size, objHiddenDetection)) vspeed = 3 * pixel_size;
+		//        fall_through_semi_solid_timer = 0; // Reset to avoid triple-taps
+		//    } else {
+		//        // First press — start the timer
+		//        fall_through_semi_solid_timer = fall_through_semi_solid_timer_max;
+		//    }
+		//}
 
-		// Decrease timer each frame
-		if (fall_through_semi_solid_timer > 0) {
-		    fall_through_semi_solid_timer--;
-		}
+		//// Decrease timer each frame
+		//if (fall_through_semi_solid_timer > 0) {
+		//    fall_through_semi_solid_timer--;
+		//}
 
 		
 		
