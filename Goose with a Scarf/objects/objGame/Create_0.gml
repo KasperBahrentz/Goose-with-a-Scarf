@@ -8,6 +8,8 @@ enum fruit_counter {
 	ORANGE	
 }
 
+has_arrived_in_level = false;
+
 found_hidden_blocks = [];
 
 display_set_gui_maximise();

@@ -2,7 +2,7 @@
   "$GMSprite":"",
   "%Name":"sprTilesDeco16",
   "bboxMode":0,
-  "bbox_bottom":421,
+  "bbox_bottom":479,
   "bbox_left":13,
   "bbox_right":479,
   "bbox_top":7,

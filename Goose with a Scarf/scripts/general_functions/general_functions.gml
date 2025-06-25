@@ -172,7 +172,7 @@ function spawn_material_particle(){
 	if (_material == "water"){
 		repeat(irandom_range(3, 7)) instance_create_layer(x, y, "instances", objParticleWater);
 	}
-	else { // Spawn dust
+	else if (_material != "wood") { // Spawn dust
 		repeat(choose(1, 1, 2)){ // Down
 		instance_create_layer(x + random_range(-3, 3), y + random_range(0, 2), "instances", objDust, {dust_id: "down"});	
 		}

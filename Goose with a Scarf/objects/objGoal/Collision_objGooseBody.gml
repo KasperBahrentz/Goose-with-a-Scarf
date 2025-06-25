@@ -9,4 +9,5 @@ if (objGooseBody.state == player_state.MOVE){
 	instance_destroy(objGoalTop);
 	audio_play_sound(sndGoal, 12, false);
 	image_index = 1;
+	objGame.has_arrived_in_level = false;
 }	

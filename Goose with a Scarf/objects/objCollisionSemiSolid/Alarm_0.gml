@@ -16,7 +16,7 @@ if (image_index == 0){
 	}
 }
 
-if (get_tileset_name() == "tlsGroundWinter") check_snow_state(layer_tilemap_get_id("back"));
+if (image_index == 0 and get_tileset_name() == "tlsGroundWinter") check_snow_state(layer_tilemap_get_id("back"));
 
 function check_water_state(_tilemap){
 	if (is_on_tilemap(_tilemap, y)) and !(is_on_tilemap(_tilemap, y-tile_size)) or (place_meeting(x, y, objPuddle)){

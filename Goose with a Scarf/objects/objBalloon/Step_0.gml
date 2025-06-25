@@ -30,13 +30,15 @@ function prepare(){
 }
 
 function fly_up(){
-	objCam.follow = objBalloon;
-	image_index = 2;
+	if (image_index == 1){
+		image_index = 2;
+		objCam.follow = objBalloon;	
+	}
 	vspeed = lerp(vspeed, -fly_speed, 0.01);
-	if (!level_goal and y <= stop_limit){
+	if (room == room_village and y <= stop_limit){
 		state = balloon_state.STOP_IN_AIR;	
 	}
-	else if (y <5*tile_size){
+	else if (image_index = 2 and y <5*tile_size){
 		if (alarm[0] <= 0) alarm[0] = 160;
 		if (!instance_exists(objDarkSquare)) instance_create_layer(x, y, "instances", objDarkSquare, {from_top : false});
 	}
@@ -114,10 +116,13 @@ function exit_balloon(){
 
 function check_for_exit_balloon() {
 	if (keyboard_check(ord("A"))) or (keyboard_check(ord("D"))){
-		state = balloon_state.IDLE;
+		if (room == room_village) state = balloon_state.IDLE;
+		else state = balloon_state.FLY_UP;
 		objGooseBody.state = player_state.MOVE;
 		image_index = 3;
 		objCam.follow = objGooseBody;
+		if (instance_exists(objKeyWASD)) objKeyWASD.state = keyboard_state.DISAPPEAR;
+		objGame.has_arrived_in_level = true;
 	}
 }
 
