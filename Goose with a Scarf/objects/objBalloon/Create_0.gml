@@ -1,5 +1,6 @@
 if (instance_exists(objGame) and objGame.has_arrived_in_level) instance_destroy();
 else {
+	
 	// Inherit the parent event
 	event_inherited();
 
@@ -24,7 +25,10 @@ else {
 		state = balloon_state.FLY_DOWN;
 		vspeed = fly_speed;
 	}
-	else state = balloon_state.IDLE;
+	else {
+		state = balloon_state.IDLE;
+		audio_play_sound(sndHonk, 10, false);
+	}
 
 	keyboard = noone;
 	keyboard_offset = 3*pixel_size;

@@ -1,0 +1,1 @@
+audio_play_sound(sndGoalBalloon, 20, false);

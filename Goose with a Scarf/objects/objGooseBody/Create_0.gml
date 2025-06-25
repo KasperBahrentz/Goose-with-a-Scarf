@@ -141,3 +141,7 @@ if (_has_water_front or _has_water_back or _has_water_windows){
 	if (_has_water_windows) cover_all_water_tiles("water_windows");
 }
 else audio_stop_sound(sndRunningWater);
+
+if (!instance_exists(objBalloon)){
+	audio_play_sound(sndHonk, 10, false);
+}
