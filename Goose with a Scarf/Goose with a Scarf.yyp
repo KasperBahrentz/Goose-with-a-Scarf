@@ -202,6 +202,7 @@
     {"id":{"name":"sndGrass8","path":"sounds/sndGrass8/sndGrass8.yy",},},
     {"id":{"name":"sndHonk","path":"sounds/sndHonk/sndHonk.yy",},},
     {"id":{"name":"sndKeyCollect","path":"sounds/sndKeyCollect/sndKeyCollect.yy",},},
+    {"id":{"name":"sndPiano","path":"sounds/sndPiano/sndPiano.yy",},},
     {"id":{"name":"sndPling","path":"sounds/sndPling/sndPling.yy",},},
     {"id":{"name":"sndPoof","path":"sounds/sndPoof/sndPoof.yy",},},
     {"id":{"name":"sndPop","path":"sounds/sndPop/sndPop.yy",},},
