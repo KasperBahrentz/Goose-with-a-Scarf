@@ -25,12 +25,14 @@ function prepare(){
 		state = balloon_state.FLY_UP;
 		if (level_goal) alarm[1] = 60;
 		instance_destroy(objDodo);
+		audio_play_sound(sndFireStart, 10, false);
 	}
 	
 	check_for_exit_balloon();
 }
 
 function fly_up(){
+	if (!audio_is_playing(sndGasFlame)) audio_play_sound(sndGasFlame, 3, true);
 	if (room == room_village and !audio_is_playing(sndPiano)) audio_play_sound(sndPiano, 10, false);
 	if (image_index == 1){
 		image_index = 2;
@@ -51,6 +53,7 @@ function stop_in_air(){
 	pan_camera = true;
 	
 	if (abs(vspeed) < 1){
+		audio_sound_gain(sndGasFlame, 0, 120);
 		vspeed = 0;
 		state = balloon_state.FLOAT;
 		timer = -1;

@@ -183,18 +183,20 @@ function move(){
 	var _steps = abs(h_spd * move_dir);
 	var _dir = sign(h_spd * move_dir);
 	for (var i = 0; i < _steps; i++) {
-	    if (!check_collision(_dir, 0)) {
-	        x += _dir;
-	    } else {
-	        // Nudge out of wall depending on direction
-	        if (_dir > 0) {
-	            while (check_collision(1, 0)) x -= 1;
-	        } else {
-	            while (check_collision(-1, 0)) x += 1;
-	        }
-	        h_spd = 0;
-	        break;
-	    }
+		if (check_collision(_dir, 0) || place_meeting(x + _dir, y, objCollision)){
+		    // Blocked by either tile or object
+		    // Handle collision response
+		    if (_dir > 0) {
+		        while (check_collision(2, 0) || place_meeting(x + 2, y, objCollision)) x -= 2;	// bbox_right is exclusive; bbox_left is inclusive, therefore, we use 2 here
+		    } else {
+		        while (check_collision(-1, 0) || place_meeting(x - 1, y, objCollision)) x += 1;
+		    }
+		    h_spd = 0;
+		    break;
+		} else {
+		    // Free to move
+		    x += _dir;
+		}
 	}
 	hspeed_tracker = h_spd * move_dir
 	
