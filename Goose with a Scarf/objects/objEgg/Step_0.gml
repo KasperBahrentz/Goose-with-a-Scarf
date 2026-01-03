@@ -84,8 +84,8 @@ function drop(){
 		y += 32;	// Fall
 		
 		// Rock collisions
-		if (place_meeting(x, y, objRock)){
-			with instance_nearest(x, y, objRock){
+		if (place_meeting(x, y, objMelon)){
+			with instance_nearest(x, y, objMelon){
 				instance_destroy();
 			}
 			destroy_egg();

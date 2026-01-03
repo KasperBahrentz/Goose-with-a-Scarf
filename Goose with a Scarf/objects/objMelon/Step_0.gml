@@ -1,6 +1,6 @@
 // Check for support slightly ahead
 var _has_support = check_collision(roll_dir * sprite_width / 3, 1)
-    || place_meeting(x + roll_dir * sprite_width / 3, y + 1, objCollision);
+    || ( place_meeting(x + roll_dir * sprite_width / 3, y + 1, objCollision));
 
 // Horizontal movement
 if (_has_support)
@@ -30,10 +30,12 @@ else
 {
     current_fall_spd = 0;
 	
-	while (check_collision(0, 0) || place_meeting(0, 0, objCollision))
-    {
-        y -= 1;
-    }
+	if (collision_start_timer > collision_start_limit) {
+		while (check_collision(0, 0) || (place_meeting(0, 0, objCollision)))
+	    {
+			y -= 1;
+		}
+	}
 }
 
 // Apply vertical movement
@@ -60,6 +62,18 @@ if (place_meeting(x + roll_dir*pixel_size, y, prtCrate)){
 	}
 }
 else // destroy self i colliding with wall
-if (check_collision(roll_dir*pixel_size, -4*pixel_size)){
-	instance_destroy();
+if (collision_start_timer >= collision_start_limit){
+	if (check_collision(roll_dir, -4*pixel_size)){
+		instance_destroy();
+	}
+}
+
+if (place_meeting(x + roll_dir*pixel_size, y, objMelon)){
+	with instance_nearest(x, y, objMelon){
+		instance_destroy();
+	}
+}
+
+if (collision_start_timer < collision_start_limit){
+	collision_start_timer++;	
 }

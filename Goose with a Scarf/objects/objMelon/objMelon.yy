@@ -1,12 +1,13 @@
 {
   "$GMObject":"",
-  "%Name":"objRock",
+  "%Name":"objMelon",
   "eventList":[
     {"$GMEvent":"v1","%Name":"","collisionObjectId":null,"eventNum":0,"eventType":3,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
     {"$GMEvent":"v1","%Name":"","collisionObjectId":null,"eventNum":0,"eventType":0,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
+    {"$GMEvent":"v1","%Name":"","collisionObjectId":null,"eventNum":0,"eventType":8,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
   ],
   "managed":true,
-  "name":"objRock",
+  "name":"objMelon",
   "overriddenProperties":[],
   "parent":{
     "name":"Objects",
@@ -36,8 +37,8 @@
   "resourceVersion":"2.0",
   "solid":false,
   "spriteId":{
-    "name":"sprRock",
-    "path":"sprites/sprRock/sprRock.yy",
+    "name":"sprMelon",
+    "path":"sprites/sprMelon/sprMelon.yy",
   },
   "spriteMaskId":null,
   "visible":true,
