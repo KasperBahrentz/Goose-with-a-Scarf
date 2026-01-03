@@ -36,12 +36,67 @@ function draw_goose(){
 	}
 }
 
+var tile_id = tilemap_get_at_pixel(layer_tilemap_get_id("ground"), x, y + 10);
+
 draw_set_font(fnt_smooth);
+
+
+/// draw_event (debug)
+
+
+// draw triangle collisions
+//var _tilemap = objGame.collision_tilemap;
+//var _tile_w = tile_size;
+//var _tile_h = tile_size;
+
+//// Visible area (performance-safe)
+//var _left   = floor(camera_get_view_x(view_camera[0]) / _tile_w) * _tile_w;
+//var _top    = floor(camera_get_view_y(view_camera[0]) / _tile_h) * _tile_h;
+//var _right  = _left + camera_get_view_width(view_camera[0]);
+//var _bottom = _top  + camera_get_view_height(view_camera[0]);
+
+//draw_set_alpha(0.4);
+
+//for (var yy = _top; yy < _bottom; yy += _tile_h)
+//{
+//    for (var xx = _left; xx < _right; xx += _tile_w)
+//    {
+//        var _tile_id = tilemap_get_at_pixel(_tilemap, xx + 1, yy + 1);
+
+//        if (_tile_id == top_right_triangle_id)
+//        {
+//            draw_set_colour(c_red);
+
+//				draw_triangle(
+//				    xx, yy,                     // top-left
+//				    xx + _tile_w, yy,           // top-right
+//				    xx + _tile_w, yy + _tile_h, // bottom-right
+//				    false
+//				);
+
+//        }
+//        else if (_tile_id == top_left_triangle_id)
+//        {
+//            draw_set_colour(c_blue);
+
+//			draw_triangle(
+//			    xx, yy,                     // top-left
+//			    xx + _tile_w, yy,           // top-right
+//			    xx, yy + _tile_h,           // bottom-left
+//			    false
+//			);
+//        }
+//    }
+//}
+
+draw_set_alpha(1);
+draw_set_colour(c_white);
+
 
 //draw_rectangle(bbox_left, bbox_top, bbox_right, bbox_bottom, false);
 
 
-//draw_text(x, y, objGame.found_hidden_blocks);
+//draw_text(x, y, tile_id);
 //draw_text(objBalloon.x, objBalloon.y + tile_size, objBalloon.pan_camera);
 
 //draw_text(x, y, is_on_ground);

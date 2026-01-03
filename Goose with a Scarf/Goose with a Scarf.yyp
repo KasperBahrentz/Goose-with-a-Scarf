@@ -2,7 +2,7 @@
   "$GMProject":"v1",
   "%Name":"Goose with a Scarf",
   "AudioGroups":[
-    {"$GMAudioGroup":"","%Name":"audiogroup_default","name":"audiogroup_default","resourceType":"GMAudioGroup","resourceVersion":"2.0","targets":-1,},
+    {"$GMAudioGroup":"v1","%Name":"audiogroup_default","exportDir":"","name":"audiogroup_default","resourceType":"GMAudioGroup","resourceVersion":"2.0","targets":-1,},
   ],
   "configs":{
     "children":[],
@@ -60,12 +60,14 @@
     {"$GMFolder":"","%Name":"tile_sprites","folderPath":"folders/Tile Sets/tile_sprites.yy","name":"tile_sprites","resourceType":"GMFolder","resourceVersion":"2.0",},
     {"$GMFolder":"","%Name":"Timelines","folderPath":"folders/Timelines.yy","name":"Timelines","resourceType":"GMFolder","resourceVersion":"2.0",},
   ],
-  "ForcedPrefabProjectReferences":[],
+  "ForcedPrefabProjectReferences":[
+    {"link":"io.gamemaker.sdfshaders-1.0.0","name":"io.gamemaker.sdfshaders-1.0.0","path":"io.gamemaker.sdfshaders-1.0.0.yyp",},
+  ],
   "IncludedFiles":[],
   "isEcma":false,
   "LibraryEmitters":[],
   "MetaData":{
-    "IDEVersion":"2024.13.1.193",
+    "IDEVersion":"2024.14.2.213",
   },
   "name":"Goose with a Scarf",
   "resources":[
@@ -139,6 +141,7 @@
     {"id":{"name":"objPeacock","path":"objects/objPeacock/objPeacock.yy",},},
     {"id":{"name":"objPear","path":"objects/objPear/objPear.yy",},},
     {"id":{"name":"objPuddle","path":"objects/objPuddle/objPuddle.yy",},},
+    {"id":{"name":"objRock","path":"objects/objRock/objRock.yy",},},
     {"id":{"name":"objSign","path":"objects/objSign/objSign.yy",},},
     {"id":{"name":"objSignFruit","path":"objects/objSignFruit/objSignFruit.yy",},},
     {"id":{"name":"objSmoke","path":"objects/objSmoke/objSmoke.yy",},},
@@ -175,6 +178,8 @@
     {"id":{"name":"room_level_spring_8","path":"rooms/room_level_spring_8/room_level_spring_8.yy",},},
     {"id":{"name":"room_level_spring_9","path":"rooms/room_level_spring_9/room_level_spring_9.yy",},},
     {"id":{"name":"room_level_spring_template","path":"rooms/room_level_spring_template/room_level_spring_template.yy",},},
+    {"id":{"name":"room_level_summer_1","path":"rooms/room_level_summer_1/room_level_summer_1.yy",},},
+    {"id":{"name":"room_level_summer_template","path":"rooms/room_level_summer_template/room_level_summer_template.yy",},},
     {"id":{"name":"room_level_test","path":"rooms/room_level_test/room_level_test.yy",},},
     {"id":{"name":"room_level_tutorial","path":"rooms/room_level_tutorial/room_level_tutorial.yy",},},
     {"id":{"name":"room_tile_test","path":"rooms/room_tile_test/room_tile_test.yy",},},
@@ -421,6 +426,8 @@
     {"id":{"name":"sprPear16","path":"sprites/sprPear16/sprPear16.yy",},},
     {"id":{"name":"sprPuddle","path":"sprites/sprPuddle/sprPuddle.yy",},},
     {"id":{"name":"sprPuddle16","path":"sprites/sprPuddle16/sprPuddle16.yy",},},
+    {"id":{"name":"sprRock","path":"sprites/sprRock/sprRock.yy",},},
+    {"id":{"name":"sprRock16","path":"sprites/sprRock16/sprRock16.yy",},},
     {"id":{"name":"sprSign","path":"sprites/sprSign/sprSign.yy",},},
     {"id":{"name":"sprSign16","path":"sprites/sprSign16/sprSign16.yy",},},
     {"id":{"name":"sprSignFruit","path":"sprites/sprSignFruit/sprSignFruit.yy",},},
@@ -524,6 +531,7 @@
   "resourceType":"GMProject",
   "resourceVersion":"2.0",
   "RoomOrderNodes":[
+    {"roomId":{"name":"room_level_summer_1","path":"rooms/room_level_summer_1/room_level_summer_1.yy",},},
     {"roomId":{"name":"room_level_tutorial","path":"rooms/room_level_tutorial/room_level_tutorial.yy",},},
     {"roomId":{"name":"room_level_spring_1","path":"rooms/room_level_spring_1/room_level_spring_1.yy",},},
     {"roomId":{"name":"room_level_spring_2","path":"rooms/room_level_spring_2/room_level_spring_2.yy",},},
@@ -542,6 +550,7 @@
     {"roomId":{"name":"room_level_test","path":"rooms/room_level_test/room_level_test.yy",},},
     {"roomId":{"name":"room_tile_test","path":"rooms/room_tile_test/room_tile_test.yy",},},
     {"roomId":{"name":"room_level_spring_template","path":"rooms/room_level_spring_template/room_level_spring_template.yy",},},
+    {"roomId":{"name":"room_level_summer_template","path":"rooms/room_level_summer_template/room_level_summer_template.yy",},},
     {"roomId":{"name":"room_candy_wrapper","path":"rooms/room_candy_wrapper/room_candy_wrapper.yy",},},
   ],
   "templateType":"game",

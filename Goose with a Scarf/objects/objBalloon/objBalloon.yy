@@ -33,8 +33,8 @@
   "physicsShapePoints":[],
   "physicsStartAwake":true,
   "properties":[
-    {"$GMObjectProperty":"v1","%Name":"level_goal","filters":[],"listItems":[],"multiselect":false,"name":"level_goal","rangeEnabled":false,"rangeMax":10.0,"rangeMin":0.0,"resourceType":"GMObjectProperty","resourceVersion":"2.0","value":"true","varType":3,},
-    {"$GMObjectProperty":"v1","%Name":"target_room","filters":[],"listItems":[],"multiselect":false,"name":"target_room","rangeEnabled":false,"rangeMax":10.0,"rangeMin":0.0,"resource":{"name":"room_village","path":"rooms/room_village/room_village.yy",},"resourceType":"GMObjectProperty","resourceVersion":"2.0","value":"room_village","varType":5,},
+    {"$GMObjectProperty":"v2","%Name":"level_goal","filters":[],"listItems":[],"multiselect":false,"name":"level_goal","rangeEnabled":false,"rangeMax":10.0,"rangeMin":0.0,"resourceType":"GMObjectProperty","resourceVersion":"2.0","value":"true","varType":3,},
+    {"$GMObjectProperty":"v2","%Name":"target_room","filters":[],"listItems":[],"multiselect":false,"name":"target_room","rangeEnabled":false,"rangeMax":10.0,"rangeMin":0.0,"resource":{"name":"room_village","path":"rooms/room_village/room_village.yy",},"resourceType":"GMObjectProperty","resourceVersion":"2.0","value":"room_village","varType":5,},
   ],
   "resourceType":"GMObject",
   "resourceVersion":"2.0",

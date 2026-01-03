@@ -63,30 +63,7 @@ function drop(){
 			play_material_sound(_material);
 		}
 		
-		map_y = tilemap_get_cell_y_at_pixel(objGame.collision_tilemap, x, y + 4*pixel_size);
-		vspeed = 0;
-		
-		audio_sound_pitch(sndThumb, random_range(0.9, 1.1));
-		audio_play_sound(sndThumb, 5, false);
-		
-		var _color = "white";
-		if (temporary){
-			switch(image_index){
-				case 1:	_color = "pink";	break;
-				case 3: _color = "orange";	break;
-				case 5: _color = "green";	break;
-			}
-		}
-		
-		repeat(choose(1, 2, 2, 2, 3)){ // Down
-			instance_create_layer(x, (map_y * tile_size)-4*pixel_size, "instances", objEggShell, {shell_id: "down", color : _color});	
-		}
-		repeat(choose(1, 2, 2, 2, 3)){ // Left
-			instance_create_layer(x, (map_y * tile_size)-4*pixel_size, "instances", objEggShell, {shell_id: "left", color : _color});	
-		}
-		repeat(choose(1, 2, 2, 2, 3)){ // Right
-			instance_create_layer(x, (map_y * tile_size)-4*pixel_size, "instances", objEggShell, {shell_id: "right", color : _color});	
-		}
+		destroy_egg();
 		
 		// Crate collisions
 		if (place_meeting(x, y+8*pixel_size, prtCrate)){
@@ -102,14 +79,50 @@ function drop(){
 				hp--;
 			}
 		}
-		
-		instance_destroy();
 	}
 	else if (!has_collided){
 		y += 32;	// Fall
+		
+		// Rock collisions
+		if (place_meeting(x, y, objRock)){
+			with instance_nearest(x, y, objRock){
+				instance_destroy();
+			}
+			destroy_egg();
+		}
 	}
 	
 	if (y > room_height){
 		instance_destroy();
 	}
+}
+
+function destroy_egg() {
+	vspeed = 0;
+	
+	map_y = tilemap_get_cell_y_at_pixel(objGame.collision_tilemap, x, y + 4*pixel_size);
+		
+	audio_sound_pitch(sndThumb, random_range(0.9, 1.1));
+	audio_play_sound(sndThumb, 5, false);
+		
+	var _color = "white";
+	if (temporary){
+		switch(image_index){
+			case 1:	_color = "pink";	break;
+			case 3: _color = "orange";	break;
+			case 5: _color = "green";	break;
+		}
+	}
+		
+	repeat(choose(1, 2, 2, 2, 3)){ // Down
+		instance_create_layer(x, (map_y * tile_size)-4*pixel_size, "instances", objEggShell, {shell_id: "down", color : _color});	
+	}
+	repeat(choose(1, 2, 2, 2, 3)){ // Left
+		instance_create_layer(x, (map_y * tile_size)-4*pixel_size, "instances", objEggShell, {shell_id: "left", color : _color});	
+	}
+	repeat(choose(1, 2, 2, 2, 3)){ // Right
+		instance_create_layer(x, (map_y * tile_size)-4*pixel_size, "instances", objEggShell, {shell_id: "right", color : _color});	
+	}
+
+	instance_destroy();
 }

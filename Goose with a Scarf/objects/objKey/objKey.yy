@@ -30,7 +30,7 @@
   "physicsShapePoints":[],
   "physicsStartAwake":true,
   "properties":[
-    {"$GMObjectProperty":"v1","%Name":"target","filters":[],"listItems":[],"multiselect":false,"name":"target","rangeEnabled":false,"rangeMax":10.0,"rangeMin":0.0,"resource":{"name":"objChest","path":"objects/objChest/objChest.yy",},"resourceType":"GMObjectProperty","resourceVersion":"2.0","value":"objChest","varType":5,},
+    {"$GMObjectProperty":"v2","%Name":"target","filters":[],"listItems":[],"multiselect":false,"name":"target","rangeEnabled":false,"rangeMax":10.0,"rangeMin":0.0,"resource":{"name":"objChest","path":"objects/objChest/objChest.yy",},"resourceType":"GMObjectProperty","resourceVersion":"2.0","value":"objChest","varType":5,},
   ],
   "resourceType":"GMObject",
   "resourceVersion":"2.0",

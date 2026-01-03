@@ -1,39 +1,75 @@
 // This function checks if the instance is colliding with an object, or a tile, at the current
 // position + the given movement values (_move_x and _move_y).
 // The function returns true if a collision was found, or false if a collision was not found.
-function check_collision(_move_x, _move_y) 
-{
-	// This checks for an object collision at the new position, where the instance is going to move
-	// We get the new position by adding _move_x and _move_y to the instance's X and Y values
-	if (place_meeting(x + _move_x, y + _move_y, objCollision))
-	{
-		// If there was an object collision, return true, and end the function
-		return true;
-	}
 	
+function check_collision(_move_x, _move_y) 
+{    
 
-	// The function continues if there were no object collisions. In this case we check for tile
-	// collisions, at each corner of the instance's bounding box.
-	// This checks for tile collision at the top-left corner of the instance's mask
-	var _left_top = tilemap_get_at_pixel(objGame.collision_tilemap, bbox_left + _move_x, bbox_top + _move_y);
+    // First, check object collision as before
+    if (place_meeting(x + _move_x, y + _move_y, objCollision))
+    {
+        return true;
+    }
 
-	// This checks for tile collision at the top-right corner of the instance's mask
-	var _right_top = tilemap_get_at_pixel(objGame.collision_tilemap, bbox_right + _move_x, bbox_top + _move_y);
-
-	// This checks for tile collision at the bottom-right corner of the instance's mask
-	var _right_bottom = tilemap_get_at_pixel(objGame.collision_tilemap, bbox_right + _move_x, bbox_bottom + _move_y);
-
-	// This checks for tile collision at the bottom-left corner of the instance's mask
-	var _left_bottom = tilemap_get_at_pixel(objGame.collision_tilemap, bbox_left + _move_x, bbox_bottom + _move_y);
-
-	// The results of the above four actions were stored in temporary variables. If any of those variables were true, meaning a tile
-	// collision was found at any given corner, we return true and end the function.
-	if (_left_top or _right_top or _right_bottom or _left_bottom)
+    // Helper function: returns true if point (px, py) is inside the top-left ceiling triangle
+	function point_in_triangle_top_left_ceiling(px, py)
 	{
-		return true;
+	    var _tile_x = floor(px / tile_size) * tile_size;
+	    var _tile_y = floor(py / tile_size) * tile_size;
+	    var _rel_x = px - _tile_x;
+	    var _rel_y = py - _tile_y;
+
+	    return _rel_y <= _rel_x;
 	}
 
-	// If no tile collisions were found, the function continues.
-	// In that case we return false, to indicate that no collisions were found, and the instance is free to move to the new position.
-	return false;
+	function point_in_triangle_top_right_ceiling(px, py)
+	{
+	    var _tile_x = floor(px / tile_size) * tile_size;
+	    var _tile_y = floor(py / tile_size) * tile_size;
+	    var _rel_x = px - _tile_x;
+	    var _rel_y = py - _tile_y;
+
+	    return _rel_y <= (tile_size - _rel_x);
+	}
+
+    // Function to check collision at a given pixel point with tile ID and triangle checks
+    function check_tile_collision(px, py)
+    {	
+        var tile_id = tilemap_get_at_pixel(objGame.collision_tilemap, px, py);
+        if (tile_id == top_right_triangle_id)
+        {
+            // Only collide if inside top-left ceiling triangle shape
+            return point_in_triangle_top_left_ceiling(px, py);
+        }
+        else if (tile_id == top_left_triangle_id)
+        {
+            // Only collide if inside top-right ceiling triangle shape
+            return point_in_triangle_top_right_ceiling(px, py);
+        }
+        else
+        {
+            // For all other tiles, any tile presence counts as collision
+            return tile_id != 0;
+        }
+    }
+
+    // Now check collision for each corner pixel of bounding box with triangle logic
+    var corners = [
+        [bbox_left + _move_x, bbox_top + _move_y],        // top-left
+        [bbox_right + _move_x, bbox_top + _move_y],       // top-right
+        [bbox_right + _move_x, bbox_bottom + _move_y],    // bottom-right
+        [bbox_left + _move_x, bbox_bottom + _move_y]      // bottom-left
+    ];
+
+    // If any corner collides, return true
+    for (var i = 0; i < array_length(corners); i++)
+    {
+        var px = corners[i][0];
+        var py = corners[i][1];
+        if (check_tile_collision(px, py))
+            return true;
+    }
+
+    // No collisions found
+    return false;
 }

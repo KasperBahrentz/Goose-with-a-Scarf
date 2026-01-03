@@ -204,16 +204,32 @@ function move(){
 	
 	// Move vertically
 	var _landed_on_semi_solid = false;
+	var _nearly_on_ground = false;
 		
 	// Semi-solid platforms
 	if (vspeed > 0) and (place_meeting(x , y + 4*pixel_size, objCollisionSemiSolid)){
 		_landed_on_semi_solid = true;
 	}
+	else if (vspeed > 0) and (place_meeting(x , y + 8*pixel_size, objCollisionSemiSolid)){
+		_nearly_on_ground = true;
+	}
 	
 	var _ceiling_hit = vspeed < 0 and check_collision(0, -8*pixel_size);
 	
-	if (_landed_on_semi_solid) or (vspeed > 0 and check_collision(0, 4*pixel_size)){ // Stop on ground
+	if (!_nearly_on_ground && check_collision(0, 8*pixel_size)) _nearly_on_ground = true;
+
+	if (_nearly_on_ground) {
+		with(objEggRespawn) alarm[0] = 4;
+		was_in_air = false;
+		current_max_jump_timer = max_jump_timer;
 		is_on_ground = true;
+		was_on_ground_timer = was_on_ground_timer_max;
+	}
+	else {
+		is_on_ground = false;	
+	}
+	
+	if (_landed_on_semi_solid) or (vspeed > 0 and check_collision(0, 4*pixel_size)){ // Stop on ground
 		glide_timer = 0;
 		if (_landed_on_semi_solid) _tilemap = layer_tilemap_get_id("back");
 		map_y = tilemap_get_cell_y_at_pixel(_tilemap, x, y + 4*pixel_size);
@@ -224,9 +240,6 @@ function move(){
 		if (was_in_air){
 			play_material_sound(get_material());
 			spawn_material_particle();
-			with(objEggRespawn) alarm[0] = 4;
-			was_in_air = false;
-			current_max_jump_timer = max_jump_timer;
 		}
 		
 
@@ -258,12 +271,7 @@ function move(){
 		else if (keyboard_check_released(ord("S"))){
 			sprite_index = spr_body_idle;
 		}
-		
-		was_on_ground_timer = was_on_ground_timer_max;
 	} 
-	else {
-		is_on_ground = false;	
-	}
 	
 	if (_ceiling_hit){ // Stop at ceiling
 		map_y = tilemap_get_cell_y_at_pixel(objGame.collision_tilemap, x, y-8*pixel_size) + 1;
