@@ -28,23 +28,21 @@ function roll(){
 	{
 	    current_fall_spd += fall_spd;
 	    current_fall_spd = min(current_fall_spd, max_fall_spd);
-		audio_sound_gain(snd_inst_thunder, 0, 30);
+	    y += current_fall_spd;   // ← move ONLY while falling
 	}
 	else
 	{
-		audio_sound_gain(snd_inst_thunder, 1, 30);
 	    current_fall_spd = 0;
-	
-		if (collision_start_timer > collision_start_limit) {
-			while (check_collision(0, 0) || (place_meeting(0, 0, [objCollision, objCollisionSemiSolid])))
+		if (point_distance(x, y, objGooseBody.x, objGooseBody.y) <= 16*tile_size) {
+			audio_sound_gain(snd_inst_thunder, 1, 30);
+		}
+		if (collision_start_timer >= collision_start_limit) {
+			while (check_collision(0, 0) || (place_meeting(x, y, [objCollision, objCollisionSemiSolid])))
 		    {
 				y -= 1;
 			}
 		}
 	}
-
-	// Apply vertical movement
-	y += current_fall_spd;
 
 
 	// kill player on collision
@@ -53,9 +51,9 @@ function roll(){
 		state = melon_state.SPLAT;
 	}
 
-
 	// destroy if off-screen
-	if (y > room_height){
+	if (y >= room_height - 8*pixel_size){
+		audio_stop_sound(snd_inst_thunder);
 		instance_destroy();
 	}
 
@@ -92,7 +90,6 @@ function roll(){
 
 function splat() {
 	audio_stop_sound(snd_inst_thunder);
-	screenshake(10, 2, 0.2);
 	
 	repeat(choose(1, 2, 2, 2, 3)){ // Down
 		instance_create_layer(x, y, "instances", objMelonSplat, {splat_id: "down"});	
@@ -103,7 +100,10 @@ function splat() {
 	repeat(choose(1, 2, 2, 2, 3)){ // Right
 		instance_create_layer(x, y, "instances", objMelonSplat, {splat_id: "right"});	
 	}
-	audio_sound_pitch(sndSplat, random_range(0.9, 1.1));
-	audio_play_sound(sndSplat, 5, false);
+	if (point_distance(x, y, objGooseBody.x, objGooseBody.y) <= 16*tile_size) {
+		audio_sound_pitch(sndSplat, random_range(0.9, 1.1));
+		audio_play_sound(sndSplat, 5, false);
+		screenshake(10, 2, 0.2);
+	}
 	instance_destroy();	
 }

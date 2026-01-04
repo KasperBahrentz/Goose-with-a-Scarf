@@ -209,6 +209,7 @@ function move(){
 	// Semi-solid platforms
 	if (vspeed > 0) and (place_meeting(x , y + 4*pixel_size, objCollisionSemiSolid)){
 		_landed_on_semi_solid = true;
+		_nearly_on_ground = true;
 	}
 	else if (vspeed > 0) and (place_meeting(x , y + 8*pixel_size, objCollisionSemiSolid)){
 		_nearly_on_ground = true;

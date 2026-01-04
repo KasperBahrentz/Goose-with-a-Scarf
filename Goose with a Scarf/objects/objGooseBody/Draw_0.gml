@@ -43,7 +43,6 @@ draw_set_font(fnt_smooth);
 
 /// draw_event (debug)
 
-
 // draw triangle collisions
 //var _tilemap = objGame.collision_tilemap;
 //var _tile_w = tile_size;

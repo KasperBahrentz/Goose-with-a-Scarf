@@ -86,7 +86,7 @@ function drop(){
 		// Rock collisions
 		if (place_meeting(x, y, objMelon)){
 			with instance_nearest(x, y, objMelon){
-				instance_destroy();
+				state = melon_state.SPLAT;
 			}
 			destroy_egg();
 		}
