@@ -220,7 +220,6 @@ function move(){
 
 	if (_nearly_on_ground) {
 		with(objEggRespawn) alarm[0] = 4;
-		was_in_air = false;
 		current_max_jump_timer = max_jump_timer;
 		is_on_ground = true;
 		was_on_ground_timer = was_on_ground_timer_max;
@@ -230,18 +229,19 @@ function move(){
 	}
 	
 	if (_landed_on_semi_solid) or (vspeed > 0 and check_collision(0, 4*pixel_size)){ // Stop on ground
-		glide_timer = 0;
-		if (_landed_on_semi_solid) _tilemap = layer_tilemap_get_id("back");
-		map_y = tilemap_get_cell_y_at_pixel(_tilemap, x, y + 4*pixel_size);
-		vspeed = 0;
-		y = (map_y * tile_size);
 		
 		// If just landed
 		if (was_in_air){
 			play_material_sound(get_material());
 			spawn_material_particle();
+			was_in_air = false;
 		}
 		
+		glide_timer = 0;
+		if (_landed_on_semi_solid) _tilemap = layer_tilemap_get_id("back");
+		map_y = tilemap_get_cell_y_at_pixel(_tilemap, x, y + 4*pixel_size);
+		vspeed = 0;
+		y = (map_y * tile_size);
 
 		// --- FALL THROUGH SEMI-SOLID (double tap S) ---
 

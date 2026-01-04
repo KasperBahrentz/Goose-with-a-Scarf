@@ -30,33 +30,35 @@ if (hp <= 0){
 }
 
 
-var _fall = current_fall_spd + fall_spd;
-_fall = min(_fall, max_fall_spd);
+current_fall_spd = min(current_fall_spd + fall_spd, max_fall_spd);
 
-if (check_collision(0, 1) || place_meeting(x, y + 1, [objCollision, objCollisionSemiSolid]))
+if (check_collision(0, current_fall_spd)
+|| place_meeting(x, y + current_fall_spd, [objCollision, objCollisionSemiSolid]))
 {
+    // Snap to surface
+    var _low = y;
+    var _high = y + current_fall_spd;
+
+    while (_high - _low > 1)
+    {
+        var _mid = floor((_low + _high) * 0.5);
+
+        if (check_collision(0, _mid - y))
+            _high = _mid;
+        else
+            _low = _mid;
+    }
+
+    y = _low;
     current_fall_spd = 0;
 }
 else
 {
-    // Apply gravity
-    current_fall_spd = _fall;
-
-    // Step down pixel by pixel until collision would occur
-    var _move = round(current_fall_spd);
-
-    while (_move > 0)
-    {
-        if (check_collision(0, 1) || place_meeting(x, y + 1, [objCollision, objCollisionSemiSolid]))
-        {
-            current_fall_spd = 0;
-            break;
-        }
-
-        y += 1;
-        _move--;
-    }
+    y += current_fall_spd;
+	
+	if (place_meeting(x, y, objGooseBody)){
+		objGooseBody.state = player_state.DIE;	
+		hp = 0;
+	}
 }
 
-// Apply vertical movement
-y += current_fall_spd;

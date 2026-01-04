@@ -16,5 +16,3 @@ initial_speed = random_range(24, 48);
 speed = initial_speed;
 
 set_direction(shell_id);
-
-direction = random_range(0, 360);

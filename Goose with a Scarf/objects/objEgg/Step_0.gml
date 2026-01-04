@@ -63,8 +63,6 @@ function drop(){
 			play_material_sound(_material);
 		}
 		
-		destroy_egg();
-		
 		// Crate collisions
 		if (place_meeting(x, y+8*pixel_size, prtCrate)){
 			with instance_nearest(x, y, prtCrate){
@@ -79,6 +77,8 @@ function drop(){
 				hp--;
 			}
 		}
+		
+		destroy_egg();
 	}
 	else if (!has_collided){
 		y += 32;	// Fall
