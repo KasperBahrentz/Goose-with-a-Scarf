@@ -1,6 +1,6 @@
 // Check for support slightly ahead
-var _has_support = check_collision(roll_dir * sprite_width / 3, 1)
-    || ( place_meeting(x + roll_dir * sprite_width / 3, y + 1, objCollision));
+var _has_support = check_collision(roll_dir, 1)
+    || (place_meeting(x + roll_dir, y + 1, [objCollision, objCollisionSemiSolid]));
 
 // Horizontal movement
 if (_has_support)
@@ -17,9 +17,6 @@ else
 // Apply horizontal movement
 x += hsp;
 
-// Roll animation scales with horizontal speed
-image_index += animate_spd * sign(hsp);
-
 // Gravity
 if (!_has_support)
 {
@@ -31,7 +28,7 @@ else
     current_fall_spd = 0;
 	
 	if (collision_start_timer > collision_start_limit) {
-		while (check_collision(0, 0) || (place_meeting(0, 0, objCollision)))
+		while (check_collision(0, 0) || (place_meeting(0, 0, [objCollision, objCollisionSemiSolid])))
 	    {
 			y -= 1;
 		}
@@ -68,11 +65,18 @@ if (collision_start_timer >= collision_start_limit){
 	}
 }
 
-if (place_meeting(x + roll_dir*pixel_size, y, objMelon)){
-	with instance_nearest(x, y, objMelon){
-		instance_destroy();
-	}
+var _other = collision_circle(x, y, sprite_width/3, objMelon, false, true);
+
+if (_other != noone)
+{
+    instance_destroy(); // destroy this melon
+
+    with (_other)
+    {
+        instance_destroy(); // destroy the other melon
+    }
 }
+
 
 if (collision_start_timer < collision_start_limit){
 	collision_start_timer++;	

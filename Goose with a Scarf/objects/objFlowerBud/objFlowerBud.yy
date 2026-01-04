@@ -14,10 +14,7 @@
     "name":"flower_platforms",
     "path":"folders/Objects/flower_platforms.yy",
   },
-  "parentObjectId":{
-    "name":"objCollision",
-    "path":"objects/objCollision/objCollision.yy",
-  },
+  "parentObjectId":null,
   "persistent":false,
   "physicsAngularDamping":0.1,
   "physicsDensity":0.5,

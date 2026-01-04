@@ -8,8 +8,12 @@ switch(state){
 
 function platform(){
 	image_index = 0;
-	if (collision_rectangle(bbox_left, bbox_top-4*pixel_size, bbox_right, bbox_bottom, objGooseBody, false, true)
-		and objGooseBody.vspeed >= 0){
+	var _goose_on_top = collision_rectangle(bbox_left, bbox_top-4*pixel_size, bbox_right, bbox_bottom, objGooseBody, false, true)
+		and objGooseBody.vspeed >= 0;
+	var _melon_on_top = collision_rectangle(bbox_left, bbox_top-4*pixel_size, bbox_right, bbox_bottom, objMelon, false, true);
+	var _crate_on_top = collision_rectangle(bbox_left, bbox_top-4*pixel_size, bbox_right, bbox_bottom, prtCrate, false, true);
+	
+	if (_goose_on_top || _melon_on_top || _crate_on_top){
 		is_landed_on = true;
 	}
 	else is_landed_on = false;

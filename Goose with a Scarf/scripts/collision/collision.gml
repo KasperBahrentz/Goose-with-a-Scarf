@@ -54,12 +54,12 @@ function check_collision(_move_x, _move_y)
     }
 
     // Now check collision for each corner pixel of bounding box with triangle logic
-    var corners = [
-        [bbox_left + _move_x, bbox_top + _move_y],        // top-left
-        [bbox_right + _move_x, bbox_top + _move_y],       // top-right
-        [bbox_right + _move_x, bbox_bottom + _move_y],    // bottom-right
-        [bbox_left + _move_x, bbox_bottom + _move_y]      // bottom-left
-    ];
+	var corners = [
+	    [bbox_left + _move_x,        bbox_top + _move_y],          // top-left
+	    [bbox_right - 1 + _move_x,   bbox_top + _move_y],          // top-right
+	    [bbox_right - 1 + _move_x,   bbox_bottom - 1 + _move_y],   // bottom-right
+	    [bbox_left + _move_x,        bbox_bottom - 1 + _move_y]    // bottom-left
+	];
 
     // If any corner collides, return true
     for (var i = 0; i < array_length(corners); i++)

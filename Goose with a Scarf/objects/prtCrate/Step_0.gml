@@ -28,3 +28,33 @@ if (hp <= 0){
 	}
 	instance_destroy();	
 }
+
+
+var _has_support = check_collision(0, 1)
+    || (place_meeting(x, y + 1, [objCollision, objCollisionSemiSolid]));
+
+// Gravity
+if (!_has_support)
+{
+    current_fall_spd += fall_spd;
+    current_fall_spd = min(current_fall_spd, max_fall_spd);
+	
+	if (place_meeting(x, y, objGooseBody)){
+		hp = 0;
+		with(objGooseBody){
+			state = player_state.DIE;	
+		}
+	}
+}
+else
+{
+    current_fall_spd = 0;
+	
+	while (check_collision(0, 0) || (place_meeting(0, 0, [objCollision, objCollisionSemiSolid])))
+	{
+		y -= 1;
+	}
+}
+
+// Apply vertical movement
+y += current_fall_spd;
