@@ -8,7 +8,7 @@ state = melon_state.ROLL;
 current_fall_spd = 0;
 max_fall_spd = 12;
 collision_start_timer = 0;
-collision_start_limit = 30;
+collision_start_limit = 20;
 
 depth = objGooseBody.depth - 30;
 
@@ -21,3 +21,5 @@ snd_inst_thunder = audio_play_sound(
 );
 
 audio_sound_pitch(snd_inst_thunder, random_range(0.9, 1.1));
+
+hsp = 0;
