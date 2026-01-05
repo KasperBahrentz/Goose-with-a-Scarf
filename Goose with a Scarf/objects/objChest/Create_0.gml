@@ -5,6 +5,7 @@
 if (array_contains(objGame.fruit_collected, room_get_name(room))){
 	image_index = 4;
 	state = locked_state.OPEN;
+	with(objKey) instance_destroy();
 }
 
 
