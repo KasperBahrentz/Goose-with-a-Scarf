@@ -89,6 +89,7 @@ function drop(){
 				state = melon_state.SPLAT;
 			}
 			destroy_egg();
+			instance_create_layer(x, y, "instances", objEgg, {state: egg_state.MOVE, temporary: true});
 		}
 	}
 	
@@ -107,10 +108,15 @@ function destroy_egg() {
 		
 	var _color = "white";
 	if (temporary){
-		switch(image_index){
-			case 1:	_color = "pink";	break;
-			case 3: _color = "orange";	break;
-			case 5: _color = "green";	break;
+		if (array_length(spawn_coordinate) == 0){
+			_color = "melon";
+		}
+		else {
+			switch(image_index){
+				case 1:	_color = "pink";	break;
+				case 3: _color = "orange";	break;
+				case 5: _color = "green";	break;
+			}
 		}
 	}
 		

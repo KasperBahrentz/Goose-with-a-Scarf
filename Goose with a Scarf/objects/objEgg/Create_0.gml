@@ -9,8 +9,13 @@ has_created_respawn = false;
 
 if (temporary){
 	depth += 1;
-	sprite_index = sprEggTemporary;
 	image_index = temporary_index;
+	if (array_length(spawn_coordinate) == 0){
+		sprite_index = sprEggMelon;
+	}
+	else {
+		sprite_index = sprEggTemporary;
+	}
 }
 
 index = 0;

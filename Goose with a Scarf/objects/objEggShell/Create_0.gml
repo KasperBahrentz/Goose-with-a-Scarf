@@ -6,6 +6,7 @@ switch(color){
 	case "pink":	sprite_index = sprEggShellPink;		break;
 	case "orange": 	sprite_index = sprEggShellOrange;	break;
 	case "green": 	sprite_index = sprEggShellGreen;	break;
+	case "melon": 	sprite_index = sprEggShellMelon;	break;
 }
 
 

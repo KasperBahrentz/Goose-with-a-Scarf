@@ -220,6 +220,11 @@ function move(){
 	if (!_nearly_on_ground && check_collision(0, 8*pixel_size)) _nearly_on_ground = true;
 
 	if (_nearly_on_ground) {
+		with(objEgg){
+			if (temporary && array_length(spawn_coordinate) == 0){
+				destroy_egg();
+			}
+		}
 		with(objEggRespawn) alarm[0] = 4;
 		current_max_jump_timer = max_jump_timer;
 		is_on_ground = true;

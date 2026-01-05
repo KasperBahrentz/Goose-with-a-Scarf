@@ -29,15 +29,6 @@ switch (state)
 
         repeat (_steps)
         {
-            // Solid impact (tiles + solid instances)
-			if (collision_start_timer >= collision_start_limit){
-	            if (check_collision(_dir, -4*pixel_size)) // we check slightly above so the melon will roll over 1-tile holes
-	            {
-	                state = melon_state.SPLAT;
-	                break;
-	            }
-			}
-
             // Crates (special case)
             var _crate = instance_place(x + _dir, y, prtCrate);
             if (_crate != noone)
@@ -46,9 +37,17 @@ switch (state)
                 {
                     hp = 0;
                 }
-                state = melon_state.SPLAT;
                 break;
             }
+			
+            // Solid impact (tiles + solid instances)
+			if (collision_start_timer >= collision_start_limit){
+	            if (check_collision(_dir, -4*pixel_size)) // we check slightly above so the melon will roll over 1-tile holes
+	            {
+	                state = melon_state.SPLAT;
+	                break;
+	            }
+			}
 
             x += _dir;
         }
@@ -167,4 +166,9 @@ switch (state)
 
 if (collision_start_timer <= collision_start_limit){
 	collision_start_timer++;	
+}
+
+if (objGooseBody.state == player_state.GONE){
+	instance_destroy();
+	audio_stop_sound(snd_inst_thunder);
 }
