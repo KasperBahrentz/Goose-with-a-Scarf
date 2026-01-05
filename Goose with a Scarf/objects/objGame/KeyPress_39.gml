@@ -3,3 +3,4 @@
 
 room_goto_next();
 objGame.has_arrived_in_level = false;
+audio_stop_sound(sndThunder);
