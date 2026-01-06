@@ -2,14 +2,29 @@
 // position + the given movement values (_move_x and _move_y).
 // The function returns true if a collision was found, or false if a collision was not found.
 	
-function check_collision(_move_x, _move_y) 
-{    
+function check_collision(_move_x, _move_y, _ignore) 
+{
+    // First, check object collision
+	var _hit = instance_place(x + _move_x, y + _move_y, objCollision);
+	
+	if (_hit != noone)
+	{
+        var _ignored = false;
 
-    // First, check object collision as before
-    if (place_meeting(x + _move_x, y + _move_y, objCollision))
-    {
-        return true;
-    }
+        for (var i = 0; i < array_length(_ignore); i++)
+        {
+            if (_hit.object_index == _ignore[i] || object_is_ancestor(_hit.object_index, _ignore[i]))
+            {
+                _ignored = true;
+                break;
+            }
+        }
+
+        if (!_ignored)
+        {
+            return true;
+        }
+	}
 
     // Helper function: returns true if point (px, py) is inside the top-left ceiling triangle
 	function point_in_triangle_top_left_ceiling(px, py)
@@ -48,8 +63,8 @@ function check_collision(_move_x, _move_y)
         }
         else
         {
-            // For all other tiles, any tile presence counts as collision
-            return tile_id != 0;
+            // For all other tiles, no collision
+            return tile_id > 0;
         }
     }
 

@@ -234,7 +234,14 @@ function move(){
 		is_on_ground = false;	
 	}
 	
-	if (_landed_on_semi_solid) or (vspeed > 0 and check_collision(0, 4*pixel_size)){ // Stop on ground
+	/// Detect ride crate
+	var ride_crate = instance_place(x, y + 4*pixel_size, prtCrate);
+
+	if (ride_crate != noone)
+	{
+	    y = ride_crate.bbox_top - 2*pixel_size;
+	}
+	else if (_landed_on_semi_solid) or (vspeed > 0 and check_collision(0, 4*pixel_size)){ // Stop on ground
 		
 		// If just landed
 		if (was_in_air){

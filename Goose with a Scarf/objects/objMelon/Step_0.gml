@@ -31,23 +31,23 @@ switch (state)
         {
             // Crates (special case)
             var _crate = instance_place(x + _dir, y, prtCrate);
-            if (_crate != noone)
+            if (_crate != noone && crate_timer <= 0)
             {
                 with (_crate)
                 {
                     hp = 0;
                 }
+				crate_timer = crate_timer_max;
                 break;
             }
+			else crate_timer--;
 			
             // Solid impact (tiles + solid instances)
-			if (collision_start_timer >= collision_start_limit){
-	            if (check_collision(_dir, -4*pixel_size)) // we check slightly above so the melon will roll over 1-tile holes
-	            {
-	                state = melon_state.SPLAT;
-	                break;
-	            }
-			}
+	        if (check_collision(_dir, -4*pixel_size, [prtCrate, objMelonSpawner])) // we check slightly above so the melon will roll over 1-tile holes
+	        {
+	            state = melon_state.SPLAT;
+	            break;
+	        }
 
             x += _dir;
         }
@@ -85,16 +85,14 @@ switch (state)
         else
         {
             current_fall_spd = 0;
-
-			if (collision_start_timer >= collision_start_limit){
-	            // Resolve ground overlap
-	            while (
-	                place_meeting(x, y, [objCollision, objCollisionSemiSolid])
-	            )
-	            {
-	                y -= 1;
-	            }
-			}
+			
+	        // Resolve ground overlap
+	        while (
+	            place_meeting(x, y, [objCollisionSemiSolid]) || check_collision(0, 0, [prtCrate, objMelonSpawner])
+	        )
+	        {
+	            y -= 1;
+	        }
 
             if (point_distance(x, y, objGooseBody.x, objGooseBody.y) <= 16 * tile_size)
             {
@@ -162,10 +160,6 @@ switch (state)
 
         instance_destroy();
     } break;
-}
-
-if (collision_start_timer <= collision_start_limit){
-	collision_start_timer++;	
 }
 
 if (objGooseBody.state == player_state.GONE){

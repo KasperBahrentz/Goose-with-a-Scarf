@@ -40,7 +40,6 @@ var tile_id = tilemap_get_at_pixel(layer_tilemap_get_id("ground"), x, y + 10);
 
 draw_set_font(fnt_smooth);
 
-
 /// draw_event (debug)
 
 // draw triangle collisions
