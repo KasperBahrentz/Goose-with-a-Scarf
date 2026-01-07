@@ -1,7 +1,9 @@
 /// @description Insert description here
 // You can write your code in this editor
 
-if (hp <= 0){
+var _is_rock = object_index == objRock || object_is_ancestor(object_index, objRock);
+
+if (hp <= 0 && !_is_rock){
 	var _x = x + sprite_width/2;
 	var _y = y + sprite_height/2;
 
@@ -36,20 +38,6 @@ if (check_collision(0, current_fall_spd)
 || place_meeting(x, y + current_fall_spd, [objCollision, objCollisionSemiSolid]))
 {
     // Snap to surface
-    var _low = y;
-    var _high = y + current_fall_spd;
-
-    while (_high - _low > 1)
-    {
-        var _mid = floor((_low + _high) * 0.5);
-
-        if (check_collision(0, _mid - y))
-            _high = _mid;
-        else
-            _low = _mid;
-    }
-
-    y = _low;
     current_fall_spd = 0;
 }
 else
@@ -59,6 +47,12 @@ else
 	if (place_meeting(x, y, objGooseBody)){
 		objGooseBody.state = player_state.DIE;	
 		hp = 0;
+	}
+	
+	var _melon = instance_place(x, y, objMelon);
+	
+	if (_is_rock && _melon != noone){
+		_melon.state = melon_state.SPLAT;
 	}
 }
 

@@ -64,20 +64,26 @@ function drop(){
 		}
 		
 		// Crate collisions
-		if (place_meeting(x, y+8*pixel_size, prtCrate)){
-			with instance_nearest(x, y, prtCrate){
-				if (hp == 3){
-					audio_sound_pitch(sndWoodCrack1, random_range(0.9, 1.1));
-					audio_play_sound(sndWoodCrack1, 5, false);
-				}
-				else if (hp == 2){
-					audio_sound_pitch(sndWoodCrack2, random_range(0.9, 1.1));
-					audio_play_sound(sndWoodCrack2, 5, false);
-				}
-				hp--;
-			}
+		var _crate = instance_place(x, y + 8 * pixel_size, prtCrate);
+
+		if (_crate != noone)
+		{
+		    with (_crate)
+		    {
+		        if (hp == 3)
+		        {
+		            audio_sound_pitch(sndWoodCrack1, random_range(0.9, 1.1));
+		            audio_play_sound(sndWoodCrack1, 5, false);
+		        }
+		        else if (hp == 2)
+		        {
+		            audio_sound_pitch(sndWoodCrack2, random_range(0.9, 1.1));
+		            audio_play_sound(sndWoodCrack2, 5, false);
+		        }
+		        hp--;
+		    }
 		}
-		
+
 		destroy_egg();
 	}
 	else if (!has_collided){

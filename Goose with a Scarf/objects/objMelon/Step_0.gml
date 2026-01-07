@@ -31,7 +31,7 @@ switch (state)
         {
             // Crates (special case)
             var _crate = instance_place(x + _dir, y, prtCrate);
-            if (_crate != noone && crate_timer <= 0)
+            if (_crate != noone && _crate.object_index != objRock && !object_is_ancestor(_crate.object_index, objRock) && crate_timer <= 0)
             {
                 with (_crate)
                 {
@@ -43,7 +43,7 @@ switch (state)
 			else crate_timer--;
 			
             // Solid impact (tiles + solid instances)
-	        if (check_collision(_dir, -4*pixel_size, [prtCrate, objMelonSpawner])) // we check slightly above so the melon will roll over 1-tile holes
+	        if (check_collision(_dir, -4*pixel_size, [objCrate, objCrateBig, objCrateStrawberry, objMelonSpawner])) // we check slightly above so the melon will roll over 1-tile holes
 	        {
 	            state = melon_state.SPLAT;
 	            break;
