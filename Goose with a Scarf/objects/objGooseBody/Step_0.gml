@@ -98,7 +98,7 @@ function set_sit(_force_sit = false){
 
 function move(){
 	image_speed = 1;
-	if (hspeed_tracker == 0 and vspeed == 0 and !keyboard_check_pressed(ord("S"))){
+	if (hspeed_tracker == 0 and is_on_ground and !keyboard_check_pressed(ord("S"))){
 		if (idle_timer <= 0){
 			set_sit();
 		}
@@ -218,14 +218,26 @@ function move(){
 	var _ceiling_hit = vspeed < 0 and check_collision(0, -8*pixel_size);
 	
 	if (!_nearly_on_ground && check_collision(0, 8*pixel_size)) _nearly_on_ground = true;
+	
+		/// Detect ride crate
+	var ride_crate = instance_place(x, y + 4*pixel_size, prtCrate);
+	var _landed_on_crate = ride_crate != noone;
+
+	if (_landed_on_crate)
+	{
+	    y = ride_crate.bbox_top - 2*pixel_size;
+		_nearly_on_ground = true
+		
+		if (was_in_air) handle_land_on_ground();
+	}
 
 	if (_nearly_on_ground) {
 		with(objEgg){
-			if (temporary && array_length(spawn_coordinate) == 0){
+			if (temporary && array_length(spawn_coordinate) == 0){ // if egg is melon egg
 				destroy_egg();
+				with (other) array_shift(egg_queue);
 			}
 		}
-		with(objEggRespawn) alarm[0] = 4;
 		current_max_jump_timer = max_jump_timer;
 		is_on_ground = true;
 		was_on_ground_timer = was_on_ground_timer_max;
@@ -234,20 +246,11 @@ function move(){
 		is_on_ground = false;	
 	}
 	
-	/// Detect ride crate
-	var ride_crate = instance_place(x, y + 4*pixel_size, prtCrate);
-
-	if (ride_crate != noone)
-	{
-	    y = ride_crate.bbox_top - 2*pixel_size;
-	}
-	else if (_landed_on_semi_solid) or (vspeed > 0 and check_collision(0, 4*pixel_size)){ // Stop on ground
+	if (!_landed_on_crate) && ((_landed_on_semi_solid) or (vspeed > 0 and check_collision(0, 4*pixel_size))){ // Stop on ground
 		
 		// If just landed
 		if (was_in_air){
-			play_material_sound(get_material());
-			spawn_material_particle();
-			was_in_air = false;
+			handle_land_on_ground();
 		}
 		
 		glide_timer = 0;
@@ -274,16 +277,6 @@ function move(){
 		//if (fall_through_semi_solid_timer > 0) {
 		//    fall_through_semi_solid_timer--;
 		//}
-
-		
-		
-		// Crouch
-		if (keyboard_check(ord("S"))){
-			sprite_index = spr_body_crouch;
-		}
-		else if (keyboard_check_released(ord("S"))){
-			sprite_index = spr_body_idle;
-		}
 	} 
 	
 	if (_ceiling_hit){ // Stop at ceiling
@@ -364,7 +357,7 @@ function move(){
 	}
 	
 	// If in air
-	if (vspeed != 0){
+	if (!is_on_ground){
 		was_in_air = true;
 		if (keyboard_check(ord("S"))){
 			vspeed += floor((grav/2));
@@ -390,9 +383,18 @@ function move(){
 			}
 		}
 	}
+	else {		
+		// Crouch
+		if (keyboard_check(ord("S"))){
+			sprite_index = spr_body_crouch;
+		}
+		else if (keyboard_check_released(ord("S"))){
+			sprite_index = spr_body_idle;
+		}
+	}
 
 	if (sprite_index != spr_body_crouch){
-		if (hspeed_tracker != 0) and (vspeed == 0){ // Change to running sprite
+		if (hspeed_tracker != 0) and (is_on_ground){ // Change to running sprite
 			if (image_index <= 1) sprite_index = spr_body_run;
 			objGooseFeet.sprite_index = spr_feet_run;
 		}
@@ -404,6 +406,13 @@ function move(){
 			objGooseFeet.sprite_index = spr_feet_idle;
 		}
 	}
+}
+
+function handle_land_on_ground(){
+	play_material_sound(get_material());
+	spawn_material_particle();
+	was_in_air = false;
+	with(objEggRespawn) alarm[0] = 4;
 }
 
 function jump(){

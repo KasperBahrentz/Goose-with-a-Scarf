@@ -89,8 +89,8 @@ function drop(){
 	else if (!has_collided){
 		y += 32;	// Fall
 		
-		// Rock collisions
-		if (place_meeting(x, y, objMelon)){
+		// Melon collisions
+		if (collision_rectangle(bbox_left - 8*pixel_size, bbox_top - 8*pixel_size, bbox_right + 8*pixel_size, bbox_bottom + 8*pixel_size, objMelon, false, true)){
 			with instance_nearest(x, y, objMelon){
 				state = melon_state.SPLAT;
 			}

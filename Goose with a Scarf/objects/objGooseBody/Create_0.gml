@@ -31,9 +31,6 @@ if (!instance_exists(objGame)){
 instance_create_layer(x, y, layer, objGooseFeet);
 instance_create_layer(x, y, layer, objGooseHead);
 
-fall_through_semi_solid_timer_max = 20;
-fall_through_semi_solid_timer = 0;
-
 idle_timer_max = 400;
 idle_timer = idle_timer_max;
 feet_dance_timer_max = 110;
@@ -69,7 +66,7 @@ for (var i = 1; i <= egg_count; i++){
 	instance_create_layer(objGooseBody.x, objGooseBody.y, "instances", objEgg, {state : egg_state.MOVE});
 }
 
-was_on_ground_timer_max = 6;
+was_on_ground_timer_max = 4;
 was_on_ground_timer = 0;
 
 sound_timer_max = 60;

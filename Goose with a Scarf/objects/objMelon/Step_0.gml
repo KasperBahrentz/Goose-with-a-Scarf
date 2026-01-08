@@ -132,7 +132,7 @@ switch (state)
         // -------------------------------------------------
         if (y >= room_height - 8 * pixel_size)
         {
-            audio_stop_sound(snd_inst_thunder);
+			if (audio_is_playing(snd_inst_thunder)) audio_stop_sound(snd_inst_thunder);
             instance_destroy();
         }
 
