@@ -6,7 +6,7 @@ if (visible and string_length(text_shown) >= 1) {
 
     for (var i = 1; i <= len; i++) {
         var ch = string_char_at(text_shown, i);
-        if (ch == "~") {
+        if (ch == "~" || ch == "*") {
             // Toggle formatting marker, don't add to string
             in_tag = !in_tag;
         } else {

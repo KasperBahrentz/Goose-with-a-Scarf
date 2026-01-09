@@ -30,6 +30,7 @@
   "physicsStartAwake":true,
   "properties":[
     {"$GMObjectProperty":"v2","%Name":"text","filters":[],"listItems":[],"multiselect":false,"name":"text","rangeEnabled":false,"rangeMax":10.0,"rangeMin":0.0,"resourceType":"GMObjectProperty","resourceVersion":"2.0","value":"\"Hank!\"","varType":2,},
+    {"$GMObjectProperty":"v2","%Name":"author","filters":[],"listItems":[],"multiselect":false,"name":"author","rangeEnabled":false,"rangeMax":10.0,"rangeMin":0.0,"resourceType":"GMObjectProperty","resourceVersion":"2.0","value":"\"Pippin\"","varType":2,},
   ],
   "resourceType":"GMObject",
   "resourceVersion":"2.0",

@@ -241,19 +241,17 @@ function move(){
 		current_max_jump_timer = max_jump_timer;
 		is_on_ground = true;
 		was_on_ground_timer = was_on_ground_timer_max;
+		
+		// If just landed
+		if (was_in_air){
+			handle_land_on_ground();
+		}
 	}
 	else {
 		is_on_ground = false;	
 	}
 	
 	if (!_landed_on_crate) && ((_landed_on_semi_solid) or (vspeed > 0 and check_collision(0, 4*pixel_size))){ // Stop on ground
-		
-		// If just landed
-		if (was_in_air){
-			handle_land_on_ground();
-		}
-		
-		glide_timer = 0;
 		if (_landed_on_semi_solid) _tilemap = layer_tilemap_get_id("back");
 		map_y = tilemap_get_cell_y_at_pixel(_tilemap, x, y + 4*pixel_size);
 		vspeed = 0;
@@ -412,7 +410,8 @@ function handle_land_on_ground(){
 	play_material_sound(get_material());
 	spawn_material_particle();
 	was_in_air = false;
-	with(objEggRespawn) alarm[0] = 4;
+	with(objEggRespawn) alarm[0] = 1;
+	glide_timer = 0;
 }
 
 function jump(){
