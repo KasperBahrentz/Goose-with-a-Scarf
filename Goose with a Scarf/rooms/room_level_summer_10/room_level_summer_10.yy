@@ -63,7 +63,7 @@
     {"name":"inst_E012238","path":"rooms/room_level_summer_10/room_level_summer_10.yy",},
     {"name":"inst_7D649D9F","path":"rooms/room_level_summer_10/room_level_summer_10.yy",},
     {"name":"inst_699A8CCE","path":"rooms/room_level_summer_10/room_level_summer_10.yy",},
-    {"name":"inst_6D62E1FC","path":"rooms/room_level_summer_10/room_level_summer_10.yy",},
+    {"name":"inst_6CE84D00","path":"rooms/room_level_summer_10/room_level_summer_10.yy",},
   ],
   "isDnd":false,
   "layers":[
@@ -162,9 +162,9 @@
         {"$GMRInstance":"v4","%Name":"inst_E012238","colour":4294967295,"frozen":false,"hasCreationCode":false,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"name":"inst_E012238","objectId":{"name":"objSpikes","path":"objects/objSpikes/objSpikes.yy",},"properties":[],"resourceType":"GMRInstance","resourceVersion":"2.0","rotation":0.0,"scaleX":1.0,"scaleY":1.0,"x":768.0,"y":256.0,},
         {"$GMRInstance":"v4","%Name":"inst_7D649D9F","colour":4294967295,"frozen":false,"hasCreationCode":false,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"name":"inst_7D649D9F","objectId":{"name":"objSpikesRight","path":"objects/objSpikesRight/objSpikesRight.yy",},"properties":[],"resourceType":"GMRInstance","resourceVersion":"2.0","rotation":0.0,"scaleX":1.0,"scaleY":1.0,"x":1024.0,"y":256.0,},
         {"$GMRInstance":"v4","%Name":"inst_699A8CCE","colour":4294967295,"frozen":false,"hasCreationCode":false,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"name":"inst_699A8CCE","objectId":{"name":"objSpikes","path":"objects/objSpikes/objSpikes.yy",},"properties":[],"resourceType":"GMRInstance","resourceVersion":"2.0","rotation":0.0,"scaleX":1.0,"scaleY":1.0,"x":1152.0,"y":2560.0,},
-        {"$GMRInstance":"v4","%Name":"inst_6D62E1FC","colour":4294967295,"frozen":false,"hasCreationCode":false,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"name":"inst_6D62E1FC","objectId":{"name":"objSign","path":"objects/objSign/objSign.yy",},"properties":[
-            {"$GMOverriddenProperty":"v1","%Name":"","name":"","objectId":{"name":"objSign","path":"objects/objSign/objSign.yy",},"propertyId":{"name":"text","path":"objects/objSign/objSign.yy",},"resourceType":"GMOverriddenProperty","resourceVersion":"2.0","value":"Holding down ~SPACE~ to soar can be crucial for survival.\\n*- Pippin Featherlock*",},
-          ],"resourceType":"GMRInstance","resourceVersion":"2.0","rotation":0.0,"scaleX":-1.0,"scaleY":1.0,"x":512.0,"y":3456.0,},
+        {"$GMRInstance":"v4","%Name":"inst_6CE84D00","colour":4294967295,"frozen":false,"hasCreationCode":false,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"name":"inst_6CE84D00","objectId":{"name":"objFalcon","path":"objects/objFalcon/objFalcon.yy",},"properties":[
+            {"$GMOverriddenProperty":"v1","%Name":"","name":"","objectId":{"name":"prtTalk","path":"objects/prtTalk/prtTalk.yy",},"propertyId":{"name":"text","path":"objects/prtTalk/prtTalk.yy",},"resourceType":"GMOverriddenProperty","resourceVersion":"2.0","value":"Holding down ~SPACE~ to soar can be crucial for survival.",},
+          ],"resourceType":"GMRInstance","resourceVersion":"2.0","rotation":0.0,"scaleX":1.0,"scaleY":1.0,"x":512.0,"y":3456.0,},
       ],"layers":[],"name":"instances","properties":[],"resourceType":"GMRInstanceLayer","resourceVersion":"2.0","userdefinedDepth":false,"visible":true,},
     {"$GMRTileLayer":"","%Name":"leaves_middle","depth":900,"effectEnabled":true,"effectType":null,"gridX":32,"gridY":32,"hierarchyFrozen":false,"inheritLayerDepth":false,"inheritLayerSettings":false,"inheritSubLayers":true,"inheritVisibility":true,"layers":[],"name":"leaves_middle","properties":[],"resourceType":"GMRTileLayer","resourceVersion":"2.0","tiles":{"SerialiseHeight":34,"SerialiseWidth":30,"TileCompressedData":[
           -396,0,2,158,160,-28,0,2,94,125,-28,0,2,187,162,-52,0,-6,-2147483648,3,193,407,409,-28,-2147483648,1,

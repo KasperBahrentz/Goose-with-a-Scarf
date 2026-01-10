@@ -21,6 +21,8 @@
     {"name":"inst_1A132D5C","path":"rooms/room_level_summer_1/room_level_summer_1.yy",},
     {"name":"inst_18ACB05B","path":"rooms/room_level_summer_1/room_level_summer_1.yy",},
     {"name":"inst_4B39ABB5","path":"rooms/room_level_summer_1/room_level_summer_1.yy",},
+    {"name":"inst_13F0E739","path":"rooms/room_level_summer_1/room_level_summer_1.yy",},
+    {"name":"inst_6F2E3557","path":"rooms/room_level_summer_1/room_level_summer_1.yy",},
   ],
   "isDnd":false,
   "layers":[
@@ -66,6 +68,13 @@
             {"$GMOverriddenProperty":"v1","%Name":"","name":"","objectId":{"name":"objMelonSpawner","path":"objects/objMelonSpawner/objMelonSpawner.yy",},"propertyId":{"name":"spawn_timer_max","path":"objects/objMelonSpawner/objMelonSpawner.yy",},"resourceType":"GMOverriddenProperty","resourceVersion":"2.0","value":"140",},
           ],"resourceType":"GMRInstance","resourceVersion":"2.0","rotation":-360.0,"scaleX":1.0,"scaleY":1.0,"x":7232.0,"y":832.0,},
         {"$GMRInstance":"v4","%Name":"inst_1A132D5C","colour":4294967295,"frozen":false,"hasCreationCode":false,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"name":"inst_1A132D5C","objectId":{"name":"objBench","path":"objects/objBench/objBench.yy",},"properties":[],"resourceType":"GMRInstance","resourceVersion":"2.0","rotation":0.0,"scaleX":1.0,"scaleY":1.0,"x":5120.0,"y":1024.0,},
+        {"$GMRInstance":"v4","%Name":"inst_13F0E739","colour":4294967295,"frozen":false,"hasCreationCode":false,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"name":"inst_13F0E739","objectId":{"name":"objChicken","path":"objects/objChicken/objChicken.yy",},"properties":[
+            {"$GMOverriddenProperty":"v1","%Name":"","name":"","objectId":{"name":"prtTalk","path":"objects/prtTalk/prtTalk.yy",},"propertyId":{"name":"text","path":"objects/prtTalk/prtTalk.yy",},"resourceType":"GMOverriddenProperty","resourceVersion":"2.0","value":"All these melons make me hungry.",},
+          ],"resourceType":"GMRInstance","resourceVersion":"2.0","rotation":0.0,"scaleX":1.0,"scaleY":1.0,"x":5056.0,"y":960.0,},
+        {"$GMRInstance":"v4","%Name":"inst_6F2E3557","colour":4294967295,"frozen":false,"hasCreationCode":false,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"name":"inst_6F2E3557","objectId":{"name":"objBalloon","path":"objects/objBalloon/objBalloon.yy",},"properties":[
+            {"$GMOverriddenProperty":"v1","%Name":"","name":"","objectId":{"name":"objBalloon","path":"objects/objBalloon/objBalloon.yy",},"propertyId":{"name":"level_goal","path":"objects/objBalloon/objBalloon.yy",},"resourceType":"GMOverriddenProperty","resourceVersion":"2.0","value":"False",},
+            {"$GMOverriddenProperty":"v1","%Name":"","name":"","objectId":{"name":"objBalloon","path":"objects/objBalloon/objBalloon.yy",},"propertyId":{"name":"text","path":"objects/objBalloon/objBalloon.yy",},"resourceType":"GMOverriddenProperty","resourceVersion":"2.0","value":"Watch out for the ~meloooooooo~...",},
+          ],"resourceType":"GMRInstance","resourceVersion":"2.0","rotation":0.0,"scaleX":1.0,"scaleY":1.0,"x":512.0,"y":-192.0,},
       ],"layers":[],"name":"instances","properties":[],"resourceType":"GMRInstanceLayer","resourceVersion":"2.0","userdefinedDepth":false,"visible":true,},
     {"$GMRTileLayer":"","%Name":"leaves_middle","depth":900,"effectEnabled":true,"effectType":null,"gridX":32,"gridY":32,"hierarchyFrozen":false,"inheritLayerDepth":false,"inheritLayerSettings":false,"inheritSubLayers":true,"inheritVisibility":true,"layers":[],"name":"leaves_middle","properties":[],"resourceType":"GMRTileLayer","resourceVersion":"2.0","tiles":{"SerialiseHeight":17,"SerialiseWidth":60,"TileCompressedData":[
           -35,0,-25,-2147483648,-35,0,-25,-2147483648,-35,0,-25,-2147483648,-35,0,-25,-2147483648,-26,0,2,158,

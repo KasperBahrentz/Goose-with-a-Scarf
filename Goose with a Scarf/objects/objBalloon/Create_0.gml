@@ -1,3 +1,5 @@
+speech_bubble = noone;
+
 if (instance_exists(objGame) and objGame.has_arrived_in_level) instance_destroy();
 else {
 	

@@ -1,0 +1,1 @@
+state = falcon_state.LOOK_STRAIGHT;

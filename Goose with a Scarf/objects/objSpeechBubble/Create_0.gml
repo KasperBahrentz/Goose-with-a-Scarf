@@ -22,12 +22,7 @@ sound_timer = 0;
 
 fade = false;
 
-signature_color = c_gray;
-
-switch(author){
-	case "Pippin": 	signature_color = make_color_rgb(190, 215, 45);	break;
-	case "Melon": 	signature_color = make_color_rgb(255, 170, 50);	break;
-}
+signature_color = c_ltgray;
 
 // Check if spawned in player circumference
 var dist = point_distance(x+4*pixel_size, y, objGooseBody.x, objGooseBody.y);

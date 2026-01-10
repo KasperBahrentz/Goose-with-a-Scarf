@@ -45,7 +45,7 @@
     {"name":"inst_6F137A52","path":"rooms/room_level_spring_7/room_level_spring_7.yy",},
     {"name":"inst_29ABFFEE","path":"rooms/room_level_spring_7/room_level_spring_7.yy",},
     {"name":"inst_6DD1994C","path":"rooms/room_level_spring_7/room_level_spring_7.yy",},
-    {"name":"inst_44AE1F5F","path":"rooms/room_level_spring_7/room_level_spring_7.yy",},
+    {"name":"inst_26558893","path":"rooms/room_level_spring_7/room_level_spring_7.yy",},
   ],
   "isDnd":false,
   "layers":[
@@ -188,8 +188,8 @@
         {"$GMRInstance":"v4","%Name":"inst_3C144E98","colour":4294967295,"frozen":false,"hasCreationCode":false,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"name":"inst_3C144E98","objectId":{"name":"objDuck","path":"objects/objDuck/objDuck.yy",},"properties":[
             {"$GMOverriddenProperty":"v1","%Name":"","name":"","objectId":{"name":"prtWalk","path":"objects/prtWalk/prtWalk.yy",},"propertyId":{"name":"walking_range","path":"objects/prtWalk/prtWalk.yy",},"resourceType":"GMOverriddenProperty","resourceVersion":"2.0","value":"120",},
           ],"resourceType":"GMRInstance","resourceVersion":"2.0","rotation":0.0,"scaleX":1.0,"scaleY":1.0,"x":2880.0,"y":2816.0,},
-        {"$GMRInstance":"v4","%Name":"inst_44AE1F5F","colour":4294967295,"frozen":false,"hasCreationCode":false,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"name":"inst_44AE1F5F","objectId":{"name":"objSign","path":"objects/objSign/objSign.yy",},"properties":[
-            {"$GMOverriddenProperty":"v1","%Name":"","name":"","objectId":{"name":"objSign","path":"objects/objSign/objSign.yy",},"propertyId":{"name":"text","path":"objects/objSign/objSign.yy",},"resourceType":"GMOverriddenProperty","resourceVersion":"2.0","value":"If you are in a hurry, press ~S~ in the air to fall ~fast~.\\n*- Pippin Featherlock*",},
+        {"$GMRInstance":"v4","%Name":"inst_26558893","colour":4294967295,"frozen":false,"hasCreationCode":false,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"name":"inst_26558893","objectId":{"name":"objFalcon","path":"objects/objFalcon/objFalcon.yy",},"properties":[
+            {"$GMOverriddenProperty":"v1","%Name":"","name":"","objectId":{"name":"prtTalk","path":"objects/prtTalk/prtTalk.yy",},"propertyId":{"name":"text","path":"objects/prtTalk/prtTalk.yy",},"resourceType":"GMOverriddenProperty","resourceVersion":"2.0","value":"In a hurry? Press ~S~ to fall ~fast~.",},
           ],"resourceType":"GMRInstance","resourceVersion":"2.0","rotation":0.0,"scaleX":1.0,"scaleY":1.0,"x":2304.0,"y":768.0,},
       ],"layers":[],"name":"instances","properties":[],"resourceType":"GMRInstanceLayer","resourceVersion":"2.0","userdefinedDepth":false,"visible":true,},
     {"$GMRTileLayer":"","%Name":"leaves_middle","depth":900,"effectEnabled":true,"effectType":null,"gridX":32,"gridY":32,"hierarchyFrozen":false,"inheritLayerDepth":false,"inheritLayerSettings":false,"inheritSubLayers":true,"inheritVisibility":true,"layers":[],"name":"leaves_middle","properties":[],"resourceType":"GMRTileLayer","resourceVersion":"2.0","tiles":{"SerialiseHeight":34,"SerialiseWidth":30,"TileCompressedData":[-510,0,-510,-2147483648,],"TileDataFormat":1,},"tilesetId":{"name":"tlsLeaves","path":"tilesets/tlsLeaves/tlsLeaves.yy",},"userdefinedDepth":false,"visible":true,"x":0,"y":0,},

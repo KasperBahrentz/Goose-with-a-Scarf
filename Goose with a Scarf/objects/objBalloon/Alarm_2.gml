@@ -1,0 +1,1 @@
+speech_bubble = instance_create_depth(x-20*pixel_size, y-18*pixel_size, depth-1000, objSpeechBubble, {text : text, always_visible: true})

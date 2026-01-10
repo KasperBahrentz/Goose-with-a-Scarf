@@ -1,5 +1,5 @@
 var dist = point_distance(x+4*pixel_size, y, objGooseBody.x, objGooseBody.y);
-if (dist < player_range) {
+if (always_visible || (dist < player_range && objGooseBody.is_on_ground == true)) {
     visible = true;
 	fade = false;
 	image_alpha = 1;

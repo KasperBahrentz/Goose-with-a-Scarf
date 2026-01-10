@@ -37,7 +37,13 @@ function fly_up(){
 	if (image_index == 1){
 		image_index = 2;
 	}
-	if (room != room_level_spring_1) objCam.follow = objBalloon;	
+	if (room != room_level_spring_1 && room != room_level_summer_1) objCam.follow = objBalloon;
+	else { // if leaving regular level
+		if (speech_bubble == noone){
+			if (alarm[2] = -1) alarm[2] = 60;
+		}
+		else speech_bubble.y = y-16*pixel_size;
+	}
 	vspeed = lerp(vspeed, -fly_speed, 0.01);
 	if (room == room_village and y <= stop_limit){
 		state = balloon_state.STOP_IN_AIR;	
