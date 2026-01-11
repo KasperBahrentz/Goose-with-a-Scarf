@@ -12,7 +12,7 @@ image_blend = dark_grey;
 
 image_speed = irandom_range(8, 11);
 
-direction = random_range(90, 100);
+direction = random_range(85, 95);
 image_index = random_range(0, 3);
 image_xscale = choose(1, -1);
 image_yscale = choose(1, -1);

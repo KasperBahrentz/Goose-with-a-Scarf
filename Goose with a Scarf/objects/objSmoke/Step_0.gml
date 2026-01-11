@@ -14,7 +14,7 @@ else if (image_blend == grey and image_index >= change_to_light_grey){
 }
 
 if (floor(image_index) != floor(last_image_index)){
-	if (direction <= 160) direction += random_range(2, 4);
+	if (direction >= 30) direction -= random_range(2, 4);
 	last_image_index = image_index;
 }
 

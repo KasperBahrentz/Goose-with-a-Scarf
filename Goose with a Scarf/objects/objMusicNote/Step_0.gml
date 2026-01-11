@@ -17,7 +17,7 @@ y += _vspeed; // smooth upward float
 
 // Apply wave delta
 x += dx;
-x -= random_range(0.5, 1); // slow drift to the left
+x += random_range(0.5, 1); // slow drift to the left
 
 // Step Event: Growth logic
 if (image_index < base_index + max_growth) {

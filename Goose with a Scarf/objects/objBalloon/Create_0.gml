@@ -1,6 +1,6 @@
 speech_bubble = noone;
 
-if (instance_exists(objGame) and objGame.has_arrived_in_level) instance_destroy();
+if (debug_active || (instance_exists(objGame) and objGame.has_arrived_in_level)) instance_destroy();
 else {
 	
 	// Inherit the parent event

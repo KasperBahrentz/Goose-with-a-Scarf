@@ -52,7 +52,7 @@ else
 	var _melon = instance_place(x, y, objMelon);
 	
 	if (_is_rock && _melon != noone){
-		_melon.state = melon_state.SPLAT;
+		_melon.state = roll_state.SPLAT;
 	}
 }
 

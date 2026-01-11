@@ -12,7 +12,10 @@
     "name":"particles",
     "path":"folders/Objects/particles.yy",
   },
-  "parentObjectId":null,
+  "parentObjectId":{
+    "name":"prtSplat",
+    "path":"objects/prtSplat/prtSplat.yy",
+  },
   "persistent":false,
   "physicsAngularDamping":0.1,
   "physicsDensity":0.5,

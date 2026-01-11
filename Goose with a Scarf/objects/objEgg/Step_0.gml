@@ -92,7 +92,7 @@ function drop(){
 		// Melon collisions
 		if (collision_rectangle(bbox_left - 8*pixel_size, bbox_top - 8*pixel_size, bbox_right + 8*pixel_size, bbox_bottom + 8*pixel_size, objMelon, false, true)){
 			with instance_nearest(x, y, objMelon){
-				state = melon_state.SPLAT;
+				state = roll_state.SPLAT;
 			}
 			destroy_egg();
 			instance_create_layer(x, y, "instances", objEgg, {state: egg_state.MOVE, temporary: true});
