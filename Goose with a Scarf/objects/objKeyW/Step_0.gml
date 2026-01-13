@@ -17,11 +17,6 @@ function appear(){
 
 function stay(){
 	image_speed = 1;
-	if (sprite_index == sprKeyWASD){
-		if (keyboard_check_pressed(ord("D"))){
-			state = keyboard_state.DISAPPEAR;	
-		}
-	}
 }
 
 function disappear(){

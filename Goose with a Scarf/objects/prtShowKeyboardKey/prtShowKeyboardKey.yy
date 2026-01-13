@@ -1,12 +1,12 @@
 {
   "$GMObject":"",
-  "%Name":"objChimney",
+  "%Name":"prtShowKeyboardKey",
   "eventList":[
     {"$GMEvent":"v1","%Name":"","collisionObjectId":null,"eventNum":0,"eventType":3,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
     {"$GMEvent":"v1","%Name":"","collisionObjectId":null,"eventNum":0,"eventType":0,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
   ],
   "managed":true,
-  "name":"objChimney",
+  "name":"prtShowKeyboardKey",
   "overriddenProperties":[],
   "parent":{
     "name":"Objects",
@@ -27,15 +27,14 @@
   "physicsShapePoints":[],
   "physicsStartAwake":true,
   "properties":[
-    {"$GMObjectProperty":"v2","%Name":"makes_smoke","filters":[],"listItems":[],"multiselect":false,"name":"makes_smoke","rangeEnabled":false,"rangeMax":10.0,"rangeMin":0.0,"resourceType":"GMObjectProperty","resourceVersion":"2.0","value":"true","varType":3,},
+    {"$GMObjectProperty":"v2","%Name":"activate_range","filters":[],"listItems":[],"multiselect":false,"name":"activate_range","rangeEnabled":false,"rangeMax":10.0,"rangeMin":0.0,"resourceType":"GMObjectProperty","resourceVersion":"2.0","value":"120","varType":1,},
+    {"$GMObjectProperty":"v2","%Name":"keyboard_key","filters":[],"listItems":[],"multiselect":false,"name":"keyboard_key","rangeEnabled":false,"rangeMax":10.0,"rangeMin":0.0,"resource":{"name":"objKeyW","path":"objects/objKeyW/objKeyW.yy",},"resourceType":"GMObjectProperty","resourceVersion":"2.0","value":"objKeyW","varType":5,},
+    {"$GMObjectProperty":"v2","%Name":"active","filters":[],"listItems":[],"multiselect":false,"name":"active","rangeEnabled":false,"rangeMax":10.0,"rangeMin":0.0,"resourceType":"GMObjectProperty","resourceVersion":"2.0","value":"true","varType":3,},
   ],
   "resourceType":"GMObject",
   "resourceVersion":"2.0",
   "solid":false,
-  "spriteId":{
-    "name":"sprChimney",
-    "path":"sprites/sprChimney/sprChimney.yy",
-  },
+  "spriteId":null,
   "spriteMaskId":null,
   "visible":true,
 }

@@ -2,7 +2,7 @@ if (smoke_timer <= 0){
 	instance_create_depth(x + irandom_range(-smoke_x_range, smoke_x_range), smoke_y, depth, objSmoke);	
 	smoke_timer = smoke_timer_max + irandom(smoke_timer_max/4);
 }
-else {
+else if (makes_smoke) {
 	smoke_timer--;	
 }
 

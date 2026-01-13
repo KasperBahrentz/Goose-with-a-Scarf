@@ -12,4 +12,4 @@ else if (image_index == 2){
 }
 
 smoke_timer_max = 4;
-smoke_timer = 0;
+smoke_timer = smoke_timer_max;

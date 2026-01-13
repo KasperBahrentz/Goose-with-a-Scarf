@@ -1,7 +1,8 @@
 /// @description Insert description here
 // You can write your code in this editor
 
-audio_set_master_gain(audiogroup_default, 0);
+// mute all audio
+//audio_set_master_gain(audiogroup_default, 0);
 
 enum fruit_counter {
 	PEAR,
@@ -9,6 +10,10 @@ enum fruit_counter {
 	GRAPE,
 	ORANGE	
 }
+
+door_x = 0;
+door_y = 0;
+exited_house = false;
 
 has_arrived_in_level = false;
 

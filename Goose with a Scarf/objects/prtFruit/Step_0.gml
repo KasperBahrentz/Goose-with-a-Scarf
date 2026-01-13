@@ -20,7 +20,7 @@ function item(){
 
 function follow(){
 	follow_player(0.1, 16);
-	if (objGooseBody.is_on_ground and alarm[1] <= 0) alarm[1] = 2;
+	if ((objGooseBody.is_on_ground || (instance_exists(objGoal) and objGoal.goal_touched == true)) and alarm[1] <= 0) alarm[1] = 1;
 }
 
 function collect(){

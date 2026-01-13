@@ -6,6 +6,9 @@ follow = objGooseBody;
 view_w_half = camera_get_view_width(cam) * 0.5;
 view_h_half = camera_get_view_height(cam) * 0.5;
 
+x = objGooseBody.x;
+y = objGooseBody.y;
+
 x_to = xstart;
 y_to = ystart;
 
@@ -23,3 +26,5 @@ mountains_middle_y = layer_get_y("mountains_middle");
 
 mountains_back_x = layer_get_x("mountains_back");
 mountains_back_y = layer_get_y("mountains_back");
+
+in_house = string_pos("house", room_get_name(room));

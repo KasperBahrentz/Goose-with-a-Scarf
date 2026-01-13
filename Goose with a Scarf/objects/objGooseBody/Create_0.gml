@@ -12,21 +12,31 @@ enum flower_color {
 	BLUE
 }
 
+if (!instance_exists(objGame)){
+	instance_create_layer(x, y, "instances", objGame);	
+}
+
+if (!instance_exists(objCam)){
+	instance_create_layer(x, y, "instances", objCam);	
+}
+
+if (objGame.exited_house){
+	objGame.exited_house = false;
+	x = objGame.door_x;
+	y = objGame.door_y;
+	objCam.x = x;
+	objCam.y = y;
+}
+
+if (audio_is_playing(sndThunder)) audio_stop_sound(sndThunder);
+
 hspeed_tracker = 0;
 
 keys = [];
 
 lay = false;
 
-if (!instance_exists(objCam)){
-	instance_create_layer(x, y, "instances", objCam);	
-}
-
 depth -= 5;
-
-if (!instance_exists(objGame)){
-	instance_create_layer(x, y, "instances", objGame);	
-}
 
 instance_create_layer(x, y, layer, objGooseFeet);
 instance_create_layer(x, y, layer, objGooseHead);
