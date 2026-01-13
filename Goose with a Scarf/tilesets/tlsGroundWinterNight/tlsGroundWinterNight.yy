@@ -1,6 +1,6 @@
 {
   "$GMTileSet":"v1",
-  "%Name":"tlsGroundWinter",
+  "%Name":"tlsGroundWinterNight",
   "autoTileSets":[
     {"$GMAutoTileSet":"","%Name":"fill","closed_edge":false,"name":"fill","resourceType":"GMAutoTileSet","resourceVersion":"2.0","tiles":[41,42,43,44,45,46,47,48,72,73,74,75,76,77,78,79,],},
     {"$GMAutoTileSet":"","%Name":"ground","closed_edge":false,"name":"ground","resourceType":"GMAutoTileSet","resourceVersion":"2.0","tiles":[
@@ -39,7 +39,7 @@
     ],
     "TileDataFormat":1,
   },
-  "name":"tlsGroundWinter",
+  "name":"tlsGroundWinterNight",
   "out_columns":22,
   "out_tilehborder":2,
   "out_tilevborder":2,
@@ -50,8 +50,8 @@
   "resourceType":"GMTileSet",
   "resourceVersion":"2.0",
   "spriteId":{
-    "name":"sprTilesGroundWinterDay",
-    "path":"sprites/sprTilesGroundWinterDay/sprTilesGroundWinterDay.yy",
+    "name":"sprTilesGroundWinterNight",
+    "path":"sprites/sprTilesGroundWinterNight/sprTilesGroundWinterNight.yy",
   },
   "spriteNoExport":false,
   "textureGroupId":{

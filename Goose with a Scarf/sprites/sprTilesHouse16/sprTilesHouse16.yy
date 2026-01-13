@@ -19,7 +19,7 @@
   "height":496,
   "HTile":false,
   "layers":[
-    {"$GMImageLayer":"","%Name":"37366298-6178-4896-96b6-6310118f8404","blendMode":0,"displayName":"default","isLocked":false,"name":"37366298-6178-4896-96b6-6310118f8404","opacity":100.0,"resourceType":"GMImageLayer","resourceVersion":"2.0","visible":true,},
+    {"$GMImageLayer":"","%Name":"6990b975-748a-4cf7-a042-a9dbea7af603","blendMode":0,"displayName":"default","isLocked":false,"name":"6990b975-748a-4cf7-a042-a9dbea7af603","opacity":100.0,"resourceType":"GMImageLayer","resourceVersion":"2.0","visible":true,},
   ],
   "name":"sprTilesHouse16",
   "nineSlice":null,

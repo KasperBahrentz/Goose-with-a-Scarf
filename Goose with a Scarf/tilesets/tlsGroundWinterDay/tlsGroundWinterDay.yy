@@ -50,8 +50,8 @@
   "resourceType":"GMTileSet",
   "resourceVersion":"2.0",
   "spriteId":{
-    "name":"sprTilesGroundWinter",
-    "path":"sprites/sprTilesGroundWinter/sprTilesGroundWinter.yy",
+    "name":"sprTilesGroundWinterDay",
+    "path":"sprites/sprTilesGroundWinterDay/sprTilesGroundWinterDay.yy",
   },
   "spriteNoExport":false,
   "textureGroupId":{
