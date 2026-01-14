@@ -15,7 +15,10 @@
     "name":"NPCs",
     "path":"folders/Objects/NPCs.yy",
   },
-  "parentObjectId":null,
+  "parentObjectId":{
+    "name":"prtTalk",
+    "path":"objects/prtTalk/prtTalk.yy",
+  },
   "persistent":false,
   "physicsAngularDamping":0.1,
   "physicsDensity":0.5,
@@ -31,7 +34,7 @@
   "physicsStartAwake":true,
   "properties":[
     {"$GMObjectProperty":"v2","%Name":"wait_timer","filters":[],"listItems":[],"multiselect":false,"name":"wait_timer","rangeEnabled":false,"rangeMax":10.0,"rangeMin":0.0,"resourceType":"GMObjectProperty","resourceVersion":"2.0","value":"180","varType":1,},
-    {"$GMObjectProperty":"v2","%Name":"walking_range","filters":[],"listItems":[],"multiselect":false,"name":"walking_range","rangeEnabled":false,"rangeMax":10.0,"rangeMin":0.0,"resourceType":"GMObjectProperty","resourceVersion":"2.0","value":"4*tile_size","varType":1,},
+    {"$GMObjectProperty":"v2","%Name":"walking_range","filters":[],"listItems":[],"multiselect":false,"name":"walking_range","rangeEnabled":false,"rangeMax":10.0,"rangeMin":0.0,"resourceType":"GMObjectProperty","resourceVersion":"2.0","value":"180","varType":1,},
     {"$GMObjectProperty":"v2","%Name":"walking_speed_start","filters":[],"listItems":[],"multiselect":false,"name":"walking_speed_start","rangeEnabled":false,"rangeMax":10.0,"rangeMin":0.0,"resourceType":"GMObjectProperty","resourceVersion":"2.0","value":"3","varType":0,},
     {"$GMObjectProperty":"v2","%Name":"normal_sprite","filters":[],"listItems":[],"multiselect":false,"name":"normal_sprite","rangeEnabled":false,"rangeMax":10.0,"rangeMin":0.0,"resource":{"name":"sprTurkey","path":"sprites/sprTurkey/sprTurkey.yy",},"resourceType":"GMObjectProperty","resourceVersion":"2.0","value":"sprTurkey","varType":5,},
     {"$GMObjectProperty":"v2","%Name":"idle_sprite","filters":[],"listItems":[],"multiselect":false,"name":"idle_sprite","rangeEnabled":false,"rangeMax":10.0,"rangeMin":0.0,"resource":{"name":"sprTurkeyIdle","path":"sprites/sprTurkeyIdle/sprTurkeyIdle.yy",},"resourceType":"GMObjectProperty","resourceVersion":"2.0","value":"sprTurkeyIdle","varType":5,},

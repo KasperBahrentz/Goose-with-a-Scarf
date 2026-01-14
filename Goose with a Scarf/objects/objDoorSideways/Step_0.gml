@@ -15,7 +15,7 @@ function locked(){
 
 function closed(){
 	image_index = 0;
-	if (point_distance(x, y, objGooseBody.x, objGooseBody.y) <= open_distance){
+	if (distance_to_object(objGooseBody) <= open_distance){
 		var _goose_on_left = objGooseBody.x < x;
 		state = door_sideways_state.OPEN;
 		audio_play_sound(sndDoor, 15, false);
@@ -29,7 +29,7 @@ function closed(){
 }
 
 function open(){
-	if (point_distance(x, y, objGooseBody.x, objGooseBody.y) <= close_distance){
+	if (distance_to_object(objGooseBody) <= close_distance){
 		auto_close_timer = auto_close_timer_max;
 	}
 	else {

@@ -1,10 +1,10 @@
 {
   "$GMSprite":"v2",
   "%Name":"sprDoorSideways",
-  "bboxMode":0,
+  "bboxMode":2,
   "bbox_bottom":255,
-  "bbox_left":8,
-  "bbox_right":255,
+  "bbox_left":120,
+  "bbox_right":144,
   "bbox_top":0,
   "collisionKind":1,
   "collisionTolerance":0,
