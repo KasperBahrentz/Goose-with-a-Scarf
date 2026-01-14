@@ -8,6 +8,15 @@ water_back_tilemap = layer_tilemap_get_id("water_back");
 deco_tilemap = layer_tilemap_get_id("deco_middle");
 back_tilemap = layer_tilemap_get_id("back");
 
+if (objCam.in_house){
+	top_right_triangle_id = 921;
+	top_left_triangle_id = 896;
+}
+else {
+	top_right_triangle_id = 205;
+	top_left_triangle_id = 180;
+}
+
 if (room_height == 2160 or room_height == 4320){
 	layer_y(layer_get_id("sky"), -4320);
 }

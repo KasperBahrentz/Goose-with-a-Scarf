@@ -5,6 +5,7 @@ enum player_state{
 	DIE,	
 	GONE,
 	SIT,
+	ENTER_DOOR,
 }
 
 enum flower_color {
@@ -91,6 +92,7 @@ spr_body_glide = sprGooseBodyGlide;
 spr_body_crouch = sprGooseCrouch;
 spr_body_die = sprGooseDie;
 spr_body_sit = sprGooseBodySit;
+spr_body_enter_door = sprGooseEnterDoor;
 
 spr_head_idle = sprGooseHeadIdle;
 spr_head_honk = sprGooseHeadHonk;

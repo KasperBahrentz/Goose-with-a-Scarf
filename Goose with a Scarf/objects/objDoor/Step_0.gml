@@ -7,10 +7,12 @@ switch(state){
 }
 
 function closed(){
-	if (distance_to_object(objGooseBody) <= activate_range){
+	if (point_distance(x, y, objGooseBody.x, objGooseBody.y) <= activate_range){
 		if (keyboard_check_pressed(ord("W"))){
 			audio_play_sound(sndDoor, 20, false);
 			state = door_state.OPEN
+			
+			objGooseBody.state = player_state.ENTER_DOOR;
 			
 			if (objCam.in_house){
 				objGame.exited_house = true;	

@@ -16,7 +16,7 @@ draw_goose();
 
 function draw_goose(){
 	if (state != player_state.GONE){
-		if (sprite_index == spr_body_crouch || sprite_index == spr_body_die){
+		if (sprite_index == spr_body_crouch || sprite_index == spr_body_die || sprite_index == spr_body_enter_door){
 			draw_self();
 		}
 		else if (sprite_index == spr_body_sit){

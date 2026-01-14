@@ -7,10 +7,12 @@
   ],
   "managed":true,
   "name":"objDoor",
-  "overriddenProperties":[],
+  "overriddenProperties":[
+    {"$GMOverriddenProperty":"v1","%Name":"","name":"","objectId":{"name":"prtShowKeyboardKey","path":"objects/prtShowKeyboardKey/prtShowKeyboardKey.yy",},"propertyId":{"name":"activate_range","path":"objects/prtShowKeyboardKey/prtShowKeyboardKey.yy",},"resourceType":"GMOverriddenProperty","resourceVersion":"2.0","value":"60",},
+  ],
   "parent":{
-    "name":"Objects",
-    "path":"folders/Objects.yy",
+    "name":"doors",
+    "path":"folders/Objects/doors.yy",
   },
   "parentObjectId":{
     "name":"prtShowKeyboardKey",
@@ -30,8 +32,7 @@
   "physicsShapePoints":[],
   "physicsStartAwake":true,
   "properties":[
-    {"$GMObjectProperty":"v2","%Name":"target_room","filters":[],"listItems":[],"multiselect":false,"name":"target_room","rangeEnabled":false,"rangeMax":10.0,"rangeMin":0.0,"resource":{"name":"room_village","path":"rooms/room_village/room_village.yy",},"resourceType":"GMObjectProperty","resourceVersion":"2.0","value":"room_house_inn","varType":5,},
-    {"$GMObjectProperty":"v2","%Name":"door","filters":[],"listItems":[],"multiselect":false,"name":"door","rangeEnabled":false,"rangeMax":10.0,"rangeMin":0.0,"resource":{"name":"sprDoor","path":"sprites/sprDoor/sprDoor.yy",},"resourceType":"GMObjectProperty","resourceVersion":"2.0","value":"sprDoor","varType":5,},
+    {"$GMObjectProperty":"v2","%Name":"target_room","filters":[],"listItems":[],"multiselect":false,"name":"target_room","rangeEnabled":false,"rangeMax":10.0,"rangeMin":0.0,"resource":{"name":"room_house_inn","path":"rooms/room_house_inn/room_house_inn.yy",},"resourceType":"GMObjectProperty","resourceVersion":"2.0","value":"room_house_inn","varType":5,},
   ],
   "resourceType":"GMObject",
   "resourceVersion":"2.0",

@@ -2,10 +2,15 @@
 // You can write your code in this editor
 
 switch (state){
-	case player_state.MOVE:		move(); break;
-	case player_state.DIE:		die();	break;	
-	case player_state.GONE:		gone();	break;
-	case player_state.SIT:		sit();	break;
+	case player_state.MOVE:			move();			break;
+	case player_state.DIE:			die();			break;	
+	case player_state.GONE:			gone();			break;
+	case player_state.SIT:			sit();			break;
+	case player_state.ENTER_DOOR:	enter_door();	break;
+}
+
+function enter_door() {
+	sprite_index = spr_body_enter_door;
 }
 
 function sit(){

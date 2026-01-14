@@ -4,7 +4,7 @@
   "bboxMode":0,
   "bbox_bottom":495,
   "bbox_left":16,
-  "bbox_right":303,
+  "bbox_right":479,
   "bbox_top":9,
   "collisionKind":1,
   "collisionTolerance":0,
@@ -20,6 +20,7 @@
   "HTile":false,
   "layers":[
     {"$GMImageLayer":"","%Name":"6990b975-748a-4cf7-a042-a9dbea7af603","blendMode":0,"displayName":"default","isLocked":false,"name":"6990b975-748a-4cf7-a042-a9dbea7af603","opacity":100.0,"resourceType":"GMImageLayer","resourceVersion":"2.0","visible":true,},
+    {"$GMImageLayer":"","%Name":"172f81a8-1942-4786-8400-39234bddff5f","blendMode":0,"displayName":"Layer 1","isLocked":false,"name":"172f81a8-1942-4786-8400-39234bddff5f","opacity":100.0,"resourceType":"GMImageLayer","resourceVersion":"2.0","visible":false,},
   ],
   "name":"sprTilesHouse16",
   "nineSlice":null,

@@ -51,12 +51,12 @@ function check_collision(_move_x, _move_y, _ignore)
     function check_tile_collision(px, py)
     {	
         var tile_id = tilemap_get_at_pixel(objGame.collision_tilemap, px, py);
-        if (tile_id == top_right_triangle_id)
+        if (tile_id == objGame.top_right_triangle_id)
         {
             // Only collide if inside top-left ceiling triangle shape
             return point_in_triangle_top_left_ceiling(px, py);
         }
-        else if (tile_id == top_left_triangle_id)
+        else if (tile_id == objGame.top_left_triangle_id)
         {
             // Only collide if inside top-right ceiling triangle shape
             return point_in_triangle_top_right_ceiling(px, py);
