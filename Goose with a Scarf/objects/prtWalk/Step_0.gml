@@ -1,3 +1,5 @@
+event_inherited()
+
 switch(state){
 	case walk_state.WALK_LEFT:	walk_left();	break;
 	case walk_state.WALK_RIGHT:	walk_right();	break;

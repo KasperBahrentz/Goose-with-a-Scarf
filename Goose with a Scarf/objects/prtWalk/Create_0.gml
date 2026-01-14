@@ -1,3 +1,5 @@
+event_inherited()
+
 enum walk_state {
 	WALK_LEFT,
 	WALK_RIGHT,
