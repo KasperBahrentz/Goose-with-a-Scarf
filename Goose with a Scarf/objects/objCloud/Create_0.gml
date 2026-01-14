@@ -6,7 +6,7 @@ if (collision_circle(x, y, 32*pixel_size, objCloud, false, true)) instance_destr
 
 var _tileset_name = get_tileset_name();
 
-if (_tileset_name == "tlsGroundWinter"){
+if (_tileset_name == "tlsGroundWinterNight"){
 	sprite_index = sprCloudWinterFront;	
 }
 else if (_tileset_name == "tlsGroundSummer"){
@@ -25,7 +25,7 @@ else if (layer == layer_get_id("clouds_middle")){
 	state = "middle";
 	parallax_factor = 24;
 	sprite_index = sprCloudMiddle;
-	if (_tileset_name == "tlsGroundWinter"){
+	if (_tileset_name == "tlsGroundWinterNight"){
 		sprite_index = sprCloudWinterMiddle;	
 	}
 	else if (_tileset_name == "tlsGroundSummer"){
@@ -37,7 +37,7 @@ else if (layer == layer_get_id("clouds_back")){
 	state = "back";
 	parallax_factor = 48;
 	sprite_index = sprCloudBack;
-	if (_tileset_name == "tlsGroundWinter"){
+	if (_tileset_name == "tlsGroundWinterNight"){
 		sprite_index = sprCloudWinterBack;	
 	}
 	else if (_tileset_name == "tlsGroundSummer"){
@@ -49,7 +49,7 @@ else if (layer == layer_get_id("clouds_back")){
 	state = "back_back";
 	parallax_factor = 64;
 	sprite_index = sprCloudBack;
-	if (_tileset_name == "tlsGroundWinter"){
+	if (_tileset_name == "tlsGroundWinterNight"){
 		sprite_index = sprCloudWinterBack;	
 	}
 	else if (_tileset_name == "tlsGroundSummer"){

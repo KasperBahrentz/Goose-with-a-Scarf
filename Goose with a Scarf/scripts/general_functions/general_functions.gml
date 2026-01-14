@@ -117,7 +117,7 @@ function layer_has_tiles(layer_name){
 function get_material(){
 	var _material = "grass";
 	
-	if (get_tileset_name() == "tlsGroundWinter"){
+	if (get_tileset_name() == "tlsGroundWinterNight"){
 		_material = "snow";	
 	}
 	

@@ -13,5 +13,3 @@ look_right_time = 120;
 look_straight_time = 120;
 
 img_spd = image_speed;
-
-if (custom_depth == -1) depth = objGooseBody.depth -100;

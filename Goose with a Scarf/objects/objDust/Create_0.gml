@@ -7,7 +7,7 @@ var tileset_name = tileset_get_name(tileset_id);
 
 is_snow = false;
 
-if (tileset_name == "tlsGroundWinter"){
+if (tileset_name == "tlsGroundWinterNight"){
 	is_snow = true;
 }
 

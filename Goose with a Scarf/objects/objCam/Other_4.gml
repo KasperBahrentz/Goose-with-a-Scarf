@@ -5,6 +5,8 @@ function random_div8_range(min_val, max_val) {
     return random_range(min_multiple, max_multiple) * 8;
 }
 
+in_house = get_tileset_name() == "tlsHouse";
+
 if (!in_house){
 	var _clouds_front = layer_create(layer_get_depth("mountains_front")-5, "clouds_front");
 	repeat(random_range(20, 25)) instance_create_layer(random_div8_range(0, room_width), random_div8_range(3*tile_size, room_height-room_height/3), _clouds_front, objCloud);
@@ -18,7 +20,7 @@ if (!in_house){
 	var _clouds_back_back = layer_create(layer_get_depth("mountains_back")+5, "clouds_back_back");
 	repeat(random_range(20, 25)) instance_create_layer(random_div8_range(0, room_width), random_div8_range(3*tile_size, room_height-room_height/3), _clouds_back_back, objCloud);
 
-	if (get_tileset_name() == "tlsGroundWinter"){
+	if (get_tileset_name() == "tlsGroundWinterNight"){
 		var _stars = layer_create(layer_get_depth(_clouds_back_back)+5, "stars");
 		repeat(random_range(40, 50)) instance_create_layer(random_div8_range(tile_size, room_width-tile_size), random_div8_range(2*tile_size, room_height-room_height/2), _stars, objStar);
 		//instance_create_layer(random_div8_range(0, room_width), random_div8_range(2*tile_size, room_height-room_height/3), _stars, objMoon);
