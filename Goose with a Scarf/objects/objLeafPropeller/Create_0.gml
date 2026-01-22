@@ -6,3 +6,5 @@ sound_timer = 0;
 sound_treshold = 16*tile_size;
 
 image_index = irandom_range(0, image_number-1);
+
+draw_y = y;

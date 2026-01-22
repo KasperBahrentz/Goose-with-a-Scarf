@@ -1,4 +1,4 @@
 /// @description Insert description here
 // You can write your code in this editor
 
-draw_sprite(sprite_index, image_index, x, draw_y);
+draw_sprite(sprite_index, image_index, x, leaf_propeller.draw_y);

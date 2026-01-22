@@ -1,0 +1,1 @@
+draw_sprite(sprite_index, image_index, x, leaf_propeller.draw_y);

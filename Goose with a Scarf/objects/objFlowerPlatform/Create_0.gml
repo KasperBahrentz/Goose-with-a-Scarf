@@ -14,7 +14,6 @@ depth = objGooseBody.depth + 10;
 event_inherited();
 
 timer = random_range(-1, 1);
-draw_y = y;
 
 if (leaf_propeller == noone){
 	leaf_propeller = instance_create_layer(x, y, "instances", objLeafPropeller);

@@ -211,6 +211,7 @@
     {"id":{"name":"room_level_summer_5","path":"rooms/room_level_summer_5/room_level_summer_5.yy",},},
     {"id":{"name":"room_level_summer_6","path":"rooms/room_level_summer_6/room_level_summer_6.yy",},},
     {"id":{"name":"room_level_summer_7","path":"rooms/room_level_summer_7/room_level_summer_7.yy",},},
+    {"id":{"name":"room_level_summer_8","path":"rooms/room_level_summer_8/room_level_summer_8.yy",},},
     {"id":{"name":"room_level_summer_template","path":"rooms/room_level_summer_template/room_level_summer_template.yy",},},
     {"id":{"name":"room_level_test","path":"rooms/room_level_test/room_level_test.yy",},},
     {"id":{"name":"room_level_tutorial","path":"rooms/room_level_tutorial/room_level_tutorial.yy",},},
@@ -611,6 +612,7 @@
   "resourceType":"GMProject",
   "resourceVersion":"2.0",
   "RoomOrderNodes":[
+    {"roomId":{"name":"room_level_summer_8","path":"rooms/room_level_summer_8/room_level_summer_8.yy",},},
     {"roomId":{"name":"room_village","path":"rooms/room_village/room_village.yy",},},
     {"roomId":{"name":"room_house_inn","path":"rooms/room_house_inn/room_house_inn.yy",},},
     {"roomId":{"name":"room_level_summer_1","path":"rooms/room_level_summer_1/room_level_summer_1.yy",},},
