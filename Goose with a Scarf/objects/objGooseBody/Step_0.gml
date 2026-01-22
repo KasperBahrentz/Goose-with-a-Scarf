@@ -222,7 +222,7 @@ function move(){
 	
 	var _ceiling_hit = vspeed < 0 and check_collision(0, -8*pixel_size);
 	
-	if (!_nearly_on_ground && check_collision(0, 8*pixel_size)) _nearly_on_ground = true;
+	if (!_nearly_on_ground && (vspeed > 0 && check_collision(0, 8*pixel_size))) _nearly_on_ground = true;
 	
 		/// Detect ride crate
 	var ride_crate = instance_place(x, y + 4*pixel_size, prtCrate);
@@ -261,25 +261,6 @@ function move(){
 		map_y = tilemap_get_cell_y_at_pixel(_tilemap, x, y + 4*pixel_size);
 		vspeed = 0;
 		y = (map_y * tile_size);
-
-		// --- FALL THROUGH SEMI-SOLID (double tap S) ---
-
-		// Check if S was just pressed
-		//if (keyboard_check_pressed(ord("S"))) {
-		//    if (fall_through_semi_solid_timer > 0 && _landed_on_semi_solid) {
-		//        // Second press detected in time — fall through
-		//        if(!check_collision(0, 3*pixel_size)) and (!place_meeting(x, y+8*pixel_size, objHiddenDetection)) vspeed = 3 * pixel_size;
-		//        fall_through_semi_solid_timer = 0; // Reset to avoid triple-taps
-		//    } else {
-		//        // First press — start the timer
-		//        fall_through_semi_solid_timer = fall_through_semi_solid_timer_max;
-		//    }
-		//}
-
-		//// Decrease timer each frame
-		//if (fall_through_semi_solid_timer > 0) {
-		//    fall_through_semi_solid_timer--;
-		//}
 	} 
 	
 	if (_ceiling_hit){ // Stop at ceiling
