@@ -33,6 +33,7 @@
     {"$GMObjectProperty":"v2","%Name":"spawn_timer_max","filters":[],"listItems":[],"multiselect":false,"name":"spawn_timer_max","rangeEnabled":false,"rangeMax":10.0,"rangeMin":0.0,"resourceType":"GMObjectProperty","resourceVersion":"2.0","value":"120","varType":1,},
     {"$GMObjectProperty":"v2","%Name":"spawn_delay","filters":[],"listItems":[],"multiselect":false,"name":"spawn_delay","rangeEnabled":false,"rangeMax":10.0,"rangeMin":0.0,"resourceType":"GMObjectProperty","resourceVersion":"2.0","value":"0","varType":1,},
     {"$GMObjectProperty":"v2","%Name":"spawn_object","filters":[],"listItems":[],"multiselect":false,"name":"spawn_object","rangeEnabled":false,"rangeMax":10.0,"rangeMin":0.0,"resource":{"name":"objMelon","path":"objects/objMelon/objMelon.yy",},"resourceType":"GMObjectProperty","resourceVersion":"2.0","value":"objMelon","varType":5,},
+    {"$GMObjectProperty":"v2","%Name":"spawn_one_at_a_time","filters":[],"listItems":[],"multiselect":false,"name":"spawn_one_at_a_time","rangeEnabled":false,"rangeMax":10.0,"rangeMin":0.0,"resourceType":"GMObjectProperty","resourceVersion":"2.0","value":"False","varType":3,},
   ],
   "resourceType":"GMObject",
   "resourceVersion":"2.0",
