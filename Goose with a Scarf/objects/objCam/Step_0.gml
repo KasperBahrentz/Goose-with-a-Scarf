@@ -48,7 +48,7 @@ if (shake) {
    } 
 }
 
-camera_set_view_pos(cam,x-view_w_half,y-view_h_half);
+camera_set_view_pos(cam,floor(x-view_w_half),floor(y-view_h_half));
 
 // Parallax Scrolling
 layer_x("mountains_front", mountains_front_x + x / 32);

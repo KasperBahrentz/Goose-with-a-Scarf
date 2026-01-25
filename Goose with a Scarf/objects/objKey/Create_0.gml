@@ -16,4 +16,4 @@ state = key_state.IDLE;
 target_instance = noone;
 
 // Distance threshold for detecting player
-collect_distance = 6*pixel_size; // or whatever feels right
+collect_distance = 6*pixel_size;

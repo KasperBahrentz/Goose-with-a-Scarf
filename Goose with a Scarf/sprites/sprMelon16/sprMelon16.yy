@@ -26,6 +26,7 @@
   "height":16,
   "HTile":false,
   "layers":[
+    {"$GMImageLayer":"","%Name":"15b0f55d-a8b6-405e-9d1d-13a6c5067ff5","blendMode":0,"displayName":"Layer 1","isLocked":false,"name":"15b0f55d-a8b6-405e-9d1d-13a6c5067ff5","opacity":20.0,"resourceType":"GMImageLayer","resourceVersion":"2.0","visible":false,},
     {"$GMImageLayer":"","%Name":"e5edebd7-5762-4828-9af8-e6983db1ca0a","blendMode":0,"displayName":"default","isLocked":false,"name":"e5edebd7-5762-4828-9af8-e6983db1ca0a","opacity":100.0,"resourceType":"GMImageLayer","resourceVersion":"2.0","visible":true,},
   ],
   "name":"sprMelon16",
@@ -66,7 +67,7 @@
     },
     "name":"sprMelon16",
     "playback":1,
-    "playbackSpeed":0.0,
+    "playbackSpeed":8.0,
     "playbackSpeedType":0,
     "resourceType":"GMSequence",
     "resourceVersion":"2.0",

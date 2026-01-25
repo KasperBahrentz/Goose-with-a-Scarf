@@ -20,7 +20,7 @@ has_arrived_in_level = false;
 found_hidden_blocks = [];
 
 display_set_gui_maximise();
-display_set_gui_size(3584*0.75, 1904*0.75);
+display_set_gui_size(3408*0.75, 1920*0.75);
 
 #macro pixel_size 8
 #macro tile_size 128
@@ -30,12 +30,14 @@ top_right_triangle_id = 205;
 top_left_triangle_id = 180;
 
 if (!instance_exists(objCam)) instance_create_layer(x, y, "instances", objCam);
+window_set_fullscreen(true);
 
 egg_count = 0;
-
 temporary_eggs = [];
 
-window_set_fullscreen(true);
+base_width = 3408;
+base_height = 1920;
+
 
 draw_set_font(fnt_smooth);
 

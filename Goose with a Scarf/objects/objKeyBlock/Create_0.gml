@@ -2,7 +2,7 @@
 state = locked_state.LOCKED;
 
 // Distance threshold for detecting player
-open_distance = 60*pixel_size; // or whatever feels right
+open_distance = 32*pixel_size; // or whatever feels right
 
 brightness = 0;
 pulse_phase = 0;
